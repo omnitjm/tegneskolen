@@ -1,0 +1,41 @@
+{
+  "poses": {
+    "draw": {
+      "file": "hand_draw.png",
+      "w": 900,
+      "h": 900,
+      "tipX": 128.5,
+      "tipY": 620.5,
+      "armExitX": 899.0,
+      "armExitY": 832.96
+    },
+    "press": {
+      "file": "hand_press.png",
+      "w": 900,
+      "h": 900,
+      "tipX": 129.0,
+      "tipY": 620.0,
+      "armExitX": 899.0,
+      "armExitY": 834.49
+    },
+    "lift": {
+      "file": "hand_lift.png",
+      "w": 900,
+      "h": 900,
+      "tipX": 128.0,
+      "tipY": 608.0,
+      "armExitX": 899.0,
+      "armExitY": 843.96
+    },
+    "erase": {
+      "file": "hand_erase.png",
+      "w": 900,
+      "h": 900,
+      "tipX": 128.5,
+      "tipY": 620.5,
+      "armExitX": 899.0,
+      "armExitY": 836.51
+    }
+  },
+  "recommendedWidthFraction": 0.34
+}

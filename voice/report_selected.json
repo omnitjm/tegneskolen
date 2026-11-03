@@ -1,0 +1,30 @@
+{
+  "candidate": "roest500",
+  "source": "live app texts",
+  "imported_files": 0,
+  "source_jobs": 971,
+  "selected_jobs": 13,
+  "files": 26,
+  "synthesized_this_run": 0,
+  "reused_pcm": 0,
+  "skipped_unverified": 0,
+  "formats": [
+    "AAC .m4a 64 kb/s",
+    "MP3 96 kb/s"
+  ],
+  "bytes": 1186210,
+  "duration_range": [
+    2.781,
+    6.46
+  ],
+  "lufs_range": [
+    -18.92,
+    -17.99
+  ],
+  "peak_range_dbfs": [
+    -3.44,
+    -2.85
+  ],
+  "all_selected_files_decoded": true,
+  "elapsed_seconds": 0.42
+}

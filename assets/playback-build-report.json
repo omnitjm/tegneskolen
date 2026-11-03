@@ -1,0 +1,5003 @@
+{
+  "steps": 835,
+  "dense": 559,
+  "coveragePixels": 13913891,
+  "lostPixels": 0,
+  "stepsData": [
+    {
+      "lesson": "e_fisk",
+      "step": 1,
+      "actions": 113,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fisk",
+      "step": 2,
+      "actions": 121,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fisk",
+      "step": 4,
+      "actions": 135,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fisk",
+      "step": 5,
+      "actions": 150,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fisk",
+      "step": 6,
+      "actions": 140,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fisk",
+      "step": 7,
+      "actions": 140,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fisk",
+      "step": 9,
+      "actions": 228,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fisk",
+      "step": 10,
+      "actions": 187,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fisk",
+      "step": 11,
+      "actions": 1591,
+      "groups": 22,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fisk",
+      "step": 12,
+      "actions": 2294,
+      "groups": 26,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kat",
+      "step": 2,
+      "actions": 165,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kat",
+      "step": 3,
+      "actions": 293,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kat",
+      "step": 4,
+      "actions": 503,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kat",
+      "step": 5,
+      "actions": 2088,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kat",
+      "step": 6,
+      "actions": 1524,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kat",
+      "step": 7,
+      "actions": 3374,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kat",
+      "step": 8,
+      "actions": 2080,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kat",
+      "step": 9,
+      "actions": 2675,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kat",
+      "step": 10,
+      "actions": 3860,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kat",
+      "step": 11,
+      "actions": 9762,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hund",
+      "step": 11,
+      "actions": 1323,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hund",
+      "step": 12,
+      "actions": 2047,
+      "groups": 22,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fugl",
+      "step": 9,
+      "actions": 178,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fugl",
+      "step": 10,
+      "actions": 881,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_fugl",
+      "step": 11,
+      "actions": 8108,
+      "groups": 26,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_snegl",
+      "step": 3,
+      "actions": 109,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_snegl",
+      "step": 4,
+      "actions": 109,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_snegl",
+      "step": 5,
+      "actions": 153,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_snegl",
+      "step": 6,
+      "actions": 275,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_snegl",
+      "step": 7,
+      "actions": 188,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_snegl",
+      "step": 8,
+      "actions": 292,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_snegl",
+      "step": 9,
+      "actions": 5722,
+      "groups": 24,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_snegl",
+      "step": 10,
+      "actions": 4179,
+      "groups": 24,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_skildpadde",
+      "step": 3,
+      "actions": 174,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_skildpadde",
+      "step": 4,
+      "actions": 181,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_skildpadde",
+      "step": 5,
+      "actions": 240,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_skildpadde",
+      "step": 6,
+      "actions": 214,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_skildpadde",
+      "step": 7,
+      "actions": 1558,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_skildpadde",
+      "step": 8,
+      "actions": 1184,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_skildpadde",
+      "step": 9,
+      "actions": 813,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_skildpadde",
+      "step": 10,
+      "actions": 822,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_skildpadde",
+      "step": 11,
+      "actions": 4224,
+      "groups": 26,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_marienhone",
+      "step": 5,
+      "actions": 173,
+      "groups": 3,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_marienhone",
+      "step": 6,
+      "actions": 148,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_marienhone",
+      "step": 12,
+      "actions": 5100,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_marienhone",
+      "step": 13,
+      "actions": 10484,
+      "groups": 27,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kanin",
+      "step": 2,
+      "actions": 102,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kanin",
+      "step": 3,
+      "actions": 170,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kanin",
+      "step": 4,
+      "actions": 598,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kanin",
+      "step": 5,
+      "actions": 382,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kanin",
+      "step": 6,
+      "actions": 1474,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kanin",
+      "step": 7,
+      "actions": 761,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kanin",
+      "step": 8,
+      "actions": 915,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kanin",
+      "step": 9,
+      "actions": 2147,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kanin",
+      "step": 10,
+      "actions": 5673,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 1,
+      "actions": 120,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 2,
+      "actions": 185,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 3,
+      "actions": 159,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 4,
+      "actions": 472,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 5,
+      "actions": 210,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 6,
+      "actions": 177,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 7,
+      "actions": 210,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 8,
+      "actions": 310,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 9,
+      "actions": 304,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 10,
+      "actions": 617,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 11,
+      "actions": 4302,
+      "groups": 29,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ugle",
+      "step": 12,
+      "actions": 1531,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_tulipan",
+      "step": 3,
+      "actions": 188,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_tulipan",
+      "step": 4,
+      "actions": 438,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_tulipan",
+      "step": 5,
+      "actions": 191,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_tulipan",
+      "step": 6,
+      "actions": 243,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_tulipan",
+      "step": 7,
+      "actions": 879,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_tulipan",
+      "step": 8,
+      "actions": 694,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_tulipan",
+      "step": 9,
+      "actions": 1047,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_tulipan",
+      "step": 10,
+      "actions": 927,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_tulipan",
+      "step": 11,
+      "actions": 3813,
+      "groups": 24,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_aeble",
+      "step": 2,
+      "actions": 115,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_aeble",
+      "step": 3,
+      "actions": 109,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_aeble",
+      "step": 4,
+      "actions": 122,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_aeble",
+      "step": 5,
+      "actions": 152,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_aeble",
+      "step": 6,
+      "actions": 168,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_aeble",
+      "step": 7,
+      "actions": 248,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_aeble",
+      "step": 8,
+      "actions": 220,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_aeble",
+      "step": 9,
+      "actions": 266,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_aeble",
+      "step": 10,
+      "actions": 1303,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_aeble",
+      "step": 11,
+      "actions": 4579,
+      "groups": 30,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 2,
+      "actions": 229,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 3,
+      "actions": 442,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 4,
+      "actions": 614,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 5,
+      "actions": 1337,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 6,
+      "actions": 640,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 7,
+      "actions": 1376,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 8,
+      "actions": 1983,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 9,
+      "actions": 1617,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 10,
+      "actions": 1652,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 11,
+      "actions": 1985,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hus",
+      "step": 12,
+      "actions": 6412,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hval",
+      "step": 2,
+      "actions": 427,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hval",
+      "step": 3,
+      "actions": 1657,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hval",
+      "step": 4,
+      "actions": 1799,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hval",
+      "step": 5,
+      "actions": 1168,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hval",
+      "step": 6,
+      "actions": 1020,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hval",
+      "step": 7,
+      "actions": 1492,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hval",
+      "step": 8,
+      "actions": 1161,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hval",
+      "step": 9,
+      "actions": 1808,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_hval",
+      "step": 10,
+      "actions": 6949,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kylling",
+      "step": 6,
+      "actions": 125,
+      "groups": 1,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kylling",
+      "step": 10,
+      "actions": 1974,
+      "groups": 24,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 2,
+      "actions": 141,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 3,
+      "actions": 221,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 4,
+      "actions": 675,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 5,
+      "actions": 1540,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 6,
+      "actions": 1153,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 7,
+      "actions": 2682,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 8,
+      "actions": 1842,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 9,
+      "actions": 1831,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 10,
+      "actions": 2197,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 11,
+      "actions": 3020,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_mus",
+      "step": 12,
+      "actions": 10920,
+      "groups": 32,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_frø",
+      "step": 2,
+      "actions": 204,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_frø",
+      "step": 3,
+      "actions": 672,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_frø",
+      "step": 4,
+      "actions": 1117,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_frø",
+      "step": 5,
+      "actions": 2038,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_frø",
+      "step": 6,
+      "actions": 2547,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_frø",
+      "step": 7,
+      "actions": 3601,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_frø",
+      "step": 8,
+      "actions": 3648,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_frø",
+      "step": 9,
+      "actions": 3933,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_frø",
+      "step": 10,
+      "actions": 14434,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_bi",
+      "step": 8,
+      "actions": 132,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_bi",
+      "step": 10,
+      "actions": 1974,
+      "groups": 25,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_pingvin",
+      "step": 1,
+      "actions": 97,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_pingvin",
+      "step": 2,
+      "actions": 166,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_pingvin",
+      "step": 3,
+      "actions": 243,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_pingvin",
+      "step": 4,
+      "actions": 286,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_pingvin",
+      "step": 5,
+      "actions": 2094,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_pingvin",
+      "step": 6,
+      "actions": 983,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_pingvin",
+      "step": 7,
+      "actions": 1711,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_pingvin",
+      "step": 8,
+      "actions": 1058,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_pingvin",
+      "step": 9,
+      "actions": 2257,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_pingvin",
+      "step": 10,
+      "actions": 5392,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_gris",
+      "step": 11,
+      "actions": 4492,
+      "groups": 29,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 2,
+      "actions": 407,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 3,
+      "actions": 787,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 4,
+      "actions": 896,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 5,
+      "actions": 998,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 6,
+      "actions": 996,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 7,
+      "actions": 1913,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 8,
+      "actions": 1812,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 9,
+      "actions": 2079,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 10,
+      "actions": 1565,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 11,
+      "actions": 2684,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ræv",
+      "step": 12,
+      "actions": 9556,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_regnbue",
+      "step": 11,
+      "actions": 330,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kaktus",
+      "step": 2,
+      "actions": 317,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kaktus",
+      "step": 3,
+      "actions": 481,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kaktus",
+      "step": 4,
+      "actions": 599,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kaktus",
+      "step": 5,
+      "actions": 1384,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kaktus",
+      "step": 6,
+      "actions": 978,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kaktus",
+      "step": 7,
+      "actions": 2124,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kaktus",
+      "step": 8,
+      "actions": 1132,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kaktus",
+      "step": 9,
+      "actions": 1785,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_kaktus",
+      "step": 10,
+      "actions": 8473,
+      "groups": 36,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_puma",
+      "step": 3,
+      "actions": 143,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_puma",
+      "step": 4,
+      "actions": 207,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_puma",
+      "step": 5,
+      "actions": 284,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_puma",
+      "step": 6,
+      "actions": 395,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_puma",
+      "step": 7,
+      "actions": 2016,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_puma",
+      "step": 8,
+      "actions": 869,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_puma",
+      "step": 9,
+      "actions": 2145,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_puma",
+      "step": 10,
+      "actions": 2118,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_puma",
+      "step": 11,
+      "actions": 2661,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_puma",
+      "step": 12,
+      "actions": 7104,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ulv",
+      "step": 2,
+      "actions": 134,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ulv",
+      "step": 3,
+      "actions": 408,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ulv",
+      "step": 4,
+      "actions": 852,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ulv",
+      "step": 5,
+      "actions": 1232,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ulv",
+      "step": 6,
+      "actions": 1603,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ulv",
+      "step": 7,
+      "actions": 1311,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ulv",
+      "step": 8,
+      "actions": 2093,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ulv",
+      "step": 9,
+      "actions": 2745,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ulv",
+      "step": 10,
+      "actions": 2928,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "e_ulv",
+      "step": 11,
+      "actions": 14137,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "raev",
+      "step": 10,
+      "actions": 154,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "raev",
+      "step": 11,
+      "actions": 206,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "raev",
+      "step": 13,
+      "actions": 2254,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "raev",
+      "step": 14,
+      "actions": 1076,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "raev",
+      "step": 15,
+      "actions": 4289,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "raev",
+      "step": 16,
+      "actions": 1649,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "raev",
+      "step": 17,
+      "actions": 46427,
+      "groups": 30,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "raev",
+      "step": 18,
+      "actions": 609,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "raev",
+      "step": 19,
+      "actions": 23967,
+      "groups": 30,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 5,
+      "actions": 169,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 10,
+      "actions": 148,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 11,
+      "actions": 329,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 12,
+      "actions": 2104,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 13,
+      "actions": 1353,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 14,
+      "actions": 1445,
+      "groups": 3,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 15,
+      "actions": 3472,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 16,
+      "actions": 996,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 17,
+      "actions": 51832,
+      "groups": 31,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 18,
+      "actions": 394,
+      "groups": 3,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kat",
+      "step": 19,
+      "actions": 19094,
+      "groups": 30,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 8,
+      "actions": 142,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 10,
+      "actions": 210,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 11,
+      "actions": 347,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 12,
+      "actions": 494,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 13,
+      "actions": 283,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 15,
+      "actions": 4030,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 16,
+      "actions": 1238,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 17,
+      "actions": 4458,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 18,
+      "actions": 2636,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 19,
+      "actions": 29473,
+      "groups": 21,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 20,
+      "actions": 47478,
+      "groups": 23,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hvalp",
+      "step": 21,
+      "actions": 39430,
+      "groups": 35,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ugle",
+      "step": 11,
+      "actions": 147,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ugle",
+      "step": 12,
+      "actions": 146,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ugle",
+      "step": 13,
+      "actions": 1339,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ugle",
+      "step": 14,
+      "actions": 951,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ugle",
+      "step": 15,
+      "actions": 2845,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ugle",
+      "step": 16,
+      "actions": 1569,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ugle",
+      "step": 17,
+      "actions": 313,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ugle",
+      "step": 18,
+      "actions": 26369,
+      "groups": 34,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ugle",
+      "step": 19,
+      "actions": 4335,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ugle",
+      "step": 20,
+      "actions": 29861,
+      "groups": 34,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kanin",
+      "step": 11,
+      "actions": 135,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kanin",
+      "step": 13,
+      "actions": 1570,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kanin",
+      "step": 14,
+      "actions": 1337,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kanin",
+      "step": 15,
+      "actions": 3832,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kanin",
+      "step": 16,
+      "actions": 1608,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kanin",
+      "step": 17,
+      "actions": 18112,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kanin",
+      "step": 18,
+      "actions": 37694,
+      "groups": 22,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "kanin",
+      "step": 19,
+      "actions": 17682,
+      "groups": 32,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 4,
+      "actions": 117,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 6,
+      "actions": 450,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 7,
+      "actions": 227,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 8,
+      "actions": 229,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 10,
+      "actions": 228,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 11,
+      "actions": 228,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 13,
+      "actions": 1459,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 14,
+      "actions": 4941,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 15,
+      "actions": 14029,
+      "groups": 24,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 16,
+      "actions": 16857,
+      "groups": 24,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 17,
+      "actions": 1534,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "sommerfugl",
+      "step": 18,
+      "actions": 9972,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "solsikke",
+      "step": 9,
+      "actions": 399,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "solsikke",
+      "step": 11,
+      "actions": 215,
+      "groups": 1,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "solsikke",
+      "step": 12,
+      "actions": 1082,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "solsikke",
+      "step": 13,
+      "actions": 4006,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "solsikke",
+      "step": 14,
+      "actions": 644,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "solsikke",
+      "step": 15,
+      "actions": 943,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "solsikke",
+      "step": 16,
+      "actions": 60436,
+      "groups": 34,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "solsikke",
+      "step": 17,
+      "actions": 35854,
+      "groups": 34,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 4,
+      "actions": 168,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 8,
+      "actions": 228,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 10,
+      "actions": 154,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 11,
+      "actions": 136,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 12,
+      "actions": 632,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 13,
+      "actions": 1084,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 14,
+      "actions": 1993,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 15,
+      "actions": 2773,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 16,
+      "actions": 1388,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 17,
+      "actions": 7870,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 18,
+      "actions": 11368,
+      "groups": 25,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 19,
+      "actions": 30062,
+      "groups": 34,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fluesvamp",
+      "step": 20,
+      "actions": 60196,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "pindsvin",
+      "step": 5,
+      "actions": 261,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "pindsvin",
+      "step": 7,
+      "actions": 387,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "pindsvin",
+      "step": 9,
+      "actions": 1392,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "pindsvin",
+      "step": 10,
+      "actions": 3437,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "pindsvin",
+      "step": 11,
+      "actions": 1877,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "pindsvin",
+      "step": 12,
+      "actions": 52508,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "pindsvin",
+      "step": 13,
+      "actions": 13453,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "papegoeje",
+      "step": 3,
+      "actions": 67,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "papegoeje",
+      "step": 5,
+      "actions": 252,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "papegoeje",
+      "step": 6,
+      "actions": 440,
+      "groups": 12,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "papegoeje",
+      "step": 7,
+      "actions": 887,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "papegoeje",
+      "step": 8,
+      "actions": 791,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "papegoeje",
+      "step": 9,
+      "actions": 902,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "papegoeje",
+      "step": 10,
+      "actions": 1708,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "papegoeje",
+      "step": 11,
+      "actions": 3657,
+      "groups": 14,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "papegoeje",
+      "step": 12,
+      "actions": 30993,
+      "groups": 28,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "papegoeje",
+      "step": 13,
+      "actions": 5974,
+      "groups": 28,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "skildpadde",
+      "step": 4,
+      "actions": 197,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "skildpadde",
+      "step": 8,
+      "actions": 351,
+      "groups": 16,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "skildpadde",
+      "step": 9,
+      "actions": 183,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "skildpadde",
+      "step": 10,
+      "actions": 362,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "skildpadde",
+      "step": 11,
+      "actions": 1415,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "skildpadde",
+      "step": 12,
+      "actions": 835,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "skildpadde",
+      "step": 13,
+      "actions": 627,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "skildpadde",
+      "step": 14,
+      "actions": 24966,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "skildpadde",
+      "step": 15,
+      "actions": 14245,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 3,
+      "actions": 173,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 4,
+      "actions": 351,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 5,
+      "actions": 549,
+      "groups": 17,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 6,
+      "actions": 738,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 7,
+      "actions": 1720,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 8,
+      "actions": 567,
+      "groups": 17,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 9,
+      "actions": 622,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 10,
+      "actions": 2576,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 11,
+      "actions": 6048,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 12,
+      "actions": 29138,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hjort",
+      "step": 13,
+      "actions": 8356,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 2,
+      "actions": 137,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 3,
+      "actions": 283,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 4,
+      "actions": 577,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 5,
+      "actions": 809,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 6,
+      "actions": 1856,
+      "groups": 14,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 7,
+      "actions": 1074,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 8,
+      "actions": 1306,
+      "groups": 14,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 9,
+      "actions": 1732,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 10,
+      "actions": 2557,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 11,
+      "actions": 3702,
+      "groups": 14,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 12,
+      "actions": 26829,
+      "groups": 28,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "blomsterbuket",
+      "step": 13,
+      "actions": 14821,
+      "groups": 28,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 3,
+      "actions": 257,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 4,
+      "actions": 682,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 5,
+      "actions": 705,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 6,
+      "actions": 649,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 7,
+      "actions": 608,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 8,
+      "actions": 709,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 9,
+      "actions": 1396,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 10,
+      "actions": 2972,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 11,
+      "actions": 6128,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 12,
+      "actions": 32402,
+      "groups": 20,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "fyrtaarn",
+      "step": 13,
+      "actions": 14261,
+      "groups": 20,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 2,
+      "actions": 174,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 3,
+      "actions": 192,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 4,
+      "actions": 573,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 5,
+      "actions": 567,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 6,
+      "actions": 795,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 7,
+      "actions": 1071,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 8,
+      "actions": 770,
+      "groups": 16,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 9,
+      "actions": 776,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 10,
+      "actions": 1710,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 11,
+      "actions": 6843,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 12,
+      "actions": 45728,
+      "groups": 32,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma",
+      "step": 13,
+      "actions": 9432,
+      "groups": 32,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 2,
+      "actions": 167,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 3,
+      "actions": 449,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 4,
+      "actions": 237,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 5,
+      "actions": 608,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 6,
+      "actions": 1500,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 7,
+      "actions": 1667,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 8,
+      "actions": 1719,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 9,
+      "actions": 1961,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 10,
+      "actions": 3500,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 11,
+      "actions": 7595,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 12,
+      "actions": 69062,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv",
+      "step": 13,
+      "actions": 10882,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 3,
+      "actions": 241,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 4,
+      "actions": 335,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 5,
+      "actions": 284,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 6,
+      "actions": 337,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 7,
+      "actions": 421,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 8,
+      "actions": 270,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 9,
+      "actions": 304,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 10,
+      "actions": 695,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 11,
+      "actions": 1233,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 12,
+      "actions": 4782,
+      "groups": 19,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_haj",
+      "step": 13,
+      "actions": 3551,
+      "groups": 20,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 3,
+      "actions": 191,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 4,
+      "actions": 367,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 5,
+      "actions": 368,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 6,
+      "actions": 940,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 7,
+      "actions": 426,
+      "groups": 15,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 8,
+      "actions": 973,
+      "groups": 16,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 9,
+      "actions": 643,
+      "groups": 16,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 10,
+      "actions": 2692,
+      "groups": 16,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 11,
+      "actions": 8799,
+      "groups": 16,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 12,
+      "actions": 56370,
+      "groups": 32,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_panda_baby",
+      "step": 13,
+      "actions": 5500,
+      "groups": 16,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "rose",
+      "step": 11,
+      "actions": 201,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "rose",
+      "step": 13,
+      "actions": 2017,
+      "groups": 19,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "rose",
+      "step": 14,
+      "actions": 1289,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "rose",
+      "step": 15,
+      "actions": 1797,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "rose",
+      "step": 16,
+      "actions": 16206,
+      "groups": 37,
+      "atlases": 3,
+      "lost": 0
+    },
+    {
+      "lesson": "rose",
+      "step": 17,
+      "actions": 9132,
+      "groups": 27,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "rose",
+      "step": 18,
+      "actions": 2496,
+      "groups": 24,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "loeve",
+      "step": 8,
+      "actions": 681,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "loeve",
+      "step": 10,
+      "actions": 187,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "loeve",
+      "step": 11,
+      "actions": 266,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "loeve",
+      "step": 12,
+      "actions": 5018,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "loeve",
+      "step": 13,
+      "actions": 759,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "loeve",
+      "step": 14,
+      "actions": 6606,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "loeve",
+      "step": 15,
+      "actions": 73970,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "loeve",
+      "step": 16,
+      "actions": 795,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "loeve",
+      "step": 17,
+      "actions": 495,
+      "groups": 2,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "loeve",
+      "step": 18,
+      "actions": 38117,
+      "groups": 35,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 8,
+      "actions": 226,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 11,
+      "actions": 119,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 13,
+      "actions": 296,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 14,
+      "actions": 1529,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 15,
+      "actions": 1770,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 16,
+      "actions": 1757,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 17,
+      "actions": 154,
+      "groups": 2,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 18,
+      "actions": 3101,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 19,
+      "actions": 37326,
+      "groups": 26,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 20,
+      "actions": 39873,
+      "groups": 26,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "elefant",
+      "step": 21,
+      "actions": 19911,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 6,
+      "actions": 186,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 8,
+      "actions": 265,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 9,
+      "actions": 145,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 10,
+      "actions": 436,
+      "groups": 15,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 11,
+      "actions": 211,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 12,
+      "actions": 168,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 14,
+      "actions": 1741,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 15,
+      "actions": 3474,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 16,
+      "actions": 1291,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 17,
+      "actions": 1846,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 18,
+      "actions": 73840,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 19,
+      "actions": 406,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "egern",
+      "step": 20,
+      "actions": 22240,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 9,
+      "actions": 147,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 11,
+      "actions": 348,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 12,
+      "actions": 430,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 13,
+      "actions": 1167,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 14,
+      "actions": 611,
+      "groups": 3,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 15,
+      "actions": 4961,
+      "groups": 28,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 16,
+      "actions": 216,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 17,
+      "actions": 10162,
+      "groups": 27,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 18,
+      "actions": 6060,
+      "groups": 29,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 19,
+      "actions": 383,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "delfin",
+      "step": 20,
+      "actions": 7319,
+      "groups": 25,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 4,
+      "actions": 445,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 5,
+      "actions": 116,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 7,
+      "actions": 203,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 8,
+      "actions": 814,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 9,
+      "actions": 662,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 11,
+      "actions": 756,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 12,
+      "actions": 6301,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 13,
+      "actions": 1292,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 14,
+      "actions": 17631,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 15,
+      "actions": 54579,
+      "groups": 35,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 16,
+      "actions": 6084,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 17,
+      "actions": 961,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 18,
+      "actions": 10545,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "eg",
+      "step": 19,
+      "actions": 93538,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 2,
+      "actions": 108,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 3,
+      "actions": 176,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 4,
+      "actions": 452,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 5,
+      "actions": 570,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 6,
+      "actions": 549,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 7,
+      "actions": 1111,
+      "groups": 15,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 8,
+      "actions": 916,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 9,
+      "actions": 575,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 10,
+      "actions": 2592,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 11,
+      "actions": 5777,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 12,
+      "actions": 53051,
+      "groups": 32,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "puma_svaer",
+      "step": 13,
+      "actions": 11478,
+      "groups": 32,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv_svaer",
+      "step": 1,
+      "actions": 119,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv_svaer",
+      "step": 3,
+      "actions": 180,
+      "groups": 6,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv_svaer",
+      "step": 8,
+      "actions": 1299,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv_svaer",
+      "step": 9,
+      "actions": 94,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv_svaer",
+      "step": 10,
+      "actions": 5370,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv_svaer",
+      "step": 11,
+      "actions": 465,
+      "groups": 4,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv_svaer",
+      "step": 12,
+      "actions": 61454,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "ulv_svaer",
+      "step": 13,
+      "actions": 10855,
+      "groups": 35,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 3,
+      "actions": 190,
+      "groups": 13,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 4,
+      "actions": 870,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 5,
+      "actions": 1265,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 6,
+      "actions": 1887,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 7,
+      "actions": 2347,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 8,
+      "actions": 1982,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 9,
+      "actions": 3042,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 10,
+      "actions": 3278,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 11,
+      "actions": 6263,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 12,
+      "actions": 44435,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_drage",
+      "step": 13,
+      "actions": 19758,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_enhjoerning",
+      "step": 4,
+      "actions": 266,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_enhjoerning",
+      "step": 6,
+      "actions": 145,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_enhjoerning",
+      "step": 7,
+      "actions": 218,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_enhjoerning",
+      "step": 8,
+      "actions": 1120,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_enhjoerning",
+      "step": 9,
+      "actions": 1055,
+      "groups": 16,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_enhjoerning",
+      "step": 10,
+      "actions": 2265,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_enhjoerning",
+      "step": 11,
+      "actions": 4825,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_enhjoerning",
+      "step": 12,
+      "actions": 29723,
+      "groups": 32,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_enhjoerning",
+      "step": 13,
+      "actions": 15712,
+      "groups": 32,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 3,
+      "actions": 207,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 4,
+      "actions": 397,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 5,
+      "actions": 597,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 6,
+      "actions": 607,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 7,
+      "actions": 761,
+      "groups": 17,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 8,
+      "actions": 819,
+      "groups": 17,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 9,
+      "actions": 2023,
+      "groups": 16,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 10,
+      "actions": 2519,
+      "groups": 16,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 11,
+      "actions": 7776,
+      "groups": 17,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 12,
+      "actions": 50073,
+      "groups": 33,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_trex",
+      "step": 13,
+      "actions": 10637,
+      "groups": 32,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_tiger",
+      "step": 4,
+      "actions": 412,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_tiger",
+      "step": 5,
+      "actions": 121,
+      "groups": 9,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_tiger",
+      "step": 6,
+      "actions": 505,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_tiger",
+      "step": 7,
+      "actions": 695,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_tiger",
+      "step": 8,
+      "actions": 1046,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_tiger",
+      "step": 9,
+      "actions": 2210,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_tiger",
+      "step": 10,
+      "actions": 7119,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_tiger",
+      "step": 11,
+      "actions": 18240,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_tiger",
+      "step": 12,
+      "actions": 98582,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_tiger",
+      "step": 13,
+      "actions": 20427,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 3,
+      "actions": 233,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 4,
+      "actions": 171,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 5,
+      "actions": 459,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 6,
+      "actions": 543,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 7,
+      "actions": 640,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 8,
+      "actions": 798,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 9,
+      "actions": 750,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 10,
+      "actions": 2259,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 11,
+      "actions": 7417,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 12,
+      "actions": 43524,
+      "groups": 32,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ulv",
+      "step": 13,
+      "actions": 8206,
+      "groups": 32,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 3,
+      "actions": 145,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 4,
+      "actions": 560,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 5,
+      "actions": 441,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 6,
+      "actions": 600,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 7,
+      "actions": 835,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 8,
+      "actions": 797,
+      "groups": 17,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 9,
+      "actions": 1138,
+      "groups": 17,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 10,
+      "actions": 1761,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 11,
+      "actions": 5221,
+      "groups": 18,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 12,
+      "actions": 37781,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_oern",
+      "step": 13,
+      "actions": 10598,
+      "groups": 36,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ugle_flyv",
+      "step": 4,
+      "actions": 322,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ugle_flyv",
+      "step": 5,
+      "actions": 398,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ugle_flyv",
+      "step": 6,
+      "actions": 402,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ugle_flyv",
+      "step": 7,
+      "actions": 594,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ugle_flyv",
+      "step": 8,
+      "actions": 454,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ugle_flyv",
+      "step": 9,
+      "actions": 556,
+      "groups": 13,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ugle_flyv",
+      "step": 10,
+      "actions": 1331,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ugle_flyv",
+      "step": 11,
+      "actions": 4243,
+      "groups": 14,
+      "atlases": 1,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ugle_flyv",
+      "step": 12,
+      "actions": 18649,
+      "groups": 26,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "s_ugle_flyv",
+      "step": 13,
+      "actions": 12820,
+      "groups": 24,
+      "atlases": 2,
+      "lost": 0,
+      "reusedVerifiedBuild": true
+    },
+    {
+      "lesson": "hest",
+      "step": 10,
+      "actions": 400,
+      "groups": 20,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "hest",
+      "step": 11,
+      "actions": 439,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "hest",
+      "step": 13,
+      "actions": 2677,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "hest",
+      "step": 14,
+      "actions": 8316,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "hest",
+      "step": 15,
+      "actions": 33155,
+      "groups": 27,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "hest",
+      "step": 16,
+      "actions": 45127,
+      "groups": 27,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "hest",
+      "step": 17,
+      "actions": 19199,
+      "groups": 36,
+      "atlases": 3,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 6,
+      "actions": 85,
+      "groups": 19,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 7,
+      "actions": 112,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 9,
+      "actions": 135,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 12,
+      "actions": 246,
+      "groups": 12,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 13,
+      "actions": 229,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 14,
+      "actions": 241,
+      "groups": 7,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 16,
+      "actions": 2136,
+      "groups": 10,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 17,
+      "actions": 4648,
+      "groups": 18,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 18,
+      "actions": 8153,
+      "groups": 19,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 19,
+      "actions": 9909,
+      "groups": 20,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 20,
+      "actions": 28970,
+      "groups": 34,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 21,
+      "actions": 4885,
+      "groups": 31,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "panda",
+      "step": 22,
+      "actions": 34699,
+      "groups": 40,
+      "atlases": 3,
+      "lost": 0
+    },
+    {
+      "lesson": "s_sportsvogn",
+      "step": 1,
+      "actions": 56,
+      "groups": 5,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "s_sportsvogn",
+      "step": 4,
+      "actions": 719,
+      "groups": 15,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "s_sportsvogn",
+      "step": 6,
+      "actions": 119,
+      "groups": 8,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "s_sportsvogn",
+      "step": 8,
+      "actions": 520,
+      "groups": 19,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "s_sportsvogn",
+      "step": 9,
+      "actions": 427,
+      "groups": 11,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "s_sportsvogn",
+      "step": 10,
+      "actions": 1568,
+      "groups": 19,
+      "atlases": 2,
+      "lost": 0
+    },
+    {
+      "lesson": "s_sportsvogn",
+      "step": 11,
+      "actions": 941,
+      "groups": 16,
+      "atlases": 1,
+      "lost": 0
+    },
+    {
+      "lesson": "s_sportsvogn",
+      "step": 12,
+      "actions": 26497,
+      "groups": 40,
+      "atlases": 3,
+      "lost": 0
+    },
+    {
+      "lesson": "s_sportsvogn",
+      "step": 13,
+      "actions": 9513,
+      "groups": 34,
+      "atlases": 2,
+      "lost": 0
+    }
+  ]
+}

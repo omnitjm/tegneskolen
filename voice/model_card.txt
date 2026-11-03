@@ -1,0 +1,21 @@
+da_DK-talesyntese-medium
+Source: https://huggingface.co/rhasspy/piper-voices/tree/main/da/da_DK/talesyntese/medium
+Revision: e7229f7d33a10e145e109b886d661984201ac3c4
+
+Original model card:
+
+# Model card for talesyntese (medium)
+
+* Language: da_DK (Danish, Denmark)
+* Speakers: 1
+* Quality: medium
+* Samplerate: 22,050Hz
+
+## Dataset
+
+* URL: https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-21/
+* License: CC0
+
+## Training
+
+Finetuned from U.S. English lessac voice (medium quality).
