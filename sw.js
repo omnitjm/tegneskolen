@@ -1,6 +1,6 @@
 'use strict';
-const PREFIX='tegneskolen-',CACHE=PREFIX+'v31-qa-testfix-20261103',RUNTIME=CACHE+'-runtime',PACK_INDEX=PREFIX+'offline-index-v1';
-const VERSION='1793689800';
+const PREFIX='tegneskolen-',CACHE=PREFIX+'v37-qa-testfix-20261103',RUNTIME=CACHE+'-runtime',PACK_INDEX=PREFIX+'offline-index-v1';
+const VERSION='1793715603';
 const FILES=['./','index.html',...['style.css','design.css','platform.js','ui-icons.js','persistence.js','scan-core.js','scan.js','techniques.js','playback-timing.js','app.js','stickers.js','lessons.js'].map(f=>`${f}?v=${VERSION}`),'manifest.webmanifest',`manifest.webmanifest?v=${VERSION}`,'assets/playback-index.json','voice/index.json',`voice/index.json?v=${VERSION}`,...['m4a','mp3'].map(ext=>`voice/phrase_flot_klaret_din_tegning_er_faerdig.${ext}?v=${VERSION}`),'icon.svg',`icon-180.png?v=${VERSION}`,`icon-512.png?v=${VERSION}`,'icon-180.png','icon-192.png','icon-512.png','icon-maskable-512.png',`icon-192.png?v=${VERSION}`,`icon-maskable-512.png?v=${VERSION}`,'assets/vector/header.svg',...['meadow','forest','ocean','jungle','savanna','space','snow','sky','farm','night'].map(id=>`assets/vector/scene-${id}.svg`)];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES).then(()=>self.skipWaiting()))));
 self.addEventListener('activate',e=>e.waitUntil((async()=>{const names=await caches.keys();await Promise.all(names.filter(k=>k.startsWith(PREFIX+'v')&&k!==CACHE&&k!==RUNTIME).map(k=>caches.delete(k)));await self.clients.claim();})()));
@@ -8,7 +8,7 @@ async function network(request,ms=45000){const controller=new AbortController(),
 async function packageMatch(request){
   const url=new URL(request.url),match=/\/lessons\/([^/]+)\//.exec(url.pathname),index=await caches.open(PACK_INDEX);
   const pointers=match?[await index.match(new URL('offline-index/'+match[1],self.registration.scope))]:await Promise.all((await index.keys()).map(key=>index.match(key)));
-  for(const pointer of pointers){if(!pointer)continue;const data=await pointer.json();const found=await(await caches.open(data.cache)).match(request,{ignoreSearch:true});if(found)return found;}return null;
+  for(const pointer of pointers){if(!pointer)continue;const data=await pointer.json();if(data.build!==VERSION)continue;const found=await(await caches.open(data.cache)).match(request,{ignoreSearch:true});if(found)return found;}return null;
 }
 async function cachedResponse(request){
   const pack=await packageMatch(request).catch(()=>null);if(pack)return pack;

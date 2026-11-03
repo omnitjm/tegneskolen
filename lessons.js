@@ -3,332 +3,6 @@ const CATEGORIES = [{"id": "dyr", "name": "Dyr", "emoji": "🐾"}, {"id": "natur
 
 const LESSONS = [
   {
-    "id": "e_fisk",
-    "cat": "dyr",
-    "title": "Fisk",
-    "level": 1,
-    "steps": [
-      "Find midten af arket. Tegn en let, liggende oval lidt til venstre. Gem plads til halen til højre.",
-      "Visk den lille del af ovalens højre kant væk, hvor halen skal sidde. Tegn en viftehale med to runde spidser.",
-      "Tegn en stor, blød trekant oven på kroppen som rygfinne.",
-      "Tegn en lille, blød trekant under maven som bugfinne.",
-      "Tegn en skrå bladform midt på kroppen som sidefinne.",
-      "Tegn en buet gællestreg foran sidefinnen.",
-      "Tegn en lille, buet smilemund helt foran til venstre.",
-      "Tegn en cirkel til øjet over munden og foran gællen.",
-      "Tegn en mørk pupil i øjet. Lad en lille, hvid prik skinne.",
-      "Tegn to buede streger inde i halen, én i hver halvdel.",
-      "Skyg let langs kroppens kant. Lad midten være lys.",
-      "Skyg let inde i finnerne og langs halen."
-    ],
-    "dir": "lessons/e_fisk/",
-    "stepMeta": [
-      {
-        "id": "e_fisk-s01",
-        "skillIds": [
-          "construction"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "selfCheck": "Er der stadig plads til de næste dele?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_fisk-s02",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_fisk-s03",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_fisk-s04",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_fisk-s05",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_fisk-s06",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_fisk-s07",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_fisk-s08",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_fisk-s09",
-        "skillIds": [
-          "highlight"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_fisk-s10",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_fisk-s11",
-        "skillIds": [
-          "shading"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "e_fisk-s12",
-        "skillIds": [
-          "shading"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      }
-    ],
-    "skillIds": [
-      "construction",
-      "contour",
-      "highlight",
-      "shading"
-    ],
-    "goal": "Enkle former",
-    "prerequisites": [],
-    "complexity": {
-      "construction": 1,
-      "proportion": 1,
-      "detail": 1,
-      "newTechniques": 1
-    },
-    "revision": "f7a9046102bcee2b"
-  },
-  {
     "id": "e_kat",
     "cat": "dyr",
     "title": "Kat",
@@ -6047,307 +5721,6 @@ const LESSONS = [
     "revision": "8cc7fb920f5107a9"
   },
   {
-    "id": "e_regnbue",
-    "cat": "natur",
-    "title": "Regnbue",
-    "level": 1,
-    "steps": [
-      "Tegn en blød sky med runde buler nederst til venstre.",
-      "Tegn en lignende sky nederst til højre.",
-      "Tegn en stor bue fra venstre sky til højre sky.",
-      "Tegn en lidt mindre bue lige under den første.",
-      "Tegn en tredje bue under den anden med samme afstand.",
-      "Tegn en fjerde bue under den tredje.",
-      "Tegn en femte bue under den fjerde.",
-      "Tegn en sjette bue under den femte.",
-      "Tegn en syvende bue under den sjette.",
-      "Tegn den sidste, mindste bue under den syvende.",
-      "Læg lidt lys blyantsskygge nederst inde i begge skyer."
-    ],
-    "dir": "lessons/e_regnbue/",
-    "stepMeta": [
-      {
-        "id": "e_regnbue-s01",
-        "skillIds": [
-          "construction"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "selfCheck": "Er der stadig plads til de næste dele?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_regnbue-s02",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_regnbue-s03",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_regnbue-s04",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_regnbue-s05",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_regnbue-s06",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_regnbue-s07",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "e_regnbue-s08",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_regnbue-s09",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_regnbue-s10",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "e_regnbue-s11",
-        "skillIds": [
-          "shading"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      }
-    ],
-    "skillIds": [
-      "construction",
-      "contour",
-      "fur",
-      "shading"
-    ],
-    "goal": "Enkle former",
-    "prerequisites": [],
-    "complexity": {
-      "construction": 1,
-      "proportion": 1,
-      "detail": 1,
-      "newTechniques": 1
-    },
-    "revision": "2826e6b6aae4a5d6"
-  },
-  {
     "id": "e_kaktus",
     "cat": "natur",
     "title": "Kaktus",
@@ -7249,6 +6622,633 @@ const LESSONS = [
       "newTechniques": 1
     },
     "revision": "aff1172d8284f981"
+  },
+  {
+    "id": "e_fisk",
+    "cat": "dyr",
+    "title": "Fisk",
+    "level": 1,
+    "steps": [
+      "Find midten af arket. Tegn en let, liggende oval lidt til venstre. Gem plads til halen til højre.",
+      "Tegn en viftehale med to runde spidser ved ovalens højre kant. Behold ovalens kant mellem kroppen og halen.",
+      "Tegn en stor, blød trekant oven på kroppen som rygfinne.",
+      "Tegn en lille, blød trekant under maven som bugfinne.",
+      "Tegn en skrå bladform midt på kroppen som sidefinne.",
+      "Tegn en buet gællestreg foran sidefinnen.",
+      "Tegn en lille, buet smilemund helt foran til venstre.",
+      "Tegn en cirkel til øjet over munden og foran gællen.",
+      "Tegn en mørk pupil i øjet. Lad en lille, hvid prik skinne.",
+      "Tegn to buede streger inde i halen, én i hver halvdel.",
+      "Skyg let langs kroppens kant. Lad midten være lys.",
+      "Skyg let inde i finnerne og langs halen."
+    ],
+    "dir": "lessons/e_fisk/",
+    "stepMeta": [
+      {
+        "id": "e_fisk-s01",
+        "skillIds": [
+          "construction"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "selfCheck": "Er der stadig plads til de næste dele?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_fisk-s02",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_fisk-s03",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_fisk-s04",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_fisk-s05",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_fisk-s06",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_fisk-s07",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_fisk-s08",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_fisk-s09",
+        "skillIds": [
+          "highlight"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_fisk-s10",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_fisk-s11",
+        "skillIds": [
+          "shading"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "e_fisk-s12",
+        "skillIds": [
+          "shading"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      }
+    ],
+    "skillIds": [
+      "construction",
+      "contour",
+      "highlight",
+      "shading"
+    ],
+    "goal": "Enkle former",
+    "prerequisites": [],
+    "complexity": {
+      "construction": 1,
+      "proportion": 1,
+      "detail": 1,
+      "newTechniques": 1
+    },
+    "revision": "19b8e36c64b2efc3"
+  },
+  {
+    "id": "e_regnbue",
+    "cat": "natur",
+    "title": "Regnbue",
+    "level": 1,
+    "steps": [
+      "Tegn en blød sky med runde buler nederst til venstre.",
+      "Tegn en lignende sky nederst til højre.",
+      "Tegn en stor bue fra venstre sky til højre sky.",
+      "Tegn en lidt mindre bue lige under den første.",
+      "Tegn en tredje bue under den anden med samme afstand.",
+      "Tegn en fjerde bue under den tredje.",
+      "Tegn en femte bue under den fjerde.",
+      "Tegn en sjette bue under den femte.",
+      "Tegn en syvende bue under den sjette.",
+      "Tegn den sidste, mindste bue under den syvende.",
+      "Læg lidt lys blyantsskygge nederst inde i begge skyer."
+    ],
+    "dir": "lessons/e_regnbue/",
+    "stepMeta": [
+      {
+        "id": "e_regnbue-s01",
+        "skillIds": [
+          "construction"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "selfCheck": "Er der stadig plads til de næste dele?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_regnbue-s02",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_regnbue-s03",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_regnbue-s04",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_regnbue-s05",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_regnbue-s06",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
+        "screenTip": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
+        "how": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_regnbue-s07",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
+        "screenTip": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
+        "how": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_regnbue-s08",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_regnbue-s09",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_regnbue-s10",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "e_regnbue-s11",
+        "skillIds": [
+          "shading"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      }
+    ],
+    "skillIds": [
+      "construction",
+      "contour",
+      "fur",
+      "shading"
+    ],
+    "goal": "Enkle former",
+    "prerequisites": [],
+    "complexity": {
+      "construction": 1,
+      "proportion": 1,
+      "detail": 1,
+      "newTechniques": 1
+    },
+    "revision": "d0e09a1a19a7b28c"
   },
   {
     "id": "raev",
@@ -8260,561 +8260,6 @@ const LESSONS = [
       "newTechniques": 1
     },
     "revision": "86ea1252a9b261b7"
-  },
-  {
-    "id": "hvalp",
-    "cat": "dyr",
-    "title": "Hundehvalp",
-    "level": 2,
-    "steps": [
-      "Tegn en stor, skrå oval til hovedet og en mindre oval nederst til snuden.",
-      "Tegn en lang, smal oval på hver side af hovedet til hængeørerne.",
-      "Tegn en rund brystform og en oval til kroppen.",
-      "Tegn aflange ben, ovale poter og en lille oval til halen.",
-      "Tegn hovedets øverste bue over den store oval med små takker til pelsen.",
-      "Tegn omridset af de to hængeører og kindernes buer ved siden af snuden.",
-      "Tegn forkroppens omrids ned langs siderne og rundt om de to store forpoter.",
-      "Tegn den runde bagkrop, den lille bagpote og den spidse hale ude til højre.",
-      "Tegn to øjne og en afrundet næse.",
-      "Tegn buede streger fra øjnene ned langs kinderne.",
-      "Tegn streger langs forbenenes indersider. Behold de tidligere streger.",
-      "Tegn munden og streger inde i ørerne og på brystet.",
-      "Tegn små tæer og kløer på poterne.",
-      "Tegn nogle få korte hår øverst på hovedet.",
-      "Tegn korte pelshår på hovedet og ørerne samt tynde knurhår.",
-      "Tegn små hår langs kroppens, poternes og halens kanter.",
-      "Tegn korte pelshår på brystet og kroppen.",
-      "Tegn pelshår på poterne og halen. Følg formernes buer.",
-      "Visk hjælpelinjerne let ud. Skyg let på hovedet og under ørerne. Gør næsen mørkere.",
-      "Skyg let på kroppen og under poterne.",
-      "Gør skyggerne i øjne, næse og pels dybere, især under ørerne og mellem forbenene."
-    ],
-    "dir": "lessons/hvalp/",
-    "stepMeta": [
-      {
-        "id": "hvalp-s01",
-        "skillIds": [
-          "construction"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "selfCheck": "Er der stadig plads til de næste dele?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s02",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s03",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s04",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s05",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s06",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s07",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s08",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s09",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s10",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s11",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s12",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s13",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s14",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s15",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "hvalp-s16",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hvalp-s17",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "hvalp-s18",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "hvalp-s19",
-        "skillIds": [
-          "shading",
-          "eraser"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "hvalp-s20",
-        "skillIds": [
-          "shading"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "hvalp-s21",
-        "skillIds": [
-          "shading"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      }
-    ],
-    "skillIds": [
-      "construction",
-      "contour",
-      "fur",
-      "shading"
-    ],
-    "goal": "Pels og skygge",
-    "prerequisites": [
-      "construction",
-      "contour"
-    ],
-    "complexity": {
-      "construction": 1,
-      "proportion": 2,
-      "detail": 3,
-      "newTechniques": 1
-    },
-    "revision": "9de3af436b6519c6"
   },
   {
     "id": "ugle",
@@ -15394,6 +14839,561 @@ const LESSONS = [
     "revision": "378ca39bf9b643a9"
   },
   {
+    "id": "hvalp",
+    "cat": "dyr",
+    "title": "Hundehvalp",
+    "level": 2,
+    "steps": [
+      "Tegn en stor, skrå oval til hovedet og en mindre oval nederst til snuden.",
+      "Tegn en lang, smal oval på hver side af hovedet til hængeørerne.",
+      "Tegn en rund brystform og en oval til kroppen.",
+      "Tegn aflange ben, ovale poter og en lille oval til halen.",
+      "Tegn hovedets øverste bue over den store oval med små takker til pelsen.",
+      "Tegn omridset af de to hængeører og kindernes buer ved siden af snuden.",
+      "Tegn forkroppens omrids ned langs siderne og rundt om de to store forpoter.",
+      "Tegn den runde bagkrop, den lille bagpote og den spidse hale ude til højre.",
+      "Tegn to øjne og en afrundet næse.",
+      "Tegn buede streger fra øjnene ned langs kinderne.",
+      "Tegn bagbenets og bagpotens omrids på højre side, og følg halens kant. Behold de tidligere streger.",
+      "Tegn munden og streger inde i ørerne og på brystet.",
+      "Tegn små tæer og kløer på poterne.",
+      "Tegn nogle få korte hår øverst på hovedet.",
+      "Tegn korte pelshår på hovedet og ørerne samt tynde knurhår.",
+      "Tegn små hår langs kroppens, poternes og halens kanter.",
+      "Tegn korte pelshår på brystet og kroppen.",
+      "Tegn pelshår på poterne og halen. Følg formernes buer.",
+      "Visk hjælpelinjerne let ud. Skyg let på hovedet og under ørerne. Gør næsen mørkere.",
+      "Skyg let på kroppen og under poterne.",
+      "Gør skyggerne i øjne, næse og pels dybere, især under ørerne og mellem forbenene."
+    ],
+    "dir": "lessons/hvalp/",
+    "stepMeta": [
+      {
+        "id": "hvalp-s01",
+        "skillIds": [
+          "construction"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "selfCheck": "Er der stadig plads til de næste dele?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s02",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s03",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s04",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s05",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s06",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s07",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s08",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s09",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s10",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s11",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg bagbenet ned til den runde bagpote. Tegn derefter halens kant på højre side.",
+        "screenTip": "Følg bagbenet ned til den runde bagpote. Tegn derefter halens kant på højre side.",
+        "how": "Følg bagbenet ned til den runde bagpote. Tegn derefter halens kant på højre side.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s12",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s13",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s14",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s15",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "hvalp-s16",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hvalp-s17",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "hvalp-s18",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "hvalp-s19",
+        "skillIds": [
+          "shading",
+          "eraser"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "hvalp-s20",
+        "skillIds": [
+          "shading"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "hvalp-s21",
+        "skillIds": [
+          "shading"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      }
+    ],
+    "skillIds": [
+      "construction",
+      "contour",
+      "fur",
+      "shading"
+    ],
+    "goal": "Pels og skygge",
+    "prerequisites": [
+      "construction",
+      "contour"
+    ],
+    "complexity": {
+      "construction": 1,
+      "proportion": 2,
+      "detail": 3,
+      "newTechniques": 1
+    },
+    "revision": "0ef8464aa99915d3"
+  },
+  {
     "id": "loeve",
     "cat": "dyr",
     "title": "Løve",
@@ -20841,818 +20841,6 @@ const LESSONS = [
     "price": 35
   },
   {
-    "id": "s_ugle_flyv",
-    "cat": "dyr",
-    "title": "Flyvende ugle",
-    "level": 3,
-    "steps": [
-      "Tegn en lys cirkel til hovedet lidt under midten af papiret.",
-      "Tegn en aflang oval til kroppen lige under hovedet.",
-      "Tilføj lange vingeovaler skråt opad, to små fodovaler og en bred halebue nederst.",
-      "Tegn uglens omrids rundt om hovedet og ned langs begge sider af kroppen.",
-      "Tegn omridset af vingen til venstre på papiret med afrundede fjerspidser.",
-      "Tegn nu omridset af vingen til højre med samme afrundede fjerspidser.",
-      "Tegn halens vifteformede omrids under kroppen med små, runde fjerspidser.",
-      "Tegn øjne, næb og ansigtets runde kant. Fjern forsigtigt hjælpelinjerne.",
-      "Del vinger og hale i lange fjer, og tegn små fjerstreger på fødderne.",
-      "Tegn små fjerstreger og buede striber på hovedet, brystet og fødderne.",
-      "Tilføj små overlappende fjer, fine streger og buede striber på vingerne og halen.",
-      "Læg lette, bløde skygger mellem fjerene og langs kroppen. Tryk ganske forsigtigt.",
-      "Gør øjne, næb, fjerstriber og de dybeste skygger mørkere. Bevar de lyse områder."
-    ],
-    "dir": "lessons/s_ugle_flyv/",
-    "stepMeta": [
-      {
-        "id": "s_ugle_flyv-s01",
-        "skillIds": [
-          "construction"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "selfCheck": "Er der stadig plads til de næste dele?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "s_ugle_flyv-s02",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "s_ugle_flyv-s03",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "s_ugle_flyv-s04",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "s_ugle_flyv-s05",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "s_ugle_flyv-s06",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "s_ugle_flyv-s07",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "s_ugle_flyv-s08",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "s_ugle_flyv-s09",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "s_ugle_flyv-s10",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "s_ugle_flyv-s11",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "s_ugle_flyv-s12",
-        "skillIds": [
-          "shading"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "s_ugle_flyv-s13",
-        "skillIds": [
-          "shading"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      }
-    ],
-    "skillIds": [
-      "construction",
-      "contour",
-      "fur",
-      "shading"
-    ],
-    "goal": "Pels og skygge",
-    "prerequisites": [
-      "construction",
-      "contour"
-    ],
-    "complexity": {
-      "construction": 1,
-      "proportion": 2,
-      "detail": 3,
-      "newTechniques": 1
-    },
-    "revision": "fb57dc264862159f",
-    "shop": true,
-    "price": 30
-  },
-  {
-    "id": "hest",
-    "cat": "dyr",
-    "title": "Hest",
-    "level": 3,
-    "steps": [
-      "Tegn let en skrå oval til hovedet lidt over midten af papiret.",
-      "Tegn en lille oval nederst til venstre til mulen, og forbind ovalerne med to skrå streger.",
-      "Tegn en lang halsoval og to spidse ører. Tilføj en bue fra hovedet mod halsen.",
-      "Tegn hovedets omrids fra panden rundt om mulen og op langs kæben.",
-      "Tegn ørernes spidse omrids oven på de lyse hjælpeformer.",
-      "Tegn halsens forkant fra kæben og ned med en lang, blød bue.",
-      "Tegn mankens bølgende yderkant fra ørerne hele vejen ned langs højre side.",
-      "Tegn øjet med en lille mørk pupil.",
-      "Tegn næseboret og munden.",
-      "Tegn streger inde i ørerne, på kinden, halsen og i manken.",
-      "Tegn lange, bølgende lokker inde i manken og foran ørerne.",
-      "Tegn nogle få korte pelshår på kinden.",
-      "Tegn korte, fine pelshår på hovedet og inde i ørerne. Følg hovedets form.",
-      "Tilføj fine pelsstreger på halsen og lange hårstreger i mankens lokker.",
-      "Visk hjælpelinjerne let ud. Skyg let under kinden og langs halsen.",
-      "Skyg let inde i mankens lange totter. Følg hårenes buer.",
-      "Gør skyggerne dybere, især i øjet, næseboret, under kinden og mellem mankens lokker."
-    ],
-    "dir": "lessons/hest/",
-    "stepMeta": [
-      {
-        "id": "hest-s01",
-        "skillIds": [
-          "construction"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "selfCheck": "Er der stadig plads til de næste dele?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s02",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s03",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s04",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s05",
-        "skillIds": [
-          "construction"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s06",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s07",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s08",
-        "skillIds": [
-          "fill"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Fyld med små cirkler i flere lette lag.",
-        "screenTip": "Fyld med små cirkler i flere lette lag.",
-        "how": "Fyld med små cirkler i flere lette lag.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s09",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s10",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s11",
-        "skillIds": [
-          "contour"
-        ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": false
-      },
-      {
-        "id": "hest-s12",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "hest-s13",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "hest-s14",
-        "skillIds": [
-          "fur"
-        ],
-        "pressure": "let",
-        "tool": "graphitePoint",
-        "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "hest-s15",
-        "skillIds": [
-          "shading",
-          "eraser"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "hest-s16",
-        "skillIds": [
-          "shading"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      },
-      {
-        "id": "hest-s17",
-        "skillIds": [
-          "shading"
-        ],
-        "pressure": "let",
-        "tool": "graphiteSide",
-        "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
-        "lightSource": {
-          "x": 0.18,
-          "y": 0.12
-        },
-        "layoutBounds": [
-          0.12,
-          0.1,
-          0.88,
-          0.9
-        ],
-        "optionalDetails": true
-      }
-    ],
-    "skillIds": [
-      "construction",
-      "contour",
-      "fill",
-      "fur",
-      "shading"
-    ],
-    "goal": "Pels og skygge",
-    "prerequisites": [
-      "construction",
-      "contour"
-    ],
-    "complexity": {
-      "construction": 1,
-      "proportion": 2,
-      "detail": 3,
-      "newTechniques": 1
-    },
-    "revision": "20b86c7110c549ae"
-  },
-  {
     "id": "panda",
     "cat": "dyr",
     "title": "Panda",
@@ -22585,6 +21773,819 @@ const LESSONS = [
       "newTechniques": 1
     },
     "revision": "10d33f95b4457f0e",
+    "shop": true,
+    "price": 30
+  },
+  {
+    "id": "hest",
+    "cat": "dyr",
+    "title": "Hest",
+    "level": 3,
+    "steps": [
+      "Tegn let en skrå oval til hovedet lidt over midten af papiret.",
+      "Tegn en lille oval nederst til venstre til mulen, og forbind ovalerne med to skrå streger.",
+      "Tegn en lang halsoval og to spidse ører. Tilføj en bue fra hovedet mod halsen.",
+      "Tegn hovedets omrids fra panden rundt om mulen og op langs kæben.",
+      "Tegn ørernes spidse omrids oven på de lyse hjælpeformer.",
+      "Tegn halsens forkant fra kæben og ned med en lang, blød bue.",
+      "Tegn mankens bølgende yderkant fra ørerne hele vejen ned langs højre side.",
+      "Tegn øjet med en lille mørk pupil.",
+      "Tegn næseboret og munden.",
+      "Tegn streger inde i ørerne, på kinden, halsen og i manken.",
+      "Tegn lange, bølgende lokker inde i manken og foran ørerne.",
+      "Tegn nogle få korte pelshår på kinden.",
+      "Tegn korte, fine pelshår på hovedet og inde i ørerne. Følg hovedets form.",
+      "Tilføj fine pelsstreger på halsen og lange hårstreger i mankens lokker.",
+      "Visk hjælpelinjerne let ud. Skyg let under kinden og langs halsen.",
+      "Skyg let inde i mankens lange totter. Følg hårenes buer.",
+      "Gør skyggerne dybere, især i øjet, næseboret, under kinden og mellem mankens lokker."
+    ],
+    "dir": "lessons/hest/",
+    "stepMeta": [
+      {
+        "id": "hest-s01",
+        "skillIds": [
+          "construction"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "selfCheck": "Er der stadig plads til de næste dele?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s02",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s03",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s04",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s05",
+        "skillIds": [
+          "construction"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s06",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s07",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s08",
+        "skillIds": [
+          "fill"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Fyld med små cirkler i flere lette lag.",
+        "screenTip": "Fyld med små cirkler i flere lette lag.",
+        "how": "Fyld med små cirkler i flere lette lag.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s09",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s10",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s11",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "hest-s12",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "hest-s13",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "hest-s14",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "hest-s15",
+        "skillIds": [
+          "shading",
+          "eraser"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "hest-s16",
+        "skillIds": [
+          "shading"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "hest-s17",
+        "skillIds": [
+          "shading"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      }
+    ],
+    "skillIds": [
+      "construction",
+      "contour",
+      "fill",
+      "fur",
+      "shading"
+    ],
+    "goal": "Pels og skygge",
+    "prerequisites": [
+      "construction",
+      "contour"
+    ],
+    "complexity": {
+      "construction": 1,
+      "proportion": 2,
+      "detail": 3,
+      "newTechniques": 1
+    },
+    "revision": "01bf6fe02a6dc679"
+  },
+  {
+    "id": "s_ugle_flyv",
+    "cat": "dyr",
+    "title": "Flyvende ugle",
+    "level": 3,
+    "steps": [
+      "Tegn en lys cirkel til hovedet lidt under midten af papiret.",
+      "Tegn en aflang oval til kroppen lige under hovedet.",
+      "Tilføj lange vingeovaler skråt opad, to små fodovaler og en bred halebue nederst.",
+      "Tegn uglens omrids rundt om hovedet og ned langs begge sider af kroppen.",
+      "Tegn omridset af vingen til venstre på papiret med afrundede fjerspidser.",
+      "Tegn nu omridset af vingen til højre med samme afrundede fjerspidser.",
+      "Tegn halens vifteformede omrids under kroppen med små, runde fjerspidser.",
+      "Tegn øjne, næb og ansigtets runde kant. Fjern forsigtigt hjælpelinjerne.",
+      "Del vinger og hale i lange fjer, og tegn små fjerstreger på fødderne.",
+      "Tegn små fjerstreger og buede striber på hovedet, brystet og fødderne.",
+      "Tilføj små overlappende fjer, fine streger og buede striber på vingerne og halen.",
+      "Læg lette, bløde skygger mellem fjerene og langs kroppen. Tryk ganske forsigtigt.",
+      "Gør øjne, næb, fjerstriber og de dybeste skygger mørkere. Bevar de lyse områder."
+    ],
+    "dir": "lessons/s_ugle_flyv/",
+    "stepMeta": [
+      {
+        "id": "s_ugle_flyv-s01",
+        "skillIds": [
+          "construction"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "selfCheck": "Er der stadig plads til de næste dele?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "s_ugle_flyv-s02",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "s_ugle_flyv-s03",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "s_ugle_flyv-s04",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "mellem",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "s_ugle_flyv-s05",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "s_ugle_flyv-s06",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "s_ugle_flyv-s07",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "s_ugle_flyv-s08",
+        "skillIds": [
+          "contour",
+          "eraser"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Tegn øjne, næb og den runde ansigtskant. Visk derefter forsigtigt hjælpelinjerne væk.",
+        "screenTip": "Tegn øjne, næb og den runde ansigtskant. Visk derefter forsigtigt hjælpelinjerne væk.",
+        "how": "Tegn øjne, næb og den runde ansigtskant. Visk derefter forsigtigt hjælpelinjerne væk.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "s_ugle_flyv-s09",
+        "skillIds": [
+          "contour"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Følg vingernes og halens form med lange fjerstreger. Løft blyanten mellem fjerene, og tegn korte streger ved fødderne.",
+        "screenTip": "Følg vingernes og halens form med lange fjerstreger. Løft blyanten mellem fjerene, og tegn korte streger ved fødderne.",
+        "how": "Følg vingernes og halens form med lange fjerstreger. Løft blyanten mellem fjerene, og tegn korte streger ved fødderne.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": false
+      },
+      {
+        "id": "s_ugle_flyv-s10",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "s_ugle_flyv-s11",
+        "skillIds": [
+          "fur"
+        ],
+        "pressure": "let",
+        "tool": "graphitePoint",
+        "action": "draw",
+        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "s_ugle_flyv-s12",
+        "skillIds": [
+          "shading"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      },
+      {
+        "id": "s_ugle_flyv-s13",
+        "skillIds": [
+          "shading"
+        ],
+        "pressure": "let",
+        "tool": "graphiteSide",
+        "action": "tone",
+        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
+        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
+        "lightSource": {
+          "x": 0.18,
+          "y": 0.12
+        },
+        "layoutBounds": [
+          0.12,
+          0.1,
+          0.88,
+          0.9
+        ],
+        "optionalDetails": true
+      }
+    ],
+    "skillIds": [
+      "construction",
+      "contour",
+      "fur",
+      "shading"
+    ],
+    "goal": "Pels og skygge",
+    "prerequisites": [
+      "construction",
+      "contour"
+    ],
+    "complexity": {
+      "construction": 1,
+      "proportion": 2,
+      "detail": 3,
+      "newTechniques": 1
+    },
+    "revision": "4bf873cb9467feef",
     "shop": true,
     "price": 30
   }

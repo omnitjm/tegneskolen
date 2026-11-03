@@ -8,12 +8,12 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Tegneskolen">
 <meta name="theme-color" content="#6435cf">
-<link rel="apple-touch-icon" href="icon-180.png?v=1793689800">
-<link rel="icon" href="icon-512.png?v=1793689800">
-<link rel="manifest" href="manifest.webmanifest?v=1793689800">
+<link rel="apple-touch-icon" href="icon-180.png?v=1793715603">
+<link rel="icon" href="icon-512.png?v=1793715603">
+<link rel="manifest" href="manifest.webmanifest?v=1793715603">
 <title>Tegneskolen</title>
-<link rel="stylesheet" href="style.css?v=1793689800">
-<link rel="stylesheet" href="design.css?v=1793689800">
+<link rel="stylesheet" href="style.css?v=1793715603">
+<link rel="stylesheet" href="design.css?v=1793715603">
 </head>
 <body>
 
@@ -56,6 +56,7 @@
     <span class="badge wallet" data-wallet aria-label="Dine stjerner"><span data-icon="star" aria-hidden="true"></span> 0</span>
   </header>
   <div class="stage" id="stage">
+      <button id="cameraReset" class="small-control camera-reset" aria-label="Vis hele arket">Hele arket</button>
     <div class="guidewrap" id="guideWrap">
       <div class="guide-camera" id="guideCamera">
       <div class="guideart" id="guideArt">
@@ -86,13 +87,19 @@
       </div>
       <canvas id="graphiteFX" width="512" height="512" aria-hidden="true"></canvas>
       <div id="paperLighting" aria-hidden="true"></div>
-      <div class="lesson-intro" id="lessonIntro" hidden><img id="introArt" alt="Det skal vi tegne"><div><span class="mascot " data-mascot="wave" aria-hidden="true"></span><strong id="introMessage">Find papir og blyant.</strong><button class="btn primary" id="introReady">Jeg er klar</button><button class="btn" id="downloadLesson">Gem til uden internet</button><span id="offlineStatus" role="status"></span></div></div>
-      <button id="cameraReset" class="small-control camera-reset" aria-label="Vis hele arket">Hele arket</button>
+      <div class="lesson-intro" id="lessonIntro" hidden><img id="introArt" alt="Det skal vi tegne"><div><span class="mascot " data-mascot="wave" aria-hidden="true"></span><strong id="introMessage">Find papir og blyant.</strong><button class="btn primary" id="introReady">Fortsæt til tegningen</button></div></div>
       <canvas id="cameraOverview" width="88" height="88" aria-label="Her er vi på tegningen" hidden></canvas><span id="lightSource" class="light-source" hidden aria-label="Lyset kommer oppe fra venstre"><span data-icon="sun"></span><small>Lys ↘</small></span><span id="zoomIndicator" hidden><span data-icon="zoom" aria-hidden="true"></span> Zoom</span>
       <div class="guidestatus" id="guideStatus" role="status" hidden></div><button id="retryStep" class="btn retry-step" hidden>Hent igen</button><div id="stepDemo" class="step-demo" hidden><strong>Se, sådan gør du</strong><canvas id="stepDemoCanvas" width="600" height="300"></canvas><button id="stepDemoContinue" class="small-control">Vis på min tegning</button></div><div id="shadowCompare" class="shadow-compare" hidden><figure><img id="shadowBefore" alt="Uden den nye skygge"><figcaption>Uden skygge</figcaption></figure><figure><img id="shadowAfter" alt="Med den nye skygge"><figcaption>Med skygge</figcaption></figure><button id="shadowCompareClose" class="small-control">Se min opgave</button></div>
       <canvas id="traceCanvas" class="pad"></canvas>
     </div>
     <div class="sidepad" id="sidePadWrap"><canvas id="sideCanvas" class="pad"></canvas></div>
+  </div>
+  <div class="video-controls" id="videoControls" role="group" aria-label="Afspil tegningen">
+    <button class="ctl" id="playPauseBtn" aria-label="Afspil tegningen" disabled><span data-icon="play" aria-hidden="true"></span></button>
+    <div class="video-timeline">
+      <output id="stepTime" for="stepScrubber" aria-live="off">0:00 / 0:00</output>
+      <input id="stepScrubber" type="range" min="0" max="1000" step="1" value="0" aria-label="Hvor langt er tegningen?" disabled>
+    </div>
   </div>
   <div class="lesson-sidebar">
   <div class="stepinfo">
@@ -107,9 +114,9 @@
 
 
   </div>
-  <button id="sideSwitch" class="small-control" hidden>Se læreren</button>  <details class="playback-details"><summary>Hjælp og afspilning <span data-icon="settings" aria-hidden="true"></span></summary><div class="playback-options">    <div class="step-guidance"><span id="pressureBadge" class="pressure-badge"></span><div id="techniqueChips" aria-label="Trinnets teknikker"></div></div>  <div class="video-controls" id="videoControls" role="group" aria-label="Afspil tegningen">
-    
-    <input id="stepScrubber" type="range" min="0" max="1000" step="1" value="0" aria-label="Hvor langt er tegningen?" disabled>
+  <button id="sideSwitch" class="small-control" hidden>Se læreren</button>
+  <div class="lesson-options">
+  <details class="playback-details"><summary>Hjælp og afspilning <span data-icon="settings" aria-hidden="true"></span></summary><div class="playback-options">    <div class="step-guidance"><span id="pressureBadge" class="pressure-badge"></span><div id="techniqueChips" aria-label="Trinnets teknikker"></div></div>
     <label class="speed"><span data-icon="speed" aria-hidden="true"></span><span class="sr-only">Tempo</span>
       <select id="stepSpeed" aria-label="Afspilningshastighed">
         <option value="0.25">0,25×</option><option value="0.5">0,5×</option>
@@ -117,15 +124,15 @@
         <option value="1.5">1,5×</option><option value="2">2×</option>
       </select>
     </label>
-  </div>
-
     <label class="playback-toggle"><input id="waitForMe" type="checkbox"> Vent på mig</label>
-    <label class="playback-toggle"><input id="autoRead" type="checkbox"> Læs op automatisk</label>
+    <p class="narration-help">Tryk på lydknappen for at høre et trin eller en øvelse.</p>
+    <div class="offline-download"><button class="small-control" id="downloadLesson">Gem til uden internet</button><span id="offlineStatus" role="status"></span></div>
     <button id="showWholeStep" class="small-control" disabled>Vis hele trinnet</button><button id="lessonWarmup" class="small-control">Opvarmning</button><button id="lessonSettings" class="small-control">Indstillinger</button>
   <button id="layoutPlan" class="btn">Hvor skal tegningen være?</button><button id="finishBasic" class="btn">Gem min grundform</button><button id="stepHow" class="btn">Sådan gør du</button><p id="stepSelfCheck"></p><button id="wholeReplay" class="btn">Hele trinnet igen</button><button id="skipDemo" class="btn ghost">Spring demonstration over</button></div></details>
-  <button id="voiceStatus" class="btn voice-status" hidden>Tryk for at høre</button><div class="step-cheer" id="stepCheer" role="status" hidden></div>
+  <button id="voiceStatus" class="btn voice-status" hidden><span data-icon="sound" aria-hidden="true"></span> Tryk for at høre</button><div class="step-cheer" id="stepCheer" role="status" hidden></div>
   <div class="padtools" id="lessonTools"></div>
-  <footer class="controls"><button class="ctl" id="playPauseBtn" aria-label="Afspil tegningen" disabled><span data-icon="play" aria-hidden="true"></span></button>
+  </div>
+  <footer class="controls">
     <button class="ctl" id="prevBtn" aria-label="Forrige trin"><span data-icon="back" aria-hidden="true"></span></button>
     <button class="ctl" id="replayBtn" aria-label="Vis denne del igen"><span data-icon="replay" aria-hidden="true"></span></button>
   <div class="copy-pause" id="copyPause" hidden>
@@ -236,7 +243,7 @@
     <label><span><span data-icon="pencil" aria-hidden="true"></span> Blyantslyd</span><input id="settingPencilSound" type="checkbox"></label>
     <label><span><span data-icon="sound" aria-hidden="true"></span>Klistermærkelyd</span><input id="settingStickerSound" type="checkbox"></label>
     <label><span><span data-icon="video" aria-hidden="true"></span> Rolige kamerabevægelser</span><input id="settingCamera" type="checkbox"></label>
-    <label><span><span data-icon="sound" aria-hidden="true"></span> Læs op automatisk</span><input id="settingRead" type="checkbox"></label>
+    <p class="narration-help"><span data-icon="sound" aria-hidden="true"></span> Tryk på lydknappen for at høre et trin eller en øvelse. Tale starter kun, når du beder om den.</p>
     <label><span><span data-icon="wait" aria-hidden="true"></span> Vent på mig</span><input id="settingWait" type="checkbox"></label>
     <label><span>Små vibrationer ved tryk</span><input id="settingHaptics" type="checkbox"></label>
     <label><span>Tempo fra start</span><select id="settingSpeed" aria-label="Standardtempo"><option value="0.25">0,25×</option><option value="0.5">0,5×</option><option value="0.75">0,75×</option><option value="1">1×</option><option value="1.5">1,5×</option><option value="2">2×</option></select></label>
@@ -249,12 +256,12 @@
     <canvas id="techniqueDemo" width="600" height="300" role="img" aria-label="Animeret eksempel på teknikken"></canvas>
     <p id="techniqueExplanation"></p><button id="techniqueReplay" class="btn">Vis igen</button>
     <p class="practice-hint" id="practiceHint"><span data-icon="pencil" aria-hidden="true"></span> Prøv selv på papiret</p>
-    <button id="practiceRead" class="btn">Hør øvelsen</button><button class="btn" id="techniqueProject">Tegn med teknikken</button><button class="btn" id="practiceComplete">Jeg har øvet mig · +1 <span data-icon="star" aria-hidden="true"></span></button>
+    <button id="practiceRead" class="btn"><span data-icon="sound" aria-hidden="true"></span> Læs øvelsen højt</button><button class="btn" id="techniqueProject">Tegn med teknikken</button><button class="btn" id="practiceComplete">Jeg har øvet mig · +1 <span data-icon="star" aria-hidden="true"></span></button>
     <button class="btn primary" id="techniqueContinue">Klar, vis mig tegningen <span data-icon="play" aria-hidden="true"></span></button>
   </div>
 </div>
 
-<div class="modal" id="warmupModal" role="dialog" aria-modal="true" aria-labelledby="warmupTitle" hidden><div class="modal-card warmup-card"><header><h2 id="warmupTitle">Varm hånden op</h2><button class="icon" id="warmupClose" aria-label="Luk opvarmning"><span data-icon="close" aria-hidden="true"></span></button></header><span class="mascot warmup-mascot" data-mascot="think" aria-hidden="true"></span><p>Find papir og blyant. Der er ingen tid, du skal nå det på.</p><ol><li>Tegn tre store, lette cirkler med hele armen.</li><li>Tegn seks rolige bølger. Løft blyanten imellem.</li><li>Lav tre felter: lyst, mellem og mørkt. Byg skyggen op i lag.</li></ol><div class="warmup-samples" aria-hidden="true"><svg viewBox="0 0 320 144" fill="none" stroke="#656477" stroke-width="2" stroke-linecap="round"><circle cx="80" cy="24" r="16"/><circle cx="160" cy="24" r="16"/><circle cx="240" cy="24" r="16"/><path d="M48 72q16-32 32 0t32 0 32 0 32 0 32 0 32 0 32 0"/><path d="M64 112h40v24H64Z" fill="#D5D3DB" stroke="none"/><path d="M140 112h40v24h-40Z" fill="#96939F" stroke="none"/><path d="M216 112h40v24h-40Z" fill="#4C4959" stroke="none"/></svg></div><p id="warmupTask"></p><canvas id="warmupDemo" width="600" height="300"></canvas><button id="warmupRead" class="btn">Hør igen</button><button id="warmupNext" class="btn">Næste lille øvelse</button><button class="btn primary" id="warmupComplete">Jeg har øvet mig · +1 <span data-icon="star" aria-hidden="true"></span></button></div></div>
+<div class="modal" id="warmupModal" role="dialog" aria-modal="true" aria-labelledby="warmupTitle" hidden><div class="modal-card warmup-card"><header><h2 id="warmupTitle">Varm hånden op</h2><button class="icon" id="warmupClose" aria-label="Luk opvarmning"><span data-icon="close" aria-hidden="true"></span></button></header><span class="mascot warmup-mascot" data-mascot="think" aria-hidden="true"></span><p>Find papir og blyant. Der er ingen tid, du skal nå det på.</p><ol><li>Tegn tre store, lette cirkler med hele armen.</li><li>Tegn seks rolige bølger. Løft blyanten imellem.</li><li>Lav tre felter: lyst, mellem og mørkt. Byg skyggen op i lag.</li></ol><div class="warmup-samples" aria-hidden="true"><svg viewBox="0 0 320 144" fill="none" stroke="#656477" stroke-width="2" stroke-linecap="round"><circle cx="80" cy="24" r="16"/><circle cx="160" cy="24" r="16"/><circle cx="240" cy="24" r="16"/><path d="M48 72q16-32 32 0t32 0 32 0 32 0 32 0 32 0 32 0"/><path d="M64 112h40v24H64Z" fill="#D5D3DB" stroke="none"/><path d="M140 112h40v24h-40Z" fill="#96939F" stroke="none"/><path d="M216 112h40v24h-40Z" fill="#4C4959" stroke="none"/></svg></div><p id="warmupTask"></p><canvas id="warmupDemo" width="600" height="300"></canvas><button id="warmupRead" class="btn"><span data-icon="sound" aria-hidden="true"></span> Læs øvelsen højt</button><button id="warmupNext" class="btn">Næste lille øvelse</button><button class="btn primary" id="warmupComplete">Jeg har øvet mig · +1 <span data-icon="star" aria-hidden="true"></span></button></div></div>
 <div class="modal" id="unlockModal" role="dialog" aria-modal="true" aria-labelledby="unlockTitle" hidden><div class="modal-card unlock-card"><header><h2 id="unlockTitle">Lås tegningen op?</h2><button class="icon" id="unlockClose" aria-label="Luk"><span data-icon="close" aria-hidden="true"></span></button></header><img id="unlockArt" alt=""><p id="unlockText"></p><button class="btn primary" id="unlockConfirm">Lås op</button><button class="btn ghost" id="unlockCancel">Spar videre</button></div></div>
 
 <div class="modal" id="modeModal" role="dialog" aria-modal="true" aria-labelledby="modeTitle" hidden><div class="modal-card"><header><h2 id="modeTitle">Hvordan vil du tegne?</h2><button class="icon" id="modeClose" aria-label="Luk tegnemåder"><span data-icon="close" aria-hidden="true"></span></button></header><div class="mode-options"><button data-mode="paper"><strong><span data-icon="paper" aria-hidden="true"></span> På papir</strong><span>Se med, og tegn på dit eget ark.</span></button><button data-mode="side"><strong><span data-icon="pencil" aria-hidden="true"></span> Ved siden af</strong><span>Tegn på en tom skærm ved siden af læreren.</span></button><button data-mode="trace"><strong><span data-icon="trace" aria-hidden="true"></span> Spor</strong><span>Tegn oven på de lyse streger på skærmen.</span></button></div></div></div>
@@ -271,15 +278,15 @@
 <div class="toast" id="toast"></div>
 <div id="rewardStatus" class="sr-only" role="status" aria-live="polite"></div>
 
-<script src="platform.js?v=1793689800"></script>
-<script src="ui-icons.js?v=1793689800"></script>
-<script src="lessons.js?v=1793689800"></script>
-<script src="persistence.js?v=1793689800"></script>
-<script src="scan-core.js?v=1793689800"></script>
-<script src="techniques.js?v=1793689800"></script>
-<script src="scan.js?v=1793689800"></script>
-<script src="stickers.js?v=1793689800"></script>
-<script src="playback-timing.js?v=1793689800"></script>
-<script src="app.js?v=1793689800"></script>
+<script src="platform.js?v=1793715603"></script>
+<script src="ui-icons.js?v=1793715603"></script>
+<script src="lessons.js?v=1793715603"></script>
+<script src="persistence.js?v=1793715603"></script>
+<script src="scan-core.js?v=1793715603"></script>
+<script src="techniques.js?v=1793715603"></script>
+<script src="scan.js?v=1793715603"></script>
+<script src="stickers.js?v=1793715603"></script>
+<script src="playback-timing.js?v=1793715603"></script>
+<script src="app.js?v=1793715603"></script>
 </body>
 </html>

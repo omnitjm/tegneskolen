@@ -1,6 +1,10 @@
 'use strict';
 const $ = s => document.querySelector(s);
 const ACCENT = '#6435cf';
+// Avoid invalidating layout and live regions with identical playback values.
+function setText(el, text) { if (el.textContent !== text) el.textContent = text; }
+function setHidden(el, hidden) { if (el.hidden !== hidden) el.hidden = hidden; }
+function setAttr(el, name, value) { if (el.getAttribute(name) !== value) el.setAttribute(name, value); }
 
 // Lageret kan være fuldt eller slået fra.
 function readLocal(key) { try { return JSON.parse(localStorage.getItem(key)); } catch { return null; } }
@@ -313,6 +317,9 @@ class Pad {
     this.cur = { c: this.color, s: this.size, t: this.tool, p: [this.pt(e)] };
     // Et kort fingertryk på sporarket styrer videoen. Pennen tegner altid.
     this.tap = this.onTap && e.pointerType === 'touch' ? { x: e.clientX, y: e.clientY } : null;
+    this.strokeBase = document.createElement('canvas');
+    this.strokeBase.width = this.c.width; this.strokeBase.height = this.c.height;
+    this.strokeBase.getContext('2d').drawImage(this.c, 0, 0);
     if (!this.tap) this.drawDot(this.cur);
   }
   move(e) {
@@ -324,7 +331,7 @@ class Pad {
     const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
     for (const ev of (evs.length ? evs : [e])) {
       this.cur.p.push(this.pt(ev));
-      this.drawSeg(this.cur, this.cur.p.length - 1);
+      this.paintCurrent();
     }
   }
   up(e) {
@@ -332,13 +339,14 @@ class Pad {
     if (this.tap && e.type !== 'pointercancel') {
       this.tap = this.cur = null; this.onTap(); return;
     }
-    if (e.type !== 'pointercancel' && Number.isFinite(e.clientX)) { const pt = this.pt(e), last = this.cur.p[this.cur.p.length-1]; if (Math.hypot(pt.x-last.x,pt.y-last.y)>.0001) { this.cur.p.push(pt); this.drawSeg(this.cur,this.cur.p.length-1); } }
+    if (e.type !== 'pointercancel' && Number.isFinite(e.clientX)) { const pt = this.pt(e), last = this.cur.p[this.cur.p.length-1]; if (Math.hypot(pt.x-last.x,pt.y-last.y)>.0001) { this.cur.p.push(pt); this.paintCurrent(); } }
     this.finishStroke();
   }
   finishStroke() {
     if (!this.cur) return;
     if (this.tap) { this.drawDot(this.cur); this.tap = null; }
-    this.drawEnd(this.cur);
+    this.paintCurrent();
+    this.strokeBase = null;
     this.strokes.push(this.cur); this.cur = null; this.redo = [];
     this.save(); this.onchange();
   }
@@ -366,12 +374,29 @@ class Pad {
     const P=st.p, b=P[P.length-1], a=P[P.length-2] || b; this.style(st,b.p); const ctx=this.ctx;
     ctx.beginPath();ctx.moveTo((a.x+b.x)/2*this.w,(a.y+b.y)/2*this.w);ctx.lineTo(b.x*this.w,b.y*this.w);ctx.stroke();
   }
+  drawStroke(st) {
+    const P = st.p;
+    if (P.some(p => Math.abs(p.p-P[0].p) > .001)) {
+      this.drawDot(st); for (let i=1;i<P.length;i++) this.drawSeg(st,i); this.drawEnd(st); return;
+    }
+    if (P.length === 1) { this.drawDot(st); return; }
+    this.style(st,P[0].p);
+    const ctx=this.ctx,W=this.w;
+    ctx.beginPath();ctx.moveTo(P[0].x*W,P[0].y*W);
+    for(let i=1;i<P.length;i++){const a=P[i-1],b=P[i];ctx.quadraticCurveTo(a.x*W,a.y*W,(a.x+b.x)/2*W,(a.y+b.y)/2*W);}
+    ctx.lineTo(P.at(-1).x*W,P.at(-1).y*W);ctx.stroke();
+  }
+  paintCurrent() {
+    const ctx=this.ctx;
+    ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.globalAlpha=1;ctx.globalCompositeOperation='copy';ctx.drawImage(this.strokeBase,0,0);ctx.restore();
+    this.drawStroke(this.cur);
+  }
   redraw() {
     if (!this.w || !this.h) return;
     const ctx = this.ctx;
     ctx.globalCompositeOperation = 'source-over';
     ctx.clearRect(0, 0, this.w, this.h);
-    for (const st of this.strokes) { this.drawDot(st); for (let i = 1; i < st.p.length; i++) this.drawSeg(st, i); this.drawEnd(st); }
+    for (const st of this.strokes) this.drawStroke(st);
     ctx.globalCompositeOperation = 'source-over';
   }
   undo() { if (this.strokes.length) { this.redo.push(this.strokes.pop()); this.redraw(); this.save(); this.onchange(); } }
@@ -430,12 +455,19 @@ const TINT_FADE = 0;
 // Stregdata og billeder hentes sammen, kun for åbne/næste trin.
 const strokeFiles = new Map();
 let handAsset = null, handRequest = null;
-let waitForMe = readLocal('ts_wait_for_me') ?? true, autoRead = readLocal('ts_auto_read') ?? true;
+// One-time reset: previous beginner defaults enabled speech and forced pauses.
+if (!readLocal('ts_child_control_v32')) {
+  writeLocal('ts_auto_read', false); writeLocal('ts_wait_for_me', false);
+  writeLocal('ts_child_control_v32', true);
+}
+// Narration is requested per clip with a speaker button, including old opt-ins.
+removeLocal('ts_auto_read');
+let waitForMe = readLocal('ts_wait_for_me') === true;
 const cheers = ['Du tog dig tid til at prøve! ✨', 'Ét skridt mere på dit tegneeventyr! 🌟', 'Du øver dig med blyanten! ✏️', 'Du gav plads til et nyt forsøg! 💜'];
 function doneMessage(lesson) { return 'Flot klaret – din tegning er færdig!'; }
 let cheerIndex = 0;
 
-function assetURL(src){return /^(lessons|assets)\//.test(src)&&!src.includes('?')?src+'?v=1793689800':src;}
+function assetURL(src){return /^(lessons|assets)\//.test(src)&&!src.includes('?')?src+'?v=1793715603':src;}
 async function fetchTimed(src, timeout=45000) {
   src=assetURL(src);
   const controller = new AbortController(), timer=setTimeout(()=>controller.abort(),timeout);
@@ -589,14 +621,13 @@ function paintHand(now = performance.now()) {
 
 /* ---------------- dansk oplæsning ---------------- */
 // Genbrug samme element: Safari knytter tilladelsen til det element, barnet
-// starter med et tryk. Et blokeret automatisk forsøg venter på næste tryk.
+// starter med lydknappen. Blokeret tale kan kun genstartes fra lydknappen.
 const voiceAudio = new Audio();
 voiceAudio.preload = 'auto';
 voiceAudio.setAttribute('playsinline', '');
-const silentVoice = 'data:audio/wav;base64,UklGRrQBAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YZABAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA';
-let voiceUnlocked = false, voiceUnlocking = false, voiceRequest = null, queuedCheer = null;
+let voiceUnlocked = false, voiceRequest = null;
 let voiceSource = '', voiceVersion = 0, phraseFiles = {};
-fetch('voice/index.json?v=1793689800').then(r => r.ok ? r.json() : {}).then(index => { phraseFiles = index; }).catch(() => {});
+fetch('voice/index.json?v=1793715603').then(r => r.ok ? r.json() : {}).then(index => { phraseFiles = index; }).catch(() => {});
 
 function phraseFile(text) {
   // Identisk med slug() i tools/build_voice.py. Virker også før index er hentet.
@@ -616,7 +647,7 @@ function voiceFile(src) {
   if (!/\.(m4a|mp3)(\?|$)/.test(src)) return src;
   const aac = voiceAudio.canPlayType?.('audio/mp4; codecs="mp4a.40.2"');
   const mp3 = voiceAudio.canPlayType?.('audio/mpeg');
-  return src.replace(/\.(m4a|mp3)(?=\?|$)/, aac || !mp3 ? '.m4a' : '.mp3') + (src.includes('?') ? '' : '?v=1793689800');
+  return src.replace(/\.(m4a|mp3)(?=\?|$)/, aac || !mp3 ? '.m4a' : '.mp3') + (src.includes('?') ? '' : '?v=1793715603');
 }
 function validVoice(request) {
   return voiceRequest === request && current === request.screen && !document.hidden;
@@ -626,18 +657,11 @@ function voiceEnded(request) {
   // Et allerede kølagt ended-event kan ankomme efter et tryk på pause.
   if (request.paused) { request.ended = true; return; }
   request.onComplete?.(); voiceRequest = null;
-  const cheer = queuedCheer; queuedCheer = null;
-  if (cheer && autoRead && current === 'lesson' && !techniqueSession) {
-    if (typeof cheer === 'object') {
-      const p = stepPlayer, group = p?.groups?.[p.groupAt];
-      if (p !== cheer.player || !group || `${group.pressure}/${group.type}` !== cheer.key || p.elapsed >= p.duration) return;
-      readPhraseAloud(cheer.text);
-    } else readPhraseAloud(cheer);
-  }
+
 }
 function cancelStepSpeech() {
   voiceVersion++;
-  voiceRequest = queuedCheer = null;
+  voiceRequest = null;
   voiceAudio.onended = voiceAudio.onerror = null;
   voiceAudio.pause();
   try { voiceAudio.currentTime = 0; } catch {}
@@ -661,7 +685,7 @@ function speakFallback(request) {
     const voice = synth.getVoices().find(v => /^da([-_]|$)/i.test(v.lang));
     if (voice) utterance.voice = voice;
     utterance.onend = () => voiceEnded(request);
-    utterance.onerror = () => { if (validVoice(request)) { voiceRequest = queuedCheer = null; } };
+    utterance.onerror = () => { if (validVoice(request)) { voiceRequest = null; } };
     request.utterance = utterance;
     synth.speak(utterance);
   } catch {}
@@ -688,39 +712,14 @@ function playVoice(request) {
   } catch (error) { failed(error); }
 }
 function retryVoice() {
+  if (voiceRequest?.paused && !voiceRequest.pending) { resumeStepSpeech(); return; }
   if (voiceRequest?.pending) {
     // A copy pause may have happened while autoplay was blocked. This labelled
     // tap explicitly asks for narration without advancing the drawing.
     voiceRequest.paused = false; playVoice(voiceRequest);
   } else readStepAloud();
 }
-function unlockVoice() {
-  if (document.hidden) return;
-  if (voiceRequest) {
-    // Pending speech resumes only from the labelled audio control.
-    return;
-  }
-  if (voiceUnlocked || voiceUnlocking) return;
-  voiceUnlocking = true;
-  const version = voiceVersion, prepared = voiceSource;
-  prepareVoice(silentVoice);
-  try {
-    const playing = voiceAudio.play();
-    if (playing) playing.then(() => {
-      voiceUnlocked = true;
-      if (version === voiceVersion && !voiceRequest) {
-        voiceAudio.pause();
-        if (prepared) prepareVoice(prepared);
-      }
-    }).catch(() => {}).finally(() => { voiceUnlocking = false; });
-    else { voiceUnlocked = true; voiceUnlocking = false; }
-  } catch { voiceUnlocking = false; }
-}
-document.addEventListener('touchend', unlockVoice, { capture: true, passive: true });
-document.addEventListener('pointerup', unlockVoice, { capture: true, passive: true });
-document.addEventListener('click', unlockVoice, { capture: true });
-document.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') unlockVoice(); }, { capture: true });
-
+// Unrelated gestures never prime or start narration.
 function readAloud(text, src) {
   cancelStepSpeech();
   if (document.hidden) return;
@@ -736,12 +735,6 @@ function readAloud(text, src) {
 function readStepAloud() {
   if (techniqueSession) { readAloud(techniqueSession.technique.text, phraseFile(techniqueSession.technique.text)); return; }
   if (L && current === 'lesson') { const g = stepPlayer?.groups?.[stepPlayer.groupAt]; if (g?.spokenText) readSegment(g); else readAloud(L.steps[step], `${L.dir}voice${step+1}.m4a`); }
-}
-function readPhraseAloud(text, afterCurrent = false, guidance = null) {
-  if (!autoRead || document.hidden) return;
-  // Lad instruktionen tale færdig, før opmuntringen starter.
-  if (afterCurrent && voiceRequest) { queuedCheer = guidance ? { text, ...guidance } : text; return; }
-  readAloud(text, phraseFile(text));
 }
 function pauseStepSpeech() {
   if (!voiceRequest) return;
@@ -764,10 +757,8 @@ function setLessonPlaybackDefaults() {
   const beginner = readLocal('ts_support') !== 'self';
   const savedSpeed = readLocal('ts_step_speed');
   stepSpeed = stepSpeeds.includes(savedSpeed) ? savedSpeed : beginner ? 0.75 : 1;
-  const savedWait = readLocal('ts_wait_for_me'), savedRead = readLocal('ts_auto_read');
-  waitForMe = typeof savedWait === 'boolean' ? savedWait : beginner;
-  autoRead = typeof savedRead === 'boolean' ? savedRead : beginner;
-  $('#waitForMe').checked = waitForMe; $('#autoRead').checked = autoRead;
+  waitForMe = readLocal('ts_wait_for_me') === true;
+  $('#waitForMe').checked = waitForMe;
 }
 
 /* ---------------- blyant og teknikker ---------------- */
@@ -1003,7 +994,6 @@ function updateGuidance(p, seek = false) {
     if (p.tipKey !== key || seek) {
       $('#liveTip').textContent = mode!=='paper'?(L?.stepMeta?.[step]?.screenTip||g.tip):g.tip;
       p.tipChanged = now;
-      if (p.playing && !seek && autoRead && !techniqueSession && !voiceRequest) readSegment(g);
       p.tipKey = key;
     }
     p.pendingTip = null;
@@ -1012,8 +1002,8 @@ function updateGuidance(p, seek = false) {
   const s = g;
   document.querySelectorAll('[data-pressure]').forEach(e => {
     const active = e.dataset.pressure === s.pressure;
-    e.classList.toggle('on', active); e.setAttribute('aria-current', active ? 'true' : 'false');
-    if(e.dataset.pressure==='let'&&e.lastChild?.nodeType===3)e.lastChild.nodeValue=g.type==='construction'?' Let hjælpelinje':' Let';
+    if(e.classList.contains('on')!==active)e.classList.toggle('on', active); setAttr(e, 'aria-current', active ? 'true' : 'false');
+    if(e.dataset.pressure==='let'&&e.lastChild?.nodeType===3){const text=g.type==='construction'?' Let hjælpelinje':' Let';if(e.lastChild.nodeValue!==text)e.lastChild.nodeValue=text;}
   });
   updateCameraTarget(p, g, seek);
   p.groupAt = at;
@@ -1070,7 +1060,6 @@ function openTechnique(technique, automatic = false) {
   $('#practiceComplete').disabled = false; UI.label($('#practiceComplete'), 'star', latestWallet().claims['practice:'+technique.id+':'+today()]?'Øv igen · Jeg har prøvet':'Jeg har øvet mig · +1');
   $('#techniqueModal').hidden = false; modalInert(true); $('#techniqueClose').focus({ preventScroll: true });
   cancelAnimationFrame(techniqueFrame); techniqueFrame = requestAnimationFrame(drawTechniqueDemo);
-  if (autoRead) readAloud(technique.text, phraseFile(technique.text));
 }
 function closeTechnique(proceed = true) {
   const session = techniqueSession;
@@ -1089,10 +1078,8 @@ function closeTechnique(proceed = true) {
   else if (session.playing && current === 'lesson') playStep();
 }
 function introduceTechniques(p, start) {
-  const seen=objectMap(readLocal('ts_techniques_global')), id=p.analysis.techniques.find(id=>!seen[id]);
-  techniqueQueue=[];
-  if(!id){ start();return; }
-  techniqueAfter=start;openTechnique(TECHNIQUES.find(t=>t.id===id),true);
+  // Technique cards remain available from Help; entering a step never gates it.
+  techniqueQueue=[]; start();
 }
 
 function drawTechniqueDemo(now){
@@ -1104,8 +1091,18 @@ $('#techniqueReplay').onclick=()=>{if(!techniqueSession)return;techniqueSession.
 $('#techniqueProject').onclick=()=>{const id=techniqueSession?.technique.id,lesson=LESSONS.find(l=>lessonUnlocked(l)&&lessonSkills(l).includes(id)&&!store.get().done[l.id])||LESSONS.find(l=>lessonUnlocked(l)&&lessonSkills(l).includes(id));closeTechnique(false);if(lesson)openLesson(lesson);};
 $('#practiceRead').onclick=()=>{const text=practiceFor(techniqueSession?.technique.id);if(text)readAloud(text,phraseFile(text));};
 
+function updateLessonHelpBounds() {
+  if (!document.body.classList.contains('lesson-help-open')) return;
+  const top = $('#stage').getBoundingClientRect().top;
+  const bottom = $('#videoControls').getBoundingClientRect().top;
+  document.body.style.setProperty('--lesson-help-top', `${Math.max(0,top)}px`);
+  document.body.style.setProperty('--lesson-help-bottom', `${Math.max(0,innerHeight-bottom)}px`);
+}
 function modalInert(open) {
-  document.querySelectorAll('.screen, #tabbar').forEach(e => { e.inert = open; });
+  const lessonHelp = open && current === 'lesson' && (!$('#techniqueModal').hidden || !$('#warmupModal').hidden);
+  document.body.classList.toggle('lesson-help-open', lessonHelp);
+  if (lessonHelp) { $('#lesson .playback-details').open = false; fitStage(); updateLessonHelpBounds(); }
+  document.querySelectorAll('.screen, #tabbar').forEach(e => { e.inert = open && !(lessonHelp && e.id === 'lesson'); });
 }
 $('#techniqueClose').onclick = $('#techniqueContinue').onclick = () => closeTechnique();
 $('#practiceComplete').onclick = () => {
@@ -1132,7 +1129,7 @@ $('#settingsBtn').onclick = () => {
   $('#settingHelpers').checked = showHelpers;
   $('#settingAwake').checked = keepScreenOn; $('#settingZoom').checked = detailZoom;
   $('#settingPencilSound').checked = pencilSound.enabled; $('#settingCamera').checked = gentleCamera;
-  $('#settingRead').checked = autoRead; $('#settingWait').checked = waitForMe; $('#settingSpeed').value = stepSpeed;
+  $('#settingWait').checked = waitForMe; $('#settingSpeed').value = stepSpeed;
   $('#settingsModal').hidden = false; modalInert(true); $('#settingsClose').focus({ preventScroll: true });
 };
 $('#settingsClose').onclick = closeSettings;
@@ -1140,14 +1137,17 @@ $('#settingAwake').onchange = e => {
   keepScreenOn = e.target.checked; writeLocal('ts_keep_awake', keepScreenOn);
   if (keepScreenOn) keepLessonAwake(true); else stopLessonAwake();
 };
-$('#cameraReset').onclick=()=>{if(!stepPlayer)return;stepPlayer.cameraOverview=!stepPlayer.cameraOverview;$('#cameraReset').textContent=stepPlayer.cameraOverview?'Tilbage til detaljen':'Hele arket';stepPlayer.focusGroup=null;updateGuidance(stepPlayer,true);};
+function updateCameraControl() {
+  const label=stepPlayer?.cameraOverview?'Tilbage til detaljen':'Hele arket';
+  setText($('#cameraReset'),label);setAttr($('#cameraReset'),'aria-label',label);
+}
+$('#cameraReset').onclick=()=>{if(!stepPlayer)return;stepPlayer.cameraOverview=!stepPlayer.cameraOverview;updateCameraControl();stepPlayer.focusGroup=null;updateGuidance(stepPlayer,true);};
 $('#settingPencilSound').onchange = e => { pencilSound.enabled = e.target.checked; writeLocal('ts_pencil_sound', pencilSound.enabled); if (!pencilSound.enabled) pencilSound.stop(); };
 $('#settingCamera').onchange = e => { gentleCamera = e.target.checked; writeLocal('ts_gentle_camera', gentleCamera); if (stepPlayer) updateGuidance(stepPlayer, true); };
 $('#settingZoom').onchange = e => {
   detailZoom = e.target.checked; writeLocal('ts_detail_zoom', detailZoom);
   if (stepPlayer) updateGuidance(stepPlayer, true);
 };
-$('#settingRead').onchange = e => setAutoRead(e.target.checked);
 $('#settingWait').onchange = e => setWaitForMe(e.target.checked);
 $('#settingSpeed').onchange = e => { stepSpeed = Number(e.target.value); writeLocal('ts_step_speed', stepSpeed); $('#stepSpeed').value = stepSpeed; };
 document.addEventListener('keydown', e => {
@@ -1184,7 +1184,20 @@ function prepareStrokes(data,image,previous,text){
     }
     return {...plan,kind:'strokes',batchPlan:true,unreliableFocus,atlasImages:data.atlasImages};
   }
-  return PlaybackTiming.raw(data,L?.stepMeta?.[step],text);
+  const meta=L?.stepMeta?.[step],plan=PlaybackTiming.raw(data,meta,text);
+  // Incidental pixel removals cannot prescribe an eraser exercise. Apply the
+  // same metadata rule to raw plans as compact plans.
+  const unreliableFocus=!!plan.teachingGuide || (plan.analysis.erased && meta?.action!=='erase');
+  if(meta)for(const g of plan.segments){
+    // Generated raster regions describe repairs as well as the new feature.
+    // Only authored guidance can tell the child where and what to draw.
+    g.tip=g.instruction=meta.tip||text;g.spokenText=text;
+    g.audioSrc=`${L.dir}voice${step+1}.m4a`;
+    if(meta.action!=='erase'&&!/visk/i.test(text)&&g.items?.some(s=>s.action==='erase')){
+      g.type=meta?.skillIds?.[0]||'contour';
+    }
+  }
+  return {...plan,batchPlan:!!plan.teachingGuide,unreliableFocus};
 }
 
 function pointOnStroke(s, distance) {
@@ -1211,7 +1224,7 @@ function playerCanvas(size) {
   const c = document.createElement('canvas'); c.width = c.height = size; return c;
 }
 function playbackSize() {
-  return Math.max(256, Math.min(768, Math.round(($('#guideWrap').getBoundingClientRect().width || 600) * Math.min(1.5,window.devicePixelRatio || 1))));
+  return Math.max(256, Math.min(1024, Math.round(($('#guideWrap').getBoundingClientRect().width || 600) * (window.devicePixelRatio || 1))));
 }
 
 // Kun fjernet grafit slettes fra det tidligere lag under viskelæderets spor.
@@ -1252,17 +1265,13 @@ function paintErasing(p, ctx) {
 }
 
 function createStrokePlayer(image,previous,prepared){
-  const size=prepared.batchPlan&&!prepared.contourGuide?Math.min(768,playbackSize()):playbackSize(),canvas=$('#stepDrawing'),tint=$('#stepHighlight');canvas.width=canvas.height=tint.width=tint.height=size;
-  const masks=Array.from({length:prepared.toneLayers},()=>playerCanvas(size).getContext('2d')),grain=graphiteGrain(size);
-  // Multiply paper-tooth alpha into the actual graphite pixels, then flatten
-  // onto the same white paper. Both previous and new masters use that identical
-  // stationary grain, so no tone jumps at step boundaries or copy pauses.
-  const graphiteImage=graphitePaper(image,size,grain),graphitePrevious=previous?graphitePaper(previous,size,grain):null;
-  return {kind:'strokes',...prepared,count:prepared.count||prepared.strokes.length,image,previous,graphiteImage,graphitePrevious,ctx:canvas.getContext('2d'),tintCtx:tint.getContext('2d'),maskCtx:playerCanvas(size).getContext('2d'),layers:masks,eraseMask:playerCanvas(size).getContext('2d'),compositeCtx:playerCanvas(size).getContext('2d'),grain,elapsed:0,painted:-1,playing:false,last:0,stopsPassed:new Set(),waiting:false,celebrated:false};
+  const size=playbackSize(),canvas=$('#stepDrawing'),tint=$('#stepHighlight');canvas.width=canvas.height=tint.width=tint.height=size;
+  const masks=Array.from({length:prepared.toneLayers},()=>playerCanvas(size).getContext('2d'));
+  // The lesson master already contains graphite texture. Preserve its complete
+  // pixels; another grain alpha weakens narrow lines on small/high-DPR screens.
+  return {kind:'strokes',...prepared,count:prepared.count||prepared.strokes.length,image,previous,ctx:canvas.getContext('2d'),tintCtx:tint.getContext('2d'),maskCtx:playerCanvas(size).getContext('2d'),layers:masks,eraseMask:playerCanvas(size).getContext('2d'),compositeCtx:playerCanvas(size).getContext('2d'),elapsed:0,painted:-1,playing:false,last:0,stopsPassed:new Set(),waiting:false,celebrated:false};
 }
-function graphitePaper(image,size,grain){const c=playerCanvas(size),ctx=c.getContext('2d');ctx.drawImage(image,0,0,size,size);ctx.globalCompositeOperation='destination-in';ctx.drawImage(grain,0,0);ctx.globalCompositeOperation='destination-over';ctx.fillStyle='#fff';ctx.fillRect(0,0,size,size);ctx.globalCompositeOperation='source-over';return c;}
 
-function graphiteGrain(size){const c=playerCanvas(size),ctx=c.getContext('2d'),pixels=ctx.createImageData(size,size);let seed=7919;for(let i=0;i<pixels.data.length;i+=4){seed=(seed*1664525+1013904223)>>>0;pixels.data[i]=pixels.data[i+1]=pixels.data[i+2]=255;pixels.data[i+3]=218+(seed%38);}ctx.putImageData(pixels,0,0);return c;}
 function createStaticPlayer(image,previous){const ctx=$('#stepDrawing').getContext('2d');return {kind:'static',image,previous,ctx,count:0,duration:1,elapsed:1,playing:false,waiting:false,stops:[],stopsPassed:new Set(),groups:[],analysis:{pressure:'let',techniques:L?.stepMeta?.[step]?.skillIds||['contour']}};}
 
 function strokeAt(p, time) {
@@ -1282,7 +1291,7 @@ function showHandAt(x, y, space, lift = 0, angle = 0, pressure = 'mellem', erasi
     view.rotation = target.rotation; view.height = target.height;
     view.weights = { [pose]: 1 }; view.last = performance.now();
   }
-  view.target = target; hand.dataset.pose = pose; hand.hidden = false;
+  view.target = target; if(hand.dataset.pose!==pose)hand.dataset.pose = pose; setHidden(hand, false);
   // Position is exact; only the wrist and pose blend are eased, never the tip.
   // Missing photographs must not disable the camera, sound or drawing effects.
   paintHand();
@@ -1307,29 +1316,50 @@ function paintContourGuide(p){
   const reveal=p.maskCtx;reveal.clearRect(0,0,size,size);reveal.save();reveal.scale(scale,scale);reveal.strokeStyle=reveal.fillStyle='#fff';
   let st=p.strokes[0];for(const s of p.strokes){if(now<s.preview)break;st=s;if(now>=s.start)brushStroke(reveal,s,0,strokeDistance(s,now),p.guideWidth||s.w+6);}
   reveal.restore();
+  // Raster registration/texture corrections settle together after the teaching
+  // paths. They never consume the drawing budget or light up detached dashes.
+  if(p.teachingGuide&&now>p.guideDuration){
+    reveal.globalAlpha=Math.min(1,(now-p.guideDuration)/(p.duration-p.guideDuration));
+    reveal.fillRect(0,0,size,size);reveal.globalAlpha=1;
+  }
   const comp=p.compositeCtx;comp.globalCompositeOperation='source-over';comp.clearRect(0,0,size,size);comp.drawImage(p.graphiteImage||p.image,0,0,size,size);comp.globalCompositeOperation='destination-in';comp.drawImage(reveal.canvas,0,0);comp.globalCompositeOperation='source-over';
   const ctx=p.ctx;ctx.clearRect(0,0,size,size);ctx.fillStyle='#fff';ctx.fillRect(0,0,size,size);if(p.previous)ctx.drawImage(p.graphitePrevious||p.previous,0,0,size,size);ctx.drawImage(comp.canvas,0,0);p.tintCtx.clearRect(0,0,size,size);
   const distance=strokeDistance(st,now);let tip=pointOnStroke(st,distance),lift=0;
   if(now<st.start){const index=p.strokes.indexOf(st),last=p.strokes[index-1];if(last){const from=pointOnStroke(last,last.length),t=Math.max(0,Math.min(1,(now-st.preview)/(st.start-st.preview))),u=t*t*(3-2*t);tip={x:from.x+(tip.x-from.x)*u,y:from.y+(tip.y-from.y)*u};lift=Math.sin(Math.PI*t);}else lift=.7;}
   p.contact=now>=st.start&&now<st.end;p.currentTool=st.tool;
-  if(p.playing&&now<p.duration)showHandAt(tip.x,tip.y,1024,lift,0,st.pressure);else{$('#drawingHand').hidden=true;pencilSound.stop();}$('#strokeArrow').hidden=true;p.painted=now;
+  if(p.playing&&now<p.duration)showHandAt(tip.x,tip.y,1024,lift,0,st.pressure,st.action==='erase');else{setHidden($('#drawingHand'),true);pencilSound.stop();}setHidden($('#strokeArrow'),true);p.painted=now;
 }
 
 function paintBatches(p){
-  if(p.contourGuide||p.primaryDuration&&p.elapsed<p.primaryDuration)return paintContourGuide(p);
+  if(p.contourGuide||p.primaryDuration&&p.elapsed<p.primaryDuration){p.batchPaintState=null;return paintContourGuide(p);}
   const segments=p.batchSegments||p.segments;
   const now=p.elapsed,size=p.ctx.canvas.width,scale=size/1024;
-  if(p.batchCompleted===undefined||now<p.painted){for(const layer of [...p.layers,p.eraseMask])layer.clearRect(0,0,size,size);p.batchCompleted=0;if(p.primaryDuration){const layer=p.layers[0];layer.save();layer.scale(scale,scale);layer.strokeStyle=layer.fillStyle='#fff';for(const s of p.strokes)brushStroke(layer,s,0,s.length,s.w+6);layer.restore();}}
-  const fullGroup=g=>{const [x,y,w,h]=g.rect,layer=g.action==='erase'?p.eraseMask:p.layers[g.layer];layer.drawImage(p.atlasImages[g.atlas],x,y,w,h,g.bounds.x0*scale,g.bounds.y0*scale,w*scale,h*scale);};
+  const reset=p.batchCompleted===undefined||now<p.painted||!p.batchPaintState;
+  if(!p.batchMaster){p.batchMaster=playerCanvas(size);p.batchMaster.getContext('2d').drawImage(p.graphiteImage||p.image,0,0,size,size);}
+  if(p.previous&&!p.batchPrevious){p.batchPrevious=playerCanvas(size);p.batchPrevious.getContext('2d').drawImage(p.graphitePrevious||p.previous,0,0,size,size);}
+  const changed=[];
+  if(reset){for(const layer of [...p.layers,p.eraseMask])layer.clearRect(0,0,size,size);p.batchCompleted=0;if(p.primaryDuration){const layer=p.layers[0];layer.save();layer.scale(scale,scale);layer.strokeStyle=layer.fillStyle='#fff';for(const s of p.strokes)brushStroke(layer,s,0,s.length,s.w+6);layer.restore();}}
+  const fullGroup=g=>{changed.push(g.bounds);const [x,y,w,h]=g.rect,layer=g.action==='erase'?p.eraseMask:p.layers[g.layer];layer.drawImage(p.atlasImages[g.atlas],x,y,w,h,g.bounds.x0*scale,g.bounds.y0*scale,w*scale,h*scale);};
   while(p.batchCompleted<segments.length&&segments[p.batchCompleted].end<=now)fullGroup(segments[p.batchCompleted++]);
   let active=segments[Math.min(p.batchCompleted,segments.length-1)],fraction=1,tip={x:512,y:512},partial=null;
-  if(p.batchCompleted<segments.length){const g=active,b=g.bounds,[ax,ay,w,h]=g.rect,glide=g===segments[0]?0:Math.min(350,(g.end-g.start)*.4);fraction=Math.max(0,Math.min(1,(now-g.start-glide)/(g.end-g.start-glide)));
-    partial=p.partialCtx ||= playerCanvas(size).getContext('2d');partial.clearRect(0,0,size,size);partial.drawImage((g.action==='erase'?p.eraseMask:p.layers[g.layer]).canvas,0,0);
+  if(p.batchCompleted<segments.length){const g=active,glide=g===segments[0]?0:Math.min(350,(g.end-g.start)*.4);fraction=Math.max(0,Math.min(1,(now-g.start-glide)/(g.end-g.start-glide)));
+  }
+  const old=p.batchPaintState,bounds=active.bounds;
+  if(!reset){
+    const bands=Math.ceil(active.rect[3]/24),from=old?.active===active?Math.floor(old.fraction*bands)*24:0;
+    changed.push({x0:bounds.x0,y0:bounds.y0+from,x1:bounds.x1,y1:Math.min(bounds.y1,bounds.y0+(Math.floor(fraction*bands)+1)*24)});
+  }
+  const dirty=reset?{x0:0,y0:0,x1:1024,y1:1024}:changed.reduce((r,b)=>({x0:Math.min(r.x0,b.x0),y0:Math.min(r.y0,b.y0),x1:Math.max(r.x1,b.x1),y1:Math.max(r.y1,b.y1)}),{x0:1024,y0:1024,x1:0,y1:0});
+  // Cover resampling at sweep boundaries; all masks/master pixels are retained.
+  const x=Math.max(0,Math.floor(dirty.x0*scale)-2),y=Math.max(0,Math.floor(dirty.y0*scale)-2),right=Math.min(size,Math.ceil(dirty.x1*scale)+2),bottom=Math.min(size,Math.ceil(dirty.y1*scale)+2);
+  const clip=ctx=>{ctx.save();ctx.beginPath();ctx.rect(x,y,Math.max(0,right-x),Math.max(0,bottom-y));ctx.clip();};
+  if(p.batchCompleted<segments.length){const g=active,b=g.bounds,[ax,ay,w,h]=g.rect;
+    partial=p.partialCtx ||= playerCanvas(size).getContext('2d');clip(partial);partial.clearRect(0,0,size,size);partial.drawImage((g.action==='erase'?p.eraseMask:p.layers[g.layer]).canvas,0,0);
     const bands=Math.ceil(h/24),amount=fraction*bands,full=Math.floor(amount),part=amount-full;
     partial.save();partial.scale(scale,scale);
     if(full){const height=Math.min(h,full*24);partial.drawImage(p.atlasImages[g.atlas],ax,ay,w,height,b.x0,b.y0,w,height);}
     if(part&&full<bands){const height=Math.min(24,h-full*24),width=w*part,offset=full%2?w-width:0;partial.drawImage(p.atlasImages[g.atlas],ax+offset,ay+full*24,width,height,b.x0+offset,b.y0+full*24,width,height);}
-    partial.restore();
+    partial.restore();partial.restore();
   }
   const b=active.bounds,h=b.y1-b.y0,w=b.x1-b.x0,bands=Math.ceil(h/24),sweep=Math.min(bands-.00001,fraction*bands),row=Math.floor(sweep),part=sweep-row;
   const target={x:b.x0+w*(row%2?1-part:part),y:Math.min(b.y1,b.y0+row*24+12)};
@@ -1339,14 +1369,14 @@ function paintBatches(p){
   const glide=previous?Math.min(350,(active.end-active.start)*.4):0;
   if(previous&&enter<glide){const old=previous.bounds,rows=Math.ceil((old.y1-old.y0)/24),from={x:(rows-1)%2?old.x0:old.x1,y:old.y1-12},t=Math.max(0,enter/glide),u=t*t*(3-2*t);tip={x:from.x+(target.x-from.x)*u,y:from.y+(target.y-from.y)*u};lift=Math.sin(Math.PI*t);}
   else tip=target;
-  const mask=p.maskCtx;mask.globalCompositeOperation='source-over';mask.globalAlpha=1;mask.clearRect(0,0,size,size);mask.drawImage(partial&&active.action==='erase'?partial.canvas:p.eraseMask.canvas,0,0);mask.globalCompositeOperation='lighter';mask.globalAlpha=1/p.layers.length;for(let i=0;i<p.layers.length;i++)mask.drawImage(partial&&active.action!=='erase'&&i===active.layer?partial.canvas:p.layers[i].canvas,0,0);mask.globalAlpha=1;mask.globalCompositeOperation='source-over';
-  const comp=p.compositeCtx;comp.globalCompositeOperation='source-over';comp.clearRect(0,0,size,size);comp.drawImage(p.graphiteImage||p.image,0,0,size,size);comp.globalCompositeOperation='destination-in';comp.drawImage(mask.canvas,0,0);comp.globalCompositeOperation='source-over';
-  const ctx=p.ctx;ctx.clearRect(0,0,size,size);ctx.fillStyle='#fff';ctx.fillRect(0,0,size,size);if(p.previous)ctx.drawImage(p.graphitePrevious||p.previous,0,0,size,size);ctx.drawImage(comp.canvas,0,0);
+  const mask=p.maskCtx;clip(mask);mask.globalCompositeOperation='source-over';mask.globalAlpha=1;mask.clearRect(0,0,size,size);mask.drawImage(partial&&active.action==='erase'?partial.canvas:p.eraseMask.canvas,0,0);mask.globalCompositeOperation='lighter';mask.globalAlpha=1/p.layers.length;for(let i=0;i<p.layers.length;i++)mask.drawImage(partial&&active.action!=='erase'&&i===active.layer?partial.canvas:p.layers[i].canvas,0,0);mask.globalAlpha=1;mask.globalCompositeOperation='source-over';mask.restore();
+  const comp=p.compositeCtx;clip(comp);comp.globalCompositeOperation='source-over';comp.clearRect(0,0,size,size);comp.drawImage(p.batchMaster,0,0);comp.globalCompositeOperation='destination-in';comp.drawImage(mask.canvas,0,0);comp.globalCompositeOperation='source-over';comp.restore();
+  const ctx=p.ctx;clip(ctx);ctx.clearRect(0,0,size,size);ctx.fillStyle='#fff';ctx.fillRect(0,0,size,size);if(p.batchPrevious)ctx.drawImage(p.batchPrevious,0,0);ctx.drawImage(comp.canvas,0,0);ctx.restore();
   p.tintCtx.clearRect(0,0,size,size);
   if(enter<700&&['shading','hatch','cross','fur'].includes(active.type)){const c=p.tintCtx;c.save();c.scale(scale,scale);c.strokeStyle='#75648655';c.fillStyle='#b2a2c112';c.lineWidth=3;c.beginPath();c.roundRect(b.x0,b.y0,w,h,16);c.fill();c.stroke();c.restore();}
   p.contact=lift<.1&&fraction<1;p.currentTool=active.tool;
-  if(p.playing&&now<p.duration)showHandAt(tip.x,tip.y,1024,lift,0,active.pressure,active.action==='erase');else{$('#drawingHand').hidden=true;pencilSound.stop();}
-  $('#strokeArrow').hidden=true;p.painted=now;
+  if(p.playing&&now<p.duration)showHandAt(tip.x,tip.y,1024,lift,0,active.pressure,active.action==='erase');else{setHidden($('#drawingHand'),true);pencilSound.stop();}
+  setHidden($('#strokeArrow'),true);p.painted=now;p.batchPaintState={active,fraction};
 }
 
 function paintStrokes(p){
@@ -1357,8 +1387,7 @@ function paintStrokes(p){
   for(let i=first;i<=at;i++){const st=p.strokes[i];if(now<st.start||p.painted>=st.end)continue;const layer=st.action==='erase'?p.eraseMask:p.layers[Math.min(p.layers.length-1,st.layer)];layer.save();layer.scale(scale,scale);layer.strokeStyle=layer.fillStyle='#fff';brushStroke(layer,st,strokeDistance(st,Math.max(st.start,p.painted)),strokeDistance(st,now),st.w+6);layer.restore();}
   p.painted=now;const mask=p.maskCtx;mask.globalCompositeOperation='source-over';mask.globalAlpha=1;mask.clearRect(0,0,size,size);mask.drawImage(p.eraseMask.canvas,0,0);
   mask.globalCompositeOperation='lighter';mask.globalAlpha=1/p.layers.length;for(const layer of p.layers)mask.drawImage(layer.canvas,0,0);mask.globalAlpha=1;mask.globalCompositeOperation='source-over';
-  // Real JPEG graphite is revealed through paper-tooth alpha. No colour replacement.
-  // The narrow fresh contact settles to the original pixels within half a second.
+  // Reveal the real master through a continuous, round-capped brush mask.
   const comp=p.compositeCtx;comp.globalCompositeOperation='source-over';comp.clearRect(0,0,size,size);comp.drawImage(p.graphiteImage||p.image,0,0,size,size);comp.globalCompositeOperation='destination-in';comp.drawImage(mask.canvas,0,0);comp.globalCompositeOperation='source-over';
   ctx.globalAlpha=1;ctx.clearRect(0,0,size,size);ctx.fillStyle='#fff';ctx.fillRect(0,0,size,size);if(p.previous)ctx.drawImage(p.graphitePrevious||p.previous,0,0,size,size);ctx.drawImage(comp.canvas,0,0);
   const tint=p.tintCtx;tint.clearRect(0,0,size,size);
@@ -1367,8 +1396,8 @@ function paintStrokes(p){
   const contact=now>=st.start&&now<st.end;
   const a=pointOnStroke(st,Math.max(0,strokeDistance(st,now)-6)),b=pointOnStroke(st,Math.min(st.length,strokeDistance(st,now)+6));if(Math.hypot(b.x-a.x,b.y-a.y)>.01)p.lastTangent=Math.atan2(b.y-a.y,b.x-a.x);
   p.contact=contact;p.currentTool=st.tool;
-  if(p.playing&&now<p.duration)showHandAt(point.x,point.y,1024,lift,Math.sin(p.lastTangent||0)*5,st.pressure,st.action==='erase');else{$('#drawingHand').hidden=true;pencilSound.stop();}
-  const arrow=$('#strokeArrow');arrow.hidden=!p.playing||!showHelpers||reducedMotion.matches||!contact||st.length<100;
+  if(p.playing&&now<p.duration)showHandAt(point.x,point.y,1024,lift,Math.sin(p.lastTangent||0)*5,st.pressure,st.action==='erase');else{setHidden($('#drawingHand'),true);pencilSound.stop();}
+  const arrow=$('#strokeArrow');setHidden(arrow,!p.playing||!showHelpers||reducedMotion.matches||!contact||st.length<100);
   if(!arrow.hidden){const ahead=pointOnStroke(st,Math.min(st.length,strokeDistance(st,now)+75));arrow.style.left=ahead.x/1024*100+'%';arrow.style.top=ahead.y/1024*100+'%';arrow.style.transform=`rotate(${p.lastTangent||0}rad)`;}
   const group=p.groups?.[p.groupAt];if(group&&now-group.start<700&&['shading','hatch','cross','fur'].includes(group.type)){
     const c=p.tintCtx,b=group.bounds;c.save();c.scale(scale,scale);c.strokeStyle='#75648655';c.fillStyle='#b2a2c112';c.lineWidth=3;c.beginPath();c.roundRect?.(b.x0,b.y0,b.x1-b.x0,b.y1-b.y0,20);c.fill();c.stroke();c.restore();
@@ -1386,8 +1415,8 @@ function celebrateStep(p) {
 function setCopyPause(p, waiting) {
   p.waiting = waiting;
   $('#copyPause').hidden = !waiting;
-  if (waiting) { p.playing = false; p.state=p.elapsed>=p.duration?'stepComplete':'drawing'; pencilSound.stop(); pauseStepSpeech(); queuedCheer=null; $('#lessonState').textContent='Din tur'; $('#readyBtn').textContent=p.elapsed>=p.duration?(step<L.steps.length-1?'Jeg har prøvet · Næste trin':'Jeg er færdig!'):'Jeg har prøvet · Vis næste del'; $('#readyBtn').focus({preventScroll:true});saveLesson(); }
-  $('#nextBtn').hidden=waiting;$('#lessonState').textContent=waiting?'Din tur':'Se med';
+  if (waiting) { p.playing = false; p.state=p.elapsed>=p.duration?'stepComplete':'drawing'; pencilSound.stop(); pauseStepSpeech(); $('#lessonState').textContent='Din tur'; $('#readyBtn').textContent=p.elapsed>=p.duration?(step<L.steps.length-1?'Jeg har prøvet · Næste trin':'Jeg er færdig!'):'Jeg har prøvet · Vis næste del'; $('#readyBtn').focus({preventScroll:true});saveLesson(); }
+  $('#nextBtn').hidden=false;$('#nextBtn').disabled=false;$('#lessonState').textContent=waiting?'Din tur':'Se med';
   fitStage();
 }
 
@@ -1572,15 +1601,23 @@ function createStepPlayer(image, mask) {
 
 function updateVideoControls() {
   const p = stepPlayer, playing = p && p.playing;
-  $('#playPauseBtn').disabled = $('#stepScrubber').disabled = !p || !p.count || p.kind==='static';
+  const disabled = !p || !p.count || p.kind==='static';
+  for(const control of [$('#playPauseBtn'),$('#stepScrubber')])if(control.disabled!==disabled)control.disabled=disabled;
   UI.controlIcon($('#playPauseBtn'), playing ? 'pause' : 'play');
-  $('#showWholeStep').disabled = !p;
-  $('#copyPause').hidden = !p?.waiting;
-  $('#playPauseBtn').setAttribute('aria-label', playing ? 'Sæt tegningen på pause' : 'Afspil tegningen');
-  const progress = p ? p.elapsed / p.duration : 0;
+  if($('#showWholeStep').disabled!==!p)$('#showWholeStep').disabled=!p;
+  setHidden($('#copyPause'), !p?.waiting);
+  setAttr($('#playPauseBtn'), 'aria-label', playing ? 'Sæt tegningen på pause' : 'Afspil tegningen');
+  const duration = p && Number.isFinite(p.duration) ? Math.max(0, p.duration) : 0;
+  const elapsed = p ? Math.max(0, Math.min(p.elapsed, duration)) : 0;
+  const progress = duration ? elapsed / duration : 0;
+  const time = ms => { const seconds = Math.floor(ms / 1000); return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`; };
+  const timeText = `${time(elapsed)} / ${time(duration)}`;
+  // This changes every frame; keep it out of live regions to avoid repeated speech.
+  if ($('#stepTime').textContent !== timeText) $('#stepTime').textContent = timeText;
   $('#stepScrubber').value = Math.round(progress * 1000);
-  $('#stepScrubber').setAttribute('aria-valuetext', `${Math.round(progress * 100)} procent`);
-  $('#stepSpeed').value = stepSpeed;
+  $('#stepScrubber').style.setProperty('--played', `${progress * 100}%`);
+  setAttr($('#stepScrubber'), 'aria-valuetext', `${time(elapsed)} af ${time(duration)}`);
+  if($('#stepSpeed').value!==String(stepSpeed))$('#stepSpeed').value=stepSpeed;
 }
 
 function drawnCount(p) {
@@ -1593,12 +1630,12 @@ function drawnCount(p) {
 }
 
 function paintStep(){const p=stepPlayer;if(!p)return;
-  $('#stepImage').hidden=p.kind!=='static';$('#stepDrawing').hidden=p.kind==='static';$('#stepHighlight').style.opacity='1';
+  setHidden($('#stepImage'),p.kind!=='static');setHidden($('#stepDrawing'),p.kind==='static');if($('#stepHighlight').style.opacity!=='1')$('#stepHighlight').style.opacity='1';
   if(p.kind==='static'){$('#drawingHand').hidden=true;pencilSound.stop();$('#guideStatus').textContent='Stillbillede · Animationen kunne ikke hentes';$('#guideStatus').hidden=false;$('#retryStep').hidden=false;$('#nextBtn').disabled=false;$('#lessonState').textContent='Se eksemplet · Prøv selv';updateVideoControls();return;}
   updateGuidance(p);paintStrokes(p);
   const done=p.elapsed>=p.duration;
-  if(done){p.playing=false;$('#drawingHand').hidden=true;$('#strokeArrow').hidden=true;pencilSound.stop();if(!p.waiting)setCopyPause(p,true);showShadowComparison(p);}
-  $('#nextBtn').disabled=p.playing||!done;$('#lessonState').textContent=p.explaining?'Hør og se området':p.waiting?'Din tur':p.playing?'Se med':'Klar til at fortsætte';updateVideoControls();
+  if(done){p.ctx.globalCompositeOperation='source-over';p.ctx.globalAlpha=1;p.ctx.clearRect(0,0,p.ctx.canvas.width,p.ctx.canvas.height);p.ctx.drawImage(p.image,0,0,p.ctx.canvas.width,p.ctx.canvas.height);p.tintCtx.clearRect(0,0,p.tintCtx.canvas.width,p.tintCtx.canvas.height);p.playing=false;$('#drawingHand').hidden=true;$('#strokeArrow').hidden=true;pencilSound.stop();if(!p.waiting)setCopyPause(p,true);}
+  if($('#nextBtn').disabled)$('#nextBtn').disabled=false;setText($('#lessonState'),p.explaining?'Hør og se området':p.waiting?'Din tur':p.playing?'Se med':'Klar til at fortsætte');updateVideoControls();
 }
 
 function positionHand(p, count) {
@@ -1659,8 +1696,6 @@ function playStep(fromStart = false) {
   $('#shadowCompare').hidden = true;
   setCopyPause(p, false);
   p.playing = !document.hidden; p.last = performance.now();
-  if (restarting && autoRead) readStepAloud();
-  else if (p.playing) resumeStepSpeech();
   paintStep();
   if (p.playing && !stepFrame) stepFrame = requestAnimationFrame(stepTick);
 }
@@ -1702,10 +1737,11 @@ function saveLesson() {
 }
 async function renderStep() {
   stopStep();
-  $('#cameraReset').textContent='Hele arket';
+  updateCameraControl();
   saveLesson();
   const version = stepVersion, lesson = L, index = step;
   const n = L.steps.length;
+  updateOfflineDownload();
   $('#stepNum').textContent = `Trin ${step + 1} af ${n}`;
   $('#progress').setAttribute('aria-valuenow', step + 1);
   $('#progress').setAttribute('aria-valuetext', `Trin ${step + 1} af ${n}`);
@@ -1713,9 +1749,9 @@ async function renderStep() {
   $('#finishBasic').hidden=!(L.stepMeta?.[step]?.optionalDetails||L.level>1);
   $('#stepSelfCheck').textContent=L.stepMeta?.[step]?.selfCheck||'Prøv på din egen måde. Du kan altid vise denne del igen.';
   [...$('#progress').children].forEach((d, i) => d.classList.toggle('on', i <= step));
-  $('#prevBtn').disabled = step === 0;
+  $('#prevBtn').disabled = false;
   UI.label($('#nextBtn'), step < n - 1 ? 'next' : 'check', step < n - 1 ? 'Næste trin' : 'Jeg er færdig!');
-  $('#nextBtn').disabled = true;$('#lessonState').textContent='Henter tegningen…';
+  $('#nextBtn').disabled = false;$('#lessonState').textContent='Henter tegningen…';
   $('#replayBtn').disabled = true;
   $('#videoControls').hidden = false;
   prepareVoice(`${L.dir}voice${step + 1}.m4a`);
@@ -1799,6 +1835,7 @@ function fitStage() {
   else size = Math.min(W, H);
   for (const e of [$('#guideWrap'), $('#sidePadWrap')]) { e.style.width = e.style.height = Math.max(0, size) + 'px'; }
   if (handView) handView.size = { width: Math.max(0,size), height: Math.max(0,size) };
+  updateLessonHelpBounds();
 }
 window.addEventListener('resize', fitStage);
 new ResizeObserver(fitStage).observe($('#stage'));
@@ -1817,7 +1854,7 @@ for (const b of document.querySelectorAll('[data-mode]')) b.onclick = () => {
   mode = b.dataset.mode; applyMode(); closeModePicker();
   toast({ paper: '📄 Tegn på papir', side: '✏️ Tegn ved siden af', trace: '👻 Tegn oven i (spor)' }[mode]);
 };
-$('#lessonClose').onclick = () => show('home');
+$('#lessonClose').onclick = () => { dismissLessonHelp(); show('home'); };
 $('#lessonRestart').onclick = () => {
   if (!confirm('Vil du starte lektionen forfra? Tegningerne i lektionen bliver slettet. Dine stjerner bliver gemt.')) return;
   sidePad.finishStroke(); tracePad.finishStroke();
@@ -1826,7 +1863,7 @@ $('#lessonRestart').onclick = () => {
   clearLessonDrawings(L.id);
   openLesson(L);
 };
-$('#prevBtn').onclick = () => { if (step > 0) { step--; renderStep(); } };
+$('#prevBtn').onclick = () => { dismissLessonHelp(); if (step > 0) { step--; renderStep(); } else show('home'); };
 $('#replayBtn').onclick = () => { if (stepPlayer) replaySegment(); else renderStep(); };
 $('#playPauseBtn').onclick = toggleStepPlayback;
 $('#guideWrap').addEventListener('click', e => {
@@ -1851,9 +1888,7 @@ $('#stepSpeed').onchange = e => {
   paintStep(); updateVideoControls();
 };
 function setWaitForMe(value){waitForMe=!!value;writeLocal('ts_wait_for_me',waitForMe);$('#waitForMe').checked=$('#settingWait').checked=waitForMe;if(!waitForMe&&stepPlayer?.waiting&&stepPlayer.elapsed<stepPlayer.duration)playStep();}
-function setAutoRead(value){autoRead=!!value;writeLocal('ts_auto_read',autoRead);$('#autoRead').checked=$('#settingRead').checked=autoRead;if(autoRead)readStepAloud();else cancelStepSpeech();}
 $('#waitForMe').onchange=e=>setWaitForMe(e.target.checked);
-$('#autoRead').onchange=e=>setAutoRead(e.target.checked);
 $('#readStepBtn').onclick = readStepAloud;
 $('#readyBtn').onclick = () => { const p=stepPlayer; if(!p?.waiting)return; if(p.elapsed>=p.duration) { confirmStep(); return; } setCopyPause(p,false); startSegment(p); };
 $('#showWholeStep').onclick = () => {
@@ -1864,9 +1899,16 @@ $('#showWholeStep').onclick = () => {
 const motionChanged = () => { if (current === 'lesson') renderStep(); };
 if (reducedMotion.addEventListener) reducedMotion.addEventListener('change', motionChanged);
 else reducedMotion.addListener(motionChanged);
+function dismissLessonHelp() {
+  cancelLessonIntro(); closeTechnique(false);
+  if(warmupSession)closeWarmup(false);
+  $('#stepDemo').hidden = $('#shadowCompare').hidden = true;
+  modalInert(false);
+}
 function confirmStep() {
-  if(!stepPlayer || stepPlayer.playing || stepPlayer.elapsed<stepPlayer.duration || introAfter || techniqueSession)return;
-  if (!stepPlayer.skipped) { awardStars(`step:${L.id}:${step}`,1,'Du prøvede et nyt trin'); markActive(); }
+  if(current!=='lesson'||!L)return;
+  dismissLessonHelp();
+  if (!stepPlayer?.skipped) { awardStars(`step:${L.id}:${step}`,1,'Du prøvede et nyt trin'); markActive(); }
   if(step<L.steps.length-1){step++;renderStep();}else finishLesson();
 }
 $('#nextBtn').onclick = confirmStep;
@@ -1876,11 +1918,8 @@ let showHelpers = readLocal('ts_helpers')===true;
 function readSegment(g){if(!g)return;const meta=L?.stepMeta?.[step],screen=mode!=='paper'&&meta?.screenTip,text=screen||g.spokenText||g.tip;readAloud(text,screen?phraseFile(text):g.audioSrc||phraseFile(text));}
 function startSegment(p){
   if(!p||p!==stepPlayer)return;
-  const shading=p.analysis.techniques.find(id=>['shading','hatch','cross','fur','highlight'].includes(id));
-  if(shading&&!p.demoSeen){p.demoSeen=true;showStepDemo(shading,()=>startSegment(p));return;}
   p.groupAt=-1;playStep();
-  const g=p.groups.find(g=>g.end>p.elapsed)||p.groups[p.groups.length-1];
-  if(autoRead&&g){readSegment(g);p.explaining=true;const request=voiceRequest;if(request)request.onComplete=()=>{if(stepPlayer===p){p.explaining=false;p.last=performance.now();}};else p.explaining=false;clearTimeout(p.speechTimer);p.speechTimer=setTimeout(()=>{p.explaining=false;},PlaybackTiming.CUE_LIMIT);}
+
 }
 function replaySegment(){const p=stepPlayer;if(!p)return;pauseStep();const current=p.groups?.[p.groupAt]||p.groups?.[0];if(!current){renderStep();return;}p.elapsed=current.start;p.painted=Infinity;p.stopsPassed=new Set(p.stops.filter(t=>t<=p.elapsed));setCopyPause(p,false);startSegment(p);}
 function showStepDemo(id,after){pauseStep();const panel=$('#stepDemo');panel.querySelector('strong').textContent='Se, sådan gør du';panel.hidden=false;panel.dataset.technique=id;const version=stepVersion,start=performance.now();let frame;const draw=now=>{if(version!==stepVersion||panel.hidden)return;TechniqueDemo.draw($('#stepDemoCanvas'),id,reducedMotion.matches?1:Math.min(1,(now-start)/6500));if(now-start<6500&&!document.hidden)frame=requestAnimationFrame(draw);else{panel.hidden=true;if(!document.hidden&&version===stepVersion)after();else{stepPlayer.demoSeen=false;}}};requestAnimationFrame(draw);$('#stepDemoContinue').onclick=()=>{cancelAnimationFrame(frame);panel.hidden=true;if(version===stepVersion)after();};}
@@ -1890,11 +1929,11 @@ $('#retryStep').onclick=()=>{strokeFiles.delete(`${L.dir}strokes${step+1}.json`)
 $('#introReady').onclick=finishLessonIntro;
 $('#voiceStatus').onclick=retryVoice;
 $('#sideSwitch').onclick=()=>{pauseStep();$('#stage').classList.toggle('my-paper');$('#sideSwitch').textContent=$('#stage').classList.contains('my-paper')?'Se læreren':'Mit ark';fitStage();};
-$('#stepHow').onclick=()=>{const text=L?.stepMeta?.[step]?.how||stepPlayer?.groups?.[stepPlayer.groupAt]?.tip;if(text)readAloud(text,phraseFile(text));};
+$('#stepHow').onclick=()=>{const text=L?.stepMeta?.[step]?.how||stepPlayer?.groups?.[stepPlayer.groupAt]?.tip;if(text)toast(text);};
 $('#wholeReplay').onclick=()=>playStep(true);
 $('#skipDemo').onclick=()=>{if(!stepPlayer)return;pauseStep();stepPlayer.skipped=true;stepPlayer.elapsed=stepPlayer.duration;paintStep();};
 $('#settingHelpers').onchange=e=>{showHelpers=e.target.checked;writeLocal('ts_helpers',showHelpers);};
-$('#supportMode').onchange=e=>{writeLocal('ts_support',e.target.value);setWaitForMe(e.target.value!=='self');setAutoRead(e.target.value!=='self');};
+$('#supportMode').onchange=e=>{writeLocal('ts_support',e.target.value);};
 $('#saveRetry').onclick=async()=>{const ok=await DraftStore.flush();if(ok){localSaveFailed=false;if(L)saveLesson();$('#saveStatus').hidden=localSaveFailed;}toast(ok?'Din tegning er gemt':'Ikke gemt endnu. Prøv at gemme billedet.');};
 $('#saveExport').onclick=()=>downloadImage(([sidePad,tracePad].find(p=>!p.empty())||sidePad).toImage(),'min-tegning.jpg');
 for(const button of document.querySelectorAll('[data-support-skill]'))button.onclick=()=>openTechnique(TECHNIQUES.find(t=>t.id===button.dataset.supportSkill));
@@ -1916,7 +1955,6 @@ function finishLesson() {
   $('#doneArt').alt = L.title + ' – færdig tegning';
   $('#doneSaveScreen').hidden = !own; $('#doneSaveScreen').disabled = false;
   show('done');
-  readPhraseAloud(doneMessage(L));
   confetti();
 }
 function confetti() {
@@ -1942,7 +1980,7 @@ $('#layoutPlan').onclick=async()=>{
   if(!L)return;const lesson=L,version=stepVersion;pauseStep();const im=await loadStep(lesson,lesson.steps.length-1).catch(()=>null);if(!im||version!==stepVersion)return;
   const panel=$('#stepDemo'),canvas=$('#stepDemoCanvas'),ctx=canvas.getContext('2d');panel.hidden=false;panel.querySelector('strong').textContent='Markér let top og bund. Gem plads til hele motivet.';ctx.clearRect(0,0,600,300);ctx.fillStyle='#fffdf8';ctx.fillRect(0,0,600,300);ctx.drawImage(im,150,0,300,300);
   const bounds=lesson.stepMeta?.[0]?.layoutBounds||[.12,.1,.88,.9];ctx.strokeStyle='#8b7b9f';ctx.lineWidth=2;ctx.setLineDash([5,5]);ctx.strokeRect(150+bounds[0]*300,bounds[1]*300,(bounds[2]-bounds[0])*300,(bounds[3]-bounds[1])*300);ctx.setLineDash([]);for(const y of [bounds[1],bounds[3]]){ctx.beginPath();ctx.arc(150+(bounds[0]+bounds[2])*150,y*300,5,0,Math.PI*2);ctx.stroke();}
-  $('#stepDemoContinue').onclick=()=>{panel.hidden=true;};const text=lesson.steps[0];readAloud(text,`${lesson.dir}voice1.m4a`);
+  $('#stepDemoContinue').onclick=()=>{panel.hidden=true;};
 };
 $('#doneHome').onclick = () => show('home');
 $('#doneSticker').onclick = () => StickerBook.fromLesson(L.id);
@@ -2128,17 +2166,17 @@ function openWarmup(challenge = null, course = null) {
 }
 let warmupFrame=0;
 const WARMUP_TEXTS=['Tegn tre store, lette cirkler med hele armen.','Tegn seks rolige bølger. Løft blyanten imellem.','Lav tre felter: lyst, mellem og mørkt. Byg skyggen op i lag.'];
-function renderWarmupExercise(){if(!warmupSession)return;const session=warmupSession,text=session.challenge||WARMUP_TEXTS[session.exercise];$('#warmupTask').textContent=text;$('#warmupModal ol').hidden=true;$('#warmupModal .warmup-samples').hidden=true;const id=['construction','waves','shading'][session.exercise],start=performance.now();cancelAnimationFrame(warmupFrame);const draw=now=>{if(warmupSession!==session)return;const p=reducedMotion.matches?1:Math.min(1,(now-start)/6500);TechniqueDemo.draw($('#warmupDemo'),id,p);if(p<1&&!document.hidden)warmupFrame=requestAnimationFrame(draw);};warmupFrame=requestAnimationFrame(draw);if(autoRead)readAloud(text,phraseFile(text));$('#warmupNext').hidden=!!session.challenge;$('#warmupNext').textContent=session.exercise<2?'Næste lille øvelse':'Vis første øvelse';}
+function renderWarmupExercise(){if(!warmupSession)return;const session=warmupSession,text=session.challenge||WARMUP_TEXTS[session.exercise];$('#warmupTask').textContent=text;$('#warmupModal ol').hidden=true;$('#warmupModal .warmup-samples').hidden=true;const id=['construction','waves','shading'][session.exercise],start=performance.now();cancelAnimationFrame(warmupFrame);const draw=now=>{if(warmupSession!==session)return;const p=reducedMotion.matches?1:Math.min(1,(now-start)/6500);TechniqueDemo.draw($('#warmupDemo'),id,p);if(p<1&&!document.hidden)warmupFrame=requestAnimationFrame(draw);};warmupFrame=requestAnimationFrame(draw);$('#warmupNext').hidden=!!session.challenge;$('#warmupNext').textContent=session.exercise<2?'Næste lille øvelse':'Vis første øvelse';}
 $('#warmupRead').onclick=()=>{if(warmupSession){const text=warmupSession.challenge||WARMUP_TEXTS[warmupSession.exercise];readAloud(text,phraseFile(text));}};
 $('#warmupNext').onclick=()=>{if(warmupSession){warmupSession.exercise=(warmupSession.exercise+1)%3;renderWarmupExercise();}};
-function closeWarmup() {
+function closeWarmup(resume = true) {
   const session = warmupSession; warmupSession = null;
   $('#warmupModal').hidden = true; modalInert(false); session?.focus?.focus({ preventScroll: true });
   cancelStepSpeech();cancelAnimationFrame(warmupFrame);
-  if (session?.playing && current === 'lesson') playStep();
+  if (resume && session?.playing && current === 'lesson') playStep();
 }
 $('#warmupBtn').onclick = $('#lessonWarmup').onclick = () => openWarmup();
-$('#lessonSettings').onclick = () => { pauseStep(); $('#settingsBtn').onclick(); }; $('#warmupClose').onclick = closeWarmup;
+$('#lessonSettings').onclick = () => { pauseStep(); $('#settingsBtn').onclick(); }; $('#warmupClose').onclick = () => closeWarmup();
 $('#warmupComplete').onclick = () => {
   if (!warmupSession) return;
   if (warmupSession.challenge) completeOwnTask(COURSES[warmupSession.course]);
@@ -2207,8 +2245,8 @@ $('#unlockConfirm').onclick = () => {
 /* ---------------- lektionens lille introduktion ---------------- */
 let introPending = false, introLessonId = '', introTimer = 0, introAfter = null;
 function startLessonIntro(player,start){
-  if(!introPending||introLessonId!==L.id){if(document.hidden){introAfter=start;$('#lessonIntro').hidden=false;}else start();return;}
-  introPending=false;introAfter=start;$('#introMessage').textContent=`Find papir, blyant og viskelæder. I dag: ${L.goal || 'rolige former og streger'}.`;$('#introArt').src=`${L.dir}step${L.steps.length}.jpg`;$('#lessonIntro').hidden=false;$('#nextBtn').disabled=true;
+  introPending=false; introAfter=null; $('#lessonIntro').hidden=true;
+  if(!document.hidden)start();
 }
 function finishLessonIntro(){
   if(document.hidden)return;const start=introAfter;introAfter=null;$('#lessonIntro').hidden=true;$('#nextBtn').disabled=false;if(start&&current==='lesson')start();
@@ -2262,13 +2300,52 @@ function makePaper() {
 makePaper();
 
 // Offline is an explicit verified lesson package, independent of decorative assets.
+const lessonDownloads = new Map();
+function updateOfflineDownload() {
+  if (!L) return;
+  const task=lessonDownloads.get(L.id),saved=readLocal('ts_offline_'+L.id);
+  $('#downloadLesson').disabled=!!task?.pending;
+  $('#offlineStatus').textContent=task?.status || (saved?.revision===L.revision && saved?.build==='1793715603' ? 'Klar uden internet ✓' : '');
+}
 $('#downloadLesson').onclick=async()=>{
-  const lesson=L;if(!lesson)return;const button=$('#downloadLesson');button.disabled=true;$('#offlineStatus').textContent='Gør hele lektionen klar…';
-  try{if(!navigator.serviceWorker)throw Error('Åbn appen over HTTPS for at gemme uden internet.');const registration=await navigator.serviceWorker.ready,worker=navigator.serviceWorker.controller||registration.active;if(!worker)throw Error('Prøv igen om lidt.');const channel=new MessageChannel();await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('Download tog for lang tid. Prøv igen.')),180000);channel.port1.onmessage=e=>{const result=e.data;if(result.error){clearTimeout(timer);reject(Error(result.error));}else if(result.complete){clearTimeout(timer);writeLocal('ts_offline_'+lesson.id,{revision:result.revision,updated:Date.now()});$('#offlineStatus').textContent='Klar uden internet ✓';resolve();}else $('#offlineStatus').textContent=`Gemmer ${result.progress} af ${result.total} filer`;};worker.postMessage({type:'DOWNLOAD_LESSON',id:lesson.id,revision:lesson.revision},[channel.port2]);});}
-  catch(error){$('#offlineStatus').textContent=error.message;readPhraseAloud(GUIDANCE_TIPS.offlineDownload);}finally{button.disabled=false;}
+  const lesson=L;if(!lesson||lessonDownloads.get(lesson.id)?.pending)return;
+  const task={pending:true,status:'Gør hele lektionen klar…'};lessonDownloads.set(lesson.id,task);updateOfflineDownload();
+  const status=text=>{task.status=text;if(L?.id===lesson.id)updateOfflineDownload();};
+  let port;
+  try {
+    if(!navigator.serviceWorker)throw Error('Åbn appen over HTTPS for at gemme uden internet.');
+    const registration=await navigator.serviceWorker.ready,worker=navigator.serviceWorker.controller||registration.active;
+    if(!worker)throw Error('Prøv igen om lidt.');
+    const channel=new MessageChannel();port=channel.port1;
+    await new Promise((resolve,reject)=>{
+      const timer=setTimeout(()=>reject(Error('Download tog for lang tid. Prøv igen.')),180000);
+      port.onmessage=e=>{const result=e.data;
+        if(result.error){clearTimeout(timer);reject(Error(result.error));}
+        else if(result.complete){clearTimeout(timer);writeLocal('ts_offline_'+lesson.id,{revision:result.revision,build:'1793715603',updated:Date.now()});status('Klar uden internet ✓');resolve();}
+        else status(`Gemmer ${result.progress} af ${result.total} filer`);
+      };
+      worker.postMessage({type:'DOWNLOAD_LESSON',id:lesson.id,revision:lesson.revision},[channel.port2]);
+    });
+  } catch(error) { status(error.message); }
+  finally { port?.close();task.pending=false;if(L?.id===lesson.id)updateOfflineDownload(); }
 };
 for(const button of document.querySelectorAll('[data-shop-kind]'))button.onclick=()=>{const worlds=button.dataset.shopKind==='worlds';$('#shop').classList.toggle('show-worlds',worlds);for(const other of document.querySelectorAll('[data-shop-kind]'))other.setAttribute('aria-pressed',String(other===button));};
-document.addEventListener('error',e=>{const image=e.target;if(image.tagName==='IMG'&&image.src&&!image.dataset.fallback){image.dataset.fallback='true';image.src='icon.svg';image.alt=(image.alt||'Tegning')+' · billedet kan hentes igen online';}},true);
+// A self-contained placeholder also works when the shell is offline.
+const imagePlaceholder='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120"><rect width="160" height="120" rx="12" fill="#f1edfd"/><path d="m57 78 8-23 30-30 12 12-30 30-20 11Z" fill="none" stroke="#756486" stroke-width="5" stroke-linejoin="round"/></svg>');
+document.addEventListener('error',e=>{
+  const image=e.target;
+  if(image.tagName!=='IMG'||!image.src||image.dataset.fallback)return;
+  image.dataset.retrySrc=image.src;image.dataset.retryAlt=image.alt;image.dataset.fallback='true';
+  image.src=imagePlaceholder;
+},true);
+window.addEventListener('online',()=>{
+  for(const image of document.querySelectorAll('img[data-retry-src]')){
+    const src=image.dataset.retrySrc;
+    image.alt=image.dataset.retryAlt||'';
+    delete image.dataset.fallback;delete image.dataset.retrySrc;delete image.dataset.retryAlt;
+    image.src=src;
+  }
+});
 let historyReady=false;
 window.addEventListener('popstate',e=>{
   // Android's Back button can navigate while the document behind a dialog is

@@ -1,7 +1,6 @@
 {
   "version": 1,
   "files": [
-    "lessons/e_fisk/sticker.png",
     "lessons/e_kat/sticker.png",
     "lessons/e_hund/sticker.png",
     "lessons/e_fugl/sticker.png",
@@ -21,10 +20,11 @@
     "lessons/e_pingvin/sticker.png",
     "lessons/e_gris/sticker.png",
     "lessons/e_r\u00e6v/sticker.png",
-    "lessons/e_regnbue/sticker.png",
     "lessons/e_kaktus/sticker.png",
     "lessons/e_puma/sticker.png",
     "lessons/e_ulv/sticker.png",
+    "lessons/e_fisk/sticker.png",
+    "lessons/e_regnbue/sticker.png",
     "lessons/raev/sticker.png",
     "lessons/kat/sticker.png",
     "lessons/hvalp/sticker.png",
@@ -58,8 +58,8 @@
     "lessons/s_ulv/sticker.png",
     "lessons/s_oern/sticker.png",
     "lessons/s_ugle_flyv/sticker.png",
-    "lessons/hest/sticker.png",
     "lessons/panda/sticker.png",
-    "lessons/s_sportsvogn/sticker.png"
+    "lessons/s_sportsvogn/sticker.png",
+    "lessons/hest/sticker.png"
   ]
 }

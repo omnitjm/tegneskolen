@@ -5,13 +5,54 @@ const PlaybackTiming = (() => {
   const LIMIT = 60000, DEMO = 6500, CUE_LIMIT = 8000;
   const bounds = p => { let x0=1024,y0=1024,x1=0,y1=0; for(let i=0;i<p.length;i+=2){x0=Math.min(x0,p[i]);y0=Math.min(y0,p[i+1]);x1=Math.max(x1,p[i]);y1=Math.max(y1,p[i+1]);}return {x0,y0,x1,y1}; };
   const join = (a,b) => a ? ({x0:Math.min(a.x0,b.x0),y0:Math.min(a.y0,b.y0),x1:Math.max(a.x1,b.x1),y1:Math.max(a.y1,b.y1)}) : {...b};
+  // Raster coverage repairs are often one-pixel paths. The asset builder sorts
+  // them spatially, which used to draw a dotted outline BEFORE the real contour.
+  // Keep erase/draw and tone-layer order, but draw coherent paths first within
+  // each operation. Edge repairs settle together, without a lift/pause per dot.
+  function orderedSources(sources) {
+    const runs=[];
+    for(const source of sources) for(const action of source.actions){
+      const key=`${action.action||'draw'}/${action.layer||0}`;
+      let run=runs[runs.length-1];if(!run||run.key!==key){run={key,items:[]};runs.push(run);}
+      let length=0;for(let i=2;i<action.p.length;i+=2)length+=Math.hypot(action.p[i]-action.p[i-2],action.p[i+1]-action.p[i-1]);
+      run.items.push({source,action,length});
+    }
+    const result=[];
+    for(const run of runs){
+      const hasContour=run.items.some(i=>i.length>=80);
+      const isRepair=i=>hasContour&&i.length<=12&&i.action.w<=6;
+      for(const repair of [false,true]){
+        let group=null;
+        for(const item of run.items.filter(i=>isRepair(i)===repair)){
+          if(!group||group.original!==item.source){group={...item.source,id:item.source.id+(repair?'-edges':''),original:item.source,actions:[],repair,pauseAfter:repair?false:item.source.pauseAfter};result.push(group);}
+          group.actions.push(item.action);
+        }
+      }
+    }
+    return result;
+  }
   function raw(data, meta={}, text='') {
+    if(data.teachingGuide){
+      const plan=raw(data.teachingGuide,meta,text),settle=700;
+      // Genuine construction erasure is a short exercise too. A lift per
+      // extracted fragment must never postpone the feature being taught.
+      const eraseTime=plan.strokes.filter(s=>s.action==='erase').reduce((n,s)=>n+s.end-s.preview,0);
+      if(eraseTime>2000){let time=0;for(const s of plan.strokes){const factor=s.action==='erase'?2000/eraseTime:1,
+          lift=(s.start-s.preview)*factor,duration=(s.end-s.preview)*factor;
+        s.preview=time;s.start=time+lift;s.end=time+duration;s.drawDuration*=factor;time=s.end;}
+        for(const g of plan.segments){g.start=g.items[0].preview;g.end=g.items.at(-1).end;}plan.duration=time;}
+      const scale=Math.min(1,(LIMIT-settle)/plan.duration);
+      if(scale<1){for(const s of plan.strokes)for(const k of ['preview','start','end','drawDuration'])s[k]*=scale;
+        for(const g of plan.segments){g.start*=scale;g.end*=scale;}plan.duration*=scale;}
+      return {...plan,teachingGuide:true,contourGuide:true,guideDuration:plan.duration,duration:plan.duration+settle,
+        stops:copyStops(plan.duration+settle),analysis:{...plan.analysis,erased:meta.action==='erase'}};
+    }
     const strokes=[],segments=[];let time=0,last=null,drawingBounds=null;
-    const sources=data.v===2?data.segments:[{id:'legacy',instruction:text,actions:data.strokes}];
+    const sources=orderedSources(data.v===2?data.segments:[{id:'legacy',instruction:text,actions:data.strokes}]);
     for(const source of sources){const start=time,items=[];let box=null;
       for(const a of source.actions){const points=Float32Array.from(a.p),lengths=new Float32Array(points.length/2);for(let i=1;i<lengths.length;i++)lengths[i]=lengths[i-1]+Math.hypot(points[i*2]-points[i*2-2],points[i*2+1]-points[i*2-1]);
-        const length=lengths[lengths.length-1],drawDuration=Math.max(160,Number(a.duration)||Math.min(8000,length/170*1000));
-        const lift=Math.max(280,Math.min(1800,280+(last?Math.hypot(points[0]-last[0],points[1]-last[1]):0)*1.4));
+        const length=lengths[lengths.length-1],drawDuration=source.repair?1:Math.max(160,Number(a.duration)||Math.min(8000,length/170*1000));
+        const lift=source.repair?0:Math.max(280,Math.min(1800,280+(last?Math.hypot(points[0]-last[0],points[1]-last[1]):0)*1.4));
         const b=bounds(points),pad=a.w/2;b.x0-=pad;b.y0-=pad;b.x1+=pad;b.y1+=pad;
         const s={points,lengths,length,w:a.w,drawDuration,preview:time,start:time+lift,end:time+lift+drawDuration,glide:!!last,layer:a.layer||0,action:a.action||'draw',tool:a.tool||'graphitePoint',pressure:a.pressure||meta.pressure||'let',type:source.skillId||meta.skillIds?.[0]||'contour',bounds:b,smooth:true,straight:true};
         items.push(s);strokes.push(s);box=join(box,b);time=s.end;last=points.subarray(points.length-2);
@@ -26,6 +67,7 @@ const PlaybackTiming = (() => {
   }
   function copyStops(duration){const n=Math.max(1,Math.round(duration/7000));return Array.from({length:n},(_,i)=>duration*(i+1)/n);}
   function batches(data){
+    if(data.teachingGuide)return {...raw(data,{pressure:data.analysis.pressure,skillIds:data.analysis.techniques}),count:data.actionCount};
     if(data.contourGuide){const plan=raw(data.contourGuide,{pressure:data.analysis.pressure,skillIds:data.analysis.techniques});return {...plan,count:data.actionCount,contourGuide:true,guideWidth:data.guideWidth,analysis:data.analysis};}
     if(data.primaryGuide){
       const primary=raw(data.primaryGuide,{pressure:data.analysis.pressure,skillIds:data.analysis.techniques});
@@ -41,6 +83,6 @@ const PlaybackTiming = (() => {
   }
   const hasDemo = analysis => analysis.techniques.some(id=>['shading','hatch','cross','fur','highlight'].includes(id));
   function budget(plan,cueMs=0){return plan.duration+(hasDemo(plan.analysis)?DEMO:0)+Math.min(CUE_LIMIT,cueMs);}
-  return {VERSION:1,LIMIT,DEMO,CUE_LIMIT,raw,batches,copyStops,budget,hasDemo};
+  return {VERSION:3,LIMIT,DEMO,CUE_LIMIT,raw,batches,copyStops,budget,hasDemo};
 })();
 if(typeof module!=='undefined')module.exports=PlaybackTiming;

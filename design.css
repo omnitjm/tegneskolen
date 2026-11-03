@@ -853,3 +853,50 @@ button:disabled { transform: none; }
 .scan-source-actions .ui-icon { margin: 0; width: 20px; height: 20px; }
 .scan-source-actions { margin: 0; }
 .scan-source-actions:has(> label:not([hidden])) { margin: 12px 0; }
+
+/* Keep zoom controls outside the paper, including when a close-up pans. */
+#lesson > .stage { position: relative; padding-top: 56px; }
+#cameraReset.camera-reset { top: 4px; right: 14px; min-height: 44px; min-width: 44px; padding: 4px 8px; font-size: 11px; line-height: 1.2; border-radius: 8px; z-index: 2; }
+/* Optional lesson help must leave navigation reachable by touch and keyboard. */
+.lesson-help-open #techniqueModal, .lesson-help-open #warmupModal { top: var(--lesson-help-top,100px); bottom: var(--lesson-help-bottom,240px); height: auto; padding: 8px 16px; background: transparent; pointer-events: none; }
+.lesson-help-open #techniqueModal::before, .lesson-help-open #warmupModal::before { content: ''; position: absolute; inset: 0; background: #25233d80; pointer-events: none; }
+.lesson-help-open .modal-card { position: relative; pointer-events: auto; }
+#copyPause { display: none; }
+
+/* Reserve a permanent playback row below the stage in every drawing mode. */
+#lesson.on { overflow: hidden; }
+#lesson > .stage, #lesson > .stage.side { flex: 1 1 0; min-height: 100px; }
+#lesson > .video-controls {
+  order: 4; display: flex; flex: none; grid-column: 1; grid-row: 3;
+  width: auto; min-width: 0; gap: 12px; margin: 0 14px;
+  padding: 4px 0; background: white; border-top: 1px solid var(--line);
+}
+#videoControls .ctl { width: 52px; min-width: 52px; height: 52px; align-self: center; }
+.video-timeline { flex: 1; min-width: 0; }
+#stepTime { display: block; text-align: right; font-size: 13px; font-weight: 800; line-height: 20px; color: var(--accent-edge); font-variant-numeric: tabular-nums; }
+#stepScrubber {
+  --played: 0%; display: block; appearance: none; -webkit-appearance: none;
+  width: 100%; height: 44px; margin: 0; padding: 0; border: 0;
+  background: transparent; cursor: pointer; touch-action: none;
+}
+#stepScrubber::-webkit-slider-runnable-track { height: 12px; border-radius: 12px; background: linear-gradient(to right, var(--accent) var(--played), var(--lavender) var(--played)); box-shadow: inset 0 0 0 1px #6435cf30; }
+#stepScrubber::-webkit-slider-thumb { appearance: none; -webkit-appearance: none; width: 30px; height: 30px; margin-top: -9px; border: 3px solid white; border-radius: 50%; background: var(--accent); box-shadow: 0 1px 4px #45239180; }
+#stepScrubber::-moz-range-track { height: 12px; border-radius: 12px; background: var(--lavender); }
+#stepScrubber::-moz-range-progress { height: 12px; border-radius: 12px; background: var(--accent); }
+#stepScrubber::-moz-range-thumb { width: 24px; height: 24px; border: 3px solid white; border-radius: 50%; background: var(--accent); box-shadow: 0 1px 4px #45239180; }
+#stepScrubber:disabled { opacity: .5; cursor: default; }
+#lesson .lesson-options { order: 5; flex: 0 1 auto; min-height: 0; max-height: 24dvh; overflow-y: auto; overscroll-behavior: contain; }
+#lesson .lesson-options .playback-details { max-height: none; overflow: visible; }
+#lesson .controls { position: static; margin-top: 0; }
+@media (min-width: 700px) and (orientation: landscape) {
+  #lesson.on { grid-template-rows: auto minmax(0,1fr) auto; }
+  #lesson > .stage, #lesson > .stage.side { grid-row: 2; min-height: 0; }
+  #lesson > .video-controls { margin: 0; }
+  #lesson > .lesson-sidebar { grid-row: 2 / 4; overflow: hidden; }
+  #lesson .lesson-options { flex: 1 1 auto; max-height: none; }
+  #lesson .lesson-sidebar .controls { flex: none; margin-top: auto; }
+}
+
+.offline-download { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; width: 100%; }
+#offlineStatus { font-size: 13px; color: var(--muted); }
+.narration-help { font-size: 13px; line-height: 1.5; color: var(--muted); }

@@ -220,6 +220,7 @@ const StickerBook = (() => {
       flipTimer = setTimeout(() => fold.remove(), 650);
     }
     state.page = id; dirty = true; save(); selected = null; particles.length = 0;
+    setHint(unlocked(scene()) ? 'Træk for at flytte · Tryk for at lege · Hold nede for at lægge tilbage' : 'Lås siden op i butikken, eller vælg en anden side.');
     if (active) { updatePage(); prepareActors(); requestPaint(); }
   }
   function place(id, celebration = false) {
@@ -244,7 +245,7 @@ const StickerBook = (() => {
       if (!active || state.page !== pageId || version !== pageVersion || !placements().some(item => item.id === id)) return;
       actors.set(id, { image, ...dimensions(id, image), phase: Math.random() * 7, born: elapsed, reaction: -10, preset });
       burst(p.x, p.y - .12, celebration); happySound(); requestPaint();
-    }).catch(() => setHint('Dit klistermærke er gemt. Åbn siden igen for at hente billedet.'));
+    }).catch(() => { if(active && state.page===pageId && version===pageVersion) setHint('Dit klistermærke er gemt. Åbn siden igen for at hente billedet.'); });
     setHint(`${lessonFor(id).title} er flyttet ind! Tryk på motivet og se, hvad der sker.`);
     return true;
   }

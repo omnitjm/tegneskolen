@@ -13,17 +13,27 @@ const DrawingScan = (() => {
   }
   function solve(A,b){const n=b.length;for(let i=0;i<n;i++){let k=i;for(let j=i+1;j<n;j++)if(Math.abs(A[j][i])>Math.abs(A[k][i]))k=j;[A[i],A[k]]=[A[k],A[i]];[b[i],b[k]]=[b[k],b[i]];if(Math.abs(A[i][i])<1e-9)return null;const d=A[i][i];for(let j=i;j<n;j++)A[i][j]/=d;b[i]/=d;for(let k=0;k<n;k++)if(k!==i){const f=A[k][i];for(let j=i;j<n;j++)A[k][j]-=f*A[i][j];b[k]-=f*b[i];}}return b;}
   function paperQuad(rgba,w,h){
-    // A close crop of paper with a lighting gradient is not a trapezoid. In
-    // particular Otsu must not mistake its bright half for the sheet itself.
-    const corner=(x,y)=>{const i=(y*w+x)*4;return .2126*rgba[i]+.7152*rgba[i+1]+.0722*rgba[i+2];};
-    if([[0,0],[w-1,0],[w-1,h-1],[0,h-1]].every(([x,y])=>corner(x,y)>225))return null;
-    const k=Math.min(1,240/Math.max(w,h)),W=Math.round(w*k),H=Math.round(h*k),lum=new Uint8Array(W*H);let hist=new Uint32Array(256);
+    const k=Math.min(1,240/Math.max(w,h)),W=Math.round(w*k),H=Math.round(h*k),lum=new Uint8Array(W*H),hist=new Uint32Array(256);
     for(let y=0;y<H;y++)for(let x=0;x<W;x++){const i=(Math.min(h-1,Math.round(y/k))*w+Math.min(w-1,Math.round(x/k)))*4;const g=Math.round(.2126*rgba[i]+.7152*rgba[i+1]+.0722*rgba[i+2]);lum[y*W+x]=g;hist[g]++;}
-    // Otsu separates the bright sheet from the desk. A low-contrast full frame is already paper.
-    let sum=0;for(let i=0;i<256;i++)sum+=hist[i]*i;let weight=0,s=0,best=0,threshold=150;
-    for(let i=0;i<254;i++){weight+=hist[i];s+=hist[i]*i;if(!weight||weight===lum.length)continue;const between=weight*(lum.length-weight)*(s/weight-(sum-s)/(lum.length-weight))**2;if(between>best){best=between;threshold=i;}}
-    threshold=clamp(threshold+12,130,225);const mask=Uint8Array.from(lum,v=>v>threshold?1:0);
-    const group=components(mask,W,H).filter(g=>g.area>W*H*.20).sort((a,b)=>b.area-a.area)[0];if(!group)return null;
+    // First separate dark desks/ink from paper. If this includes the frame,
+    // reclassify only bright pixels: dark ink must not outweigh a light desk.
+    function otsu(low){
+      let sum=0,total=0;for(let i=low;i<256;i++){sum+=hist[i]*i;total+=hist[i];}
+      let weight=0,s=0,best=0,threshold=150;
+      for(let i=low;i<254;i++){weight+=hist[i];s+=hist[i]*i;if(!weight||weight===total)continue;const between=weight*(total-weight)*(s/weight-(sum-s)/(total-weight))**2;if(between>best){best=between;threshold=i;}}
+      return clamp(threshold+12,130,245);
+    }
+    const candidate=threshold=>components(Uint8Array.from(lum,v=>v>threshold?1:0),W,H).filter(g=>g.area>W*H*.20).sort((a,b)=>b.area-a.area)[0];
+    let group=candidate(otsu(0));if(!group)return null;
+    const spansFrame=g=>g.x0===0&&g.y0===0&&g.x1===W-1&&g.y1===H-1;
+    const brightCorners=[[0,0],[w-1,0],[w-1,h-1],[0,h-1]].every(([x,y])=>{const i=(y*w+x)*4;return .2126*rgba[i]+.7152*rgba[i+1]+.0722*rgba[i+2]>225;});
+    if(spansFrame(group)||brightCorners){
+      const bright=candidate(otsu(130));
+      // A cropped sheet or a lighting gradient needs no perspective transform.
+      // Only accept a distinct, enclosed sheet when retrying a bright desk.
+      if(!bright||bright.x0<1||bright.y0<1||bright.x1>W-2||bright.y1>H-2)return null;
+      group=bright;
+    }
     let corners=[null,null,null,null],scores=[Infinity,-Infinity,-Infinity,Infinity];
     for(const p of group.pts){const x=p%W,y=(p/W)|0,a=x+y,b=x-y;if(a<scores[0]){scores[0]=a;corners[0]=[x/k,y/k];}if(b>scores[1]){scores[1]=b;corners[1]=[x/k,y/k];}if(a>scores[2]){scores[2]=a;corners[2]=[x/k,y/k];}if(b<scores[3]){scores[3]=b;corners[3]=[x/k,y/k];}}
     const area=Math.abs(corners.reduce((s,p,i)=>s+p[0]*corners[(i+1)%4][1]-p[1]*corners[(i+1)%4][0],0))/2;
