@@ -3,6 +3,12 @@
 // Original, local vector artwork. Every control uses this 24 px / 2 px icon set.
 const UI = (() => {
   const paths = {
+    learn: '<path d="m2 8 10-5 10 5-10 5Z M6 10v7q6 5 12 0v-7 M22 8v8"/>',
+    collections: '<rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><path d="M14 18h8 M18 14v8"/>',
+    gallery: '<path d="m5 5 14-2 2 15-14 2Z M3 8l-1 13h14 M8 15l3-5 3 3 2-2 3 4"/>',
+    heart: '<path d="M12 20 4 12C-2 6 7 0 12 7 17 0 26 6 20 12Z"/>',
+    practiceFace: '<circle cx="12" cy="12" r="9"/><path d="M8 9h.01 M16 9h.01 M8 15h8"/>',
+    helpFace: '<circle cx="12" cy="12" r="9"/><path d="M7 8h3m4 0h3M8 12h.01M16 12h.01M9 17q3-1 6 0"/>',
     home: '<path d="m3 10 9-7 9 7v10H3Z M9 20v-7h6v7"/>',
     pencil: '<path d="m4 16-1 5 5-1L20 8l-4-4Z M13 7l4 4 M4 16l4 4 M16 4l2-2 4 4-2 2"/>',
     play: '<path d="m8 4 13 8-13 8Z" fill="currentColor" stroke="none"/>',

@@ -7,44 +7,41 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Tegneskolen">
-<meta name="theme-color" content="#6435cf">
-<link rel="apple-touch-icon" href="icon-180.png?v=1793715603">
-<link rel="icon" href="icon-512.png?v=1793715603">
-<link rel="manifest" href="manifest.webmanifest?v=1793715603">
+<meta name="theme-color" content="#330D81">
+<link rel="apple-touch-icon" href="icon-180.png?v=1794018008">
+<link rel="icon" href="icon-512.png?v=1794018008">
+<link rel="manifest" href="manifest.webmanifest?v=1794018008">
 <title>Tegneskolen</title>
-<link rel="stylesheet" href="style.css?v=1793715603">
-<link rel="stylesheet" href="design.css?v=1793715603">
+<link rel="preload" href="assets/fonts/nunito-sans-regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/fonts/nunito-sans-bold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="style.css?v=1794018008">
+<link rel="stylesheet" href="design.css?v=1794018008">
+<link rel="stylesheet" href="player.css?v=1794018008">
 </head>
 <body>
 
-<!-- FORSIDE -->
-<section id="home" class="screen tabbed">
-  <header class="top">
-    <div>
-      <div class="hello" id="hello">Hej!</div>
-      <h1>Hvad vil du tegne i dag?</h1>
-    </div>
-    <div class="badges">
-      <button class="icon" id="settingsBtn" aria-label="Indstillinger"><span data-icon="settings" aria-hidden="true"></span></button>
-      <span class="badge" id="streak"><span data-icon="flame" aria-hidden="true"></span> 0</span>
-      <span class="badge" id="starsTotal"><span data-icon="star" aria-hidden="true"></span> 0</span>
-    </div>
-  </header>
+<!-- Our original learning journey and drawing library. -->
+<section id="home" class="screen tabbed atelier-screen">
+  <header class="top"><div><div class="hello" id="hello">Tegneskolen</div><h1>Din tegnerejse</h1></div><div class="badges"><span class="badge" id="starsTotal" aria-label="Dine stjerner"></span><button class="icon profile-button" id="settingsBtn" aria-label="Indstillinger"><span data-mascot="wave" aria-hidden="true"></span></button><span id="streak" hidden></span></div></header>
   <div class="home-scroll">
-  <div class="home-hero"><div><span class="eyebrow">DIT LILLE TEGNEATELIER</span><h2>Din næste tegning</h2><p>Find papir og blyant. Blyant-Bo tegner med!</p><button class="hero-action" id="pathContinue">Find mit næste skridt <span data-icon="next" aria-hidden="true"></span></button></div><img id="heroArt" src="lessons/e_fisk/thumb.jpg" alt="Din næste tegning" width="128" height="128"></div>
-  <details class="course-details"><summary>Se mit forløb</summary>
-  <div id="learningResume" class="learning-resume" hidden></div>
-  <div id="learningPath" class="learning-path" aria-label="Din læringssti"></div>
-  </details><div class="home-practice-links">
-  <button class="learn-techniques" id="techniquesBtn"><span data-icon="pencil" aria-hidden="true"></span> Lær teknikkerne <span>Små øvelser til dit papir <span data-icon="next" aria-hidden="true"></span></span></button>
-  <button class="warmup-link" id="warmupBtn"><span data-icon="wave" aria-hidden="true"></span> Varm hånden op <span>Små former, let og mørkt · +1 <span data-icon="star" aria-hidden="true"></span></span></button>
-  </div>
-  <h2 class="section-heading">Vælg selv en tegning</h2>
-  <div class="chips" id="chips" role="group" aria-label="Kategori"></div>
-  <div class="chips" id="levelChips" role="group" aria-label="Sværhedsgrad"></div>
-  <div class="grid" id="lessonGrid"></div>
+    <div class="journey-heading"><div><span class="eyebrow">Lidt efter lidt, streg for streg</span><h2>Find din tegnelyst</h2></div><button class="small-control" id="switchPath">Skift spor <span data-icon="next"></span></button></div>
+    <div id="learningResume" class="learning-resume" hidden></div>
+    <div id="learningPath" class="learning-path" aria-label="Din læringssti"></div>
+    <div class="journey-invitation"><img id="heroArt" src="lessons/e_fisk/thumb.jpg" alt="Din næste tegning" width="120" height="120"><div><span class="eyebrow">Et ark. En blyant. Din idé.</span><h2 id="journeyNextTitle">Din næste tegning</h2><p>Se med, prøv selv. Du bestemmer tempoet.</p><button class="btn primary" id="pathContinue">Lad os tegne</button></div></div>
+    <div class="home-practice-links"><button class="learn-techniques" id="techniquesBtn"><span data-icon="pencil"></span><span>Lær en teknik<small>Små øvelser til dit papir</small></span><span data-icon="next"></span></button><button class="warmup-link" id="warmupBtn"><span data-icon="wave"></span><span>Varm hånden op<small>Rolige streger og lette former</small></span><span data-icon="next"></span></button></div>
+    <p class="journey-footnote">Alle tegninger kan tages i dit eget tempo.</p>
   </div>
 </section>
+<section id="explore" class="screen tabbed atelier-screen">
+  <header class="top"><h1>Find en tegning</h1><button class="icon" id="exploreSettings" aria-label="Indstillinger"><span data-icon="settings"></span></button></header>
+  <div class="explore-scroll"><div id="collectionRow" class="collection-row" aria-label="Samlinger"></div><h2 class="recommendation-heading">Til din tegnelyst</h2><div id="recommendations" class="recommendation-row" aria-label="Tegninger til dig"></div><div class="section-line"><h2 id="exploreTitle">Lige til at tegne</h2><button id="filterToggle" class="small-control" aria-expanded="false">Niveau <span data-icon="settings"></span></button></div>
+    <div class="chips" id="chips" role="group" aria-label="Kategori"></div><div class="chips" id="levelChips" role="group" aria-label="Sværhedsgrad" hidden></div><div class="grid" id="lessonGrid"></div>
+  </div>
+</section>
+<section id="course" class="screen atelier-screen"><header class="top"><button class="icon" id="courseBack" aria-label="Tilbage til tegnerejsen"><span data-icon="back"></span></button><h1 id="courseTitle">Former</h1><span id="courseCount" class="course-count"></span></header><p id="courseGoal" class="course-goal"></p><div id="courseLessons" class="course-lessons"></div><button id="courseResume" class="btn ghost" hidden></button><p class="course-footer">Vælg frit. Du kan altid prøve igen.</p></section>
+<section id="drawingIntro" class="screen atelier-screen"><header class="top"><button class="icon" id="previewBack" aria-label="Tilbage"><span data-icon="back"></span></button><span class="eyebrow">Dit tegnegrej</span><span></span></header><div class="preview-content"><div><span class="eyebrow" id="previewLevel">Let</span><h1 id="previewTitle"></h1><p id="previewGoal"></p></div><div class="equipment-art" aria-hidden="true"><span data-icon="paper"></span><span data-icon="pencil"></span></div><img id="previewArt" alt="Tegningen vi skal lave" hidden><p class="equipment-note"><span data-icon="paper"></span> Find papir og en blyant.<br>Et viskelæder er også rart at have.</p><p id="previewReward"></p><button class="btn primary" id="previewStart">Lad os tegne</button><button class="btn ghost" id="previewLater">Spring over</button></div></section>
+<section id="onboarding" class="screen atelier-screen"><header class="top"><span class="brand-name">Tegneskolen</span><button class="small-control" id="onboardingSkip">Spring over</button></header><div class="onboarding-content"><span class="mascot welcome-mascot" data-mascot="wave" aria-hidden="true"></span><h1 id="onboardingTitle">En verden af streger</h1><p id="onboardingText">Velkommen til din tegnetid.<br>Find noget, du har lyst til at tegne.</p><div id="interestProgress" class="interest-progress" role="progressbar" aria-label="Dine valg" aria-valuemin="0" aria-valuemax="2" aria-valuenow="0" hidden><i></i></div><div id="interestPair" class="interest-pair" hidden></div><button id="onboardingNext" class="btn primary">Find min tegnelyst</button><p class="onboarding-note">Ingen rigtige eller forkerte valg. Bare din nysgerrighed.</p></div></section>
+<div id="pathSheet" class="modal path-sheet" role="dialog" aria-modal="true" aria-labelledby="pathSheetTitle" hidden><div class="modal-card"><header><h2 id="pathSheetTitle">Hvilket spor lokker?</h2><button class="icon" id="pathSheetClose" aria-label="Luk sporvælger"><span data-icon="close"></span></button></header><div id="pathChoices" class="path-choices"></div></div></div>
 
 <!-- LEKTION -->
 <section id="lesson" class="screen">
@@ -55,8 +52,8 @@
     <button class="icon" id="modeBtn" aria-label="Tegn på skærmen"><span data-icon="pencil" aria-hidden="true"></span></button>
     <span class="badge wallet" data-wallet aria-label="Dine stjerner"><span data-icon="star" aria-hidden="true"></span> 0</span>
   </header>
-  <div class="stage" id="stage">
-      <button id="cameraReset" class="small-control camera-reset" aria-label="Vis hele arket">Hele arket</button>
+  <div class="stage" id="stage"><details id="teachingReference" class="teaching-reference" hidden><summary><img id="referenceArt" alt="Lærerens mål for skyggen"><span>Se eksemplet</span></summary><p id="referenceGoal"></p><img class="light-diagram" src="assets/vector/technique-shading.svg" alt="Lyset kommer fra øverst til venstre. Den modsatte kant er mørkere."><span>Vores eksempel · Lyset og de mørke lag giver formen dybde.</span><button id="referenceClose" class="btn ghost">Tilbage til tegningen</button><button id="referenceResume" class="btn primary">Afspil videre</button></details>
+      
     <div class="guidewrap" id="guideWrap">
       <div class="guide-camera" id="guideCamera">
       <div class="guideart" id="guideArt">
@@ -88,10 +85,11 @@
       <canvas id="graphiteFX" width="512" height="512" aria-hidden="true"></canvas>
       <div id="paperLighting" aria-hidden="true"></div>
       <div class="lesson-intro" id="lessonIntro" hidden><img id="introArt" alt="Det skal vi tegne"><div><span class="mascot " data-mascot="wave" aria-hidden="true"></span><strong id="introMessage">Find papir og blyant.</strong><button class="btn primary" id="introReady">Fortsæt til tegningen</button></div></div>
-      <canvas id="cameraOverview" width="88" height="88" aria-label="Her er vi på tegningen" hidden></canvas><span id="lightSource" class="light-source" hidden aria-label="Lyset kommer oppe fra venstre"><span data-icon="sun"></span><small>Lys ↘</small></span><span id="zoomIndicator" hidden><span data-icon="zoom" aria-hidden="true"></span> Zoom</span>
-      <div class="guidestatus" id="guideStatus" role="status" hidden></div><button id="retryStep" class="btn retry-step" hidden>Hent igen</button><div id="stepDemo" class="step-demo" hidden><strong>Se, sådan gør du</strong><canvas id="stepDemoCanvas" width="600" height="300"></canvas><button id="stepDemoContinue" class="small-control">Vis på min tegning</button></div><div id="shadowCompare" class="shadow-compare" hidden><figure><img id="shadowBefore" alt="Uden den nye skygge"><figcaption>Uden skygge</figcaption></figure><figure><img id="shadowAfter" alt="Med den nye skygge"><figcaption>Med skygge</figcaption></figure><button id="shadowCompareClose" class="small-control">Se min opgave</button></div>
+      <canvas id="cameraOverview" width="88" height="88" aria-label="Her er vi på tegningen" hidden></canvas><span id="zoomIndicator" hidden><span data-icon="zoom" aria-hidden="true"></span> Zoom</span>
+      <div class="guidestatus" id="guideStatus" role="status" hidden></div><button id="retryStep" class="btn retry-step" hidden>Hent igen</button><div id="shadowCompare" class="shadow-compare" hidden><figure><img id="shadowBefore" alt="Uden den nye skygge"><figcaption>Uden skygge</figcaption></figure><figure><img id="shadowAfter" alt="Med den nye skygge"><figcaption>Med skygge</figcaption></figure><button id="shadowCompareClose" class="small-control">Se min opgave</button></div>
       <canvas id="traceCanvas" class="pad"></canvas>
     </div>
+    <div id="stepDemo" class="step-demo" hidden><strong>Se, sådan gør du</strong><canvas id="stepDemoCanvas" width="600" height="300"></canvas><button id="stepDemoContinue" class="small-control">Vis på min tegning</button></div>
     <div class="sidepad" id="sidePadWrap"><canvas id="sideCanvas" class="pad"></canvas></div>
   </div>
   <div class="video-controls" id="videoControls" role="group" aria-label="Afspil tegningen">
@@ -100,6 +98,7 @@
       <output id="stepTime" for="stepScrubber" aria-live="off">0:00 / 0:00</output>
       <input id="stepScrubber" type="range" min="0" max="1000" step="1" value="0" aria-label="Hvor langt er tegningen?" disabled>
     </div>
+    <button id="cameraReset" class="small-control camera-reset" aria-label="Vis hele arket">Hele arket</button>
   </div>
   <div class="lesson-sidebar">
   <div class="stepinfo">
@@ -109,14 +108,14 @@
     <div class="pressure-meter" role="group" aria-label="Blyantens tryk">
       <span data-pressure="let"><span data-icon="feather" aria-hidden="true"></span> Let</span><span data-pressure="mellem"><span data-icon="pencil" aria-hidden="true"></span> Mellem</span><span data-pressure="hårdt"><span data-icon="pressure" aria-hidden="true"></span> Lidt mere</span>
     </div>
-    <div id="liveTip" class="live-tip" aria-live="polite" aria-atomic="true">Følg blyanten med på dit papir.</div>
+    <span id="lightSource" class="light-source" hidden aria-label="Lyset kommer oppe fra venstre"><span data-icon="sun"></span><small>Lys ↘</small></span><div id="liveTip" class="live-tip" aria-live="polite" aria-atomic="true">Følg blyanten med på dit papir.</div>
   </div>
 
 
   </div>
   <button id="sideSwitch" class="small-control" hidden>Se læreren</button>
   <div class="lesson-options">
-  <details class="playback-details"><summary>Hjælp og afspilning <span data-icon="settings" aria-hidden="true"></span></summary><div class="playback-options">    <div class="step-guidance"><span id="pressureBadge" class="pressure-badge"></span><div id="techniqueChips" aria-label="Trinnets teknikker"></div></div>
+  <details class="playback-details"><summary>Hjælp og afspilning <span data-icon="settings" aria-hidden="true"></span></summary><div class="playback-options"><p id="fullStepInstruction"></p>    <div class="step-guidance"><span id="pressureBadge" class="pressure-badge"></span><div id="techniqueChips" aria-label="Trinnets teknikker"></div></div>
     <label class="speed"><span data-icon="speed" aria-hidden="true"></span><span class="sr-only">Tempo</span>
       <select id="stepSpeed" aria-label="Afspilningshastighed">
         <option value="0.25">0,25×</option><option value="0.5">0,5×</option>
@@ -134,7 +133,7 @@
   </div>
   <footer class="controls">
     <button class="ctl" id="prevBtn" aria-label="Forrige trin"><span data-icon="back" aria-hidden="true"></span></button>
-    <button class="ctl" id="replayBtn" aria-label="Vis denne del igen"><span data-icon="replay" aria-hidden="true"></span></button>
+    <button class="ctl" id="replayBtn" aria-label="Vis denne del igen"><span data-icon="replay" aria-hidden="true"></span><small>Vis igen</small></button>
   <div class="copy-pause" id="copyPause" hidden>
     <span>Din tur! Prøv stregerne på dit papir.</span>
     <button class="ctl primary" id="readyBtn">Jeg har prøvet <span data-icon="play" aria-hidden="true"></span></button>
@@ -144,38 +143,23 @@
   </div>
 </section>
 
-<!-- FÆRDIG -->
-<section id="done" class="screen">
-  <div class="donebox">
-    <div class="confetti" id="confetti"></div>
-    <span class="mascot done-mascot" data-mascot="cheer" role="img" aria-label="Blyant-Bo fejrer din indsats"></span>
-    <span class="eyebrow" id="doneKind">PROJEKT GENNEMFØRT</span><span class="badge" data-wallet><span data-icon="star" aria-hidden="true"></span> 0</span>
-    <h1 id="doneTitle">Flot klaret!</h1>
-    <img id="doneArt" alt="Den færdige tegning"><p id="doneCaption">Vores eksempel</p>
-    <p>Tag et billede af din tegning og gem den i din tegnebog.</p>
-    <p id="doneReward" class="reward-note"></p>
-    <button class="btn primary" id="doneScan"><span data-icon="camera"></span> Scan min tegning</button><label class="btn"><span data-icon="camera" aria-hidden="true"></span> Tag billede
-      <input type="file" accept="image/*" capture="environment" id="donePhoto" hidden>
-    </label>
-    <button class="btn primary" id="doneSaveScreen" hidden><span data-icon="save" aria-hidden="true"></span> Gem skærmtegningen</button>
-    <button class="btn ghost" id="doneHome">Gem senere · Til forsiden</button>
-    <button class="btn" id="doneSticker">Leg i klistermærkebogen</button>
-    <div class="self-assessment" role="group" aria-label="Hvordan var det at tegne?"><button data-assess="easy"><span data-icon="smile" aria-hidden="true"></span> Det gik let</button><button data-assess="practice"><span data-icon="pencil" aria-hidden="true"></span> Jeg øver mere</button><button data-assess="help"><span data-icon="help" aria-hidden="true"></span> Jeg vil have hjælp</button></div>
-    <p id="assessmentTip" hidden></p><div id="supportChoices" hidden><button class="btn" data-support-skill="construction">Form og placering</button><button class="btn" data-support-skill="contour">Streger</button><button class="btn" data-support-skill="shading">Skygge</button><button class="btn" data-support-skill="fur">Pels og detaljer</button></div>
-    <div class="own-challenge"><strong>Prøv selv · Gør den til din</strong><p id="ownChallenge"></p><button class="small-control" id="ownTried">Jeg prøvede min egen idé <span data-icon="check" aria-hidden="true"></span></button></div>
-  </div>
-</section>
+<!-- Completion is a reward, then optional capture, then reflection. -->
+<section id="done" class="screen atelier-screen" data-beat="celebrate"><div id="confetti" class="confetti" aria-hidden="true"></div><div class="donebox">
+  <div class="completion-beat" data-completion-beat="celebrate"><span class="eyebrow" id="doneKind">HELE TEGNINGEN GENNEMFØRT</span><h1 id="doneTitle">Du gjorde det!</h1><div id="completionAward" class="completion-award" aria-hidden="true"><span class="award-rays"></span><span class="award-star" data-icon="star"></span><span class="mascot" data-mascot="cheer"></span></div><p id="doneReward" class="reward-note"></p><span class="badge" data-wallet></span><button id="celebrationContinue" class="btn primary">Gem eller se tegningen</button><button class="btn ghost" id="celebrationHome">Til tegnerejsen</button></div>
+  <div class="completion-beat" data-completion-beat="capture" hidden><span class="eyebrow">Din helt egen udgave</span><h2>Gem et lille minde</h2><img id="doneArt" alt="Den færdige tegning"><p id="doneCaption">Vores eksempel</p><p>Vil du gemme din tegning i tegnebogen?</p><button class="btn primary" id="doneSaveScreen" hidden><span data-icon="save"></span> Gem skærmtegningen</button><button class="btn primary" id="doneScan"><span data-icon="camera"></span> Scan min tegning</button><label class="btn capture-file"><span data-icon="camera"></span> Vælg et foto<input type="file" accept="image/*" capture="environment" id="donePhoto" hidden></label><button id="captureContinue" class="btn ghost">Fortsæt uden foto</button></div>
+  <div class="completion-beat" data-completion-beat="reflect" hidden><img id="reflectionArt" alt="Vores eksempel"><small id="reflectionCaption">Vores eksempel</small><span class="eyebrow">Et øjeblik til dig</span><h2>Hvordan var det at tegne?</h2><div class="self-assessment" role="group" aria-label="Hvordan var det at tegne?"><button data-assess="easy"><span data-icon="smile"></span><span>Det gik let</span></button><button data-assess="practice"><span data-icon="practiceFace"></span><span>Jeg øver mere</span></button><button data-assess="help"><span data-icon="helpFace"></span><span>Jeg vil have hjælp</span></button></div><p id="assessmentTip" hidden></p><div id="supportChoices" hidden><button class="btn" data-support-skill="construction">Form og placering</button><button class="btn" data-support-skill="contour">Streger</button><button class="btn" data-support-skill="shading">Skygge</button><button class="btn" data-support-skill="fur">Pels og detaljer</button></div><button class="btn primary" id="doneHome">Til tegnerejsen</button><button class="btn ghost" id="doneSticker">Leg i klistermærkebogen</button><details class="own-challenge"><summary>Har du lyst til at prøve selv?</summary><p id="ownChallenge"></p><button class="small-control" id="ownTried">Jeg prøvede min egen idé <span data-icon="check"></span></button></details></div>
+</div></section>
 
 <section id="shop" class="screen tabbed">
   <header class="top"><div><div class="hello">Nye tegneeventyr</div><h1>Butik <span data-icon="shop" aria-hidden="true"></span></h1></div><span class="badge wallet" data-wallet><span data-icon="star" aria-hidden="true"></span> 0</span></header>
-  <div class="shop-scroll"><div class="shop-tabs" role="group" aria-label="Vælg varer"><button class="btn" data-shop-kind="motifs" aria-pressed="true">Motiver</button><button class="btn" data-shop-kind="worlds" aria-pressed="false">Verdener</button></div><div class="shop-intro"><span class="mascot " data-mascot="think" aria-hidden="true"></span><div><h2>Hvad sparer du op til?</h2><p>Tegn og øv dig for at få stjerner. Brug dem til nye motiver og sider i din klistermærkebog. Her bruger vi kun stjerner!</p></div></div><details class="star-rules"><summary>Sådan får du stjerner <span data-icon="star" aria-hidden="true"></span></summary><p>+1 pr. nyt trin · +3 for en hel lektion · +2 for dit første lektionsfoto · +1 pr. øvelse pr. dag · +2 på en dag, du tegner. Du beholder dine stjerner, også når du holder pause.</p></details><h2 class="shop-section-title">Nye motiver</h2><div id="shopGrid" class="shop-grid"></div><p id="shopEmpty" class="hint" hidden>Nye tegneeventyr er på vej. Øv dig og saml stjerner imens!</p><h2 class="shop-section-title">Nye verdener til din bog</h2><div id="sceneShopGrid" class="scene-shop-grid"></div></div>
+  <div class="shop-scroll"><div class="shop-tabs" role="group" aria-label="Vælg varer"><button class="btn" data-shop-kind="motifs" aria-pressed="true">Motiver</button><button class="btn" data-shop-kind="worlds" aria-pressed="false">Verdener</button></div><div class="shop-intro"><span class="mascot " data-mascot="think" aria-hidden="true"></span><div><h2>Hvad sparer du op til?</h2><p>Gennemfør en tegning for at få stjerner. Vælg nye motiver eller en verden til din klistermærkebog.</p></div></div><p class="reward-summary">Stjerner første gang: Let 3 · Mellem 4 · Svær 5. Et nyt forsøg giver ikke flere stjerner.</p><details class="star-rules"><summary>Sådan får du stjerner <span data-icon="star" aria-hidden="true"></span></summary><p>En hel tegning giver stjerner første gang: Let = 3 · Mellem = 4 · Svær = 5. Du kan tegne den igen, lige så tit du vil. Dine køb og stjerner bliver hos dig, når du holder pause.</p></details><h2 class="shop-section-title">Nye motiver</h2><div id="shopGrid" class="shop-grid"></div><p id="shopEmpty" class="hint" hidden>Nye tegneeventyr er på vej. Gennemfør en tegning for at få stjerner.</p><h2 class="shop-section-title">Nye verdener til din bog</h2><div id="sceneShopGrid" class="scene-shop-grid"></div></div>
 </section>
 
 <!-- LEVENDE KLISTERMÆRKEBOG -->
 <section id="stickerbook" class="screen tabbed">
   <header class="top book-top"><div><span class="eyebrow">EN BOG FULD AF DINE IDÉER</span><h1>Min klistermærke<wbr>bog</h1></div><button class="icon" id="bookMotion" aria-label="Sæt liv på pause" aria-pressed="false"><span data-icon="pause" aria-hidden="true"></span></button><button class="icon book-sound" id="bookSound" aria-label="Slå klistermærkelyd fra" aria-pressed="true"><span data-icon="sound"></span></button></header>
   <div class="book-content">
-    <div id="bookScenes" class="book-scenes" role="group" aria-label="Vælg en side"></div>
+    <details class="scene-picker"><summary>Vælg en verden</summary><div id="bookScenes" class="book-scenes" role="group" aria-label="Vælg en side"></div></details>
     <div class="book-pager"><button class="icon" id="bookPrev" aria-label="Forrige side"><span data-icon="back" aria-hidden="true"></span></button><div><h2 id="bookSceneTitle">Eng med blomster</h2><span id="bookPageNumber">Side 1 af 10</span></div><button class="icon" id="bookNext" aria-label="Næste side"><span data-icon="next" aria-hidden="true"></span></button></div>
     <div id="bookDots" class="book-dots" role="group" aria-label="Bogens sider"></div><div class="book-space"><div id="bookPage" class="book-page">
       <img id="bookBackdrop" class="book-backdrop" src="assets/vector/scene-meadow.svg" alt="En eng med flade grønne bakker og blomster" draggable="false">
@@ -208,7 +192,7 @@
       <input type="file" accept="image/*" id="journalAdd" hidden>
     </label>
   </header>
-  <button class="btn" id="journalScan"><span data-icon="camera"></span> Scan min tegning</button><div id="journalDrafts" aria-label="Dine gemte kladder"></div><div class="jgrid" id="jgrid"></div>
+  <button class="btn primary" id="journalScan"><span data-icon="camera"></span> Scan min tegning</button><div id="journalFilters" class="chips" role="group" aria-label="Tegninger i tegnebogen"><button class="chip on" data-journal-filter="all">Alle</button><button class="chip" data-journal-filter="screen">På skærmen</button><button class="chip" data-journal-filter="photo">Fotos</button></div><details class="journal-drafts"><summary>Mine kladder</summary><div id="journalDrafts" aria-label="Dine gemte kladder"></div></details><div class="jgrid" id="jgrid"></div>
   <div class="empty" id="jempty">
     <div class="empty-art" data-mascot="wave" aria-hidden="true"></div><h2>Plads til dine idéer</h2>
     <p>Din første tegning kan bo lige her.<br>Scan dit papir, eller gem en skærmtegning.</p>
@@ -237,17 +221,8 @@
 
 <div class="modal" id="settingsModal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle" hidden>
   <div class="modal-card settings-card">
-    <header><h2 id="settingsTitle">Indstillinger</h2><button class="icon" id="settingsClose" aria-label="Luk indstillinger"><span data-icon="close" aria-hidden="true"></span></button></header>
-    <label><span>Støtte på alle niveauer</span><select id="supportMode"><option value="guided">Hjælp mig trin for trin</option><option value="self">Jeg vil styre selv</option></select></label><label><span>Vis hjælpespor</span><input type="checkbox" id="settingHelpers"></label><label><span><span data-icon="sun" aria-hidden="true"></span> Hold skærmen tændt</span><input id="settingAwake" type="checkbox"></label>
-    <label><span><span data-icon="zoom" aria-hidden="true"></span> Zoom ind på detaljer</span><input id="settingZoom" type="checkbox"></label>
-    <label><span><span data-icon="pencil" aria-hidden="true"></span> Blyantslyd</span><input id="settingPencilSound" type="checkbox"></label>
-    <label><span><span data-icon="sound" aria-hidden="true"></span>Klistermærkelyd</span><input id="settingStickerSound" type="checkbox"></label>
-    <label><span><span data-icon="video" aria-hidden="true"></span> Rolige kamerabevægelser</span><input id="settingCamera" type="checkbox"></label>
-    <p class="narration-help"><span data-icon="sound" aria-hidden="true"></span> Tryk på lydknappen for at høre et trin eller en øvelse. Tale starter kun, når du beder om den.</p>
-    <label><span><span data-icon="wait" aria-hidden="true"></span> Vent på mig</span><input id="settingWait" type="checkbox"></label>
-    <label><span>Små vibrationer ved tryk</span><input id="settingHaptics" type="checkbox"></label>
-    <label><span>Tempo fra start</span><select id="settingSpeed" aria-label="Standardtempo"><option value="0.25">0,25×</option><option value="0.5">0,5×</option><option value="0.75">0,75×</option><option value="1">1×</option><option value="1.5">1,5×</option><option value="2">2×</option></select></label>
-    <p class="voice-credit">Blyant-Bo læser op med en syntetisk dansk stemme.</p><button id="installApp" class="btn"><span data-icon="plus"></span> Føj til startskærm</button><p id="installHelp" class="hint">Gem Tegneskolen som en app på din enhed.</p>
+    <header><h2 id="settingsTitle">Dit atelier</h2><button class="icon" id="settingsClose" aria-label="Luk indstillinger"><span data-icon="close" aria-hidden="true"></span></button></header>
+    <div class="settings-body"><div class="settings-profile"><span class="mascot" data-mascot="wave" aria-hidden="true"></span><div><strong>Tegneskolen</strong><p>Din tegnetid. Dit tempo.</p><span class="badge" data-wallet></span></div></div><h3>Lyd, tempo og hjælp</h3><label><span><span data-icon="pencil" aria-hidden="true"></span> Blyantslyd</span><input id="settingPencilSound" type="checkbox"></label><label><span><span data-icon="sound" aria-hidden="true"></span>Klistermærkelyd</span><input id="settingStickerSound" type="checkbox"></label><label><span>Tempo fra start</span><select id="settingSpeed" aria-label="Standardtempo"><option value="0.25">0,25×</option><option value="0.5">0,5×</option><option value="0.75">0,75×</option><option value="1">1×</option><option value="1.5">1,5×</option><option value="2">2×</option></select></label><label><span>Støtte på alle niveauer</span><select id="supportMode"><option value="guided">Hjælp mig trin for trin</option><option value="self">Jeg vil styre selv</option></select></label><label><span>Vis hjælpespor</span><input type="checkbox" id="settingHelpers"></label><label><span><span data-icon="wait" aria-hidden="true"></span> Vent på mig</span><input id="settingWait" type="checkbox"></label><p class="hint">Vent på mig stopper efter hver lille øvelse, indtil du selv fortsætter.</p><details class="advanced-settings"><summary>Flere indstillinger</summary><label><span><span data-icon="sun" aria-hidden="true"></span> Hold skærmen tændt</span><input id="settingAwake" type="checkbox"></label><label><span><span data-icon="zoom" aria-hidden="true"></span> Zoom ind på detaljer</span><input id="settingZoom" type="checkbox"></label><label><span><span data-icon="video" aria-hidden="true"></span> Rolige kamerabevægelser</span><input id="settingCamera" type="checkbox"></label><label><span>Små vibrationer ved tryk</span><input id="settingHaptics" type="checkbox"></label><p class="voice-credit">Oplæsning starter kun, når du trykker på lydknappen.</p><button id="installApp" class="btn"><span data-icon="plus"></span> Føj til startskærm</button><p id="installHelp" class="hint">Gem Tegneskolen som en app på din enhed.</p></details><button id="changeInterests" class="btn">Find min tegnelyst igen</button></div>
   </div>
 </div>
 <div class="modal" id="techniqueModal" role="dialog" aria-modal="true" aria-labelledby="techniqueTitle" hidden>
@@ -256,37 +231,33 @@
     <canvas id="techniqueDemo" width="600" height="300" role="img" aria-label="Animeret eksempel på teknikken"></canvas>
     <p id="techniqueExplanation"></p><button id="techniqueReplay" class="btn">Vis igen</button>
     <p class="practice-hint" id="practiceHint"><span data-icon="pencil" aria-hidden="true"></span> Prøv selv på papiret</p>
-    <button id="practiceRead" class="btn"><span data-icon="sound" aria-hidden="true"></span> Læs øvelsen højt</button><button class="btn" id="techniqueProject">Tegn med teknikken</button><button class="btn" id="practiceComplete">Jeg har øvet mig · +1 <span data-icon="star" aria-hidden="true"></span></button>
-    <button class="btn primary" id="techniqueContinue">Klar, vis mig tegningen <span data-icon="play" aria-hidden="true"></span></button>
+    <button id="practiceRead" class="btn"><span data-icon="sound" aria-hidden="true"></span> Læs øvelsen højt</button><button class="btn" id="techniqueProject">Tegn med teknikken</button><button class="btn primary" id="practiceComplete">Jeg har øvet mig</button>
+    <button class="btn ghost" id="techniqueContinue">Klar, vis mig tegningen <span data-icon="play" aria-hidden="true"></span></button>
   </div>
 </div>
 
-<div class="modal" id="warmupModal" role="dialog" aria-modal="true" aria-labelledby="warmupTitle" hidden><div class="modal-card warmup-card"><header><h2 id="warmupTitle">Varm hånden op</h2><button class="icon" id="warmupClose" aria-label="Luk opvarmning"><span data-icon="close" aria-hidden="true"></span></button></header><span class="mascot warmup-mascot" data-mascot="think" aria-hidden="true"></span><p>Find papir og blyant. Der er ingen tid, du skal nå det på.</p><ol><li>Tegn tre store, lette cirkler med hele armen.</li><li>Tegn seks rolige bølger. Løft blyanten imellem.</li><li>Lav tre felter: lyst, mellem og mørkt. Byg skyggen op i lag.</li></ol><div class="warmup-samples" aria-hidden="true"><svg viewBox="0 0 320 144" fill="none" stroke="#656477" stroke-width="2" stroke-linecap="round"><circle cx="80" cy="24" r="16"/><circle cx="160" cy="24" r="16"/><circle cx="240" cy="24" r="16"/><path d="M48 72q16-32 32 0t32 0 32 0 32 0 32 0 32 0 32 0"/><path d="M64 112h40v24H64Z" fill="#D5D3DB" stroke="none"/><path d="M140 112h40v24h-40Z" fill="#96939F" stroke="none"/><path d="M216 112h40v24h-40Z" fill="#4C4959" stroke="none"/></svg></div><p id="warmupTask"></p><canvas id="warmupDemo" width="600" height="300"></canvas><button id="warmupRead" class="btn"><span data-icon="sound" aria-hidden="true"></span> Læs øvelsen højt</button><button id="warmupNext" class="btn">Næste lille øvelse</button><button class="btn primary" id="warmupComplete">Jeg har øvet mig · +1 <span data-icon="star" aria-hidden="true"></span></button></div></div>
+<div class="modal" id="warmupModal" role="dialog" aria-modal="true" aria-labelledby="warmupTitle" hidden><div class="modal-card warmup-card"><header><h2 id="warmupTitle">Varm hånden op</h2><button class="icon" id="warmupClose" aria-label="Luk opvarmning"><span data-icon="close" aria-hidden="true"></span></button></header><span class="mascot warmup-mascot" data-mascot="think" aria-hidden="true"></span><p>Find papir og blyant. Der er ingen tid, du skal nå det på.</p><ol><li>Tegn tre store, lette cirkler med hele armen.</li><li>Tegn seks rolige bølger. Løft blyanten imellem.</li><li>Lav tre felter: lyst, mellem og mørkt. Byg skyggen op i lag.</li></ol><div class="warmup-samples" aria-hidden="true"><svg viewBox="0 0 320 144" fill="none" stroke="#656477" stroke-width="2" stroke-linecap="round"><circle cx="80" cy="24" r="16"/><circle cx="160" cy="24" r="16"/><circle cx="240" cy="24" r="16"/><path d="M48 72q16-32 32 0t32 0 32 0 32 0 32 0 32 0 32 0"/><path d="M64 112h40v24H64Z" fill="#D5D3DB" stroke="none"/><path d="M140 112h40v24h-40Z" fill="#96939F" stroke="none"/><path d="M216 112h40v24h-40Z" fill="#4C4959" stroke="none"/></svg></div><p id="warmupTask"></p><canvas id="warmupDemo" width="600" height="300"></canvas><button id="warmupRead" class="btn"><span data-icon="sound" aria-hidden="true"></span> Læs øvelsen højt</button><button id="warmupNext" class="btn">Næste lille øvelse</button><button class="btn primary" id="warmupComplete">Jeg har øvet mig</button></div></div>
 <div class="modal" id="unlockModal" role="dialog" aria-modal="true" aria-labelledby="unlockTitle" hidden><div class="modal-card unlock-card"><header><h2 id="unlockTitle">Lås tegningen op?</h2><button class="icon" id="unlockClose" aria-label="Luk"><span data-icon="close" aria-hidden="true"></span></button></header><img id="unlockArt" alt=""><p id="unlockText"></p><button class="btn primary" id="unlockConfirm">Lås op</button><button class="btn ghost" id="unlockCancel">Spar videre</button></div></div>
 
 <div class="modal" id="modeModal" role="dialog" aria-modal="true" aria-labelledby="modeTitle" hidden><div class="modal-card"><header><h2 id="modeTitle">Hvordan vil du tegne?</h2><button class="icon" id="modeClose" aria-label="Luk tegnemåder"><span data-icon="close" aria-hidden="true"></span></button></header><div class="mode-options"><button data-mode="paper"><strong><span data-icon="paper" aria-hidden="true"></span> På papir</strong><span>Se med, og tegn på dit eget ark.</span></button><button data-mode="side"><strong><span data-icon="pencil" aria-hidden="true"></span> Ved siden af</strong><span>Tegn på en tom skærm ved siden af læreren.</span></button><button data-mode="trace"><strong><span data-icon="trace" aria-hidden="true"></span> Spor</strong><span>Tegn oven på de lyse streger på skærmen.</span></button></div></div></div>
 
-<nav class="tabbar" id="tabbar">
-  <button data-tab="home" class="on"><span><span data-icon="pencil" aria-hidden="true"></span></span>Lær</button>
-  <button data-tab="shop"><span><span data-icon="shop" aria-hidden="true"></span></span>Butik</button>
-  <button data-tab="stickerbook" class="book-tab" aria-label="Min levende klistermærkebog"><span data-icon="stickers" aria-hidden="true"></span>Klistermærker</button>
-  <button data-tab="journal"><span><span data-icon="journal" aria-hidden="true"></span></span>Tegnebog</button>
-</nav>
+<nav class="tabbar" id="tabbar" aria-label="Hovedmenu"><button data-tab="home" class="on"><span data-icon="learn"></span>Rejse</button><button data-tab="explore"><span data-icon="collections"></span>Tegn</button><button data-tab="journal"><span data-icon="gallery"></span>Tegnebog</button><button data-tab="stickerbook" aria-label="Min klistermærkebog"><span data-icon="stickers"></span>Leg</button><button data-tab="shop"><span data-icon="shop"></span>Butik</button></nav>
 
 <div id="saveStatus" class="save-status" role="alert" hidden><span>Ikke gemt endnu</span><button id="saveRetry" class="btn">Prøv at gemme</button><button id="saveExport" class="btn">Gem billedet</button></div>
 <div class="modal" id="scanModal" role="dialog" aria-modal="true" aria-labelledby="scanTitle" hidden><div class="modal-card scan-card"><header><h2 id="scanTitle">Scan min tegning</h2><button id="scanClose" class="icon" aria-label="Luk scanner"><span data-icon="close"></span></button></header><p class="scan-privacy">Dit foto bliver på denne enhed.</p><p id="scanMessage" role="status">Læg dit papir inden for rammen.</p><div id="scanCamera" class="scan-camera"><video id="scanVideo" autoplay muted playsinline></video><div class="scan-frame" aria-hidden="true"></div><button id="scanShutter" class="scan-shutter" aria-label="Tag billede"></button></div><div class="scan-source-actions"><label class="btn" id="scanFileLabel"><span data-icon="journal"></span> Vælg et foto<input id="scanFile" type="file" accept="image/*" hidden></label><label class="btn" id="scanCaptureLabel" hidden><span data-icon="camera"></span> Tag et foto<input id="scanCapture" type="file" accept="image/*" capture="environment" hidden></label></div><button class="btn ghost" id="scanCameraRetry" hidden>Åbn kameraet igen</button><div id="scanReview" hidden><div id="scanPaper" class="scan-paper"><canvas id="scanCanvas" width="600" height="600" aria-label="Dit udklip. Vælg Viskelæder for at fjerne rester."></canvas><div class="scan-beam" aria-hidden="true"></div></div><div class="scan-tools"><button id="scanEraser" class="btn" aria-pressed="false">Viskelæder</button><button id="scanUndo" class="btn" disabled>Tilbage</button><button id="scanRotate" class="btn">Drej</button><label>Mørkere streger<input id="scanStrength" type="range" min="0.6" max="2" value="1" step="0.05"></label></div><div id="scanMotion" role="group" aria-label="Hvordan bevæger din figur sig?"><button data-scan-motion="walk" class="btn"><span data-icon="paw"></span> Går</button><button data-scan-motion="swim" class="btn"><span data-icon="wave"></span> Svømmer</button><button data-scan-motion="fly" class="btn"><span data-icon="feather"></span> Flyver</button><button data-scan-motion="idle" class="btn" aria-pressed="true"><span data-icon="leaf"></span> Vipper</button></div><div class="scan-actions"><button id="scanRetry" class="btn">Prøv igen</button><button id="scanUse" class="btn primary" disabled>Brug den</button></div></div><div id="scanLiving" class="scan-living" hidden><h3>Se, den er blevet levende!</h3><canvas id="scanLivingCanvas" width="600" height="320"></canvas><p>Dit foto er i tegnebogen. Din figur er i klistermærkeskuffen.</p><button id="scanPlace" class="btn primary">Sæt i klistermærkebogen</button><button id="scanLater" class="btn">Gem til senere</button></div></div></div>
 <div class="toast" id="toast"></div>
 <div id="rewardStatus" class="sr-only" role="status" aria-live="polite"></div>
 
-<script src="platform.js?v=1793715603"></script>
-<script src="ui-icons.js?v=1793715603"></script>
-<script src="lessons.js?v=1793715603"></script>
-<script src="persistence.js?v=1793715603"></script>
-<script src="scan-core.js?v=1793715603"></script>
-<script src="techniques.js?v=1793715603"></script>
-<script src="scan.js?v=1793715603"></script>
-<script src="stickers.js?v=1793715603"></script>
-<script src="playback-timing.js?v=1793715603"></script>
-<script src="app.js?v=1793715603"></script>
+<script src="platform.js?v=1794018008"></script>
+<script src="ui-icons.js?v=1794018008"></script>
+<script src="lessons.js?v=1794018008"></script>
+<script src="persistence.js?v=1794018008"></script>
+<script src="scan-core.js?v=1794018008"></script>
+<script src="techniques.js?v=1794018008"></script>
+<script src="scan.js?v=1794018008"></script>
+<script src="stickers.js?v=1794018008"></script>
+<script src="plan-codec.js?v=1794018008"></script>
+<script src="playback-timing.js?v=1794018008"></script>
+<script src="app.js?v=1794018008"></script>
 </body>
 </html>

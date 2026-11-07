@@ -603,3 +603,23 @@ button:focus-visible, summary:focus-visible, label:focus-within, textarea:focus-
   .book-flip { display: none; }
   .book-backdrop { transform: none !important; }
 }
+
+/* Teaching paper is neutral: graphite, not decoration, carries the values. */
+.guidewrap, .guide-camera { background-color:#fff; }
+.guideart { mix-blend-mode:normal; }
+#paperLighting { display:none; }
+#lightSource { position:static; display:inline-flex; flex-direction:row; gap:5px; padding:0; background:none; box-shadow:none; }
+#lightSource[hidden] { display:none; }
+#lightSource svg { width:19px; height:19px; }
+#lightSource small { font-size:12px; }
+#cameraOverview { width:58px; height:58px; opacity:.95; }
+#compareShading { margin-top:8px; }
+
+/* Keep pressure and light on one short row, with the instruction below. */
+.pencil-guidance { display:grid; grid-template-columns:auto 1fr; align-items:center; gap:4px 10px; }
+.pencil-guidance .live-tip { grid-column:1 / -1; }
+#lightSource { justify-self:end; white-space:nowrap; }
+#lightSource small { white-space:nowrap; }
+
+/* The discovery rail becomes a bottom row on portrait phones. */
+@supports(height:100dvh){.atelier-screen{height:100dvh}}

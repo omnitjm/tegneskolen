@@ -2,6 +2,7 @@
 const $ = s => document.querySelector(s);
 const ACCENT = '#6435cf';
 // Avoid invalidating layout and live regions with identical playback values.
+function shortCaption(text){return (text||'').trim();}
 function setText(el, text) { if (el.textContent !== text) el.textContent = text; }
 function setHidden(el, hidden) { if (el.hidden !== hidden) el.hidden = hidden; }
 function setAttr(el, name, value) { if (el.getAttribute(name) !== value) el.setAttribute(name, value); }
@@ -39,7 +40,6 @@ const today = () => { const d = new Date(); return `${d.getFullYear()}-${d.getMo
 function markActive() {
   const p = store.get();
   if (!p.days.includes(today())) { p.days.push(today()); p.days = p.days.slice(-400); store.set(p); }
-  awardStars('daily:' + today(), 2, 'Du tegnede i dag');
 }
 function streak() {
   const days = new Set(store.get().days);
@@ -155,10 +155,12 @@ function show(id) {
   if (current === 'done' && id !== 'done') { cancelStepSpeech(); }
   document.querySelectorAll('.screen').forEach(s => s.classList.toggle('on', s.id === id));
   const tabbed = $('#' + id).classList.contains('tabbed');
+  document.body.dataset.screen = id;
   $('#tabbar').classList.toggle('hide', !tabbed);
   document.querySelectorAll('#tabbar button').forEach(b => {b.classList.toggle('on', b.dataset.tab===id);if(b.dataset.tab===id)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
   if(current!==id&&historyReady)history.pushState({screen:id},'', '#'+id);
   current = id;
+  if (id === 'lesson') document.querySelectorAll('.star-flight').forEach(badge => badge.remove());
   if (id === 'done') $('#done').scrollTop = 0;
   if (id !== 'lesson') closeTechnique(false);
   if (id !== 'done' && id !== 'lesson') cancelStepSpeech();
@@ -166,7 +168,7 @@ function show(id) {
   writeLocal('ts_screen', id === 'lesson' ? { screen: id, lessonId: L.id } : {
     screen: id === 'done' ? 'home' : id === 'entry' ? 'journal' : id,
   });
-  if (id === 'home') renderHome();
+  if (id === 'home' || id === 'explore') renderHome();
   if (id === 'journal') renderJournal();
   if (id === 'shop') renderShop();
   if (id === 'stickerbook') StickerBook.open();
@@ -188,78 +190,64 @@ const LEVELS = [
   { id: 3, name: 'Svær', heading: 'Svær · klar til en udfordring?' },
 ];
 const savedFilters = readLocal('ts_filters');
+let favoriteCollection = savedFilters?.favorites === true;
 let cat = CATEGORIES.some(c => c.id === savedFilters?.cat) ? savedFilters.cat : 'alle';
 let level = LEVELS.some(l => l.id === savedFilters?.level) ? savedFilters.level : 'alle';
-function saveFilters() { writeLocal('ts_filters', { cat, level }); }
+function saveFilters() { writeLocal('ts_filters', { cat, level, favorites:favoriteCollection }); }
 function renderHome() {
-  const h = new Date().getHours();
-  $('#hello').textContent = h < 10 ? 'Godmorgen!' : h < 17 ? 'Hej igen!' : 'Godaften!';
-  const prog = store.get();
-  UI.label($('#streak'), 'flame', String(streak()));
-  $('#streak').setAttribute('aria-label', streak() + ' dage i træk');
-  updateWalletCounters();
-  renderLearningPath();
-
-  const chips = $('#chips'); chips.innerHTML = '';
-  [{ id: 'alle', name: 'Alle', emoji: '✨' }, ...CATEGORIES].forEach(c => {
-    const b = document.createElement('button');
-    b.className = 'chip' + (c.id === cat ? ' on' : '');
-    b.setAttribute('aria-pressed', c.id === cat);
-    UI.label(b, { alle: 'sparkle', dyr: 'paw', natur: 'leaf' }[c.id] || 'shapes', c.name);
-    b.onclick = () => { cat = c.id; saveFilters(); renderHome(); };
-    chips.appendChild(b);
+  $('#hello').textContent = 'Tegneskolen';
+  updateWalletCounters(); renderLearningPath();
+  const chips = $('#chips'); chips.replaceChildren();
+  [{id:'alle',name:'Alle'},...CATEGORIES].forEach(c=>{
+    const button=document.createElement('button');button.className='chip'+(!favoriteCollection&&c.id===cat?' on':'');
+    button.textContent=c.name;button.setAttribute('aria-pressed',String(!favoriteCollection&&c.id===cat));
+    button.onclick=()=>{favoriteCollection=false;cat=c.id;saveFilters();renderHome();};chips.append(button);
   });
-
-  const levelChips = $('#levelChips'); levelChips.innerHTML = '';
-  [{ id: 'alle', name: 'Alle' }, ...LEVELS].forEach(l => {
-    const b = document.createElement('button');
-    b.className = 'chip' + (l.id === level ? ' on' : '');
-    b.setAttribute('aria-pressed', l.id === level);
-    UI.label(b, l.id === 'alle' ? 'shapes' : 'star', l.name);
-    b.onclick = () => { level = l.id; saveFilters(); renderHome(); };
-    levelChips.appendChild(b);
+  const levels=$('#levelChips');levels.replaceChildren();
+  [{id:'alle',name:'Alle niveauer'},...LEVELS].forEach(l=>{
+    const button=document.createElement('button');button.className='chip'+(l.id===level?' on':'');
+    button.textContent=l.name;button.setAttribute('aria-pressed',String(l.id===level));
+    button.onclick=()=>{level=l.id;saveFilters();renderHome();};levels.append(button);
   });
-
-  const grid = $('#lessonGrid'); grid.innerHTML = '';
-  const lessons = LESSONS.filter(l => lessonUnlocked(l) && (cat === 'alle' || l.cat === cat) && (level === 'alle' || l.level === level));
-  if (!lessons.length) {
-    const empty = document.createElement('div'); empty.className = 'catalog-empty';
-    empty.innerHTML = UI.mascot('think');
-    const hint = document.createElement('p'); hint.className = 'hint';
-    hint.textContent = 'Prøv et andet valg, så finder vi noget at tegne.';
-    const reset = document.createElement('button'); reset.textContent = 'Vis alle tegninger'; reset.className = 'btn';
-    reset.onclick = () => { cat = level = 'alle'; saveFilters(); renderHome(); };
-    empty.append(hint, reset); grid.append(empty);
+  renderCollections();
+  const grid=$('#lessonGrid');grid.replaceChildren();
+  const interests=readLocal('ts_interests')||[];
+  const lessons=LESSONS.filter(l=>lessonUnlocked(l)&&(!favoriteCollection||objectMap(readLocal('ts_favorites'))[l.id])&&(favoriteCollection||cat==='alle'||l.cat===cat)&&(level==='alle'||l.level===level));
+  lessons.sort((a,b)=>Number(interests.includes(b.id))-Number(interests.includes(a.id)));
+  const recommendations=$('#recommendations');recommendations.replaceChildren();for(const lesson of lessons.slice(0,8))recommendations.append(drawingCard(lesson));
+  const discovery=!favoriteCollection&&cat==='alle'&&level==='alle';
+  const picks=[...lessons].sort((a,b)=>Number(!!lessonState(b)&&!lessonState(b).complete)-Number(!!lessonState(a)&&!lessonState(a).complete)||Number(interests.includes(b.id))-Number(interests.includes(a.id))||a.level-b.level).slice(0,6);
+  recommendations.replaceChildren();if(discovery)for(const lesson of picks)recommendations.append(drawingCard(lesson));
+  recommendations.hidden=!discovery;$('.recommendation-heading').hidden=!discovery;
+  $('#explore').dataset.discovery=String(discovery);
+  $('#exploreTitle').textContent=favoriteCollection?'Dine favoritter':cat==='alle'?'Alle tegninger':CATEGORIES.find(c=>c.id===cat)?.name||'Din samling';
+  if(!lessons.length){const empty=document.createElement('p');empty.className='catalog-empty';empty.textContent=favoriteCollection?'Her bor dine favoritter. Tryk på et hjerte under Alle.':'Prøv et andet niveau. Her er plads til alle slags streger.';grid.append(empty);}
+  for(const lesson of lessons.filter(l=>!discovery||!picks.includes(l)))grid.append(drawingCard(lesson));
+}
+function drawingCard(lesson) {
+  const card=document.createElement('article');card.className='card';
+  const open=document.createElement('button');open.className='artwork-button';open.setAttribute('aria-label','Tegn '+lesson.title);
+  const image=document.createElement('img');image.src=lesson.dir+'thumb.jpg';image.alt=lesson.title;image.loading='lazy';image.width=image.height=400;
+  open.append(image);open.onclick=()=>openLessonPreview(lesson);card.append(open);
+  const favorite=document.createElement('button');favorite.className='favorite';favorite.dataset.lessonId=lesson.id;favorite.innerHTML=UI.icon('heart');
+  const refresh=()=>{const selected=!!objectMap(readLocal('ts_favorites'))[lesson.id];favorite.setAttribute('aria-pressed',String(selected));favorite.setAttribute('aria-label',(selected?'Fjern ':'Gem ')+lesson.title+' som favorit');};refresh();
+  favorite.onclick=()=>{const favorites=objectMap(readLocal('ts_favorites'));favorites[lesson.id]=!favorites[lesson.id];writeLocal('ts_favorites',favorites);refresh();for(const other of document.querySelectorAll('.favorite'))if(other.dataset.lessonId===lesson.id){other.setAttribute('aria-pressed',favorite.getAttribute('aria-pressed'));other.setAttribute('aria-label',favorite.getAttribute('aria-label'));}if(favoriteCollection)renderHome();else renderCollections();};card.append(favorite);
+  const title=document.createElement('button');title.className='t';title.textContent=lesson.title;title.onclick=open.onclick;card.append(title);
+  const tag=document.createElement('span');tag.className='level level-'+lesson.level;tag.textContent=LEVELS.find(l=>l.id===lesson.level)?.name||'Let';card.append(tag);
+  if(store.get().done[lesson.id]){const status=document.createElement('span');status.className='done';status.innerHTML=UI.icon('check');status.setAttribute('aria-label','Gennemført');card.append(status);}
+  else if(lessonState(lesson)){const status=document.createElement('span');status.className='inprogress';status.textContent='Fortsæt';card.append(status);}
+  if(wallet.newLessons[lesson.id]){const badge=document.createElement('span');badge.className='new-badge';badge.textContent='Ny';card.append(badge);}
+  return card;
+}
+function renderCollections() {
+  const row=$('#collectionRow');row.replaceChildren();
+  const collections=[{name:'Dine favoritter',icon:'heart',ids:LESSONS.filter(l=>objectMap(readLocal('ts_favorites'))[l.id])},...CATEGORIES.map(c=>({name:c.name,cat:c.id,icon:c.id==='dyr'?'paw':c.id==='natur'?'leaf':'shapes',ids:LESSONS.filter(l=>l.cat===c.id&&lessonUnlocked(l))}))];
+  for(const collection of collections){
+    const button=document.createElement('button');button.className='collection-tile';button.setAttribute('aria-pressed',String(collection.cat?!favoriteCollection&&cat===collection.cat:favoriteCollection));
+    const text=document.createElement('span'),name=document.createElement('strong'),count=document.createElement('small');name.textContent=collection.name;count.textContent=collection.ids.length+' tegninger';text.append(name,count);button.append(text);button.insertAdjacentHTML('beforeend',UI.icon(collection.icon));
+    const accent=document.createElement('img');accent.src='assets/vector/collection-'+(collection.cat||'favorites')+'.svg';accent.alt='';button.append(accent);
+    button.onclick=()=>{favoriteCollection=!collection.cat;cat=collection.cat||'alle';saveFilters();renderHome();$('#exploreTitle').scrollIntoView?.({block:'start',behavior:'smooth'});};row.append(button);
   }
-  let previousLevel = null;
-  lessons.forEach(l => {
-    if (level === 'alle' && previousLevel !== l.level) {
-      const heading = document.createElement('h2'); heading.className = 'level-heading';
-      UI.label(heading, 'star', LEVELS.find(item => item.id === l.level).heading);
-      grid.appendChild(heading);
-    }
-    previousLevel = l.level;
-    const saved = lessonState(l);
-    const card = document.createElement('button');
-    card.className = 'card';
-    const img = document.createElement('img');
-    img.src = l.dir + 'thumb.jpg'; img.alt = l.title; img.loading = 'lazy';
-    img.width = img.height = 400;
-    card.appendChild(img);
-    for (const [cls, text] of [
-      ['t', l.title],
-      ['level level-' + l.level, LEVELS.find(item => item.id === l.level).name],
-      ['m', l.goal || `${l.steps.length} trin`],
-      ...(prog.done[l.id] ? [['done', 'Gennemført ✓']] :
-        saved ? [['inprogress', `Trin ${saved.step + 1} af ${l.steps.length}`]] : []),
-    ]) {
-      const div = document.createElement('div'); div.className = cls; div.textContent = text;
-      card.appendChild(div);
-    }
-    if (wallet.newLessons[l.id]) { const badge = document.createElement('span'); badge.className = 'new-badge'; badge.textContent = 'Ny!'; card.appendChild(badge); }
-    card.onclick = () => openLesson(l);
-    grid.appendChild(card);
-  });
 }
 
 /* ---------------- tegneflade ---------------- */
@@ -404,7 +392,7 @@ class Pad {
   clear() { this.strokes = []; this.redo = []; this.redraw(); this.save(); this.onchange(); }
   save() { this.changedSinceLoad = true; if (this.persistKey) DraftStore.queue(this.persistKey, this.strokes); }
   empty() { return !this.strokes.length; }
-  toImage() {
+  toImage(type = 'image/jpeg') {
     const out = document.createElement('canvas');
     // Render the stroke model independently of layout: a restored hidden pad
     // has never acquired a CSS size or painted its display canvas.
@@ -416,7 +404,7 @@ class Pad {
     const o = out.getContext('2d');
     o.fillStyle = '#fff'; o.fillRect(0, 0, out.width, out.height);
     o.drawImage(ink, 0, 0);
-    return out.toDataURL('image/jpeg', 0.9);
+    return out.toDataURL(type, 0.9);
   }
 }
 
@@ -462,18 +450,19 @@ if (!readLocal('ts_child_control_v32')) {
 }
 // Narration is requested per clip with a speaker button, including old opt-ins.
 removeLocal('ts_auto_read');
-let waitForMe = readLocal('ts_wait_for_me') === true;
+let waitForMe = readLocal('ts_wait_for_me') ?? beginner;
 const cheers = ['Du tog dig tid til at prøve! ✨', 'Ét skridt mere på dit tegneeventyr! 🌟', 'Du øver dig med blyanten! ✏️', 'Du gav plads til et nyt forsøg! 💜'];
 function doneMessage(lesson) { return 'Flot klaret – din tegning er færdig!'; }
 let cheerIndex = 0;
 
-function assetURL(src){return /^(lessons|assets)\//.test(src)&&!src.includes('?')?src+'?v=1793715603':src;}
+function assetURL(src){return /^(lessons|assets|hand)\//.test(src)&&!src.includes('?')?src+'?v=1794018008':src;}
 async function fetchTimed(src, timeout=45000) {
   src=assetURL(src);
   const controller = new AbortController(), timer=setTimeout(()=>controller.abort(),timeout);
   try{const r=await fetch(src,{signal:controller.signal});if(!r.ok)throw Error('Kunne ikke hente '+src);return r;}finally{clearTimeout(timer);}
 }
-function trimAssets(lesson,index){for(const map of [stepImages,strokeFiles])for(const key of map.keys())if(![index-1,index,index+1].some(i=>key===`${lesson.dir}${map===stepImages?'step':'strokes'}${i+1}.${map===stepImages?'jpg':'json'}`))map.delete(key);}
+function trimAssets(lesson,index){for(const map of [stepImages,strokeFiles])for(const key of map.keys())if(![index-1,index,index+1].some(i=>key===`${lesson.dir}${map===stepImages?'step':'strokes'}${i+1}.${map===stepImages?'jpg':'bin'}`))map.delete(key);}
+async function loadPlan(src){const response=await fetchTimed(src);return src.endsWith('.bin')?PlanCodec.decode(await response.arrayBuffer()):response.json();}
 const playbackIndex = fetchTimed('assets/playback-index.json').then(r=>r.json()).catch(()=>({steps:{}}));
 function validStrokePlan(data){
   if(data?.v===3)return data.size===1024&&Number.isFinite(data.duration)&&data.duration>0&&data.duration<=PlaybackTiming.LIMIT&&Array.isArray(data.atlases)&&Array.isArray(data.groups)&&data.groups.length>0&&data.groups.every(g=>g.bounds&&Array.isArray(g.rect)&&g.rect.length===4&&g.rect.every(Number.isFinite)&&g.weight>0&&Number.isInteger(g.atlas)&&g.atlas>=0&&g.atlas<data.atlases.length);
@@ -481,16 +470,16 @@ function validStrokePlan(data){
 }
 function loadPlanImage(src){return new Promise((resolve,reject)=>{const im=new Image(),timer=setTimeout(()=>reject(Error('Forbindelsen er langsom. Prøv igen.')),45000);im.onload=async()=>{clearTimeout(timer);try{await im.decode?.();}catch{}resolve(im);};im.onerror=()=>{clearTimeout(timer);reject(Error('Masken kunne ikke hentes'));};im.src=assetURL(src);});}
 function loadStrokes(lesson,index){
-  const src=`${lesson.dir}strokes${index+1}.json`;
+  const src=`${lesson.dir}strokes${index+1}.bin`;
   if(!strokeFiles.has(src)){
     const promise=(async()=>{
       const compact=(await playbackIndex).steps?.[`${lesson.id}/${index+1}`];
       if(compact&&compact.revision===lesson.revision){try{
-        const data=await fetchTimed(lesson.dir+compact.file).then(r=>r.json());
+        const data=await loadPlan(lesson.dir+compact.file);
         if(!validStrokePlan(data)||data.imageRevision!==lesson.revision)throw Error('Forældet animation');
         data.atlasImages=await Promise.all(data.atlases.map(f=>loadPlanImage(lesson.dir+f)));return data;
       }catch{throw Error('Animationen kunne ikke hentes. Prøv igen.');}}
-      const data=await fetchTimed(src).then(r=>r.json());
+      const data=await loadPlan(src);
       if(!validStrokePlan(data)||(data.imageRevision&&lesson.revision&&data.imageRevision!==lesson.revision))throw Error('Animationen passer ikke til tegningen.');return data;
     })().catch(()=>{strokeFiles.delete(src);return null;});strokeFiles.set(src,promise);
   }return strokeFiles.get(src);
@@ -505,8 +494,8 @@ function handOverlay() {
   const style = document.createElement('style');
   style.id = 'handV2Styles';
   style.textContent = `
-    #drawingHand { position:absolute; inset:0; width:100%; max-width:none; height:100%;
-      overflow:hidden; border-radius:inherit; pointer-events:none; transform:none;
+    #drawingHand { position:absolute; inset:-65%; width:230%; max-width:none; height:230%;
+      overflow:hidden; border-radius:0; pointer-events:none; transform:none;
       filter:none; transition:none; will-change:auto; }
     #drawingHand::before, #drawingHand::after { content:none !important; display:none !important; }
     #drawingHand canvas { display:block; width:100%; height:100%; }
@@ -515,47 +504,59 @@ function handOverlay() {
   const hand = $('#drawingHand'), canvas = document.createElement('canvas');
   canvas.id = 'handCanvas';
   hand.replaceChildren(canvas); // Also remove the old SVG/photograph and its arm.
-  $('#guideWrap').insertBefore(hand, $('#graphiteFX'));
+  $('#guideCamera').appendChild(hand);
   handView = { hand, canvas, ctx: canvas.getContext('2d'), frame: 0, last: 0,
     rotation: 0, height: 0, weights: {}, target: null };
   return handView;
 }
 
 function featherHandLayer(image, meta) {
-  const layer = playerCanvas(meta.w), ctx = layer.getContext('2d');
-  layer.height = meta.h;
-  ctx.drawImage(image, 0, 0, meta.w, meta.h);
+  const width=Math.min(1536,meta.w),layer=playerCanvas(width),ctx=layer.getContext('2d');
+  layer.height=Math.round(meta.h*width/meta.w);
+  ctx.drawImage(image,0,0,layer.width,layer.height);
+  // Preserve the exported alpha. Colour-keying skin cut holes in finger creases.
   // These finite photographs contain the entire forearm: never extend it with
   // another piece. Feather only its two cropped exits, leaving fingers/tip crisp.
-  ctx.globalCompositeOperation = 'destination-in';
-  for (const [w, h] of [[meta.w, 0], [0, meta.h]]) {
-    const fade = ctx.createLinearGradient(w * .88, h * .88, w, h);
-    fade.addColorStop(0, '#fff'); fade.addColorStop(1, '#fff0');
-    ctx.fillStyle = fade; ctx.fillRect(0, 0, meta.w, meta.h);
-  }
   return layer;
 }
 
+function handShadowLevels(image, meta) {
+  // Six small, padded receiver masks, blurred ONCE at import. No live filters.
+  const width=640, scale=width/meta.w, pad=32, height=Math.ceil(meta.h*scale);
+  const source=playerCanvas(width+pad*2);source.height=height+pad*2;
+  const ctx=source.getContext('2d');ctx.drawImage(image,pad,pad,width,height);
+  ctx.globalCompositeOperation='source-in';ctx.fillStyle='#443a30';ctx.fillRect(0,0,source.width,source.height);
+  return Array.from({length:6},(_,i)=>{
+    const canvas=playerCanvas(source.width);canvas.height=source.height;
+    const c=canvas.getContext('2d');c.filter=`blur(${5+i*2.5}px)`;c.drawImage(source,0,0);c.filter='none';
+    return {canvas,pad,scale};
+  });
+}
+const handResources=new Map();
 function loadHand() {
-  if (handVariants.size === 4) return Promise.resolve();
+  if (handVariants.has('draw') && handVariants.has('side') && handVariants.has('erase')) return Promise.resolve();
   if (handRequest) return handRequest;
   handOverlay();
   const imageAt = src => loadPlanImage(src);
-  TechniqueDemo.setToolRenderer((ctx,x,y,side,erase)=>{if(side)return false;const asset=handVariants.get(erase?'erase':'draw');if(!asset)return false;paintHandPose(ctx,asset,x,y,200,0,0,1,true);paintHandPose(ctx,asset,x,y,200,0,0,1,false);return true;});
+  TechniqueDemo.setToolRenderer((ctx,x,y,side,erase)=>{const asset=handVariants.get(erase?'erase':side?'side':'draw')||handAsset;if(!asset)return false;paintHandPose(ctx,asset,x,y,480,0,0,1,true);paintHandPose(ctx,asset,x,y,480,0,0,1,false);return true;});
   handRequest = (async () => {
     const response = await fetchTimed('hand/hands.json');
     if (!response.ok) return;
     const config = await response.json();
     if (Number.isFinite(config.recommendedWidthFraction) && config.recommendedWidthFraction > 0 && config.recommendedWidthFraction <= 1)
       handWidthFraction = config.recommendedWidthFraction;
-    await Promise.all(['draw', 'press', 'lift', 'erase'].map(async pose => {
+    await Promise.all(['draw', 'press', 'lift', 'erase', 'side'].map(async pose => {
       if (handVariants.has(pose)) return;
       try {
         const meta = config.poses?.[pose];
         if (!meta || ![meta.w, meta.h, meta.tipX, meta.tipY].every(Number.isFinite) || meta.w <= 0 || meta.h <= 0 ||
           meta.tipX < 0 || meta.tipX > meta.w || meta.tipY < 0 || meta.tipY > meta.h || !/^hand_[a-z]+\.png$/.test(meta.file)) return;
-        const [image, shadow] = await Promise.all([imageAt('hand/' + meta.file), imageAt(`hand/shadow_${pose}.png`)]);
-        const asset = { ...meta, pose, image: featherHandLayer(image, meta), shadow: featherHandLayer(shadow, meta) };
+        const loadAsset=async frame=>{
+          if(!handResources.has(frame.file))handResources.set(frame.file,(async()=>{const photo=await imageAt('hand/'+frame.file);const image=featherHandLayer(photo,frame);return {image,shadows:handShadowLevels(image,frame)};})().catch(error=>{handResources.delete(frame.file);throw error;}));
+          return {...frame,pose,...await handResources.get(frame.file)};
+        };
+        const asset=await loadAsset(meta);
+        if(meta.frames?.length)asset.frames=await Promise.all(meta.frames.map(loadAsset));
         handVariants.set(pose, asset);
         if (pose === 'draw') handAsset = asset;
       } catch {} // A missing pose falls back to the loaded drawing pose.
@@ -565,16 +566,43 @@ function loadHand() {
 }
 
 function paintHandPose(ctx, asset, x, y, width, rotation, height, opacity, shadow = false) {
-  const k = width / asset.w;
-  ctx.save(); ctx.translate(x, y); ctx.rotate(rotation * Math.PI / 180);
-  // Lift's image already contains a raised tip (12.5 source pixels). Preserve
-  // its registered wrist instead of snapping that raised tip onto the paper.
-  const tipY = asset.tipY + (asset.pose === 'lift' ? 12.5 : 0);
-  ctx.globalAlpha = opacity * (shadow ? 1 - height * .22 : 1);
-  const dx = shadow ? height * 3 : 0, dy = shadow ? height * 6 : 0;
-  ctx.drawImage(shadow ? asset.shadow : asset.image,
-    -asset.tipX * k + dx, -tipY * k + dy, asset.w * k, asset.h * k);
+  const k=width/asset.w,q=Math.max(0,Math.min(1,height)),u=q*q*(3-2*q),paperScale=width/(asset.displayWidthFraction||1.04)/324;
+  ctx.save();
+  // Receiver projection is in WORLD light coordinates, before wrist rotation.
+  ctx.translate(x+(shadow?(2+5*u)*paperScale:0),y+(shadow?(4+9*u)*paperScale:-q*4*paperScale));
+  ctx.rotate(rotation*Math.PI/180);
+  if(shadow&&asset.shadows){
+    const level=q*5,lo=Math.floor(level),hi=Math.min(5,lo+1),mix=level-lo;
+    for(const [index,weight] of [[lo,1-mix],[hi,mix]]){
+      if(weight<=0)continue;const m=asset.shadows[index],padding=m.pad/m.scale*k;
+      ctx.globalAlpha=opacity*(.16-.085*u)*weight;
+      ctx.drawImage(m.canvas,-asset.tipX*k-padding,-asset.tipY*k-padding,m.canvas.width/m.scale*k,m.canvas.height/m.scale*k);
+    }
+  }else if(!shadow){
+    ctx.globalAlpha=opacity;
+    ctx.drawImage(asset.image,-asset.tipX*k,-asset.tipY*k,asset.w*k,asset.h*k);
+  }
   ctx.restore();
+  if(shadow&&q<1&&asset.pose!=='erase'){
+    // A tapered shaft projection: grounded at the tip, progressively softer
+    // toward the grip. Three narrow strokes avoid a live canvas blur.
+    const angle=rotation*Math.PI/180,dx=(asset.pose==='side'?100:110)*k,dy=(asset.pose==='side'?-24:-126)*k;
+    const endX=x+dx*Math.cos(angle)-dy*Math.sin(angle)+3*paperScale;
+    const endY=y+dx*Math.sin(angle)+dy*Math.cos(angle)+5*paperScale;
+    ctx.save();ctx.lineCap='round';
+    for(const [thickness,alpha] of [[3,.025],[1.7,.05],[.7,.1]]){
+      const gradient=ctx.createLinearGradient(x,y,endX,endY);
+      gradient.addColorStop(0,`rgba(45,38,31,${alpha*(1-q)})`);gradient.addColorStop(1,'rgba(45,38,31,0)');
+      ctx.strokeStyle=gradient;ctx.lineWidth=thickness*paperScale;
+      ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(endX,endY);ctx.stroke();
+    }ctx.restore();
+  }
+  if(shadow&&q<1){
+    // Tip and the first shaft millimetres stay grounded independently of palm height.
+    const contact=ctx.createRadialGradient(x,y,0,x,y,2.4*paperScale);
+    contact.addColorStop(0,`rgba(45,38,31,${.22*(1-q)})`);contact.addColorStop(1,'rgba(45,38,31,0)');
+    ctx.fillStyle=contact;ctx.beginPath();ctx.ellipse(x,y,2.4*paperScale,1.4*paperScale,0,0,Math.PI*2);ctx.fill();
+  }
 }
 
 function paintHand(now = performance.now()) {
@@ -584,39 +612,27 @@ function paintHand(now = performance.now()) {
   if (view.hand.hidden || !view.target || document.hidden) return;
   const { width, height } = view.size || $('#guideWrap').getBoundingClientRect();
   if (!width || !height) return;
-  const dpr = Math.min(2, window.devicePixelRatio || 1, 1024 / Math.max(width,height)), canvas = view.canvas, ctx = view.ctx;
-  const w = Math.round(width * dpr), h = Math.round(height * dpr);
+  const bleed=width*.65, surface=width+bleed*2;
+  const dpr = Math.min(window.devicePixelRatio || 1, 2, 1024 / surface), canvas = view.canvas, ctx = view.ctx;
+  const w = Math.round(surface * dpr), h = Math.round((height+bleed*2) * dpr);
   if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; }
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, width, height);
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, surface, height+bleed*2);
   const dt = Math.min(64, Math.max(0, now - view.last)); view.last = now;
   const ease = reducedMotion.matches ? 1 : 1 - Math.exp(-dt / 65), target = view.target;
   view.rotation += (target.rotation - view.rotation) * ease;
-  view.height += (target.height - view.height) * ease;
-  for (const pose of handVariants.keys()) {
-    view.weights[pose] = (view.weights[pose] || 0) + ((pose === target.pose ? 1 : 0) - (view.weights[pose] || 0)) * ease;
-  }
-  // Only the contact follows the camera. A close-up must not enlarge the hand
-  // into the oversized foreground object that obscured the demonstration.
-  const x = (.5 + (target.x - camera.x) * camera.z) * width;
-  const y = (.5 + (target.y - camera.y) * camera.z) * height;
-  if(target.pose==='eraseFallback'||target.pose==='drawFallback'){TechniqueDemo.drawTool(ctx,x,y,stepPlayer?.currentTool==='graphiteSide',target.pose==='eraseFallback',Math.max(.6,width/450));if(!stepPlayer?.playing)view.frame=requestAnimationFrame(paintHand);return;}
-  if(stepPlayer?.currentTool==='graphiteSide'){TechniqueDemo.drawTool(ctx,x,y,true,false,Math.max(.6,width/450));if(!stepPlayer?.playing)view.frame=requestAnimationFrame(paintHand);return;}
-  for (const shadow of [true, false]) for (const [pose, asset] of handVariants) {
-    const opacity = view.weights[pose] || 0;
-    if (opacity > .001) paintHandPose(ctx, asset, x, y, width * handWidthFraction, view.rotation, view.height, opacity, shadow);
-  }
-  // Fade the overlay alone at the paper's bottom/right clip; drawing stays sharp.
-  ctx.globalCompositeOperation = 'destination-in';
-  const fadeSize = Math.max(4, Math.min(10, width * .018));
-  for (const [x0, y0, x1, y1] of [[width - fadeSize, 0, width, 0], [0, height - fadeSize, 0, height]]) {
-    const fade = ctx.createLinearGradient(x0, y0, x1, y1);
-    fade.addColorStop(0, '#fff'); fade.addColorStop(1, '#fff0');
-    ctx.fillStyle = fade; ctx.fillRect(0, 0, width, height);
-  }
-  ctx.globalCompositeOperation = 'source-over';
-  // Active playback paints the hand at its exact new contact in stepTick.
-  // A second independent hand loop would redraw the same full canvas again.
-  if (!stepPlayer?.playing) view.frame = requestAnimationFrame(paintHand);
+  view.height = target.height===0 ? 0 : view.height+(target.height-view.height)*ease;
+
+  // The entire overlay is inside guideCamera: one common projection for
+  // paper, marks, point, anatomy and shadows, including the overview tilt.
+  const x=target.x*width+bleed,y=target.y*height+bleed;
+  const projectedX=.5+(target.x-camera.x)*camera.z,projectedY=.5+(target.y-camera.y)*camera.z;
+  if(target.height>0&&(projectedX<0||projectedX>1||projectedY<0||projectedY>1))return;
+  if(target.pose==='eraseFallback'||target.pose==='drawFallback'){TechniqueDemo.drawTool(ctx,x,y,stepPlayer?.currentTool==='graphiteSide',target.pose==='eraseFallback',Math.max(.6,width/450));return;}
+  let asset=handVariants.get(target.pose)||handAsset;
+  if(asset?.frames?.length){const phase=target.pose==='lift'?Math.max(0,Math.min(1,target.height)):stepPlayer?.poseCycle||0;asset=asset.frames[Math.min(asset.frames.length-1,Math.round(phase*(asset.frames.length-1)))];}
+  if(asset)for(const shadow of [true,false])paintHandPose(ctx,asset,x,y,width*(asset.displayWidthFraction||handWidthFraction),view.rotation,view.height,1,shadow);
+  // Manual pauses freeze a still. Active playback owns the sole hand clock.
+
 }
 
 /* ---------------- dansk oplæsning ---------------- */
@@ -627,7 +643,7 @@ voiceAudio.preload = 'auto';
 voiceAudio.setAttribute('playsinline', '');
 let voiceUnlocked = false, voiceRequest = null;
 let voiceSource = '', voiceVersion = 0, phraseFiles = {};
-fetch('voice/index.json?v=1793715603').then(r => r.ok ? r.json() : {}).then(index => { phraseFiles = index; }).catch(() => {});
+fetch('voice/index.json?v=1794018008').then(r => r.ok ? r.json() : {}).then(index => { phraseFiles = index; }).catch(() => {});
 
 function phraseFile(text) {
   // Identisk med slug() i tools/build_voice.py. Virker også før index er hentet.
@@ -642,12 +658,8 @@ function prepareVoice(src) {
   voiceAudio.src = src;
   voiceAudio.load();
 }
-// Some Android builds support MP3 but have no AAC decoder.
 function voiceFile(src) {
-  if (!/\.(m4a|mp3)(\?|$)/.test(src)) return src;
-  const aac = voiceAudio.canPlayType?.('audio/mp4; codecs="mp4a.40.2"');
-  const mp3 = voiceAudio.canPlayType?.('audio/mpeg');
-  return src.replace(/\.(m4a|mp3)(?=\?|$)/, aac || !mp3 ? '.m4a' : '.mp3') + (src.includes('?') ? '' : '?v=1793715603');
+  return /\.m4a(\?|$)/.test(src) && !src.includes('?') ? src+'?v=1794018008' : src;
 }
 function validVoice(request) {
   return voiceRequest === request && current === request.screen && !document.hidden;
@@ -757,7 +769,7 @@ function setLessonPlaybackDefaults() {
   const beginner = readLocal('ts_support') !== 'self';
   const savedSpeed = readLocal('ts_step_speed');
   stepSpeed = stepSpeeds.includes(savedSpeed) ? savedSpeed : beginner ? 0.75 : 1;
-  waitForMe = readLocal('ts_wait_for_me') === true;
+  waitForMe = readLocal('ts_wait_for_me') ?? beginner;
   $('#waitForMe').checked = waitForMe;
 }
 
@@ -972,7 +984,13 @@ function showStepGuidance(p, image, previous) {
   } else p.groups = p.segments?.length ? p.segments : guidanceGroups(p);
   p.groupAt = -1; p.tipChanged = -Infinity; p.tipKey = ''; p.cameraChanged = -Infinity;
   $('#pressureBadge').textContent = '';
-  $('#lightSource').hidden = !p.analysis.techniques.some(id => ['shading','hatch','cross','fur','highlight'].includes(id));
+  const light=$('#lightSource'),source=L?.stepMeta?.[step]?.lightSource||{x:.18,y:.12};
+  light.hidden=!p.analysis.techniques.some(id=>['shading','hatch','cross'].includes(id));
+  light.setAttribute('aria-label',source.x>.5?'Lys fra højre; skygge på den modsatte side':'Lys fra venstre; skygge på den modsatte side');
+  light.querySelector('small').textContent=source.x>.5?'Lys ↙':'Lys ↘';
+  let compare=$('#compareShading');
+  if(!compare){compare=document.createElement('button');compare.id='compareShading';compare.className='small-control';compare.textContent='Se forskellen';compare.onclick=()=>{pauseStep();stepPlayer.compared=false;showShadowComparison(stepPlayer);};$('#techniqueChips').parentNode.appendChild(compare);}
+  compare.hidden=!p.previous||!p.analysis.techniques.includes('shading');
   $('#techniqueChips').replaceChildren();
   for (const id of p.analysis.techniques) {
     const t = TECHNIQUES.find(t => t.id === id);
@@ -980,6 +998,7 @@ function showStepGuidance(p, image, previous) {
     const b = document.createElement('button'); b.className = 'technique-chip'; UI.label(b, UI.techniqueIcons[t.id], t.name);
     b.onclick = () => openTechnique(t); $('#techniqueChips').appendChild(b);
   }
+  $('#teachingReference').hidden=!p.analysis.techniques.includes('shading');$('#referenceArt').src=L.dir+'step'+(step+1)+'.jpg';$('#referenceGoal').textContent=L.stepMeta?.[step]?.lightGoal||L.steps[step];
   fitStage(); updateGuidance(p, true);
 }
 
@@ -992,7 +1011,8 @@ function updateGuidance(p, seek = false) {
   if (seek || !p.tipKey || (p.pendingTip === at && now - p.tipChanged >= 1500)) {
     const key = g.id || g.pressure + '/' + g.type;
     if (p.tipKey !== key || seek) {
-      $('#liveTip').textContent = mode!=='paper'?(L?.stepMeta?.[step]?.screenTip||g.tip):g.tip;
+      const caption=['shading','hatch','cross','fur'].includes(g.type)||g.action==='erase'?g.tip||L.steps[step]:L.steps[step];setText($('#stepText'),shortCaption(caption));
+      $('#liveTip').textContent='';$('#liveTip').hidden=false;
       p.tipChanged = now;
       p.tipKey = key;
     }
@@ -1013,26 +1033,42 @@ const camera = { x: .5, y: .5, z: 1, target: { x: .5, y: .5, z: 1 }, from: null,
 function setCamera(target, immediate = false) {
   if (mode === 'trace' || !detailZoom) { target = { x:.5,y:.5,z:1 }; immediate = true; }
   if (!gentleCamera) immediate = true;
-  if (!immediate && ['x', 'y', 'z'].every(k => Math.abs(camera.target[k] - target[k]) < .001)) return;
+  if (!immediate && ['x', 'y', 'z'].every(k => Math.abs(camera.target[k] - target[k]) < .001) && (camera.frame || ['x','y','z'].every(k=>Math.abs(camera[k]-target[k])<.001))) return;
   camera.from = { x: camera.x, y: camera.y, z: camera.z }; camera.target = target;
   camera.started = performance.now();
-  if (immediate || reducedMotion.matches) { Object.assign(camera, target); camera.from = null; }
+  if (immediate || reducedMotion.matches) { Object.assign(camera, target); camera.from = null;cancelAnimationFrame(camera.frame);camera.frame=0;paintCamera(performance.now());return; }
   if (!camera.frame) camera.frame = requestAnimationFrame(paintCamera);
 }
 function paintCamera(now) {
   camera.frame = 0;
-  const t = Math.min(1, Math.max(0, (now - camera.started) / 300)), ease = t * t * (3 - 2 * t);
+  const t = Math.min(1, Math.max(0, (now - camera.started) / 550)), ease = t * t * t * (10 + t * (-15 + 6 * t));
   if (camera.from) for (const key of ['x', 'y', 'z']) camera[key] = camera.from[key] + (camera.target[key] - camera.from[key]) * ease;
   const half = .5 / camera.z;
   camera.x = Math.max(half, Math.min(1 - half, camera.x)); camera.y = Math.max(half, Math.min(1 - half, camera.y));
   $('#guideCamera').style.transform = `translate(${(0.5 - camera.x * camera.z) * 100}%, ${(0.5 - camera.y * camera.z) * 100}%) scale(${camera.z})`;
-  $('#zoomIndicator').hidden = camera.z < 1.05 || mode === 'trace';
+  $('#zoomIndicator').hidden = true;
   paintOverview();
   if (handView?.target && !handView.hand.hidden && !stepPlayer?.playing) paintHand(now);
   if (t >= 1) camera.from = null;
   if (!document.hidden && camera.from) camera.frame = requestAnimationFrame(paintCamera);
 }
 function updateCameraTarget(p, group, seek = false) {
+  if(p.cameraFrozen&&!p.playing&&!seek)return;
+  if(p.authored){
+    // Establish page placement, then hold one view for a complete feature.
+    // All value passes share cameraId; short raster paths never own a shot.
+    const context=p.elapsed<800 || group.type==='construction' || p.waiting || p.elapsed>=p.duration-650;
+    if(mode==='trace'||reducedMotion.matches||!detailZoom||p.cameraOverview||context){setCamera({x:.5,y:.5,z:1});return;}
+    const key=group.cameraId||group.id;
+    if(!seek&&p.focusGroup===key)return;
+    const b=group.focusBounds||group.bounds,extent=Math.max(b.x1-b.x0,b.y1-b.y0);
+    const paper=$('#guideWrap').getBoundingClientRect().width||360;
+    // Do not magnify the 1024px master beyond a useful tablet detail scale.
+    const maxZoom=1.65; // Pedagogical crop; source remains 1024px, never advertised as new optical detail.
+    const zoom=Math.max(1,Math.min(maxZoom,1024/(extent+300))),half=.5/zoom;
+    setCamera({x:Math.max(half,Math.min(1-half,(b.x0+b.x1)/2048)),y:Math.max(half,Math.min(1-half,(b.y0+b.y1)/2048)),z:zoom});
+    p.focusGroup=key;return;
+  }
   if (mode === 'trace' || reducedMotion.matches || !detailZoom || p.cameraOverview || p.unreliableFocus || step === 0) { setCamera({x:.5,y:.5,z:1}); return; }
   if (!seek && p.focusGroup === group.id) return;
   const b = group.focusBounds || group.bounds, width = b.x1-b.x0, height=b.y1-b.y0;
@@ -1041,7 +1077,7 @@ function updateCameraTarget(p, group, seek = false) {
 }
 function paintOverview() {
   const c=$('#cameraOverview'); if (!c) return; c.hidden=camera.z<1.05 || mode==='trace'; if(c.hidden||!stepPlayer)return;
-  const ctx=c.getContext('2d');ctx.clearRect(0,0,88,88);ctx.drawImage(stepPlayer.image,0,0,88,88);ctx.strokeStyle=ACCENT;ctx.lineWidth=2;ctx.strokeRect((camera.x-.5/camera.z)*88,(camera.y-.5/camera.z)*88,88/camera.z,88/camera.z);
+  const ctx=c.getContext('2d');ctx.clearRect(0,0,88,88);ctx.drawImage(stepPlayer.ctx?.canvas||stepPlayer.image,0,0,88,88);ctx.strokeStyle=ACCENT;ctx.lineWidth=2;ctx.strokeRect((camera.x-.5/camera.z)*88,(camera.y-.5/camera.z)*88,88/camera.z,88/camera.z);
 }
 
 function markTechnique(id) { const seen = objectMap(readLocal('ts_techniques_global')); seen[id] = true; writeLocal('ts_techniques_global', seen); }
@@ -1051,13 +1087,13 @@ function openTechnique(technique, automatic = false) {
   if (!techniqueSession && !techniqueFocus) techniqueFocus = document.activeElement;
   if (current === 'lesson') pauseStep();
   cancelStepSpeech(); loadHand();
-  techniqueSession = { technique, playing, automatic, started: performance.now() };
+  techniqueSession = { technique, playing, automatic, origin:current, courseId:current==='course'?selectedCourse?.id:null, started: performance.now() };
   UI.label($('#techniqueTitle'), UI.techniqueIcons[technique.id], technique.name);
   $('#techniqueExplanation').textContent = technique.text;
   $('#techniqueDemo').setAttribute('aria-label', 'Eksempel: ' + technique.name);
-  UI.label($('#techniqueContinue'), current === 'lesson' ? 'play' : 'back', current === 'lesson' ? 'Fortsæt til tegningen' : 'Tilbage til teknikker');
+  UI.label($('#techniqueContinue'), current === 'lesson' ? 'play' : 'back', current === 'lesson' ? 'Tilbage til tegningen' : current==='course'?'Tilbage til '+selectedCourse.name:'Tilbage til teknikker');
   UI.label($('#practiceHint'), 'pencil', UI.plain(practiceFor(technique.id)));
-  $('#practiceComplete').disabled = false; UI.label($('#practiceComplete'), 'star', latestWallet().claims['practice:'+technique.id+':'+today()]?'Øv igen · Jeg har prøvet':'Jeg har øvet mig · +1');
+  $('#practiceComplete').disabled = false; UI.label($('#practiceComplete'), 'check', 'Færdig med øvelsen');
   $('#techniqueModal').hidden = false; modalInert(true); $('#techniqueClose').focus({ preventScroll: true });
   cancelAnimationFrame(techniqueFrame); techniqueFrame = requestAnimationFrame(drawTechniqueDemo);
 }
@@ -1092,6 +1128,7 @@ $('#techniqueProject').onclick=()=>{const id=techniqueSession?.technique.id,less
 $('#practiceRead').onclick=()=>{const text=practiceFor(techniqueSession?.technique.id);if(text)readAloud(text,phraseFile(text));};
 
 function updateLessonHelpBounds() {
+  if(current==='lesson'){const tray=$('#videoControls').getBoundingClientRect();document.body.style.setProperty('--playback-help-bottom',(Math.max(0,innerHeight-tray.top)+8)+'px');}
   if (!document.body.classList.contains('lesson-help-open')) return;
   const top = $('#stage').getBoundingClientRect().top;
   const bottom = $('#videoControls').getBoundingClientRect().top;
@@ -1109,7 +1146,8 @@ $('#practiceComplete').onclick = () => {
   if (!techniqueSession) return;
   const id = techniqueSession.technique.id;
   const count = (readLocal('ts_practice_' + id) || 0) + 1;
-  awardStars(`practice:${id}:${today()}`, 1, 'Du prøvede en teknik'); writeLocal('ts_practice_' + id, count); markTechnique(id); markActive(); $('#practiceComplete').disabled = true; $('#practiceComplete').textContent = 'Du gav dig tid til at øve ✓'; renderLearningPath();
+  writeLocal('ts_practice_' + id, count); markTechnique(id); markActive();
+  const courseId=techniqueSession.courseId;if(courseId)setCoursePhase(courseId,0);closeTechnique();if(courseId)openCourse(COURSES.find(c=>c.id===courseId));renderLearningPath();
 };
 $('#techniquesBtn').onclick = () => show('techniques');
 $('#techniquesBack').onclick = () => show('home');
@@ -1130,7 +1168,7 @@ $('#settingsBtn').onclick = () => {
   $('#settingAwake').checked = keepScreenOn; $('#settingZoom').checked = detailZoom;
   $('#settingPencilSound').checked = pencilSound.enabled; $('#settingCamera').checked = gentleCamera;
   $('#settingWait').checked = waitForMe; $('#settingSpeed').value = stepSpeed;
-  $('#settingsModal').hidden = false; modalInert(true); $('#settingsClose').focus({ preventScroll: true });
+  $('#settingsModal').hidden = false;$('.advanced-settings').open=false;$('#settingsModal .settings-body').scrollTop=0; modalInert(true); $('#settingsClose').focus({ preventScroll: true });
 };
 $('#settingsClose').onclick = closeSettings;
 $('#settingAwake').onchange = e => {
@@ -1153,7 +1191,7 @@ $('#settingSpeed').onchange = e => { stepSpeed = Number(e.target.value); writeLo
 document.addEventListener('keydown', e => {
   const modal = [...document.querySelectorAll('.modal')].find(m => !m.hidden);
   if (!modal) return;
-  if (e.key === 'Escape') { e.preventDefault(); if(modal.id==='scanModal')ScanFlow.close();else if (modal.id === 'stickerPhotoModal') StickerBook.closePhoto(); else if (modal.id === 'modeModal') closeModePicker(); else if (modal.id === 'warmupModal') closeWarmup(); else if (modal.id === 'unlockModal') closeUnlock(); else if (techniqueSession) closeTechnique(); else closeSettings(); }
+  if (e.key === 'Escape') { e.preventDefault(); if(modal.id==='scanModal')ScanFlow.close();else if (modal.id === 'stickerPhotoModal') StickerBook.closePhoto(); else if (modal.id === 'modeModal') closeModePicker(); else if (modal.id === 'warmupModal') closeWarmup(); else if (modal.id === 'pathSheet') closePathSheet(); else if (modal.id === 'unlockModal') closeUnlock(); else if (techniqueSession) closeTechnique(); else closeSettings(); }
   if (e.key === 'Tab') {
     const elements = [...modal.querySelectorAll('button, input, select, textarea, a[href], [tabindex="0"]')].filter(e => !e.disabled && !e.hidden && !e.closest('[hidden]')), first = elements[0], last = elements[elements.length - 1];
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
@@ -1172,6 +1210,7 @@ function strokeEase(t) {
 
 function prepareStrokes(data,image,previous,text){
   if(!validStrokePlan(data))return null;
+  if(data.teachingActions){const plan=PlaybackTiming.raw(data,L?.stepMeta?.[step]||{},text);return {...plan,batchPlan:false,unreliableFocus:false};}
   if(data.v===3){
     const plan=PlaybackTiming.batches(data),meta=L?.stepMeta?.[step];
     // Pixel differences can contain incidental erasures across the whole figure.
@@ -1212,19 +1251,24 @@ function pointOnStroke(s, distance) {
 
 function strokeDistance(s, elapsed) { return s.length * strokeEase((elapsed - s.start) / s.drawDuration); }
 function brushStroke(ctx, s, from, to, width) {
+  ctx.save();
+  // Only the small side-lead contact feathers the reveal boundary. The master
+  // graphite and its tooth stay sharp; no full-frame filter is evaluated.
+  if(s.tool==='graphiteSide'){ctx.shadowColor='#fff';ctx.shadowBlur=3*ctx.canvas.width/1024;}
   const a = pointOnStroke(s, from), b = pointOnStroke(s, to);
   ctx.lineWidth = width; ctx.lineCap = ctx.lineJoin = 'round';
   ctx.beginPath(); ctx.moveTo(a.x, a.y);
   for (let i = a.i; i < b.i; i++) ctx.lineTo(s.points[i * 2], s.points[i * 2 + 1]);
   ctx.lineTo(b.x, b.y); ctx.stroke();
   if (to === from) { ctx.beginPath(); ctx.arc(a.x, a.y, width / 2, 0, Math.PI * 2); ctx.fill(); }
+  ctx.restore();
 }
 
 function playerCanvas(size) {
   const c = document.createElement('canvas'); c.width = c.height = size; return c;
 }
 function playbackSize() {
-  return Math.max(256, Math.min(1024, Math.round(($('#guideWrap').getBoundingClientRect().width || 600) * (window.devicePixelRatio || 1))));
+  return Math.max(256, Math.min(1024, Math.round(($('#paperWorld')?.clientWidth || $('#guideWrap').getBoundingClientRect().width || 600) * (window.devicePixelRatio || 1))));
 }
 
 // Kun fjernet grafit slettes fra det tidligere lag under viskelæderets spor.
@@ -1282,10 +1326,9 @@ function strokeAt(p, time) {
 
 function showHandAt(x, y, space, lift = 0, angle = 0, pressure = 'mellem', erasing = false) {
   const view = handOverlay(), hand = view.hand;
-  const variant = erasing ? 'erase' : lift > .3 ? 'lift' : pressure === 'hårdt' ? 'press' : 'draw';
+  const variant = erasing ? 'erase' : stepPlayer?.currentTool==='graphiteSide' ? 'side' : lift>.3 ? 'lift' : pressure === 'hårdt' ? 'press' : 'draw';
   const pose = handVariants.has(variant) ? variant : erasing ? 'eraseFallback' : 'drawFallback';
-  const hover = pressure === 'let' ? .35 : pressure === 'hårdt' ? 0 : .15;
-  const target = { x: x / space, y: y / space, pose, height: Math.max(lift, hover),
+  const target = { x: x / space, y: y / space, pose, height: Math.max(0, lift),
     rotation: reducedMotion.matches ? 0 : Math.max(-10, Math.min(10, angle)) };
   if (hand.hidden || !view.target) {
     view.rotation = target.rotation; view.height = target.height;
@@ -1305,7 +1348,7 @@ function showHandAt(x, y, space, lift = 0, angle = 0, pressure = 'mellem', erasi
     paintGraphiteFX(p, x / space, y / space, lift, pressure, erasing);
   }
 }
-function paintGraphiteFX(){ $('#graphiteFX').getContext('2d').clearRect(0,0,512,512); }
+function paintGraphiteFX(){ /* Graphite tooth is in the registered master. */ }
 
 // Dense plans reveal pre-rendered original masks in narrow, alternating bands.
 // Work per frame depends on teaching regions, never on the number of microstrokes.
@@ -1379,7 +1422,98 @@ function paintBatches(p){
   setHidden($('#strokeArrow'),true);p.painted=now;p.batchPaintState={active,fraction};
 }
 
+// Contact-only reveal. Erasing composites a removal-only image, so an eraser
+// can never draw an eye. Three masks represent three actual light passes.
+// Rewinding reconstructs the same strokes; the completed frame uses the exact master.
+function paintTeachingActions(p){
+  const now=p.elapsed,size=p.ctx.canvas.width,scale=size/1024,at=strokeAt(p,now);
+  const reset=p.painted<0||now<p.painted;
+  let dirty=reset?{x0:0,y0:0,x1:1024,y1:1024}:null;
+  const changed=s=>{
+    const b=s.bounds,pad=s.w/2+20;
+    const box={x0:b.x0-pad,y0:b.y0-pad,x1:b.x1+pad,y1:b.y1+pad};
+    dirty=dirty?{x0:Math.min(dirty.x0,box.x0),y0:Math.min(dirty.y0,box.y0),x1:Math.max(dirty.x1,box.x1),y1:Math.max(dirty.y1,box.y1)}:box;
+  };
+  if(reset){for(const c of [...p.layers,p.eraseMask])c.clearRect(0,0,size,size);p.painted=-1;p.taughtCompleted=0;}
+  p.taughtCompleted ||= 0;
+  while(p.taughtCompleted<p.strokes.length&&p.strokes[p.taughtCompleted].end<=now){
+    const s=p.strokes[p.taughtCompleted++];changed(s);
+    const c=s.action==='erase'?p.eraseMask:p.layers[s.layer];c.save();c.scale(scale,scale);c.strokeStyle=c.fillStyle='#fff';
+    brushStroke(c,s,0,s.length,s.w+4);c.restore();
+  }
+  const active=p.strokes[at],drawing=now>=active.start&&now<active.end;
+  if(drawing&&now!==p.painted)changed(active);
+  const x=dirty?Math.max(0,Math.floor(dirty.x0*scale)):0,y=dirty?Math.max(0,Math.floor(dirty.y0*scale)):0;
+  const right=dirty?Math.min(size,Math.ceil(dirty.x1*scale)):0,bottom=dirty?Math.min(size,Math.ceil(dirty.y1*scale)):0;
+  const clip=c=>{c.save();c.beginPath();c.rect(x,y,Math.max(0,right-x),Math.max(0,bottom-y));c.clip();};
+  let partial=null;
+  if(drawing&&dirty){
+    partial=p.partialCtx ||= playerCanvas(size).getContext('2d');clip(partial);
+    partial.clearRect(0,0,size,size);partial.drawImage((active.action==='erase'?p.eraseMask:p.layers[active.layer]).canvas,0,0);
+    partial.save();partial.scale(scale,scale);partial.strokeStyle=partial.fillStyle='#fff';
+    brushStroke(partial,active,0,strokeDistance(active,now),active.w+4);partial.restore();partial.restore();
+  }
+  if(!p.eraseOnly&&p.analysis.erased&&p.previous){
+    // Compute removal after rasterizing both images at the *same* native
+    // backing size. Max-before-resampling damaged thin contours at DPR 1.
+    const old=playerCanvas(size),fresh=playerCanvas(size),a=old.getContext('2d'),b=fresh.getContext('2d');
+    a.drawImage(p.previous,0,0,size,size);b.drawImage(p.image,0,0,size,size);
+    const before=a.getImageData(0,0,size,size),after=b.getImageData(0,0,size,size);
+    for(let i=0;i<before.data.length;i+=4)for(let k=0;k<3;k++)before.data[i+k]=Math.max(before.data[i+k],after.data[i+k]);
+    a.putImageData(before,0,0);p.eraseOnly=old;
+  }
+
+  if(!p.masterRaster){
+    p.masterRaster=playerCanvas(size);p.masterRaster.getContext('2d').drawImage(p.image,0,0,size,size);
+    if(p.previous){p.previousRaster=playerCanvas(size);p.previousRaster.getContext('2d').drawImage(p.previous,0,0,size,size);}
+  }
+  const ctx=p.ctx;
+  if(dirty){
+    // The static paper/previous marks and completed masks survive between
+    // frames. Only the current contact's padded region is recomposited.
+    const mask=p.maskCtx;clip(mask);mask.globalCompositeOperation='source-over';mask.clearRect(0,0,size,size);mask.globalCompositeOperation='lighter';mask.globalAlpha=1/p.layers.length;
+    for(let i=0;i<p.layers.length;i++)mask.drawImage(partial&&active.action!=='erase'&&i===active.layer?partial.canvas:p.layers[i].canvas,0,0);mask.globalAlpha=1;mask.globalCompositeOperation='source-over';mask.restore();
+    const comp=p.compositeCtx;clip(comp);clip(ctx);ctx.globalCompositeOperation='source-over';ctx.globalAlpha=1;ctx.fillStyle='#fff';ctx.fillRect(0,0,size,size);if(p.previousRaster)ctx.drawImage(p.previousRaster,0,0);
+    if(p.eraseOnly){comp.clearRect(0,0,size,size);comp.drawImage(p.eraseOnly,0,0,size,size);comp.globalCompositeOperation='destination-in';comp.drawImage(partial&&active.action==='erase'?partial.canvas:p.eraseMask.canvas,0,0);comp.globalCompositeOperation='source-over';ctx.drawImage(comp.canvas,0,0);}
+    comp.clearRect(0,0,size,size);comp.drawImage(p.masterRaster,0,0);comp.globalCompositeOperation='destination-in';comp.drawImage(mask.canvas,0,0);comp.globalCompositeOperation='source-over';ctx.drawImage(comp.canvas,0,0);ctx.restore();comp.restore();
+  }
+  if(p.cuePainted){p.tintCtx.clearRect(0,0,size,size);p.cuePainted=false;}
+  const s=p.strokes[at],distance=strokeDistance(s,now),point=pointOnStroke(s,distance),contact=now>=s.start&&now<s.end;
+  p.contact=contact;p.currentTool=s.tool;p.poseCycle=contact?Math.sin(Math.PI*distance/Math.max(1,s.length)):0;
+  if(p.playing&&now<p.duration&&!s.technicalSettle&&!s.repeat){
+    let tip=point,lift=0;
+    if(!contact){
+      const old=p.strokes[Math.max(0,at-1)];
+      const to=pointOnStroke(s,0),from=at?pointOnStroke(old,old.length):to;
+      const t=now<s.start?Math.max(0,Math.min(1,(now-s.preview)/Math.max(1,s.start-s.preview))):1,u=t*t*(3-2*t);
+      tip=now<s.start?{x:from.x+(to.x-from.x)*u,y:from.y+(to.y-from.y)*u}:point;
+      lift=.65+.35*Math.sin(Math.PI*t);
+    }
+    const release=!contact&&now>=s.end,away=release?Math.min(1,(now-s.end)/240):0;
+    if(release){lift=Math.min(1,(now-s.end)/140);tip={x:point.x+110*away*away,y:point.y+70*away*away};}
+    const before=pointOnStroke(s,Math.max(0,distance-6)),after=pointOnStroke(s,Math.min(s.length,distance+6));
+    const angle=Math.sin(Math.atan2(after.y-before.y,after.x-before.x))*4;
+    if(!release||away<1)showHandAt(tip.x,tip.y,1024,lift,angle,s.pressure,s.action==='erase');
+    else {setHidden($('#drawingHand'),true);pencilSound.stop();}
+  }else{if(!p.manualPause||p.elapsed!==p.pausedAt)setHidden($('#drawingHand'),true);pencilSound.stop();}
+  // A purposeful start cue, once per teaching unit, fades before deposition.
+  const group=p.segments.find(g=>now>=g.start&&now<g.end),first=group?.items[0];
+  if(first&&now<first.start-120&&!p.waiting){
+    p.cuePainted=true;
+    const age=now-group.start,alpha=Math.min(1,age/180,Math.max(0,(first.start-120-now)/180));
+    const c=p.tintCtx,a=pointOnStroke(first,0);c.save();c.scale(scale,scale);c.globalAlpha=alpha;
+    c.strokeStyle='#9167c3';c.lineWidth=4;c.beginPath();c.arc(a.x,a.y,14,0,Math.PI*2);c.stroke();
+    if(age>400&&first.tool!=='graphiteSide'&&first.action!=='erase'){
+      c.globalAlpha=alpha*.45;brushStroke(c,first,0,Math.min(first.length,250),4);
+    }
+    c.restore();
+  }
+  if(now>=p.duration){ctx.globalCompositeOperation='source-over';ctx.globalAlpha=1;ctx.clearRect(0,0,size,size);ctx.drawImage(p.image,0,0,size,size);}
+  setHidden($('#strokeArrow'),true);p.painted=now;
+}
+
 function paintStrokes(p){
+  if(p.authored)return paintTeachingActions(p);
   if(p.batchPlan)return paintBatches(p);
   const now=p.elapsed,ctx=p.ctx,size=ctx.canvas.width,scale=size/1024,at=strokeAt(p,now);
   if(now<p.painted){for(const layer of [...p.layers,p.eraseMask])layer.clearRect(0,0,size,size);p.painted=-1;}
@@ -1415,7 +1549,10 @@ function celebrateStep(p) {
 function setCopyPause(p, waiting) {
   p.waiting = waiting;
   $('#copyPause').hidden = !waiting;
-  if (waiting) { p.playing = false; p.state=p.elapsed>=p.duration?'stepComplete':'drawing'; pencilSound.stop(); pauseStepSpeech(); $('#lessonState').textContent='Din tur'; $('#readyBtn').textContent=p.elapsed>=p.duration?(step<L.steps.length-1?'Jeg har prøvet · Næste trin':'Jeg er færdig!'):'Jeg har prøvet · Vis næste del'; $('#readyBtn').focus({preventScroll:true});saveLesson(); }
+  if($('#copyPause').dataset)$('#copyPause').dataset.complete=String(p.elapsed>=p.duration);
+  const cue=$('#copyPause > span');
+  if(cue)cue.textContent=p.elapsed>=p.duration?(step===L.steps.length-1?'Se din tegning. Du bestemmer, hvornår den er færdig.':'Din tur · Fortsæt, når du har lyst.'):'Din tur · Prøv selv.';
+  if (waiting) { p.manualPause=false; p.playing = false; p.state=p.elapsed>=p.duration?'stepComplete':'drawing'; pencilSound.stop(); pauseStepSpeech(); $('#lessonState').textContent='Din tur'; $('#readyBtn').textContent=p.groups?.some(g=>g.practiceExample&&Math.abs(p.elapsed-g.end)<1)?'Vis resten · valgfrit':p.elapsed>=p.duration?(step<L.steps.length-1?'Jeg har prøvet · Næste trin':'Jeg er færdig!'):'Jeg har prøvet · Vis næste del'; saveLesson(); }
   $('#nextBtn').hidden=false;$('#nextBtn').disabled=false;$('#lessonState').textContent=waiting?'Din tur':'Se med';
   fitStage();
 }
@@ -1634,8 +1771,9 @@ function paintStep(){const p=stepPlayer;if(!p)return;
   if(p.kind==='static'){$('#drawingHand').hidden=true;pencilSound.stop();$('#guideStatus').textContent='Stillbillede · Animationen kunne ikke hentes';$('#guideStatus').hidden=false;$('#retryStep').hidden=false;$('#nextBtn').disabled=false;$('#lessonState').textContent='Se eksemplet · Prøv selv';updateVideoControls();return;}
   updateGuidance(p);paintStrokes(p);
   const done=p.elapsed>=p.duration;
-  if(done){p.ctx.globalCompositeOperation='source-over';p.ctx.globalAlpha=1;p.ctx.clearRect(0,0,p.ctx.canvas.width,p.ctx.canvas.height);p.ctx.drawImage(p.image,0,0,p.ctx.canvas.width,p.ctx.canvas.height);p.tintCtx.clearRect(0,0,p.tintCtx.canvas.width,p.tintCtx.canvas.height);p.playing=false;$('#drawingHand').hidden=true;$('#strokeArrow').hidden=true;pencilSound.stop();if(!p.waiting)setCopyPause(p,true);}
-  if($('#nextBtn').disabled)$('#nextBtn').disabled=false;setText($('#lessonState'),p.explaining?'Hør og se området':p.waiting?'Din tur':p.playing?'Se med':'Klar til at fortsætte');updateVideoControls();
+  if(done){if(!p.authored){p.ctx.globalCompositeOperation='source-over';p.ctx.globalAlpha=1;p.ctx.clearRect(0,0,p.ctx.canvas.width,p.ctx.canvas.height);p.ctx.drawImage(p.image,0,0,p.ctx.canvas.width,p.ctx.canvas.height);}p.tintCtx.clearRect(0,0,p.tintCtx.canvas.width,p.tintCtx.canvas.height);p.playing=false;$('#drawingHand').hidden=true;$('#strokeArrow').hidden=true;pencilSound.stop();if(!p.waiting)setCopyPause(p,true);}
+  if($('#nextBtn').disabled)$('#nextBtn').disabled=false;if(step===L.steps.length-1)setText($('#nextBtn'),p.waiting&&p.elapsed>=p.duration?'Jeg er færdig':'Afslut tegningen');
+  setText($('#lessonState'),p.explaining?'Hør og se området':p.waiting?'Din tur':p.playing?'Se med':'Klar til at fortsætte');updateVideoControls();
 }
 
 function positionHand(p, count) {
@@ -1656,8 +1794,10 @@ function advanceStep(now) {
   const p = stepPlayer;
   if (!p || !p.playing || p.explaining) { if(p)p.last=now;return; }
   p.frameDelta = Math.max(0, now - p.last);
-  const target = Math.min(p.duration, p.elapsed + Math.min(100, p.frameDelta) * stepSpeed);
-  const stop = waitForMe ? p.stops.find(t => t > p.elapsed && t <= target && !p.stopsPassed.has(t)) : undefined;
+  const target = Math.min(p.duration, p.elapsed + p.frameDelta * stepSpeed);
+  const exampleStops=(p.groups||[]).filter(g=>g.practiceExample).map(g=>g.end);
+  const stops=waitForMe?p.stops:exampleStops;
+  const stop = stops.length ? stops.find(t => t > p.elapsed && t <= target && !p.stopsPassed.has(t)) : undefined;
   p.elapsed = stop ?? target; p.last = now;
   if (typeof stop === 'number') { p.stopsPassed.add(stop); setCopyPause(p, true); }
   else if(p.elapsed>=p.duration)setCopyPause(p,true);
@@ -1672,10 +1812,10 @@ function stepTick(now) {
 function pauseStep() {
   advanceStep(performance.now());
   cancelAnimationFrame(stepFrame); stepFrame = 0;
-  if (stepPlayer) stepPlayer.playing = false;
+  if (stepPlayer) {stepPlayer.playing=false;stepPlayer.cameraFrozen=true;stepPlayer.manualPause=!stepPlayer.waiting;stepPlayer.pausedAt=stepPlayer.elapsed;}
   pencilSound.stop();
   pauseStepSpeech();
-  camera.from=null; cancelAnimationFrame(camera.frame);camera.frame=0;
+  setCamera({x:camera.x,y:camera.y,z:camera.z},true);
   saveLesson();paintStep();
 }
 
@@ -1684,6 +1824,7 @@ function playStep(fromStart = false) {
   const p = stepPlayer;
   if (!p) return;
   if (!p.count) { p.elapsed = p.duration; paintStep(); return; }
+  p.manualPause=false;
   const restarting = fromStart || p.elapsed >= p.duration;
   if (restarting) {
     p.elapsed = 0; p.drawn = 0; p.hand = null;
@@ -1692,9 +1833,11 @@ function playStep(fromStart = false) {
     camera.tip = null;
     $('#stepCheer').hidden = true;
     p.ctx.clearRect(0, 0, p.ctx.canvas.width, p.ctx.canvas.height);
+    p.painted=-1;p.batchCompleted=undefined;p.batchPaintState=null;
   }
   $('#shadowCompare').hidden = true;
   setCopyPause(p, false);
+  p.cameraFrozen=false;p.focusGroup=null;
   p.playing = !document.hidden; p.last = performance.now();
   paintStep();
   if (p.playing && !stepFrame) stepFrame = requestAnimationFrame(stepTick);
@@ -1705,7 +1848,7 @@ function toggleStepPlayback() {
   if (stepPlayer.playing) pauseStep(); else playStep();
 }
 
-function openLesson(lesson) {
+function openLesson(lesson, options = {}) {
   if (!lessonUnlocked(lesson)) { show('shop'); toast('Lås først tegningen op med dine stjerner ⭐'); return; }
   if (wallet.newLessons[lesson.id]) { const next = cloneWallet(); delete next.newLessons[lesson.id]; saveWallet(next); }
   // En afsluttet lektion begynder på et nyt ark.
@@ -1717,8 +1860,8 @@ function openLesson(lesson) {
     clearLessonDrawings(lesson.id); removeLocal(lessonKey(lesson.id)); saved=null;
   }
   attemptComplete=false;
-  L = lesson; step = saved ? saved.step : 0; mode = saved ? saved.mode : 'paper';
-  introPending = !saved; introLessonId = lesson.id; resumeState = saved; attemptId = saved?.attemptId || crypto.randomUUID?.() || String(Date.now()); assessment = saved?.assessment || null;
+  L = lesson; step = Number.isInteger(options.step)?Math.max(0,Math.min(lesson.steps.length-1,options.step)):saved ? saved.step : 0; mode = saved ? saved.mode : 'paper';
+  introPending = !saved; introLessonId = lesson.id; resumeState = Number.isInteger(options.step)?null:saved; attemptId = saved?.attemptId || crypto.randomUUID?.() || String(Date.now()); assessment = saved?.assessment || null;
   // Existing drafts are kept until an explicit restart or successful archive.
   stepImages.clear(); strokeFiles.clear();
   setLessonPlaybackDefaults(); loadHand();
@@ -1745,13 +1888,13 @@ async function renderStep() {
   $('#stepNum').textContent = `Trin ${step + 1} af ${n}`;
   $('#progress').setAttribute('aria-valuenow', step + 1);
   $('#progress').setAttribute('aria-valuetext', `Trin ${step + 1} af ${n}`);
-  $('#stepText').textContent = L.steps[step];
+  $('#stepText').textContent = shortCaption(L.steps[step]);$('#stepText').setAttribute('aria-label',L.steps[step]);$('#fullStepInstruction').textContent=L.steps[step];
   $('#finishBasic').hidden=!(L.stepMeta?.[step]?.optionalDetails||L.level>1);
   $('#stepSelfCheck').textContent=L.stepMeta?.[step]?.selfCheck||'Prøv på din egen måde. Du kan altid vise denne del igen.';
   [...$('#progress').children].forEach((d, i) => d.classList.toggle('on', i <= step));
   $('#prevBtn').disabled = false;
   UI.label($('#nextBtn'), step < n - 1 ? 'next' : 'check', step < n - 1 ? 'Næste trin' : 'Jeg er færdig!');
-  $('#nextBtn').disabled = false;$('#lessonState').textContent='Henter tegningen…';
+  $('#nextBtn').disabled = false;if(step===n-1)UI.label($('#nextBtn'),'check','Afslut tegningen');$('#lessonState').textContent='Henter tegningen…';
   $('#replayBtn').disabled = true;
   $('#videoControls').hidden = false;
   prepareVoice(`${L.dir}voice${step + 1}.m4a`);
@@ -1812,7 +1955,6 @@ function applyMode() {
   if(mode==='trace')setCamera({x:.5,y:.5,z:1},true);
   $('#cameraReset').hidden=mode==='trace'||!!stepPlayer?.unreliableFocus;
   if(mode==='side' && window.innerWidth<700) { pauseStep(); st.classList.add('my-paper'); } else st.classList.remove('my-paper');
-  $('#sideSwitch').hidden=mode!=='side';
   UI.controlIcon($('#modeBtn'), { paper: 'paper', side: 'pencil', trace: 'trace' }[mode]);
   $('#modeBtn').setAttribute('aria-label', 'Vælg tegnemåde. Nu: ' + { paper: 'På papir', side: 'Ved siden af', trace: 'Spor' }[mode]);
   const tools = $('#lessonTools');
@@ -1824,6 +1966,8 @@ function applyMode() {
 function fitStage() {
   if (current !== 'lesson') return;
   const st = $('#stage'), r = st.getBoundingClientRect();
+  $('#sideSwitch').hidden = mode !== 'side' || window.innerWidth >= 700;
+  setText($('#sideSwitch'), st.classList.contains('my-paper') ? 'Se læreren' : 'Mit ark');
   const layout = getComputedStyle(st);
   const W = Math.max(0, r.width - parseFloat(layout.paddingLeft || 0) - parseFloat(layout.paddingRight || 0));
   const H = Math.max(0, r.height - parseFloat(layout.paddingTop || 0) - parseFloat(layout.paddingBottom || 0));
@@ -1834,7 +1978,7 @@ function fitStage() {
   else if (mode === 'side') size = stacked ? Math.min(W, (H - gap) / 2) : Math.min(H, (W - gap) / 2);
   else size = Math.min(W, H);
   for (const e of [$('#guideWrap'), $('#sidePadWrap')]) { e.style.width = e.style.height = Math.max(0, size) + 'px'; }
-  if (handView) handView.size = { width: Math.max(0,size), height: Math.max(0,size) };
+  if (handView) handView.size = { width: Math.max(0,size-24), height: Math.max(0,size-24) };
   updateLessonHelpBounds();
 }
 window.addEventListener('resize', fitStage);
@@ -1852,7 +1996,6 @@ $('#modeBtn').onclick = () => {
 $('#modeClose').onclick = () => closeModePicker();
 for (const b of document.querySelectorAll('[data-mode]')) b.onclick = () => {
   mode = b.dataset.mode; applyMode(); closeModePicker();
-  toast({ paper: '📄 Tegn på papir', side: '✏️ Tegn ved siden af', trace: '👻 Tegn oven i (spor)' }[mode]);
 };
 $('#lessonClose').onclick = () => { dismissLessonHelp(); show('home'); };
 $('#lessonRestart').onclick = () => {
@@ -1867,7 +2010,7 @@ $('#prevBtn').onclick = () => { dismissLessonHelp(); if (step > 0) { step--; ren
 $('#replayBtn').onclick = () => { if (stepPlayer) replaySegment(); else renderStep(); };
 $('#playPauseBtn').onclick = toggleStepPlayback;
 $('#guideWrap').addEventListener('click', e => {
-  if (e.target !== $('#traceCanvas') && !e.target.closest('button') && !introAfter) toggleStepPlayback();
+  if (e.target !== $('#traceCanvas') && !e.target.closest('button,details') && !introAfter) toggleStepPlayback();
 });
 $('#stepScrubber').addEventListener('input', e => {
   if (!stepPlayer) return;
@@ -1900,6 +2043,7 @@ const motionChanged = () => { if (current === 'lesson') renderStep(); };
 if (reducedMotion.addEventListener) reducedMotion.addEventListener('change', motionChanged);
 else reducedMotion.addListener(motionChanged);
 function dismissLessonHelp() {
+  $('#teachingReference').open=false;
   cancelLessonIntro(); closeTechnique(false);
   if(warmupSession)closeWarmup(false);
   $('#stepDemo').hidden = $('#shadowCompare').hidden = true;
@@ -1908,7 +2052,8 @@ function dismissLessonHelp() {
 function confirmStep() {
   if(current!=='lesson'||!L)return;
   dismissLessonHelp();
-  if (!stepPlayer?.skipped) { awardStars(`step:${L.id}:${step}`,1,'Du prøvede et nyt trin'); markActive(); }
+  markActive();
+  for(const c of COURSES.filter(c=>c.lesson===L.id)){const shade=Math.max(1,L.stepMeta.findIndex(m=>m.skillIds?.includes('shading')));if(step===shade-1)setCoursePhase(c.id,1);if(step===L.steps.length-1)setCoursePhase(c.id,2);}
   if(step<L.steps.length-1){step++;renderStep();}else finishLesson();
 }
 $('#nextBtn').onclick = confirmStep;
@@ -1925,12 +2070,13 @@ function replaySegment(){const p=stepPlayer;if(!p)return;pauseStep();const curre
 function showStepDemo(id,after){pauseStep();const panel=$('#stepDemo');panel.querySelector('strong').textContent='Se, sådan gør du';panel.hidden=false;panel.dataset.technique=id;const version=stepVersion,start=performance.now();let frame;const draw=now=>{if(version!==stepVersion||panel.hidden)return;TechniqueDemo.draw($('#stepDemoCanvas'),id,reducedMotion.matches?1:Math.min(1,(now-start)/6500));if(now-start<6500&&!document.hidden)frame=requestAnimationFrame(draw);else{panel.hidden=true;if(!document.hidden&&version===stepVersion)after();else{stepPlayer.demoSeen=false;}}};requestAnimationFrame(draw);$('#stepDemoContinue').onclick=()=>{cancelAnimationFrame(frame);panel.hidden=true;if(version===stepVersion)after();};}
 function showShadowComparison(p){if(p.compared||!p.previous||!p.analysis.techniques.some(id=>['shading','hatch','cross','fur'].includes(id)))return;p.compared=true;$('#shadowBefore').src=p.graphitePrevious?.toDataURL()||p.previous.src;$('#shadowAfter').src=p.ctx?.canvas.toDataURL()||p.image.src;$('#shadowCompare').hidden=false;}
 $('#shadowCompareClose').onclick=()=>$('#shadowCompare').hidden=true;
-$('#retryStep').onclick=()=>{strokeFiles.delete(`${L.dir}strokes${step+1}.json`);stepImages.delete(`${L.dir}step${step+1}.jpg`);renderStep();};
+$('#retryStep').onclick=()=>{strokeFiles.delete(`${L.dir}strokes${step+1}.bin`);stepImages.delete(`${L.dir}step${step+1}.jpg`);renderStep();};
 $('#introReady').onclick=finishLessonIntro;
 $('#voiceStatus').onclick=retryVoice;
 $('#sideSwitch').onclick=()=>{pauseStep();$('#stage').classList.toggle('my-paper');$('#sideSwitch').textContent=$('#stage').classList.contains('my-paper')?'Se læreren':'Mit ark';fitStage();};
 $('#stepHow').onclick=()=>{const text=L?.stepMeta?.[step]?.how||stepPlayer?.groups?.[stepPlayer.groupAt]?.tip;if(text)toast(text);};
 $('#wholeReplay').onclick=()=>playStep(true);
+$('#lesson .playback-details').addEventListener('toggle',()=>{if($('#lesson .playback-details').open&&current==='lesson'){pauseStep();updateLessonHelpBounds();}});
 $('#skipDemo').onclick=()=>{if(!stepPlayer)return;pauseStep();stepPlayer.skipped=true;stepPlayer.elapsed=stepPlayer.duration;paintStep();};
 $('#settingHelpers').onchange=e=>{showHelpers=e.target.checked;writeLocal('ts_helpers',showHelpers);};
 $('#supportMode').onchange=e=>{writeLocal('ts_support',e.target.value);};
@@ -1939,23 +2085,21 @@ $('#saveExport').onclick=()=>downloadImage(([sidePad,tracePad].find(p=>!p.empty(
 for(const button of document.querySelectorAll('[data-support-skill]'))button.onclick=()=>openTechnique(TECHNIQUES.find(t=>t.id===button.dataset.supportSkill));
 /* ---------------- færdig ---------------- */
 function finishLesson() {
-  $('#doneKind').textContent='HELE LEKTIONEN GENNEMFØRT';$('#doneSticker').hidden=false;
-  awardStars('lesson:' + L.id, 3, 'Du gennemførte lektionen');
-  const p = store.get(); p.done[L.id] = 3; store.set(p); markActive();
-  $('#doneReward').textContent = 'Stjernerne er for din indsats. Gem et foto og få 2 ekstra stjerner første gang.';
-  $('#ownChallenge').textContent = challengeFor(L);
-  $('#ownTried').disabled = !!readLocal('ts_variation_' + L.id);
-  assessment=null; $('#assessmentTip').hidden = true; $('#supportChoices').hidden=true;
-  document.querySelectorAll('[data-assess]').forEach(b => b.setAttribute('aria-pressed', 'false'));
-  sidePad.finishStroke(); tracePad.finishStroke(); attemptComplete=true; saveLesson();
-  $('#doneTitle').textContent = doneMessage(L);
-  const own = [sidePad,tracePad].find(p=>!p.empty());
-  $('#doneArt').src = own ? own.toImage() : `${L.dir}step${L.steps.length}.jpg`;
-  $('#doneCaption').textContent=own?'Din egen tegning':'Vores eksempel · Scan din tegning herunder';
-  $('#doneArt').alt = L.title + ' – færdig tegning';
-  $('#doneSaveScreen').hidden = !own; $('#doneSaveScreen').disabled = false;
-  show('done');
-  confetti();
+  const reward=StarEconomy.starsFor(L),first=awardStars('lesson:'+L.id,reward,'Du gennemførte tegningen');
+  markActive();
+  $('#doneKind').textContent='Se, hvad du har skabt!';$('#doneSticker').hidden=false;
+  $('#doneTitle').textContent=L.title+' er færdig!';
+  $('#doneReward').textContent=first?`+${reward} stjerner · for din hele tegning`:store.get().done[L.id]?'Endnu en fin tegning! Du har allerede fået stjerner for denne.':'Stjernerne kunne ikke gemmes. Frigør lidt plads, og prøv igen.';
+  $('#completionAward').classList.toggle('earned',first);
+  $('#ownChallenge').textContent=challengeFor(L);$('#ownTried').disabled=!!readLocal('ts_variation_'+L.id);
+  assessment=null;$('#assessmentTip').hidden=true;$('#supportChoices').hidden=true;
+  document.querySelectorAll('[data-assess]').forEach(b=>b.setAttribute('aria-pressed','false'));
+  sidePad.finishStroke();tracePad.finishStroke();attemptComplete=true;saveLesson();
+  const own=[sidePad,tracePad].find(p=>!p.empty());
+  $('#doneArt').dataset.owner=own?'child':'example';$('#doneArt').src=own?own.toImage():`${L.dir}step${L.steps.length}.jpg`;
+  $('#doneCaption').textContent=own?'Din egen tegning':'Vores eksempel · Din udgave er helt din egen';
+  $('#doneArt').alt=L.title+' – færdig tegning';$('#doneSaveScreen').hidden=!own;$('#doneSaveScreen').disabled=false;
+  delete $('#doneSaveScreen').dataset.saved;$('.own-challenge').open=false;setCompletionBeat('celebrate');show('done');if(first)confetti();
 }
 function confetti() {
   const box = $('#confetti'); box.innerHTML = '';
@@ -1974,10 +2118,11 @@ function confetti() {
 $('#finishBasic').onclick=()=>{
   if(!L)return;sidePad.finishStroke();tracePad.finishStroke();assessment=null;attemptComplete=false;saveLesson();markActive();
   document.querySelectorAll('[data-assess]').forEach(b=>b.setAttribute('aria-pressed','false'));
-  const own=[sidePad,tracePad].find(p=>!p.empty());$('#doneKind').textContent='DIT EGET FORSØG';$('#doneTitle').textContent='Din grundform er klar!';$('#doneArt').src=own?own.toImage():`${L.dir}step${Math.max(1,step)}.jpg`;$('#doneCaption').textContent=own?'Din egen tegning':'Vores eksempel · Din udgave må gerne være enkel';$('#doneReward').textContent='Du har øvet grundformen. Du kan fortsætte med de ekstra detaljer senere.';$('#doneSaveScreen').hidden=!own;$('#doneSaveScreen').disabled=false;$('#doneSticker').hidden=!store.get().done[L.id];$('#ownChallenge').textContent=challengeFor(L);$('#assessmentTip').hidden=true;$('#supportChoices').hidden=true;show('done');
+  const own=[sidePad,tracePad].find(p=>!p.empty());$('#doneKind').textContent='DIT EGET FORSØG';$('#doneTitle').textContent='Din grundform er klar!';$('#doneArt').dataset.owner=own?'child':'example';$('#doneArt').src=own?own.toImage():`${L.dir}step${Math.max(1,step)}.jpg`;$('#doneCaption').textContent=own?'Din egen tegning':'Vores eksempel · Din udgave må gerne være enkel';$('#doneReward').textContent='Du har øvet grundformen. Du kan fortsætte med de ekstra detaljer senere.';$('#doneSaveScreen').hidden=!own;$('#doneSaveScreen').disabled=false;$('#doneSticker').hidden=!store.get().done[L.id];$('#ownChallenge').textContent=challengeFor(L);$('#ownTried').disabled=!!readLocal('ts_variation_'+L.id);$('.own-challenge').open=false;$('#assessmentTip').hidden=true;$('#supportChoices').hidden=true;delete $('#doneSaveScreen').dataset.saved;setCompletionBeat('capture');show('done');
 };
 $('#layoutPlan').onclick=async()=>{
   if(!L)return;const lesson=L,version=stepVersion;pauseStep();const im=await loadStep(lesson,lesson.steps.length-1).catch(()=>null);if(!im||version!==stepVersion)return;
+  $('#lesson .playback-details').open=false;fitStage();
   const panel=$('#stepDemo'),canvas=$('#stepDemoCanvas'),ctx=canvas.getContext('2d');panel.hidden=false;panel.querySelector('strong').textContent='Markér let top og bund. Gem plads til hele motivet.';ctx.clearRect(0,0,600,300);ctx.fillStyle='#fffdf8';ctx.fillRect(0,0,600,300);ctx.drawImage(im,150,0,300,300);
   const bounds=lesson.stepMeta?.[0]?.layoutBounds||[.12,.1,.88,.9];ctx.strokeStyle='#8b7b9f';ctx.lineWidth=2;ctx.setLineDash([5,5]);ctx.strokeRect(150+bounds[0]*300,bounds[1]*300,(bounds[2]-bounds[0])*300,(bounds[3]-bounds[1])*300);ctx.setLineDash([]);for(const y of [bounds[1],bounds[3]]){ctx.beginPath();ctx.arc(150+(bounds[0]+bounds[2])*150,y*300,5,0,Math.PI*2);ctx.stroke();}
   $('#stepDemoContinue').onclick=()=>{panel.hidden=true;};
@@ -1990,11 +2135,13 @@ $('#doneSaveScreen').onclick = async () => {
   if(archiving)return;archiving=true;$('#doneSaveScreen').disabled=true;
   const lesson=L,attempt=attemptId;try { for(const [kind,pad] of [['side',sidePad],['trace',tracePad]]) if(!pad.empty()) {
     const img=pad.toImage();await addEntry(img,lesson.title,{id:`attempt:${attempt}:${kind}`,lessonId:lesson.id,attemptId:attempt,mode:kind,kind:'screen',skillIds:lessonSkills(lesson),selfAssessment:assessment});
-  } await DraftStore.flush(); $('#doneCaption').textContent='Din tegning · Gemt i tegnebogen';toast('Dine ark er gemt i tegnebogen'); }
+  } await DraftStore.flush(); $('#doneCaption').textContent='Din tegning · Gemt i tegnebogen';$('#doneSaveScreen').dataset.saved='true';$('#doneSaveScreen').textContent='Gemt i tegnebogen';$('#captureContinue').textContent='Fortsæt';toast('Dine ark er gemt i tegnebogen'); }
   catch{toast('Ikke gemt endnu. Din kladde er stadig her.');$('#saveStatus').hidden=false;}finally{archiving=false;$('#doneSaveScreen').disabled=false;}
 };
 
 /* ---------------- tegnebog (IndexedDB) ---------------- */
+let journalFilter='all',journalRenderVersion=0;
+for(const button of document.querySelectorAll('[data-journal-filter]'))button.onclick=()=>{journalFilter=button.dataset.journalFilter;for(const other of document.querySelectorAll('[data-journal-filter]')){other.classList.toggle('on',other===button);other.setAttribute('aria-pressed',String(other===button));}renderJournal();};
 let dbP;
 function db() {
   return dbP ||= new Promise((res,rej)=>{let r;try{r=indexedDB.open('tegneskolen',1);}catch(e){rej(e);return;}
@@ -2028,49 +2175,90 @@ function shrink(file, max = 1200) {
 const fmtDate = t => new Date(t).toLocaleDateString('da-DK', { day: 'numeric', month: 'long', year: 'numeric' });
 
 async function renderJournal() {
-  await renderDrafts();
+  const version=++journalRenderVersion;
+  await renderDrafts(version);
+  if(version!==journalRenderVersion||current!=='journal')return;
   const g=$('#jgrid');g.replaceChildren();g.hidden=false;$('#jempty').classList.remove('on');g.textContent='Henter dine tegninger…';
-  try { const items=(await dbAll()).filter(it=>it && typeof it.img==='string').sort((a,b)=>b.created-a.created); if(current!=='journal')return;g.replaceChildren();g.hidden=!items.length;$('#jempty').classList.toggle('on',!items.length);
-    for(const it of items.slice(0,journalLimit)){const b=document.createElement('button');b.className='jitem';const ph=document.createElement('div');ph.className='ph';const img=document.createElement('img');img.src=it.img;img.alt=it.title||'Min tegning';img.loading='lazy';ph.append(img);const d=document.createElement('div');d.className='d';d.textContent=`${it.title} · ${fmtDate(it.created)}`;b.append(ph,d);b.onclick=()=>openEntry(it.id);g.append(b);}
-    if(items.length>journalLimit){const more=document.createElement('button');more.className='btn';more.textContent='Vis flere tegninger';more.onclick=()=>{journalLimit+=24;renderJournal();};g.append(more);}
+  try { const items=(await dbAll()).filter(it=>it && typeof it.img==='string'&&(journalFilter==='all'||it.kind===journalFilter)).sort((a,b)=>b.created-a.created); if(current!=='journal'||version!==journalRenderVersion)return;g.replaceChildren();g.hidden=!items.length;$('#jempty').classList.toggle('on',!items.length);
+    const tablet=journalTablet.matches;const pages=Math.max(1,Math.ceil(items.length/3));journalPage=Math.min(journalPage,pages-1);const visible=tablet?items.slice(journalPage*3,journalPage*3+3):items.slice(0,journalLimit);
+    for(const it of visible){const b=document.createElement('button');b.className='jitem';const ph=document.createElement('div');ph.className='ph';const img=document.createElement('img');img.src=it.img;img.alt=it.title||'Min tegning';img.loading='lazy';ph.append(img);const d=document.createElement('div');d.className='d';d.textContent=it.title||'Min tegning';const date=document.createElement('span');date.className='entry-date';date.textContent=fmtDate(it.created);d.append(date);b.append(ph,d);if(tablet){const note=document.createElement('span');note.className='scrapbook-note';note.textContent=it.note||'Et lille minde fra min tegnetid';b.append(note);}b.onclick=()=>openEntry(it.id);g.append(b);}
+    if(tablet&&pages>1){const pager=document.createElement('div');pager.className='journal-pager';for(const direction of [-1,1]){const b=document.createElement('button');b.className='small-control';b.textContent=direction<0?'← Forrige':'Næste →';b.disabled=direction<0?journalPage===0:journalPage===pages-1;b.onclick=()=>{journalPage+=direction;renderJournal();};pager.append(b);}const count=document.createElement('span');count.textContent=(journalPage+1)+' / '+pages;pager.insertBefore(count,pager.lastChild);g.append(pager);}
+    if(!tablet&&items.length>journalLimit){const more=document.createElement('button');more.className='btn';more.textContent='Vis flere tegninger';more.onclick=()=>{journalLimit+=24;renderJournal();};g.append(more);}
   } catch { g.textContent='Tegnebogen kunne ikke åbnes. Dine tegninger er ikke slettet.';const b=document.createElement('button');b.textContent='Prøv igen';b.className='btn';b.onclick=renderJournal;g.append(b); }
 }
-async function renderDrafts(){const box=$('#journalDrafts');box.replaceChildren();for(const lesson of LESSONS){const saved=lessonState(lesson);if(!saved)continue;const values=await Promise.all(['side','trace'].map(kind=>DraftStore.get(lessonKey(lesson.id)+'_'+kind).catch(()=>null)));if(!values.some(v=>validPadStrokes(v?.strokes).length))continue;const button=document.createElement('button');button.textContent='Gem kladden · '+lesson.title;button.onclick=async()=>{openLesson(lesson);await Promise.all(['side','trace'].map(kind=>DraftStore.get(lessonKey(lesson.id)+'_'+kind).catch(()=>null)));if(L.id===lesson.id)finishLesson();};box.append(button);}}
-let journalLimit=24;
+async function archiveDraft(lesson,kind,record,saved){
+  // Archive the same pressure, smoothing, dots and erasure as the live pad.
+  // toImage renders independently of the pad's current visibility or size.
+  const pad=Object.create(Pad.prototype);
+  pad.strokes=validPadStrokes(record.strokes);
+  await addEntry(pad.toImage('image/png'),lesson.title+' · Kladde',{id:'draft:'+lesson.id+':'+kind+':'+(saved.attemptId||'first'),lessonId:lesson.id,attemptId:saved.attemptId,kind:'screen',mode:kind,complete:!!saved.complete,draft:!saved.complete,step:saved.step});
+  writeLocal(lessonKey(lesson.id),{...saved,archivedDraftAt:Date.now()});
+}
+async function renderDrafts(version=journalRenderVersion){
+ const box=$('#journalDrafts'),rows=document.createDocumentFragment();
+ for(const lesson of LESSONS){const saved=lessonState(lesson);if(!saved)continue;
+  const kinds=['side','trace'],values=await Promise.all(kinds.map(kind=>DraftStore.get(lessonKey(lesson.id)+'_'+kind).catch(()=>null)));
+  if(version!==journalRenderVersion||current!=='journal')return;
+  if(!values.some(v=>validPadStrokes(v?.strokes).length))continue;
+  const row=document.createElement('div'),resume=document.createElement('button'),save=document.createElement('button');
+  resume.textContent='Fortsæt · '+lesson.title;resume.onclick=()=>openLesson(lesson);
+  save.textContent=(saved.complete?'Gem tegningen · ':'Gem kladden · ')+lesson.title;save.onclick=async()=>{save.disabled=true;try{for(let i=0;i<2;i++)if(validPadStrokes(values[i]?.strokes).length)await archiveDraft(lesson,kinds[i],values[i],saved);toast('Kladde gemt. Du kan fortsætte senere.');renderJournal();}catch{toast('Kladden kunne ikke gemmes. Prøv igen.');save.disabled=false;}};
+  row.append(resume);if(!saved.archivedDraftAt||values.some(v=>v?.updated>saved.archivedDraftAt))row.append(save);rows.append(row);
+ }
+ if(version!==journalRenderVersion||current!=='journal')return;
+ box.replaceChildren(rows);
+ const disclosure=box.closest('details');disclosure.hidden=!box.children.length;disclosure.querySelector('summary').textContent='Mine kladder · '+box.children.length;
+}
+
+let journalLimit=24,journalPage=0;
+const journalTablet=matchMedia('(min-width:700px) and (min-height:501px)');journalTablet.addEventListener('change',()=>{if(current==='journal')renderJournal();});
 $('#journalAdd').onchange=e=>{const file=e.target.files[0];e.target.value='';if(file)ScanFlow.open({file});};
 let entry=null,noteT,pendingNote=null;const deletedEntries=new Set();
-async function flushEntryNote(){clearTimeout(noteT);const change=pendingNote;if(!change)return;pendingNote=null;if(deletedEntries.has(change.id))return;try{await tx('readwrite',store=>{const r=store.get(change.id);r.onsuccess=()=>{if(r.result&&!deletedEntries.has(change.id))store.put({...r.result,note:change.note});};return r;});}catch(e){pendingNote=change;throw e;}}
+const noteRecoveryKey='ts_entry_notes_recovery';
+const noteChanges=new Map((Array.isArray(readLocal(noteRecoveryKey))?readLocal(noteRecoveryKey):[]).filter(v=>v&&['string','number'].includes(typeof v.id)&&typeof v.note==='string').map(v=>[v.id,v]));
+function checkpointEntryNotes(){if(noteChanges.size)writeLocal(noteRecoveryKey,[...noteChanges.values()]);else removeLocal(noteRecoveryKey);}
+async function flushEntryNote(){
+  clearTimeout(noteT);
+  if(pendingNote){noteChanges.set(pendingNote.id,pendingNote);pendingNote=null;}
+  for(const change of [...noteChanges.values()]){
+    if(deletedEntries.has(change.id)){noteChanges.delete(change.id);checkpointEntryNotes();continue;}
+    try{await tx('readwrite',store=>{const r=store.get(change.id);r.onsuccess=()=>{if(r.result&&!deletedEntries.has(change.id))store.put({...r.result,note:change.note});};return r;});
+      if(noteChanges.get(change.id)===change)noteChanges.delete(change.id);checkpointEntryNotes();
+    }catch(e){checkpointEntryNotes();throw e;}
+  }
+}
 async function openEntry(id){
   try{await flushEntryNote();const found=await dbGet(id);if(!found){toast('Tegningen findes ikke længere.');show('journal');return;}entry=found;$('#entryTitle').textContent=entry.title;$('#entryImg').src=entry.img;$('#entryNote').value=entry.note||'';$('#entryDate').textContent=fmtDate(entry.created)+(entry.skillIds?.length?' · Du prøvede: '+entry.skillIds.map(id=>TECHNIQUES.find(t=>t.id===id)?.name||id).join(', '):'');show('entry');await renderAttempts();}
   catch{toast('Tegningen kunne ikke åbnes. Prøv igen.');show('journal');}
 }
-async function renderAttempts(){const box=$('#entryAttempts');box.replaceChildren();if(!entry?.lessonId)return;const list=(await dbAll()).filter(it=>it.lessonId===entry.lessonId).sort((a,b)=>a.created-b.created);if(list.length<2)return;const label=document.createElement('p');label.textContent='Mine forsøg · Vælg din favorit';box.append(label);for(const it of list){const b=document.createElement('button');b.className='small-control';b.textContent=fmtDate(it.created);b.onclick=()=>openEntry(it.id);box.append(b);}}
-$('#entryNote').oninput=()=>{if(!entry)return;pendingNote={id:entry.id,note:$('#entryNote').value};clearTimeout(noteT);noteT=setTimeout(()=>flushEntryNote().catch(()=>toast('Noten er ikke gemt endnu.')),400);};
+async function renderAttempts(){const box=$('#entryAttempts');box.replaceChildren();if(!entry?.lessonId)return;const list=(await dbAll()).filter(it=>it.lessonId===entry.lessonId).sort((a,b)=>a.created-b.created);if(list.length<2)return;const label=document.createElement('p');label.textContent='Se dine forsøg';box.append(label);for(const [i,it]of list.entries()){const b=document.createElement('button');b.className='attempt-tile';const img=document.createElement('img');img.src=it.img;img.alt='';const title=document.createElement('strong');title.textContent=(it.draft?'Kladde':'Forsøg')+' '+(i+1);const date=document.createElement('small');date.textContent=fmtDate(it.created);b.append(img,title,date);b.setAttribute('aria-current',String(it.id===entry.id));b.onclick=()=>openEntry(it.id);box.append(b);}}
+$('#entryNote').oninput=()=>{if(!entry)return;pendingNote={id:entry.id,note:$('#entryNote').value};noteChanges.set(entry.id,pendingNote);checkpointEntryNotes();clearTimeout(noteT);noteT=setTimeout(()=>flushEntryNote().catch(()=>toast('Noten er ikke gemt endnu.')),400);};
 $('#entryBack').onclick=async()=>{try{await flushEntryNote();show('journal');}catch{toast('Noten er ikke gemt. Prøv igen.');}};
-$('#entryDelete').onclick=async()=>{if(!entry||!confirm('Vil du slette denne tegning?'))return;const id=entry.id;clearTimeout(noteT);pendingNote=null;deletedEntries.add(id);try{await dbDel(id);entry=null;show('journal');}catch{deletedEntries.delete(id);toast('Tegningen kunne ikke slettes. Prøv igen.');}};
-function downloadImage(src,name){const a=document.createElement('a');a.href=src;a.download=name;a.click();}
+$('#entryDelete').onclick=async()=>{if(!entry||!confirm('Vil du slette denne tegning?'))return;const id=entry.id;clearTimeout(noteT);pendingNote=null;noteChanges.delete(id);checkpointEntryNotes();deletedEntries.add(id);try{await dbDel(id);entry=null;show('journal');}catch{deletedEntries.delete(id);toast('Tegningen kunne ikke slettes. Prøv igen.');}};
+function downloadImage(src,name){
+  const format=/^data:image\/(png|webp|jpeg)[;,]/i.exec(src)?.[1].toLowerCase();
+  if(format)name=name.replace(/\.(?:jpe?g|png|webp)$/i,format==='jpeg'?'.jpg':'.'+format);
+  const a=document.createElement('a');a.href=src;a.download=name;a.click();
+}
 $('#entryExport').onclick=()=>{if(entry)downloadImage(entry.img,'min-tegning.jpg');};
 $('#entryScan').onclick=()=>{if(entry)ScanFlow.open({src:entry.img,entryId:entry.id,lesson:LESSONS.find(l=>l.id===entry.lessonId)});};
 /* ---------------- stjerner, læringssti og butik ---------------- */
 // En handling får en fast nøgle. Gentagelser ændrer aldrig tidligere belønninger.
-function initialWallet() {
-  const claims = {}, progress = store.get(); let earned = 0;
-  for (const [id, stars] of Object.entries(progress.done || {})) {
-    earned += Math.max(0, Number(stars) || 0); claims['lesson:' + id] = true;
-    const lesson = LESSONS.find(l => l.id === id);
-    lesson?.steps.forEach((_, i) => { claims[`step:${id}:${i}`] = true; });
-  }
-  return { version: 1, earned, spent: 0, claims, unlocked: {}, newLessons: {} };
-}
+function initialWallet() { return StarEconomy.migrate(readLocal('ts_wallet_v1'), store.get(), LESSONS); }
 function validWallet(value) {
-  return value?.version === 1 && Number.isFinite(value.earned) && Number.isFinite(value.spent) &&
-    value.earned >= value.spent && value.spent >= 0 && [value.claims,value.unlocked,value.newLessons].every(v=>v && typeof v==='object' && !Array.isArray(v));
+  return value?.version === 2 && Number.isInteger(value.earned) && value.earned >= 0 &&
+    Number.isInteger(value.spent) && value.spent >= 0 &&
+    [value.claims,value.unlocked,value.newLessons].every(v=>v && typeof v==='object' && !Array.isArray(v));
 }
-let wallet = readLocal('ts_wallet_v1');
-if (!validWallet(wallet)) { wallet = initialWallet(); writeLocal('ts_wallet_v1', wallet); }
-function latestWallet() { const saved = readLocal('ts_wallet_v1'); if (validWallet(saved)) wallet = saved; return wallet; }
+let wallet = initialWallet();
+writeLocal('ts_wallet_v1', wallet);
+function latestWallet() {
+  const saved = readLocal('ts_wallet_v1');
+  wallet = StarEconomy.migrate(saved || wallet, store.get(), LESSONS);
+  return wallet;
+}
 function cloneWallet() { return JSON.parse(JSON.stringify(latestWallet())); }
-function balance() { latestWallet(); return Math.max(0, Math.floor(wallet.earned - wallet.spent)); }
+function balance() { latestWallet(); return Math.max(0, wallet.earned - wallet.spent); }
 function saveWallet(next) {
   try { localStorage.setItem('ts_wallet_v1', JSON.stringify(next)); wallet = next; return true; }
   catch { toast('Stjernerne kunne ikke gemmes. Der skal være plads på enheden.'); return false; }
@@ -2083,60 +2271,52 @@ function updateWalletCounters() {
   }
 }
 function awardStars(key, amount, reason) {
+  if (!key.startsWith('lesson:')) return false;
+  const id = key.slice(7), lesson = LESSONS.find(l=>l.id===id) || (L?.id===id ? L : null);
+  const progress = store.get();
+  if (!lesson || progress.done[id] || amount !== StarEconomy.starsFor(lesson)) return false;
   const next = cloneWallet();
-  if (next.claims[key] || !Number.isInteger(amount) || amount <= 0) return false;
-  next.claims[key] = true; next.earned += amount;
-  if (!saveWallet(next)) return false;
-  updateWalletCounters(); animateStars(amount, reason); return true;
+  progress.done[id] = amount;
+  if (!writeLocal('ts_progress', progress)) return false;
+  const derived = StarEconomy.migrate(next, progress, LESSONS);
+  saveWallet(derived); updateWalletCounters();
+  animateStars(amount, reason); return true;
 }
 function animateStars(amount, reason) {
   $('#rewardStatus').textContent = `${reason}. Plus ${amount} stjerner.`;
-  const counter = [...document.querySelectorAll('[data-wallet], #starsTotal')].find(e => e.closest('.screen.on'));
-  const badge = document.createElement('div'); badge.className = 'star-flight'; UI.label(badge, 'star', `+${amount}`);
-  badge.setAttribute('aria-hidden', 'true'); document.body.appendChild(badge);
-  const end = counter?.getBoundingClientRect();
-  if (!reducedMotion.matches && badge.animate) badge.animate([
-    { transform: 'translate(-50%, 0) scale(1)', opacity: 1 },
-    { transform: 'translate(-50%, -35px) scale(1.15)', opacity: 1, offset: .3 },
-    { transform: `translate(${end ? end.left + end.width / 2 - window.innerWidth / 2 : 0}px, ${end ? end.top - window.innerHeight * .62 : -180}px) scale(.4)`, opacity: 0 }
-  ], { duration: 1100, easing: 'ease-in-out' });
-  setTimeout(() => badge.remove(), reducedMotion.matches ? 1100 : 1150);
+  // The full-screen lesson celebration owns the visual reward. No step flights.
 }
-function completedStepCount(lesson) { latestWallet(); return lesson.steps.filter((_, i) => wallet.claims[`step:${lesson.id}:${i}`]).length; }
+function completedStepCount(lesson) { return store.get().done[lesson.id] ? lesson.steps.length : 0; }
 function lessonUnlocked(lesson) { return !lesson.shop || !!latestWallet().unlocked[lesson.id]; }
 window.addEventListener('storage', e => {
-  if (e.key !== 'ts_wallet_v1') return;
+  if (!['ts_wallet_v1','ts_progress'].includes(e.key)) return;
   latestWallet(); updateWalletCounters(); if (current === 'home') renderHome(); if (current === 'shop') renderShop();
 });
 const COURSES = [
   { id:'forms', practiceLessonIds:['e_fisk','e_skildpadde'], goal:'Find og placér en enkel grundform', name: 'Former', icon: '◯', technique: 'construction', lesson: 'e_fisk', own: 'Find en ting med en oval form. Tegn den med lette streger.' },
   { id:'tone', practiceLessonIds:['e_aeble','e_fisk'], goal:'Samme form med lyse og mørkere lag', name: 'Let og mørkt', icon: '✏️', technique: 'contour', lesson: 'e_aeble', own: 'Tegn en anden frugt med en let hjælpelinje og et mørkere omrids.' },
-  { id:'light', practiceLessonIds:['e_aeble','e_tulipan'], goal:'Find lyset og skyg på den modsatte side', name: 'Lys og skygge', icon: '🌗', technique: 'shading', lesson: 'e_aeble', own: 'Læg en lille ting på bordet. Find lyset, og tegn skyggen på den anden side.' },
+  { id:'light', practiceLessonIds:['e_aeble','e_tulipan'], goal:'Find lyset og skyg på den modsatte side', name: 'Lys og skygge', icon: '🌗', technique: 'shading', lesson: 'e_tulipan', own: 'Læg en lille ting på bordet. Find lyset, og tegn skyggen på den anden side.' },
   { id:'texture', practiceLessonIds:['kanin','raev'], goal:'Korte strøg der følger dyrets form', name: 'Pels og tekstur', icon: '🪶', technique: 'fur', lesson: 'kanin', own: 'Opfind et dyr med korte pelsstreger eller lange fjer.' }
 ];
 let recommendedAction = null;
 function renderLearningPath() {
-  const path=$('#learningPath'),resumeBox=$('#learningResume');path.replaceChildren();resumeBox.replaceChildren();resumeBox.hidden=true;recommendedAction=null;
+  const path=$('#learningPath'),position=path.scrollLeft,resumeBox=$('#learningResume');path.replaceChildren();resumeBox.replaceChildren();resumeBox.hidden=true;
+  const progress=store.get(), interests=readLocal('ts_interests')||[];
   const interrupted=LESSONS.filter(lessonUnlocked).filter(l=>lessonState(l)&&!lessonState(l).complete).sort((a,b)=>lessonState(b).updated-lessonState(a).updated)[0];
-  let suggested=interrupted,label=interrupted?`Fortsæt ${interrupted.title} · trin ${lessonState(interrupted).step+1}`:'';
-  if(interrupted){const resume=document.createElement('button');resume.className='resume-card';resume.textContent=label;resume.onclick=()=>openLesson(interrupted);resumeBox.append(resume);resumeBox.hidden=false;recommendedAction=resume.onclick;}
+  const suggested=interrupted||LESSONS.find(l=>interests.includes(l.id)&&!progress.done[l.id])||LESSONS.find(l=>lessonUnlocked(l)&&!progress.done[l.id])||LESSONS[0];
+  recommendedAction=()=>openLessonPreview(suggested);
   for(const [i,course]of COURSES.entries()){
-    const lesson=LESSONS.find(l=>l.id===course.lesson);if(!lesson)continue;
-    const practised=readLocal('ts_practice_'+course.technique)>0,drawn=!!store.get().done[lesson.id],own=!!readLocal('ts_course_own_'+course.id)||!!readLocal('ts_course_own_'+i);
-    const card=document.createElement('div');card.className='path-card';card.dataset.complete=String(practised&&drawn&&own);
-    const title=document.createElement('strong');UI.label(title,UI.techniqueIcons[course.technique],`${i+1}. ${course.name}`);card.append(title);
-    const goal=document.createElement('p');goal.textContent=course.goal;card.append(goal);
-    for(const [name,complete,action]of [['Øv',practised,()=>{show('techniques');openTechnique(TECHNIQUES.find(t=>t.id===course.technique));}],['Tegn',drawn,()=>openLesson(lesson)],['Prøv selv',own,()=>openWarmup(course.own,i)]]){
-      const button=document.createElement('button');button.className=complete?'path-node complete':'path-node';if(complete)UI.label(button,'check',name);else button.textContent=name;button.onclick=action;card.append(button);
-      if(!complete&&!recommendedAction){recommendedAction=action;suggested=lesson;label=name==='Øv'?'Øv '+course.name:name==='Tegn'?'Tegn '+lesson.title:'Prøv din egen idé · '+course.name;}
-    }
-    for(const id of course.practiceLessonIds||[]){const extra=LESSONS.find(l=>l.id===id);if(!extra||extra.id===lesson.id)continue;const button=document.createElement('button');button.className='small-control';button.textContent='Prøv også '+extra.title;button.onclick=()=>openLesson(extra);card.append(button);}
-    path.append(card);
+    const lesson=LESSONS.find(l=>l.id===course.lesson),ids=[...new Set([course.lesson,...course.practiceLessonIds])],done=ids.filter(id=>progress.done[id]).length;
+    const group=document.createElement('div');group.className='journey-group';
+    const node=document.createElement('button');node.className='course-node'+(done===ids.length?' complete':'');node.style.setProperty('--arc',Math.round(done/ids.length*360)+'deg');
+    node.innerHTML=UI.icon(done===ids.length?'check':'learn');const title=document.createElement('strong');title.textContent=course.name;node.append(title);const count=document.createElement('small');count.textContent=done+' af '+ids.length+' tegninger';node.append(count);node.onclick=()=>openCourse(course);node.setAttribute('aria-label',course.name+', '+count.textContent);group.append(node);
+    const branch=document.createElement('div');branch.className='drawing-branch';
+    for(const id of ids){const drawing=LESSONS.find(l=>l.id===id),practice=document.createElement('button');practice.className='drawing-node'+(progress.done[id]?' complete':'');const img=document.createElement('img');img.src=drawing.dir+'thumb.jpg';img.alt='';img.loading='lazy';const label=document.createElement('span');label.textContent=drawing.title+(id===suggested.id?' · '+(interrupted?'Fortsæt':'Start'):'');practice.append(img,label);practice.onclick=()=>openLessonPreview(drawing);branch.append(practice);}group.append(branch);path.append(group);
   }
-  if(!recommendedAction){suggested=LESSONS.find(l=>lessonUnlocked(l)&&!store.get().done[l.id])||LESSONS[0];label='Næste tegning · '+suggested.title;recommendedAction=()=>openLesson(suggested);}
-  if(!interrupted&&!Object.keys(store.get().done).length&&!TECHNIQUES.some(t=>readLocal('ts_practice_'+t.id)>0)){suggested=LESSONS.find(l=>l.id==='e_fisk');label='Start med din fisk';recommendedAction=()=>openLesson(suggested);}
-  const active=[...path.querySelectorAll('.path-card')].find(c=>c.dataset.complete!=='true');active?.classList.add('current-course');
-  $('#heroArt').src=(suggested||LESSONS[0]).dir+'thumb.jpg';$('#pathContinue').textContent=label;
+  path.scrollLeft=position;
+  if(interrupted){const b=document.createElement('button');b.className='resume-drawing';const img=document.createElement('img');img.src=interrupted.dir+'thumb.jpg';img.alt='';const label=document.createElement('span');label.textContent='Fortsæt '+interrupted.title+' · trin '+(lessonState(interrupted).step+1)+' af '+interrupted.steps.length;b.append(img,label);b.onclick=()=>openLesson(interrupted);resumeBox.append(b);resumeBox.hidden=false;}
+  $('#heroArt').src=suggested.dir+'thumb.jpg';$('#journeyNextTitle').textContent=suggested.title;
+  $('#pathContinue').textContent=interrupted?'Fortsæt min tegning':'Lad os tegne';
 }
 $('#pathContinue').onclick = () => recommendedAction?.();
 function lessonSkills(lesson) { return lesson.skillIds || [...new Set((lesson.stepMeta || []).flatMap(m=>m.skillIds||[]))]; }
@@ -2160,7 +2340,7 @@ function openWarmup(challenge = null, course = null) {
   $('#warmupTitle').textContent = challenge ? 'Prøv selv · Din egen idé' : 'Varm hånden op';
   $('#warmupModal ol').hidden = !!challenge; $('#warmupModal .warmup-samples').hidden = !!challenge;
   $('#warmupModal .warmup-card > p').textContent = 'Find papir og blyant. Der er ingen tid, du skal nå det på.';
-  UI.label($('#warmupComplete'), challenge ? 'check' : 'star', challenge ? 'Jeg har prøvet min idé' : latestWallet().claims['warmup:'+today()]?'Øv igen · Jeg har prøvet':'Jeg har øvet mig · +1');
+  UI.label($('#warmupComplete'), 'check', challenge ? 'Jeg har prøvet min idé' : 'Jeg har øvet mig');
   warmupSession.exercise=0; renderWarmupExercise();
   $('#warmupModal').hidden = false; modalInert(true); $('#warmupClose').focus({ preventScroll: true });
 }
@@ -2182,7 +2362,7 @@ $('#warmupComplete').onclick = () => {
   if (warmupSession.challenge) completeOwnTask(COURSES[warmupSession.course]);
   else {
     const count = (readLocal('ts_warmups') || 0) + 1;
-    if (awardStars('warmup:' + today(), 1, 'Din hånd er varmet op')) writeLocal('ts_warmups', count);
+    writeLocal('ts_warmups', count);
   }
   markActive(); closeWarmup(); if (current === 'home') renderLearningPath();
 };
@@ -2203,15 +2383,15 @@ function renderShop() {
   const lessons = LESSONS.filter(l => l.shop); $('#shopEmpty').hidden = !!lessons.length;
   for (const l of lessons) {
     const unlocked = lessonUnlocked(l), card = document.createElement('article'); card.className = 'shop-card' + (unlocked ? ' unlocked' : ' locked');
-    const art = document.createElement('div'); art.className = 'shop-art';
+    const art = document.createElement('button'); art.className = 'shop-art';art.setAttribute('aria-label','Se '+l.title);art.onclick=()=>unlocked?openLesson(l):askUnlock(l);
     const img = document.createElement('img'); img.src = `${l.dir}step${l.steps.length}.jpg`; img.alt = l.title; img.loading = 'lazy'; img.width = img.height = 400;
     art.appendChild(img);
     if (!unlocked) { const lock = document.createElement('span'); lock.className = 'shop-lock'; UI.label(lock, 'lock', l.price + ' stjerner'); art.appendChild(lock); }
     const name = document.createElement('h2'); name.textContent = l.title;
     const meta = document.createElement('p'); meta.textContent = `${LEVELS.find(x => x.id === l.level).name} · ${l.steps.length} trin`;
     const button = document.createElement('button'); button.className = 'btn' + (unlocked || balance() >= l.price ? ' primary' : '');
-    UI.label(button, unlocked ? 'next' : 'star', unlocked ? 'Tegn nu' : balance() >= l.price ? `Lås op · ${l.price}` : `Spar ${l.price - balance()} mere op`);
-    button.disabled = !unlocked && balance() < l.price;
+    UI.label(button, unlocked ? 'next' : 'star', unlocked ? 'Tegn nu' : balance() >= l.price ? `Lås op · ${l.price}` : 'Se tegningen');
+    button.disabled = false;
     button.onclick = () => unlocked ? openLesson(l) : askUnlock(l);
     card.append(art, name, meta, button); grid.appendChild(card);
   }
@@ -2223,7 +2403,8 @@ function askUnlock(lesson) {
   $('#unlockTitle').textContent = lesson.stickerScene ? 'Lås siden op?' : 'Lås tegningen op?';
   $('#unlockArt').src = lesson.stickerScene ? lesson.art : `${lesson.dir}step${lesson.steps.length}.jpg`;
   $('#unlockArt').alt = lesson.title;
-  $('#unlockText').textContent = `Brug ${lesson.price} stjerner på ${lesson.title.toLowerCase()}? Så har du ${Math.max(0, balance() - lesson.price)} stjerner tilbage.`;
+  $('#unlockText').textContent = `Brug ${lesson.price} stjerner på ${lesson.stickerScene ? 'siden' : 'tegningen'} “${lesson.title}”? Så har du ${Math.max(0, balance() - lesson.price)} ${balance()-lesson.price===1?'stjerne':'stjerner'} tilbage.`;
+  if(balance()<lesson.price)$('#unlockText').textContent=lesson.title+' koster '+lesson.price+' stjerner. Du mangler '+(lesson.price-balance())+' '+(lesson.price-balance()===1?'stjerne':'stjerner')+'. Du kan altid vælge en anden tegning.';
   $('#unlockConfirm').disabled = balance() < lesson.price;
   $('#unlockModal').hidden = false; modalInert(true); $('#unlockCancel').focus({ preventScroll: true });
 }
@@ -2289,13 +2470,15 @@ let gentleCamera = readLocal('ts_gentle_camera') !== false;
 
 // Lille gentaget papirstruktur beregnes én gang, aldrig i afspilningssløjfen.
 function makePaper() {
-  const c = playerCanvas(128), ctx = c.getContext('2d'), pixels = ctx.createImageData(128, 128);
-  let seed = 7919;
-  for (let i = 0; i < pixels.data.length; i += 4) {
-    seed = (seed * 1664525 + 1013904223) >>> 0; const grain = seed % 5;
-    pixels.data[i] = 255 - grain; pixels.data[i + 1] = 253 - grain; pixels.data[i + 2] = 248 - grain; pixels.data[i + 3] = 255;
-  }
-  ctx.putImageData(pixels, 0, 0); $('#guideCamera').style.backgroundImage = `url(${c.toDataURL()})`;
+  // Keep the optional comparison off the drawing, including at practice stops.
+  $('.lessonbar').appendChild($('#teachingReference'));
+  $('.playback-options').appendChild($('#lessonRestart'));
+  const world=document.createElement('div');world.id='paperWorld';world.className='paper-world';
+  $('#guideWrap').insertBefore(world,$('#guideCamera'));world.appendChild($('#guideCamera'));
+  $('#guideCamera').appendChild($('#paperLighting'));
+  $('#guideCamera').appendChild($('#graphiteFX'));
+  if($('#drawingHand').parentNode!==$('#guideCamera'))$('#guideCamera').appendChild($('#drawingHand'));
+  const slot=document.createElement('div');slot.className='practice-cue-slot';$('#pencilGuidance').append(slot);slot.append($('#liveTip'),$('#copyPause'));
 }
 makePaper();
 
@@ -2305,7 +2488,7 @@ function updateOfflineDownload() {
   if (!L) return;
   const task=lessonDownloads.get(L.id),saved=readLocal('ts_offline_'+L.id);
   $('#downloadLesson').disabled=!!task?.pending;
-  $('#offlineStatus').textContent=task?.status || (saved?.revision===L.revision && saved?.build==='1793715603' ? 'Klar uden internet ✓' : '');
+  $('#offlineStatus').textContent=task?.status || (saved?.revision===L.revision && ['1794014404','1794018002','1794018003','1794018004','1794018005','1794018006','1794018007','1794018008'].includes(saved?.build) ? 'Klar uden internet ✓' : '');
 }
 $('#downloadLesson').onclick=async()=>{
   const lesson=L;if(!lesson||lessonDownloads.get(lesson.id)?.pending)return;
@@ -2321,7 +2504,7 @@ $('#downloadLesson').onclick=async()=>{
       const timer=setTimeout(()=>reject(Error('Download tog for lang tid. Prøv igen.')),180000);
       port.onmessage=e=>{const result=e.data;
         if(result.error){clearTimeout(timer);reject(Error(result.error));}
-        else if(result.complete){clearTimeout(timer);writeLocal('ts_offline_'+lesson.id,{revision:result.revision,build:'1793715603',updated:Date.now()});status('Klar uden internet ✓');resolve();}
+        else if(result.complete){clearTimeout(timer);writeLocal('ts_offline_'+lesson.id,{revision:result.revision,build:'1794018008',updated:Date.now()});status('Klar uden internet ✓');resolve();}
         else status(`Gemmer ${result.progress} af ${result.total} filer`);
       };
       worker.postMessage({type:'DOWNLOAD_LESSON',id:lesson.id,revision:lesson.revision},[channel.port2]);
@@ -2354,21 +2537,90 @@ window.addEventListener('popstate',e=>{
   if (!$('#settingsModal').hidden) closeSettings();
   if (!$('#warmupModal').hidden) closeWarmup();
   if (!$('#unlockModal').hidden) closeUnlock();
+  if (!$('#pathSheet').hidden) closePathSheet();
   if (!$('#modeModal').hidden) closeModePicker(false);
   if (techniqueSession) closeTechnique(false);
   historyReady=false;const screen=e.state?.screen;
   if(screen&&document.getElementById(screen)?.classList.contains('screen'))show(screen);else show('home');
   historyReady=true;
 });
+/* ---------------- discovery UI, independent of drawing playback ---------------- */
+let previewLesson=null,previewOrigin='home',selectedCourse=null,onboardingStep=-1,onboardingChoices=[],interestSelection=null,pathSheetFocus=null;
+function openLessonPreview(lesson) {
+  previewOrigin=current==='drawingIntro'?previewOrigin:current;previewLesson=lesson;
+  if(readLocal('ts_equipment_ready')&&!store.get().done[lesson.id]){openLesson(lesson);return;}
+  $('#previewTitle').textContent='Har du papir og blyant?';$('#previewGoal').textContent=lesson.goal||'Vi finder formerne og tegner dem sammen.';
+  $('#previewLevel').textContent=(LEVELS.find(l=>l.id===lesson.level)?.name||'Let')+' · '+lesson.steps.length+' trin';
+  $('#previewArt').src=lesson.dir+'thumb.jpg';$('#previewArt').alt=lesson.title;
+  $('#previewReward').textContent=store.get().done[lesson.id]?'Du har allerede fået stjerner for denne tegning.':'Din første hele tegning giver '+StarEconomy.starsFor(lesson)+' stjerner.';
+  $('#previewStart').textContent='Ja, jeg er klar';show('drawingIntro');
+}
+function setCoursePhase(id,phase){const state=objectMap(readLocal('ts_course_phases_'+id));state[phase]=true;writeLocal('ts_course_phases_'+id,state);}
+function openCourse(course) {
+ selectedCourse=course;$('#courseTitle').textContent=course.name;$('#courseGoal').textContent=course.goal;
+ const lesson=LESSONS.find(l=>l.id===course.lesson),saved=lessonState(lesson),state=objectMap(readLocal('ts_course_phases_'+course.id));
+ const shade=lesson.stepMeta.findIndex(m=>m.skillIds?.includes('shading'));
+ const phases=[{title:'Se teknikken',index:0,technique:true},{title:'Byg formen',index:0},{title:'Prøv på tegningen',index:Math.max(1,shade)}];
+ $('#courseCount').textContent=Object.values(state).filter(Boolean).length+' / 3 øvelser';const row=$('#courseLessons');row.replaceChildren();
+ for(const [i,phase]of phases.entries()){
+  const button=document.createElement('button');button.className='course-lesson'+(state[i]?' complete':'');
+  const circle=document.createElement('span');circle.className='course-art';const image=document.createElement('img');image.src=i===0?'assets/vector/technique-'+course.technique+'.svg':lesson.dir+'step'+(i===1?Math.min(4,lesson.steps.length):lesson.steps.length)+'.jpg';image.alt=phase.title;circle.append(image);
+  const label=document.createElement('strong');label.textContent=phase.title;const meta=document.createElement('small');meta.textContent=state[i]?'Øvet · prøv igen':i===0?'Et lille eksempel':i===1?'Lette hjælpelinjer':'Brug '+course.name.toLowerCase();
+  button.append(circle,label,meta);button.onclick=()=>{writeLocal('ts_course_position_'+course.id,i);if(phase.technique){openTechnique(TECHNIQUES.find(t=>t.id===course.technique));return;}openLesson(lesson,{step:phase.index});};row.append(button);
+ }
+ const resume=$('#courseResume');resume.hidden=!saved||saved.complete;if(!resume.hidden){resume.textContent='Fortsæt '+lesson.title+' · trin '+(saved.step+1);resume.onclick=()=>openLesson(lesson);}
+ show('course');const position=readLocal('ts_course_position_'+course.id)||0;row.scrollLeft=position*(row.children[0]?.offsetWidth+40||0);
+}
+function setCompletionBeat(beat) {
+  $('#done').dataset.beat=beat;
+  const own=[sidePad,tracePad].some(p=>!p.empty());$('#done').dataset.captureMode=own?'screen':'paper';
+  $('#doneScan').classList.toggle('primary',!own);$('#doneSaveScreen').textContent='Gem min tegning';
+  $('#captureContinue').textContent=$('#doneSaveScreen').dataset.saved==='true'?'Fortsæt':own?'Fortsæt uden at gemme':'Fortsæt uden foto';
+  if(beat==='reflect'){$('#reflectionArt').src=$('#doneArt').src;const ownImage=$('#doneArt').dataset.owner==='child';$('#reflectionCaption').textContent=ownImage?'Din tegning':'Vores eksempel';$('#reflectionArt').alt=ownImage?'Din tegning fra dette forsøg':'Vores eksempel';}
+  for(const panel of document.querySelectorAll('[data-completion-beat]'))panel.hidden=panel.dataset.completionBeat!==beat;
+  $('#done').scrollTop=0;
+}
+function closePathSheet(){ $('#pathSheet').hidden=true;modalInert(false);pathSheetFocus?.focus({preventScroll:true}); }
+$('#switchPath').onclick=()=>{
+  pathSheetFocus=document.activeElement;const row=$('#pathChoices');row.replaceChildren();
+  for(const course of COURSES){const button=document.createElement('button');const image=document.createElement('img');image.src=LESSONS.find(l=>l.id===course.lesson).dir+'thumb.jpg';image.alt='';const label=document.createElement('strong');label.textContent=course.name;button.append(image,label);button.onclick=()=>{closePathSheet();openCourse(course);};row.append(button);}
+  $('#pathSheet').hidden=false;modalInert(true);$('#pathSheetClose').focus();
+};
+$('#pathSheetClose').onclick=closePathSheet;
+$('#courseBack').onclick=()=>show('home');
+$('#previewBack').onclick=$('#previewLater').onclick=()=>show(previewOrigin==='course'?'course':previewOrigin==='explore'?'explore':'home');
+$('#previewStart').onclick=()=>{writeLocal('ts_equipment_ready',true);if(previewLesson)openLesson(previewLesson);};
+$('#previewLater').onclick=()=>{writeLocal('ts_equipment_ready',true);if(previewLesson)openLesson(previewLesson);};
+$('#exploreSettings').onclick=()=>$('#settingsBtn').onclick();
+$('#filterToggle').onclick=()=>{const hidden=!$('#levelChips').hidden;$('#levelChips').hidden=hidden;$('#filterToggle').setAttribute('aria-expanded',String(!hidden));};
+$('#celebrationContinue').onclick=()=>setCompletionBeat('capture');$('#celebrationHome').onclick=()=>show('home');
+$('#captureContinue').onclick=()=>setCompletionBeat('reflect');
+function startOnboarding(){onboardingStep=-1;onboardingChoices=[];renderOnboarding();show('onboarding');}
+function finishOnboarding(){writeLocal('ts_onboarded_v4',true);if(onboardingChoices.length)writeLocal('ts_interests',onboardingChoices);show('home');}
+function renderOnboarding(){
+  const welcome=onboardingStep<0;interestSelection=null;$('#onboarding').classList.toggle('welcome',welcome);
+  $('#onboardingTitle').textContent=welcome?'En verden af streger':onboardingStep===0?'Hvad har du lyst til at tegne?':'Hvad skal vi også prøve?';
+  $('#onboardingText').innerHTML=welcome?'Velkommen til din tegnetid.<br>Find noget, du har lyst til at tegne.':'Vælg den tegning, der gør dig nysgerrig.';
+  $('#onboarding .welcome-mascot').hidden=!welcome;$('#interestProgress').hidden=welcome;$('#interestPair').hidden=welcome;
+  $('#onboardingNext').textContent=welcome?'Find min tegnelyst':onboardingStep===0?'Næste valg':'Vis min tegnerejse';$('#onboardingNext').disabled=false;
+  $('#interestProgress').setAttribute('aria-valuenow',String(Math.max(0,onboardingStep)));$('#interestProgress i').style.width=Math.max(0,onboardingStep)/2*100+'%';
+  const pair=$('#interestPair');pair.replaceChildren();if(welcome)return;
+  for(const id of (onboardingStep===0?['e_fisk','e_aeble']:['e_skildpadde','e_tulipan'])){const lesson=LESSONS.find(l=>l.id===id);if(!lesson)continue;const b=document.createElement('button');b.className='interest-choice';b.setAttribute('aria-pressed','false');const img=document.createElement('img');img.src=lesson.dir+'thumb.jpg';img.alt=lesson.title;const name=document.createElement('span');name.textContent=lesson.title;b.append(img,name);b.onclick=()=>{interestSelection=id;for(const other of pair.children)other.setAttribute('aria-pressed',String(other===b));};pair.append(b);}
+}
+$('#onboardingNext').onclick=()=>{if(interestSelection)onboardingChoices.push(interestSelection);if(onboardingStep>=1)finishOnboarding();else{onboardingStep++;renderOnboarding();}};
+$('#onboardingSkip').onclick=finishOnboarding;
+$('#changeInterests').onclick=()=>{closeSettings();startOnboarding();};
+
 /* ---------------- start ---------------- */
 // Gem også en streg, hvis appen lukkes midt i tegningen.
 function saveBeforeHide() {
   StickerBook.suspend();
   pencilSound.stop();
-  clearTimeout(introTimer); DraftStore.flush(); flushEntryNote().catch(()=>{});
-  if(current==='lesson')saveLesson();
-  if (current === 'lesson') { sidePad.finishStroke(); tracePad.finishStroke(); pauseStep(); cancelStepSpeech(); }
+  clearTimeout(introTimer);
+  // Commit in-flight strokes before starting the final IndexedDB flush.
+  if (current === 'lesson') { sidePad.finishStroke(); tracePad.finishStroke(); pauseStep(); saveLesson(); cancelStepSpeech(); }
   else cancelStepSpeech();
+  DraftStore.checkpoint(); DraftStore.flush(); flushEntryNote().catch(()=>{});
   stopLessonAwake(false);
   cancelAnimationFrame(camera.frame); camera.frame = 0;
   cancelAnimationFrame(techniqueFrame); techniqueFrame = 0;
@@ -2399,7 +2651,14 @@ StickerBook.init();
 ScanFlow.init();
 const savedLesson = savedScreen && savedScreen.screen === 'lesson' && LESSONS.find(l => l.id === savedScreen.lessonId);
 if (savedLesson) openLesson(savedLesson);
-else show(savedScreen && ['home', 'shop', 'journal', 'entry', 'stickerbook'].includes(savedScreen.screen) ?
+else show(savedScreen && ['home', 'explore', 'shop', 'journal', 'entry', 'stickerbook'].includes(savedScreen.screen) ?
   (savedScreen.screen === 'entry' ? 'journal' : savedScreen.screen) : 'home');
 
 history.replaceState({screen:current},'', '#'+current);historyReady=true;
+
+if (!readLocal('ts_onboarded_v4') && !savedLesson && !Object.keys(store.get().done).length && !savedScreen) startOnboarding();
+
+$('#teachingReference').addEventListener('toggle',()=>{if($('#teachingReference').open)pauseStep();});
+
+$('#referenceClose').onclick=()=>{$('#teachingReference').open=false;};
+$('#referenceResume').onclick=()=>{$('#teachingReference').open=false;playStep();};

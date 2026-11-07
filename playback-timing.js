@@ -32,6 +32,7 @@ const PlaybackTiming = (() => {
     return result;
   }
   function raw(data, meta={}, text='') {
+    if(data.teachingActions)return taught(data,meta,text);
     if(data.teachingGuide){
       const plan=raw(data.teachingGuide,meta,text),settle=700;
       // Genuine construction erasure is a short exercise too. A lift per
@@ -65,6 +66,35 @@ const PlaybackTiming = (() => {
     const duration=Math.max(1,time*scale),stops=dense?copyStops(duration):segments.filter(g=>g.pauseAfter).map(g=>g.end);
     return {strokes,segments,stops,duration,dense,originalDuration:time,toneLayers:data.toneLayers||1,analysis:{pressure:meta.pressure||'let',techniques:meta.skillIds||[strokes[0]?.type||'contour'],erased:strokes.some(s=>s.action==='erase'),drawingBounds}};
   }
+  // Editorial teaching units own their clock. Extracted repair count never
+  // determines how long a child waits. Repetition is explicitly labelled.
+  function taught(data,meta,text){
+    const strokes=[],segments=[];let time=0,last=null;
+    const repeats=data.segments.filter(g=>g.repeat),repeatTime=repeats.reduce((n,g)=>n+g.actions.reduce((m,a)=>m+a.duration,0),0);
+    const repeatScale=1; // Repeated coverage remains optional at its authored motor speed.
+    for(const source of data.segments){
+      const start=time,items=[],prior=segments.at(-1);
+      const newShot=!source.repeat&&prior&&(source.cameraId||source.id)!==(prior.cameraId||prior.id);
+      time+=Math.max(source.holdBefore||0,newShot?850:0);
+      for(const a of source.actions){
+        const points=Float32Array.from(a.p),lengths=new Float32Array(points.length/2);
+        for(let i=1;i<lengths.length;i++)lengths[i]=lengths[i-1]+Math.hypot(points[2*i]-points[2*i-2],points[2*i+1]-points[2*i-1]);
+        const length=lengths.at(-1),drawDuration=Math.max(.1,a.duration*(source.repeat?repeatScale:1));
+        const travel=last?Math.hypot(points[0]-last[0],points[1]-last[1]):0;
+        const lift=source.repeat?0:(a.tool||source.tool)==='graphiteSide'?Math.min(140,travel*.25):Math.min(240,travel*.7);
+        const s={points,lengths,length,w:a.w,layer:a.layer??source.layer??0,action:a.action||source.action||'draw',tool:a.tool||source.tool||'graphitePoint',pressure:a.pressure||source.pressure||'let',type:source.skillId,preview:time,start:time+lift,end:time+lift+drawDuration,drawDuration,glide:!!last,bounds:bounds(points),repeat:source.repeat,technicalSettle:!!a.technicalSettle};
+        time=s.end;last=points.subarray(points.length-2);strokes.push(s);items.push(s);
+      }
+      time+=source.holdAfter||0;
+      const f=source.focusBounds,b=f?{x0:f[0],y0:f[1],x1:f[2],y1:f[3]}:items.reduce((b,s)=>join(b,s.bounds),null);
+      segments.push({...source,start,end:time,items,bounds:b,focusBounds:b,tip:source.instruction,type:source.skillId,pressure:items[0]?.pressure||'let'});
+    }
+    const normal=segments.filter(g=>!g.repeat),normalTime=normal.reduce((n,g)=>n+g.end-g.start,0);
+    // Many spatial islands in a shadow are repetition after one close-up per
+    // value layer. Keep the first three complete examples readable.
+    const limit=data.editorialVersion===2?Infinity:45000;if(time>limit){const scale=limit/time;for(const s of strokes)for(const k of ['preview','start','end','drawDuration'])s[k]*=scale;for(const g of segments){g.start*=scale;g.end*=scale;}time=limit;}
+    return {authored:true,editorialVersion:data.editorialVersion,teachingKind:data.teachingKind,kind:'strokes',strokes,segments,toneLayers:data.toneLayers||1,duration:Math.max(1,time),stops:segments.filter(g=>g.pauseAfter).map(g=>g.end),analysis:{pressure:meta.pressure||'let',techniques:meta.skillIds||['contour'],erased:strokes.some(s=>s.action==='erase'),drawingBounds:segments.reduce((b,g)=>join(b,g.bounds),null)}};
+  }
   function copyStops(duration){const n=Math.max(1,Math.round(duration/7000));return Array.from({length:n},(_,i)=>duration*(i+1)/n);}
   function batches(data){
     if(data.teachingGuide)return {...raw(data,{pressure:data.analysis.pressure,skillIds:data.analysis.techniques}),count:data.actionCount};
@@ -83,6 +113,6 @@ const PlaybackTiming = (() => {
   }
   const hasDemo = analysis => analysis.techniques.some(id=>['shading','hatch','cross','fur','highlight'].includes(id));
   function budget(plan,cueMs=0){return plan.duration+(hasDemo(plan.analysis)?DEMO:0)+Math.min(CUE_LIMIT,cueMs);}
-  return {VERSION:3,LIMIT,DEMO,CUE_LIMIT,raw,batches,copyStops,budget,hasDemo};
+  return {VERSION:7,LIMIT,DEMO,CUE_LIMIT,raw,batches,copyStops,budget,hasDemo};
 })();
 if(typeof module!=='undefined')module.exports=PlaybackTiming;

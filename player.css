@@ -1,0 +1,259 @@
+/* Lesson camera and its controls. Deliberately scoped away from the app shell. */
+#lesson { --player-paper:#f8f7f3; --player-ink:#343039; }
+#lesson > .stage {
+  padding:8px; gap:16px; isolation:isolate;
+  background:#dfd9cf url('assets/player/desk.webp') center / cover;
+  overflow:hidden;
+}
+#lesson > .stage::after {
+  content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
+  background:radial-gradient(ellipse at 35% 28%,#fff7e718,transparent 60%,#30271c0b);
+}
+#lesson #guideWrap {
+  background:transparent; border:0; border-radius:0; box-shadow:none;
+  overflow:hidden; isolation:isolate; z-index:1;
+}
+#lesson .paper-world {
+  position:absolute; inset:12px; pointer-events:none;
+  transform:perspective(1400px) rotateX(2deg) rotateY(-1deg) rotateZ(-.35deg);
+  transform-origin:50% 50%;
+}
+#lesson #guideCamera {
+  background:var(--player-paper) url('assets/player/paper.png') repeat;
+  background-size:96px 96px; isolation:isolate; border-radius:1px;
+  box-shadow:0 1px 1px #392b2929,0 4px 8px #392b291a,0 14px 28px -8px #392b2921;
+}
+#lesson #guideCamera::before {
+  content:''; position:absolute; inset:0; border-bottom:1px solid #d2cbbf;
+  pointer-events:none; transform:translateY(1px); z-index:-1;
+}
+/* White-backed masters multiply into one stationary paper material. Pale
+   construction survives; erasure cannot leave a white patch in the lighting. */
+#lesson #guideArt { overflow:hidden; mix-blend-mode:multiply; }
+#lesson #paperLighting {
+  display:block; position:absolute; inset:0; z-index:1; pointer-events:none;
+  background:linear-gradient(135deg,#ffffff08,transparent 45%,#44362407);
+  box-shadow:none;
+}
+#lesson #drawingHand { z-index:2; }
+#lesson #graphiteFX { pointer-events:none; }
+#lesson .stage.trace .paper-world { transform:none; inset:12px; }
+#lesson .stage.trace #guideArt { opacity:.35; }
+#lesson .stage.trace #traceCanvas { inset:12px; width:calc(100% - 24px); height:calc(100% - 24px); }
+#lesson .stage.trace #paperLighting { display:none; }
+#lesson .stage .sidepad { z-index:1; background:var(--player-paper); border-radius:2px; box-shadow:0 2px 6px #392b2925; }
+/* A short, stable caption area leaves a full-width sheet at phone sizes. */
+#lesson .stepinfo { position:relative; padding:10px 18px 8px; }
+#lesson .stepnum { color:#796c86; letter-spacing:.06em; font-size:11px; }
+#lesson .lesson-state { padding:3px 7px; border-radius:5px; background:#f0eaf9; color:#684399; font-size:11px; }
+#lesson .steptext {
+  font-size:17px; font-weight:650; line-height:21px; margin:7px 44px 0 0;
+  height:63px; min-height:63px; max-height:63px; overflow-y:auto;
+}
+#lesson .read-step { width:40px; height:40px; min-width:40px; border-radius:50%; }
+#lesson .pencil-guidance { margin-top:4px; padding:0; gap:4px 8px; }
+#lesson #liveTip { font-size:12px; line-height:16px; height:32px; min-height:32px; max-height:32px; color:#6a6171; }
+#lesson .pressure-meter span.on { font-size:11px; padding:2px 6px; border-radius:4px; background:#f4f0f8; }
+#lesson #lightSource { position:static; background:transparent; padding:0; font-size:14px; }
+#lesson #lightSource .ui-icon { width:15px; height:15px; }
+#lesson #lightSource small { display:inline; font-size:11px; }
+#lesson > .video-controls { margin:0 14px; gap:8px; border:0; padding:5px 0 1px; }
+#lesson #videoControls .ctl { width:44px; min-width:44px; height:44px; border-radius:50%; }
+#lesson #stepTime { font-size:11px; line-height:16px; color:#7d7186; font-weight:500; }
+#lesson #cameraReset { width:74px; padding:4px 6px; min-height:44px; font-size:11px; border:0; background:#f4f0f8; border-radius:8px; }
+#lesson #stepScrubber { height:36px; }
+#lesson #stepScrubber::-webkit-slider-runnable-track { height:5px; box-shadow:none; }
+#lesson #stepScrubber::-webkit-slider-thumb { width:18px; height:18px; margin-top:-6.5px; border-width:2px; box-shadow:0 1px 3px #45239140; }
+#lesson #stepScrubber::-moz-range-track, #lesson #stepScrubber::-moz-range-progress { height:5px; }
+#lesson #stepScrubber::-moz-range-thumb { width:14px; height:14px; border-width:2px; }
+#lesson .controls { flex-wrap:wrap; padding:8px 14px calc(10px + var(--safe-b)); gap:8px; border-top:1px solid #ece7f1; }
+#lesson .controls .ctl { border-radius:12px; }
+#lesson #copyPause:not([hidden]) {
+  display:flex; position:absolute; bottom:8px; left:18px; right:18px; min-height:54px;
+  align-items:center; flex-direction:row; gap:10px; border-radius:10px; padding:4px 10px;
+  background:#f6f1e7; color:#5e5144;
+}
+#lesson .stepinfo:has(#copyPause:not([hidden])) .pencil-guidance { visibility:hidden; }
+#lesson #copyPause > span { display:block; flex:1; min-width:0; max-width:none; font-size:12px; font-weight:500; line-height:17px; text-align:left; }
+#lesson #copyPause .ctl { flex:0 1 55%; min-height:48px; width:auto; margin:0; font-size:13px; }
+#lesson #copyPause[hidden] { display:none; }
+#lesson #copyPause[data-complete='true'] .ctl { display:none; }
+#lesson #copyPause[data-complete='true'] { padding:8px 12px; }
+#lesson .playback-details summary { min-height:40px; padding:8px 0; font-size:12px; }
+#lesson .lessonbar { padding:8px 14px; }
+#lesson .lessonbar .progress { min-width:32px; display:flex; }
+#lesson .lessonbar .restart { font-size:10px; padding:0 2px; }
+#lesson .lessonbar .wallet { display:none; }
+#lesson #guideStatus { background:#fffaf0ee; border:0; color:#655748; }
+@media (min-width:700px) and (orientation:landscape) {
+  #lesson.on { grid-template-columns:minmax(0,1fr) 300px; gap:12px 20px; padding-left:20px; padding-right:20px; }
+  #lesson > .stage, #lesson > .stage.side { padding:8px; height:100%; }
+  #lesson .stepinfo { padding:18px 4px 12px; }
+  #lesson .steptext { font-size:21px; line-height:28px; height:auto; min-height:84px; max-height:196px; margin-top:14px; }
+  #lesson #liveTip { height:auto; min-height:48px; max-height:96px; font-size:14px; line-height:20px; }
+  #lesson .pencil-guidance { margin-top:16px; }
+  #lesson .controls { padding:12px 0; }
+  #lesson .lesson-options { margin-top:16px; }
+  #lesson #copyPause:not([hidden]) { left:0; right:0; bottom:12px; }
+  #lesson #copyPause .ctl { flex:0 1 55%; width:auto; }
+}
+@media (max-height:650px) and (max-width:699px) {
+  #lesson .steptext { height:42px; min-height:42px; max-height:42px; font-size:15px; }
+  #lesson #liveTip { height:16px; min-height:16px; max-height:16px; }
+  #lesson .stepinfo { padding-top:4px; padding-bottom:4px; }
+  #lesson #copyPause:not([hidden]) { padding:6px 10px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  #lesson .paper-world { transform:none; }
+}
+
+/* Critic round 1: one stable media scene and bounded, pausing help. */
+#lesson{--accent:#8317ff;--accent-edge:#6430a0;background:#f8f7f3}
+#lesson .stepinfo{padding:8px 16px 6px}
+#lesson .lesson-state{display:inline-block;margin-right:12px;font-size:12px;line-height:18px}
+#lesson .stepnum{display:inline-block;font-size:12px;line-height:18px;letter-spacing:0}
+#lesson .steptext{height:44px;min-height:44px;max-height:64px;font-size:17px;line-height:22px;font-weight:600;margin-top:5px}
+#lesson .pencil-guidance{display:block;margin-top:4px}
+#lesson .pressure-meter,#lesson #lightSource{display:none}
+#lesson #liveTip{font-size:14px;line-height:18px;min-height:0;height:36px;max-height:36px;color:#5b5264}
+#lesson #liveTip[hidden]{display:none}
+#lesson .controls .ctl.primary{background:#8317ff;color:#f3f0df;border:0;box-shadow:none;min-height:52px;border-radius:14px;font-size:16px;font-weight:600}
+#lesson #replayBtn{width:auto;min-width:76px;display:flex;flex-direction:column;gap:2px;justify-content:center;align-items:center;background:transparent;box-shadow:none}
+#lesson #replayBtn small{font-size:11px;line-height:13px;max-width:78px;font-weight:500}
+#lesson .lesson-options{flex:none;overflow:visible;max-height:none;z-index:6}
+#lesson .playback-details{overflow:visible;max-height:none}
+#lesson .playback-details[open] .playback-options{position:fixed;z-index:30;left:16px;right:16px;bottom:calc(152px + var(--safe-b));max-height:38dvh;overflow:auto;background:#f3f0df;color:#110034;padding:16px;border:1px solid #bca9d1;border-radius:16px;box-shadow:0 4px 18px #20085433}
+#lesson #copyPause:not([hidden]){position:static;min-height:0;padding:4px 8px;font-size:13px;border:0;background:transparent}
+#lesson #copyPause>span{display:none}
+#lesson #copyPause .ctl{min-height:44px;flex:1;width:auto;max-width:none;font-size:13px;padding:8px}
+#lesson .stepinfo:has(#copyPause:not([hidden])) .pencil-guidance{visibility:visible}
+#lesson .teaching-reference{position:absolute;top:12px;left:12px;z-index:4;max-width:84px;background:#f3f0dfeb;border-radius:10px;color:#110034;padding:4px;box-shadow:0 1px 4px #20085418}
+#lesson .teaching-reference[hidden]{display:none}
+.teaching-reference summary{cursor:pointer;list-style:none;display:flex;flex-direction:column;align-items:center;font-size:12px}
+#referenceArt{width:72px;height:72px;object-fit:contain;border-radius:8px}
+#lesson .teaching-reference[open]{max-width:240px;width:240px;padding:12px}
+#lesson .teaching-reference[open] #referenceArt{width:180px;height:180px}
+.teaching-reference p{font-size:14px;line-height:20px;margin:8px 0}
+.teaching-reference>span{font-size:12px}
+#lesson .teaching-reference:not([open])>span{display:none}
+#lesson #cameraOverview:not([hidden]){display:block!important;position:absolute;bottom:14px;left:14px;z-index:3;width:70px;height:70px;background:#f8f7f3;border:1px solid #c7bbd4}
+#lesson #stepScrubber::-webkit-slider-runnable-track{height:4px;background:linear-gradient(to right,#ffd44f var(--played),#927aa7 var(--played))}
+#lesson #stepScrubber::-webkit-slider-thumb{background:#f3f0df;border:1px solid #b39cc7;width:14px;height:14px;margin-top:-5px;box-shadow:none}
+@media(min-width:700px) and (orientation:landscape){
+ #lesson.on{position:relative;display:block;padding:0;background:#e7e1d8}
+ #lesson>.lessonbar{position:absolute;top:0;left:0;right:0;z-index:7;background:#f8f7f3e8;min-height:64px;padding:8px 20px}
+ #lesson>.stage,#lesson>.stage.side{position:absolute;inset:64px 0 0;min-height:0;height:auto;padding:12px 20px 92px}
+ #lesson>.lesson-sidebar{display:contents}
+ #lesson .stepinfo{position:absolute;z-index:5;top:90px;right:22px;width:278px;background:#f3f0dfeb;border-radius:14px;padding:12px 16px;max-height:190px;box-shadow:0 1px 5px #20085413}
+ #lesson .steptext{font-size:17px;line-height:22px;min-height:44px;height:auto;max-height:88px;margin-top:8px}
+ #lesson #liveTip{font-size:14px;line-height:19px;min-height:0;height:auto;max-height:60px;margin-top:4px}
+ #lesson>.video-controls{position:absolute;z-index:7;bottom:24px;left:24px;width:min(620px,calc(100% - 366px));height:52px;margin:0;padding:0 8px;background:#2b183fdc;border-radius:14px;color:#f3f0df;box-shadow:none;gap:8px}
+ #lesson #stepTime{color:#f3f0df;font-size:12px;line-height:14px}
+ #lesson #stepScrubber{height:32px}
+ #lesson #playPauseBtn,#lesson #cameraReset{background:transparent;color:#f3f0df}
+ #lesson .controls{position:absolute;z-index:7;bottom:24px;right:20px;width:300px;min-height:52px;display:flex;padding:0;border:0;gap:6px}
+ #lesson .controls #prevBtn{width:44px;min-width:44px;background:#f3f0df}
+ #lesson .controls #nextBtn{flex:1;font-size:15px}
+ #lesson #copyPause:not([hidden]){position:absolute;bottom:66px;right:0;width:260px;background:#f3f0df;border-radius:12px;padding:8px}
+ #lesson .lesson-options{position:absolute;z-index:8;right:22px;top:22px;margin:0;max-height:none;overflow:visible;color:#110034}
+ #lesson .lesson-options .playback-details>summary{padding:0;min-height:40px}
+ #lesson .playback-details[open] .playback-options{left:auto;right:20px;bottom:100px;width:300px;max-height:50dvh}
+ #lesson .teaching-reference{left:20px;top:20px}
+ #lesson #sideSwitch{position:absolute;bottom:90px;left:24px;z-index:8}
+ #lesson #lessonTools{max-width:300px;background:#f3f0df}
+}
+@media(orientation:landscape) and (max-height:500px){
+ #lesson>.stage,#lesson>.stage.side{inset:54px 0 0;padding-bottom:76px}
+ #lesson>.lessonbar{min-height:54px;height:54px}
+ #lesson .stepinfo{top:66px;right:12px;width:240px;max-height:150px;padding:8px}
+ #lesson .steptext{font-size:15px;line-height:19px;max-height:57px}
+ #lesson .controls{bottom:12px;right:12px;width:290px}
+ #lesson>.video-controls{bottom:12px;left:12px;width:calc(100% - 330px)}
+ #lesson .lesson-options{top:7px;right:12px}
+ #lesson .teaching-reference{max-width:64px;top:8px;left:12px}#lesson #referenceArt{width:54px;height:54px}
+}
+#lesson .steptext{height:auto;min-height:44px;max-height:66px;overflow:visible}
+#lesson #liveTip{height:auto;min-height:0;max-height:40px;overflow:visible}
+#fullStepInstruction{font-size:15px;line-height:22px;font-weight:400;color:#110034;margin:0 0 12px}
+/* Practice replaces the short motor cue in its reserved caption slot. It never
+   changes the dimensions of the paper, timeline or permanent Next action. */
+#lesson #liveTip:not([hidden]){height:40px;min-height:40px}
+#lesson .stepinfo #copyPause:not([hidden]){position:absolute;left:16px;right:16px;bottom:4px;width:auto;min-height:44px;max-height:44px;padding:0;background:#f3f0df;z-index:5}
+#lesson .stepinfo #copyPause[data-complete=true]{display:none}
+#lesson .stepinfo:has(#copyPause:not([hidden]):not([data-complete=true])) #liveTip{visibility:hidden}
+#lesson .stepinfo #copyPause .ctl{font-size:14px;min-height:44px}
+#lesson .playback-details[open] .playback-options{bottom:var(--playback-help-bottom,160px)}
+#lesson .controls #nextBtn{padding-left:12px;padding-right:12px}
+@media(min-width:700px) and (orientation:landscape){
+ #lesson>.lessonbar{padding-right:300px}
+ #lesson #modeBtn{position:absolute;right:20px;top:8px}
+ #lesson .lesson-options{top:12px;right:82px}
+ #lesson .lesson-options .playback-details>summary{font-size:13px}
+}
+@media(min-width:700px) and (orientation:landscape){
+ #lesson .controls{width:340px}
+ #lesson>.video-controls{width:min(620px,calc(100% - 406px))}
+ #lesson .controls #nextBtn{font-size:14px;white-space:nowrap}
+}
+@media(orientation:landscape) and (max-height:500px){
+ #lesson .controls{width:290px}
+ #lesson>.video-controls{width:calc(100% - 330px)}
+}
+
+@media(min-width:700px) and (orientation:landscape){#lesson .steptext{max-height:none}#lesson .stepinfo{max-height:none}}
+
+/* Round 2: a stable cue slot, complete silent captions and compact media tray. */
+#lesson .practice-cue-slot{position:relative;min-height:44px;height:44px;max-height:44px}
+#lesson .practice-cue-slot #liveTip{height:44px;min-height:44px;visibility:hidden}
+#lesson .stepinfo .practice-cue-slot #copyPause:not([hidden]){position:absolute;inset:0;min-height:44px;height:44px;max-height:44px;padding:0;width:100%;background:transparent}
+#lesson .stepinfo .practice-cue-slot #copyPause[data-complete=true]{display:none}
+#lesson .steptext{min-height:66px;max-height:none;height:auto;font-weight:500;padding-right:36px;line-height:22px}
+#lesson .stepinfo{min-height:144px}
+#lesson .pencil-guidance{padding:0;margin:0}
+#lesson #guideWrap,#lesson #paperWorld,#lesson #guideCamera{overflow:visible}
+#lesson #stage{overflow:hidden;background:#e7e1d8;background-image:none}
+#lesson .video-controls{background:#2b183fe8;color:#f3f0df;border-radius:14px;min-height:56px}
+#lesson .video-controls #stepTime{color:#f3f0df}
+#lesson .video-controls button{background:transparent;color:#f3f0df}
+#lesson .video-controls .timeline{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:8px;min-height:48px;height:48px}
+#lesson #stepTime{white-space:nowrap;margin:0;align-self:center;line-height:16px;font-size:12px}
+#lesson #stepScrubber{height:48px;margin:0}
+#lesson #replayBtn small{white-space:nowrap}
+#lesson #teachingReference[open]{position:fixed;left:16px;right:16px;top:100px;bottom:auto;width:auto;max-width:480px;max-height:calc(100dvh - 270px);overflow:auto;margin:auto;z-index:32;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:20px;background:#f3f0df;box-shadow:0 0 0 100vmax #160440a6}
+#lesson #teachingReference[open] summary{grid-column:1;grid-row:1/3}
+#lesson #teachingReference[open] #referenceArt{width:100%;height:auto;max-height:220px}
+#lesson #teachingReference[open] #referenceGoal{grid-column:2;font-weight:500;margin:0}
+#lesson #teachingReference .light-diagram{display:none}
+#lesson #teachingReference[open] .light-diagram{display:block;grid-column:2;width:100%;max-height:120px;object-fit:contain}
+#lesson #teachingReference:not([open])>:not(summary){display:none}
+#lesson #teachingReference[open]>span{grid-column:1/-1;font-size:13px}
+#lesson #teachingReference .btn{min-height:48px;font-size:14px}
+#lesson #teachingReference #referenceClose{color:#200854;background:transparent;border:1px solid #b8a4ce}
+#lesson #teachingReference #referenceResume{background:#8317ff;color:#f3f0df}
+@media(max-width:699px){
+ #lesson>.lessonbar{background:#f3f0df;min-height:64px}
+ #lesson>.video-controls{margin:0 10px;padding:2px 8px;gap:8px}
+ #lesson>.lesson-sidebar>.lesson-options{position:absolute;right:10px;bottom:calc(142px + var(--safe-b));z-index:10;margin:0}
+ #lesson .lesson-options>.playback-details>summary{font-size:12px;padding:4px 8px;min-height:36px;color:#f3f0df;background:#2b183fe8;border-radius:10px}
+ #lesson .lesson-options .playback-details>summary>.ui-icon{width:18px;height:18px}
+ #lesson .lesson-options .playback-details[open] .playback-options{bottom:calc(148px + var(--safe-b))}
+ #lesson .stepinfo{padding-top:8px;padding-bottom:0}
+ #lesson .controls{background:#f3f0df;border:0}
+ #lesson .read-step{background:transparent}
+}
+@media(min-width:700px) and (orientation:landscape){
+ #lesson .stepinfo{min-height:144px}
+ #lesson .video-controls{height:56px;min-height:56px}
+ #lesson .video-controls .timeline{height:48px;min-height:48px;display:grid;grid-template-columns:auto minmax(80px,1fr);gap:8px;align-items:center}
+ #lesson #stepTime{position:static;transform:none}
+}
+#lesson .video-controls #cameraReset{background:transparent!important;color:#f3f0df!important;border-color:#b6a2c94d}
+#lesson .practice-cue-slot #readyBtn{animation:none}
+#lesson .video-timeline{display:grid;grid-template-columns:auto minmax(50px,1fr);align-items:center;gap:8px;height:48px;min-height:48px;padding:0}
+#lesson .video-timeline #stepTime{position:static;transform:none;line-height:16px;margin:0;white-space:nowrap;align-self:center}
+#lesson .video-timeline #stepScrubber{height:48px;min-height:48px;margin:0}
+
+/* The example action belongs to the header; it must not cover the artwork. */
+#lesson .lessonbar #teachingReference:not([open]){position:static;flex:none;max-width:none;margin-left:auto;padding:0;background:transparent;box-shadow:none}
+#lesson .lessonbar #teachingReference:not([open]) summary{min-height:44px;min-width:102px;justify-content:center;padding:0 10px;font-size:14px;font-weight:600;border:1px solid #b8a4ce;border-radius:10px}
+#lesson .lessonbar #teachingReference:not([open]) #referenceArt{display:none}

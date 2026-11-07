@@ -1,41 +1,187 @@
 {
   "poses": {
     "draw": {
-      "file": "hand_draw.png",
-      "w": 900,
-      "h": 900,
-      "tipX": 128.5,
-      "tipY": 620.5,
-      "armExitX": 899.0,
-      "armExitY": 832.96
+      "file": "hand_posea.png",
+      "w": 724,
+      "h": 181,
+      "tipX": 34,
+      "tipY": 163,
+      "generated": true,
+      "displayWidthFraction": 1.18,
+      "frames": [
+        {
+          "file": "hand_posea.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 34,
+          "tipY": 163,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        },
+        {
+          "file": "hand_poseb.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 33,
+          "tipY": 162,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        },
+        {
+          "file": "hand_posec.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 33,
+          "tipY": 161,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        },
+        {
+          "file": "hand_posed.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 33,
+          "tipY": 159,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        }
+      ]
     },
     "press": {
-      "file": "hand_press.png",
-      "w": 900,
-      "h": 900,
-      "tipX": 129.0,
-      "tipY": 620.0,
-      "armExitX": 899.0,
-      "armExitY": 834.49
+      "file": "hand_posec.png",
+      "w": 724,
+      "h": 181,
+      "tipX": 33,
+      "tipY": 161,
+      "generated": true,
+      "displayWidthFraction": 1.18,
+      "frames": [
+        {
+          "file": "hand_posec.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 33,
+          "tipY": 161,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        },
+        {
+          "file": "hand_posed.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 33,
+          "tipY": 159,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        }
+      ]
     },
     "lift": {
-      "file": "hand_lift.png",
-      "w": 900,
-      "h": 900,
-      "tipX": 128.0,
-      "tipY": 608.0,
-      "armExitX": 899.0,
-      "armExitY": 843.96
+      "file": "hand_posee.png",
+      "w": 724,
+      "h": 181,
+      "tipX": 32,
+      "tipY": 162,
+      "generated": true,
+      "displayWidthFraction": 1.18,
+      "frames": [
+        {
+          "file": "hand_posee.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 32,
+          "tipY": 162,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        },
+        {
+          "file": "hand_posef.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 32,
+          "tipY": 161,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        },
+        {
+          "file": "hand_posek.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 32,
+          "tipY": 164,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        },
+        {
+          "file": "hand_posel.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 32,
+          "tipY": 162,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        }
+      ]
     },
     "erase": {
       "file": "hand_erase.png",
-      "w": 900,
-      "h": 900,
-      "tipX": 128.5,
-      "tipY": 620.5,
-      "armExitX": 899.0,
-      "armExitY": 836.51
+      "w": 2172,
+      "h": 724,
+      "tipX": 129.4,
+      "tipY": 678.4,
+      "longArm": true,
+      "generated": true,
+      "displayWidthFraction": 1.18
+    },
+    "side": {
+      "file": "hand_poseg.png",
+      "w": 724,
+      "h": 181,
+      "tipX": 31,
+      "tipY": 152,
+      "generated": true,
+      "displayWidthFraction": 1.18,
+      "frames": [
+        {
+          "file": "hand_poseg.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 31,
+          "tipY": 152,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        },
+        {
+          "file": "hand_poseh.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 27,
+          "tipY": 153,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        },
+        {
+          "file": "hand_posei.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 26,
+          "tipY": 152,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        },
+        {
+          "file": "hand_posej.png",
+          "w": 724,
+          "h": 181,
+          "tipX": 28,
+          "tipY": 159,
+          "generated": true,
+          "displayWidthFraction": 1.18
+        }
+      ]
     }
   },
-  "recommendedWidthFraction": 0.34
+  "recommendedWidthFraction": 0.34,
+  "articulationVersion": 2,
+  "provenance": "Original generated twelve anatomical grip states, built-in image_gen, round 2. Not filmed footage."
 }

@@ -11,7 +11,7 @@ const LESSONS = [
       "Tegn en stor, bred oval øverst på papiret som hoved.",
       "Tegn to trekantede ører oven på hovedet.",
       "Tegn en pæreformet krop under hovedet.",
-      "Visk kroppens bund væk, og tegn to lange forben med runde poter.",
+      "Tegn to lange forben med runde poter i åbningen under kroppen.",
       "Tegn en buet hale med rund spids på højre side.",
       "Tegn en lille trekant inde i hvert øre.",
       "Tegn to mørke, ovale øjne. Lad en lille hvid prik stå i hvert.",
@@ -25,14 +25,14 @@ const LESSONS = [
       {
         "id": "e_kat-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -51,12 +51,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -75,12 +75,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -97,15 +97,14 @@ const LESSONS = [
       {
         "id": "e_kat-s04",
         "skillIds": [
-          "contour",
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -124,12 +123,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -148,12 +147,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -170,14 +169,14 @@ const LESSONS = [
       {
         "id": "e_kat-s07",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -199,9 +198,9 @@ const LESSONS = [
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -220,12 +219,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -244,12 +243,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -271,9 +270,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lidt let blyantsskygge inde i ørerne og langs kroppen og halen.",
+        "screenTip": "Læg lidt let blyantsskygge inde i ørerne og langs kroppen og halen.",
+        "how": "Læg lidt let blyantsskygge inde i ørerne og langs kroppen og halen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -285,7 +284,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lidt let blyantsskygge inde i ørerne og langs kroppen og halen."
       }
     ],
     "skillIds": [
@@ -302,7 +302,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "5099aa4ece9622c4"
+    "revision": "35fd57ed54b7117a"
   },
   {
     "id": "e_hund",
@@ -328,14 +328,14 @@ const LESSONS = [
       {
         "id": "e_hund-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -354,12 +354,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -376,14 +376,14 @@ const LESSONS = [
       {
         "id": "e_hund-s03",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -405,9 +405,9 @@ const LESSONS = [
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -426,12 +426,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -450,12 +450,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -474,12 +474,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -498,12 +498,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -522,12 +522,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -546,12 +546,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -573,9 +573,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let inde i begge ører.",
+        "screenTip": "Skyg let inde i begge ører.",
+        "how": "Skyg let inde i begge ører.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -587,7 +587,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let inde i begge ører."
       },
       {
         "id": "e_hund-s12",
@@ -597,9 +598,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let langs kroppen, nederst på bagpoterne og i halen.",
+        "screenTip": "Skyg let langs kroppen, nederst på bagpoterne og i halen.",
+        "how": "Skyg let langs kroppen, nederst på bagpoterne og i halen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -611,7 +612,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let langs kroppen, nederst på bagpoterne og i halen."
       }
     ],
     "skillIds": [
@@ -628,7 +630,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "07c2866a32a962bd"
+    "revision": "a000b192260a7e99"
   },
   {
     "id": "e_fugl",
@@ -653,14 +655,14 @@ const LESSONS = [
       {
         "id": "e_fugl-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -679,12 +681,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -703,12 +705,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -725,14 +727,14 @@ const LESSONS = [
       {
         "id": "e_fugl-s04",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -751,12 +753,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -775,12 +777,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -797,14 +799,14 @@ const LESSONS = [
       {
         "id": "e_fugl-s07",
         "skillIds": [
-          "fill"
+          "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Fyld med små cirkler i flere lette lag.",
-        "screenTip": "Fyld med små cirkler i flere lette lag.",
-        "how": "Fyld med små cirkler i flere lette lag.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -823,12 +825,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -847,12 +849,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -874,9 +876,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under vingen og langs mavens højre kant. Lad brystets midte være lys.",
+        "screenTip": "Skyg under vingen og langs mavens højre kant. Lad brystets midte være lys.",
+        "how": "Skyg under vingen og langs mavens højre kant. Lad brystets midte være lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -888,7 +890,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under vingen og langs mavens højre kant. Lad brystets midte være lys."
       },
       {
         "id": "e_fugl-s11",
@@ -898,9 +901,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under vingen og langs mavens højre kant. Lad brystets midte være lys.",
+        "screenTip": "Skyg under vingen og langs mavens højre kant. Lad brystets midte være lys.",
+        "how": "Skyg under vingen og langs mavens højre kant. Lad brystets midte være lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -912,7 +915,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under vingen og langs mavens højre kant. Lad brystets midte være lys."
       }
     ],
     "skillIds": [
@@ -930,7 +934,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "72bfd999de779f0b"
+    "revision": "d5c1f7b9b91045b7"
   },
   {
     "id": "e_snegl",
@@ -954,14 +958,14 @@ const LESSONS = [
       {
         "id": "e_snegl-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -980,12 +984,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1004,12 +1008,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1028,12 +1032,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1052,12 +1056,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1076,12 +1080,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1098,14 +1102,14 @@ const LESSONS = [
       {
         "id": "e_snegl-s07",
         "skillIds": [
-          "fill"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Fyld med små cirkler i flere lette lag.",
-        "screenTip": "Fyld med små cirkler i flere lette lag.",
-        "how": "Fyld med små cirkler i flere lette lag.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1124,12 +1128,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1151,9 +1155,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let nederst på sneglehuset og langs spiralens kant.",
+        "screenTip": "Skyg let nederst på sneglehuset og langs spiralens kant.",
+        "how": "Skyg let nederst på sneglehuset og langs spiralens kant.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1165,7 +1169,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let nederst på sneglehuset og langs spiralens kant."
       },
       {
         "id": "e_snegl-s10",
@@ -1175,9 +1180,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let langs kroppen, halsen, hovedet og øjenstilkene.",
+        "screenTip": "Skyg let langs kroppen, halsen, hovedet og øjenstilkene.",
+        "how": "Skyg let langs kroppen, halsen, hovedet og øjenstilkene.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1189,7 +1194,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let langs kroppen, halsen, hovedet og øjenstilkene."
       }
     ],
     "skillIds": [
@@ -1206,7 +1212,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "bdd6f554e19e263e"
+    "revision": "c00eb7305ecdf1d1"
   },
   {
     "id": "e_skildpadde",
@@ -1231,14 +1237,14 @@ const LESSONS = [
       {
         "id": "e_skildpadde-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -1257,12 +1263,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1281,12 +1287,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1305,12 +1311,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1329,12 +1335,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1353,12 +1359,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1375,14 +1381,14 @@ const LESSONS = [
       {
         "id": "e_skildpadde-s07",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1401,12 +1407,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1425,12 +1431,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1449,12 +1455,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1476,9 +1482,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let på skjoldet, hovedet, benene og halen med blyanten.",
+        "screenTip": "Skyg let på skjoldet, hovedet, benene og halen med blyanten.",
+        "how": "Skyg let på skjoldet, hovedet, benene og halen med blyanten.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1490,7 +1496,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let på skjoldet, hovedet, benene og halen med blyanten."
       }
     ],
     "skillIds": [
@@ -1507,7 +1514,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "bece4e26e4c7ea17"
+    "revision": "3e76f157b234692b"
   },
   {
     "id": "e_marienhone",
@@ -1534,14 +1541,14 @@ const LESSONS = [
       {
         "id": "e_marienhone-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -1560,12 +1567,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1584,12 +1591,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1608,12 +1615,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1632,12 +1639,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1656,12 +1663,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1683,9 +1690,9 @@ const LESSONS = [
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1704,12 +1711,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1728,12 +1735,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1752,12 +1759,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1776,12 +1783,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1803,9 +1810,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let langs kroppen og i hovedet, benene og de seks pletter.",
+        "screenTip": "Skyg let langs kroppen og i hovedet, benene og de seks pletter.",
+        "how": "Skyg let langs kroppen og i hovedet, benene og de seks pletter.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1817,7 +1824,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let langs kroppen og i hovedet, benene og de seks pletter."
       },
       {
         "id": "e_marienhone-s13",
@@ -1827,9 +1835,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let langs bladets kant og stilk. Lad midten være lys.",
+        "screenTip": "Skyg let langs bladets kant og stilk. Lad midten være lys.",
+        "how": "Skyg let langs bladets kant og stilk. Lad midten være lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1841,7 +1849,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let langs bladets kant og stilk. Lad midten være lys."
       }
     ],
     "skillIds": [
@@ -1857,7 +1866,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "fe2b46ba5a60b342"
+    "revision": "2cb78417c55351a8"
   },
   {
     "id": "e_kanin",
@@ -1881,14 +1890,14 @@ const LESSONS = [
       {
         "id": "e_kanin-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -1907,12 +1916,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1931,12 +1940,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1955,12 +1964,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -1979,12 +1988,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2003,12 +2012,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2025,14 +2034,14 @@ const LESSONS = [
       {
         "id": "e_kanin-s07",
         "skillIds": [
-          "highlight"
+          "shading"
         ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
+        "pressure": "let",
+        "tool": "graphiteSide",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Tegn to runde øjne. Farv dem mørke med en lille hvid prik.",
+        "screenTip": "Tegn to runde øjne. Farv dem mørke med en lille hvid prik.",
+        "how": "Tegn to runde øjne. Farv dem mørke med en lille hvid prik.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2044,7 +2053,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": false
+        "optionalDetails": false,
+        "lightGoal": "Tegn to runde øjne. Farv dem mørke med en lille hvid prik."
       },
       {
         "id": "e_kanin-s08",
@@ -2054,9 +2064,9 @@ const LESSONS = [
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2075,12 +2085,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2102,9 +2112,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lidt lys blyantsskygge i ørerne og langs hovedets, kroppens og føddernes kanter.",
+        "screenTip": "Læg lidt lys blyantsskygge i ørerne og langs hovedets, kroppens og føddernes kanter.",
+        "how": "Læg lidt lys blyantsskygge i ørerne og langs hovedets, kroppens og føddernes kanter.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2116,7 +2126,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lidt lys blyantsskygge i ørerne og langs hovedets, kroppens og føddernes kanter."
       }
     ],
     "skillIds": [
@@ -2133,7 +2144,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "e9dce333f866b71f"
+    "revision": "12ca695e63929c6b"
   },
   {
     "id": "e_ugle",
@@ -2159,14 +2170,14 @@ const LESSONS = [
       {
         "id": "e_ugle-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -2185,12 +2196,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2209,12 +2220,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2231,14 +2242,14 @@ const LESSONS = [
       {
         "id": "e_ugle-s04",
         "skillIds": [
-          "fill"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Fyld med små cirkler i flere lette lag.",
-        "screenTip": "Fyld med små cirkler i flere lette lag.",
-        "how": "Fyld med små cirkler i flere lette lag.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2257,12 +2268,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2281,12 +2292,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2303,14 +2314,14 @@ const LESSONS = [
       {
         "id": "e_ugle-s07",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2329,12 +2340,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2353,12 +2364,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2377,12 +2388,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2404,9 +2415,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let langs kroppen og inde i vingerne.",
+        "screenTip": "Skyg let langs kroppen og inde i vingerne.",
+        "how": "Skyg let langs kroppen og inde i vingerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2418,7 +2429,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let langs kroppen og inde i vingerne."
       },
       {
         "id": "e_ugle-s12",
@@ -2428,9 +2440,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let på næbbet, fødderne, grenen og bladet.",
+        "screenTip": "Skyg let på næbbet, fødderne, grenen og bladet.",
+        "how": "Skyg let på næbbet, fødderne, grenen og bladet.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2442,7 +2454,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let på næbbet, fødderne, grenen og bladet."
       }
     ],
     "skillIds": [
@@ -2460,7 +2473,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "40d73633b334221d"
+    "revision": "aa063a57c0c06e50"
   },
   {
     "id": "e_tulipan",
@@ -2485,14 +2498,14 @@ const LESSONS = [
       {
         "id": "e_tulipan-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -2511,12 +2524,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2535,12 +2548,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2559,12 +2572,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2583,12 +2596,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2607,12 +2620,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2631,12 +2644,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2655,12 +2668,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2679,12 +2692,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2703,12 +2716,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2730,9 +2743,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg ganske let nederst i blomsten, langs stilken og ved bladenes bund.",
+        "screenTip": "Skyg ganske let nederst i blomsten, langs stilken og ved bladenes bund.",
+        "how": "Skyg ganske let nederst i blomsten, langs stilken og ved bladenes bund.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2744,7 +2757,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg ganske let nederst i blomsten, langs stilken og ved bladenes bund."
       }
     ],
     "skillIds": [
@@ -2760,7 +2774,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "e6f1d85f8b3fcb2f"
+    "revision": "2c2f88853305771f"
   },
   {
     "id": "e_aeble",
@@ -2785,14 +2799,14 @@ const LESSONS = [
       {
         "id": "e_aeble-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -2811,12 +2825,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2835,12 +2849,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2859,12 +2873,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2883,12 +2897,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2907,12 +2921,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2931,12 +2945,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2955,12 +2969,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -2979,12 +2993,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3006,9 +3020,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg langs æblets højre og nederste kant. Blød ud mod den lyse midte.",
+        "screenTip": "Skyg langs æblets højre og nederste kant. Blød ud mod den lyse midte.",
+        "how": "Skyg langs æblets højre og nederste kant. Blød ud mod den lyse midte.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3020,7 +3034,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg langs æblets højre og nederste kant. Blød ud mod den lyse midte."
       },
       {
         "id": "e_aeble-s11",
@@ -3030,9 +3045,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg langs æblets højre og nederste kant. Blød ud mod den lyse midte.",
+        "screenTip": "Skyg langs æblets højre og nederste kant. Blød ud mod den lyse midte.",
+        "how": "Skyg langs æblets højre og nederste kant. Blød ud mod den lyse midte.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3044,7 +3059,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg langs æblets højre og nederste kant. Blød ud mod den lyse midte."
       }
     ],
     "skillIds": [
@@ -3060,7 +3076,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "56a3fe04d18d2e00"
+    "revision": "6eb9af3c9eaa22ae"
   },
   {
     "id": "e_hus",
@@ -3086,14 +3102,14 @@ const LESSONS = [
       {
         "id": "e_hus-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -3112,12 +3128,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3136,12 +3152,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3160,12 +3176,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3184,12 +3200,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3208,12 +3224,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3232,12 +3248,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3256,12 +3272,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3280,12 +3296,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3304,12 +3320,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3328,12 +3344,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3355,9 +3371,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg et lyst skyggelag lige under tagkanten.",
+        "screenTip": "Læg et lyst skyggelag lige under tagkanten.",
+        "how": "Læg et lyst skyggelag lige under tagkanten.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3369,7 +3385,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg et lyst skyggelag lige under tagkanten."
       }
     ],
     "skillIds": [
@@ -3385,7 +3402,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "99a36eb1468a2e76"
+    "revision": "bd982c9eb7918721"
   },
   {
     "id": "e_hval",
@@ -3409,14 +3426,14 @@ const LESSONS = [
       {
         "id": "e_hval-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -3435,12 +3452,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3459,12 +3476,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3483,12 +3500,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3507,12 +3524,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3529,14 +3546,14 @@ const LESSONS = [
       {
         "id": "e_hval-s06",
         "skillIds": [
-          "fill"
+          "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Fyld med små cirkler i flere lette lag.",
-        "screenTip": "Fyld med små cirkler i flere lette lag.",
-        "how": "Fyld med små cirkler i flere lette lag.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3555,12 +3572,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3579,12 +3596,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3603,12 +3620,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3630,9 +3647,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg ganske let langs kroppen, halen, finnen og vandet med blyanten.",
+        "screenTip": "Skyg ganske let langs kroppen, halen, finnen og vandet med blyanten.",
+        "how": "Skyg ganske let langs kroppen, halen, finnen og vandet med blyanten.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3644,7 +3661,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg ganske let langs kroppen, halen, finnen og vandet med blyanten."
       }
     ],
     "skillIds": [
@@ -3661,7 +3679,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "f7a4beffb7b1e70f"
+    "revision": "db2f2d4837285c1c"
   },
   {
     "id": "e_kylling",
@@ -3685,14 +3703,14 @@ const LESSONS = [
       {
         "id": "e_kylling-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -3711,12 +3729,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3735,12 +3753,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3759,12 +3777,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3783,12 +3801,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3805,14 +3823,14 @@ const LESSONS = [
       {
         "id": "e_kylling-s06",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3831,12 +3849,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3855,12 +3873,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3879,12 +3897,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3906,9 +3924,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lidt let blyantsskygge nederst på maven og i vingerne.",
+        "screenTip": "Læg lidt let blyantsskygge nederst på maven og i vingerne.",
+        "how": "Læg lidt let blyantsskygge nederst på maven og i vingerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -3920,7 +3938,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lidt let blyantsskygge nederst på maven og i vingerne."
       }
     ],
     "skillIds": [
@@ -3937,7 +3956,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "9b2b947f238460e4"
+    "revision": "31d4a08c46659427"
   },
   {
     "id": "e_mus",
@@ -3963,14 +3982,14 @@ const LESSONS = [
       {
         "id": "e_mus-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -3989,12 +4008,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4013,12 +4032,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4037,12 +4056,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4061,12 +4080,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4085,12 +4104,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4109,12 +4128,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4136,9 +4155,9 @@ const LESSONS = [
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4155,14 +4174,14 @@ const LESSONS = [
       {
         "id": "e_mus-s09",
         "skillIds": [
-          "fill"
+          "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Fyld med små cirkler i flere lette lag.",
-        "screenTip": "Fyld med små cirkler i flere lette lag.",
-        "how": "Fyld med små cirkler i flere lette lag.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4181,12 +4200,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4205,12 +4224,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4232,9 +4251,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lidt let blyantsskygge i øret, langs kroppen, på foden og halen.",
+        "screenTip": "Læg lidt let blyantsskygge i øret, langs kroppen, på foden og halen.",
+        "how": "Læg lidt let blyantsskygge i øret, langs kroppen, på foden og halen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4246,7 +4265,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lidt let blyantsskygge i øret, langs kroppen, på foden og halen."
       }
     ],
     "skillIds": [
@@ -4263,7 +4283,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "e8f16e79eed507cf"
+    "revision": "63c5a4bf4d1daa89"
   },
   {
     "id": "e_frø",
@@ -4287,14 +4307,14 @@ const LESSONS = [
       {
         "id": "e_frø-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -4313,12 +4333,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4335,14 +4355,14 @@ const LESSONS = [
       {
         "id": "e_frø-s03",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4361,12 +4381,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4385,12 +4405,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4409,12 +4429,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4433,12 +4453,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4457,12 +4477,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4481,12 +4501,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4508,9 +4528,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg langs mavens sider. Lad midten af maven være hvid.",
+        "screenTip": "Skyg langs mavens sider. Lad midten af maven være hvid.",
+        "how": "Skyg langs mavens sider. Lad midten af maven være hvid.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4522,7 +4542,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg langs mavens sider. Lad midten af maven være hvid."
       }
     ],
     "skillIds": [
@@ -4539,7 +4560,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "89e1190f5bc00a66"
+    "revision": "3b4ce8678b7a028a"
   },
   {
     "id": "e_bi",
@@ -4563,14 +4584,14 @@ const LESSONS = [
       {
         "id": "e_bi-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -4589,12 +4610,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4613,12 +4634,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4637,12 +4658,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4659,14 +4680,14 @@ const LESSONS = [
       {
         "id": "e_bi-s05",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4685,12 +4706,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4709,12 +4730,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4733,12 +4754,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4757,12 +4778,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4784,9 +4805,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Fyld de to brede striber med siden. Overlap små buer; stop ved kanten.",
+        "screenTip": "Fyld de to brede striber med siden. Overlap små buer; stop ved kanten.",
+        "how": "Fyld de to brede striber med siden. Overlap små buer; stop ved kanten.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4798,7 +4819,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Fyld de to brede striber med siden. Overlap små buer; stop ved kanten."
       }
     ],
     "skillIds": [
@@ -4815,7 +4837,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "c702bbd4e6955126"
+    "revision": "a029cf5db1eb59fa"
   },
   {
     "id": "e_pingvin",
@@ -4839,14 +4861,14 @@ const LESSONS = [
       {
         "id": "e_pingvin-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -4865,12 +4887,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4889,12 +4911,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4913,12 +4935,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4937,12 +4959,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4961,12 +4983,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -4983,14 +5005,14 @@ const LESSONS = [
       {
         "id": "e_pingvin-s07",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5009,12 +5031,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5033,12 +5055,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5060,9 +5082,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg let blyantsskygge på hovedets kant, kroppens sider, vinger, fødder og næb.",
+        "screenTip": "Læg let blyantsskygge på hovedets kant, kroppens sider, vinger, fødder og næb.",
+        "how": "Læg let blyantsskygge på hovedets kant, kroppens sider, vinger, fødder og næb.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5074,7 +5096,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg let blyantsskygge på hovedets kant, kroppens sider, vinger, fødder og næb."
       }
     ],
     "skillIds": [
@@ -5091,7 +5114,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "b09c7f945acfeb79"
+    "revision": "f0fc5ddb6875ccc6"
   },
   {
     "id": "e_gris",
@@ -5116,14 +5139,14 @@ const LESSONS = [
       {
         "id": "e_gris-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -5142,12 +5165,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5166,12 +5189,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5190,12 +5213,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5214,12 +5237,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5238,12 +5261,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5260,14 +5283,14 @@ const LESSONS = [
       {
         "id": "e_gris-s07",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5289,9 +5312,9 @@ const LESSONS = [
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5310,12 +5333,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5334,12 +5357,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5361,9 +5384,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lidt let blyantsskygge nederst på kroppen, hovedet, benene og i øret.",
+        "screenTip": "Læg lidt let blyantsskygge nederst på kroppen, hovedet, benene og i øret.",
+        "how": "Læg lidt let blyantsskygge nederst på kroppen, hovedet, benene og i øret.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5375,7 +5398,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lidt let blyantsskygge nederst på kroppen, hovedet, benene og i øret."
       }
     ],
     "skillIds": [
@@ -5392,7 +5416,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "bcc6519c8a6fb0bc"
+    "revision": "e903729294866ea8"
   },
   {
     "id": "e_ræv",
@@ -5418,14 +5442,14 @@ const LESSONS = [
       {
         "id": "e_ræv-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -5444,12 +5468,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5466,14 +5490,14 @@ const LESSONS = [
       {
         "id": "e_ræv-s03",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5492,12 +5516,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5516,12 +5540,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5540,12 +5564,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5564,12 +5588,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5588,12 +5612,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5612,12 +5636,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5636,12 +5660,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5660,12 +5684,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5687,9 +5711,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lidt lys blyantsskygge på panden, ørerne, kroppens sider og halen.",
+        "screenTip": "Læg lidt lys blyantsskygge på panden, ørerne, kroppens sider og halen.",
+        "how": "Læg lidt lys blyantsskygge på panden, ørerne, kroppens sider og halen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5701,7 +5725,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lidt lys blyantsskygge på panden, ørerne, kroppens sider og halen."
       }
     ],
     "skillIds": [
@@ -5718,7 +5743,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "8cc7fb920f5107a9"
+    "revision": "6e6ac4794f7b281c"
   },
   {
     "id": "e_kaktus",
@@ -5742,14 +5767,14 @@ const LESSONS = [
       {
         "id": "e_kaktus-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -5768,12 +5793,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5792,12 +5817,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5816,12 +5841,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5838,14 +5863,14 @@ const LESSONS = [
       {
         "id": "e_kaktus-s05",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5864,12 +5889,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5888,12 +5913,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5912,12 +5937,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5936,12 +5961,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5963,9 +5988,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg på kaktussens højre side. Den venstre side skal være lys.",
+        "screenTip": "Skyg på kaktussens højre side. Den venstre side skal være lys.",
+        "how": "Skyg på kaktussens højre side. Den venstre side skal være lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -5977,7 +6002,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg på kaktussens højre side. Den venstre side skal være lys."
       }
     ],
     "skillIds": [
@@ -5994,7 +6020,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "2c7eff0ae83f6c7d"
+    "revision": "e5229bfa799470f2"
   },
   {
     "id": "e_puma",
@@ -6020,14 +6046,14 @@ const LESSONS = [
       {
         "id": "e_puma-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -6046,12 +6072,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6070,12 +6096,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6094,12 +6120,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6118,12 +6144,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6142,12 +6168,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6166,12 +6192,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6188,14 +6214,14 @@ const LESSONS = [
       {
         "id": "e_puma-s08",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6217,9 +6243,9 @@ const LESSONS = [
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6238,12 +6264,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6262,12 +6288,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6289,9 +6315,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg et lyst lag i ørerne. Hold ansigtets midte lys.",
+        "screenTip": "Læg et lyst lag i ørerne. Hold ansigtets midte lys.",
+        "how": "Læg et lyst lag i ørerne. Hold ansigtets midte lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6303,7 +6329,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg et lyst lag i ørerne. Hold ansigtets midte lys."
       }
     ],
     "skillIds": [
@@ -6320,7 +6347,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "251be579d4e31ce3"
+    "revision": "2dacfc477f0666ba"
   },
   {
     "id": "e_ulv",
@@ -6345,14 +6372,14 @@ const LESSONS = [
       {
         "id": "e_ulv-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -6371,12 +6398,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6395,12 +6422,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6417,14 +6444,14 @@ const LESSONS = [
       {
         "id": "e_ulv-s04",
         "skillIds": [
-          "fill"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Fyld med små cirkler i flere lette lag.",
-        "screenTip": "Fyld med små cirkler i flere lette lag.",
-        "how": "Fyld med små cirkler i flere lette lag.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6446,9 +6473,9 @@ const LESSONS = [
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6467,12 +6494,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6491,12 +6518,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6515,12 +6542,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6539,12 +6566,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6563,12 +6590,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6590,9 +6617,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg let blyantskygge på ører, hoved, krop og hale; behold lyse felter.",
+        "screenTip": "Læg let blyantskygge på ører, hoved, krop og hale; behold lyse felter.",
+        "how": "Læg let blyantskygge på ører, hoved, krop og hale; behold lyse felter.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6604,7 +6631,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg let blyantskygge på ører, hoved, krop og hale; behold lyse felter."
       }
     ],
     "skillIds": [
@@ -6621,7 +6649,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "aff1172d8284f981"
+    "revision": "bc46deb049d685c7"
   },
   {
     "id": "e_fisk",
@@ -6647,14 +6675,14 @@ const LESSONS = [
       {
         "id": "e_fisk-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -6673,12 +6701,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6697,12 +6725,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6721,12 +6749,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6745,12 +6773,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6769,12 +6797,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6793,12 +6821,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6817,12 +6845,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6839,14 +6867,14 @@ const LESSONS = [
       {
         "id": "e_fisk-s09",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6865,12 +6893,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6892,9 +6920,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg langs den nederste kropskant. Blød kant indad; midten bliver lys.",
+        "screenTip": "Skyg langs den nederste kropskant. Blød kant indad; midten bliver lys.",
+        "how": "Skyg langs den nederste kropskant. Blød kant indad; midten bliver lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6906,7 +6934,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg langs den nederste kropskant. Blød kant indad; midten bliver lys."
       },
       {
         "id": "e_fisk-s12",
@@ -6916,9 +6945,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg fra finnens rod. Lad spidsen være lys.",
+        "screenTip": "Skyg fra finnens rod. Lad spidsen være lys.",
+        "how": "Skyg fra finnens rod. Lad spidsen være lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -6930,7 +6959,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg fra finnens rod. Lad spidsen være lys."
       }
     ],
     "skillIds": [
@@ -6947,7 +6977,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "19b8e36c64b2efc3"
+    "revision": "f7f6879f711eb828"
   },
   {
     "id": "e_regnbue",
@@ -6972,14 +7002,14 @@ const LESSONS = [
       {
         "id": "e_regnbue-s01",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -6998,12 +7028,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7022,12 +7052,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7046,12 +7076,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7070,12 +7100,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7097,9 +7127,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
-        "screenTip": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
-        "how": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7121,9 +7151,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
-        "screenTip": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
-        "how": "Følg buen med én rolig streg. Hold samme afstand til den forrige bue.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7142,12 +7172,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7166,12 +7196,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7190,12 +7220,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7217,9 +7247,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg kun nederst i venstre sky. Lad toppen være hvid.",
+        "screenTip": "Skyg kun nederst i venstre sky. Lad toppen være hvid.",
+        "how": "Skyg kun nederst i venstre sky. Lad toppen være hvid.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7231,7 +7261,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg kun nederst i venstre sky. Lad toppen være hvid."
       }
     ],
     "skillIds": [
@@ -7248,7 +7279,7 @@ const LESSONS = [
       "detail": 1,
       "newTechniques": 1
     },
-    "revision": "d0e09a1a19a7b28c"
+    "revision": "47d3121bdecbb83c"
   },
   {
     "id": "raev",
@@ -7286,9 +7317,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -7305,14 +7336,14 @@ const LESSONS = [
       {
         "id": "raev-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7329,14 +7360,14 @@ const LESSONS = [
       {
         "id": "raev-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7358,9 +7389,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7377,14 +7408,14 @@ const LESSONS = [
       {
         "id": "raev-s05",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7403,12 +7434,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7427,12 +7458,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7451,12 +7482,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7475,12 +7506,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7499,12 +7530,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7523,12 +7554,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7545,14 +7576,14 @@ const LESSONS = [
       {
         "id": "raev-s12",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7569,14 +7600,14 @@ const LESSONS = [
       {
         "id": "raev-s13",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7593,14 +7624,14 @@ const LESSONS = [
       {
         "id": "raev-s14",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7622,9 +7653,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7641,14 +7672,14 @@ const LESSONS = [
       {
         "id": "raev-s16",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7665,15 +7696,14 @@ const LESSONS = [
       {
         "id": "raev-s17",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse.",
+        "screenTip": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse.",
+        "how": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7685,19 +7715,20 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse."
       },
       {
         "id": "raev-s18",
         "skillIds": [
-          "contour"
+          "shading"
         ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
+        "pressure": "let",
+        "tool": "graphiteSide",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse.",
+        "screenTip": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse.",
+        "how": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7709,7 +7740,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": false
+        "optionalDetails": false,
+        "lightGoal": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse."
       },
       {
         "id": "raev-s19",
@@ -7719,9 +7751,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse.",
+        "screenTip": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse.",
+        "how": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7733,7 +7765,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under kinden og på benenes inderside. Hold bryst og halespids lyse."
       }
     ],
     "skillIds": [
@@ -7753,7 +7786,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "ee64ed1ed07d4619"
+    "revision": "ca6e56c06e2d4d7d"
   },
   {
     "id": "kat",
@@ -7791,9 +7824,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -7810,14 +7843,14 @@ const LESSONS = [
       {
         "id": "kat-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7834,14 +7867,14 @@ const LESSONS = [
       {
         "id": "kat-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7860,12 +7893,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7884,12 +7917,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7906,14 +7939,14 @@ const LESSONS = [
       {
         "id": "kat-s06",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7932,12 +7965,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7954,14 +7987,14 @@ const LESSONS = [
       {
         "id": "kat-s08",
         "skillIds": [
-          "fill"
+          "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Fyld med små cirkler i flere lette lag.",
-        "screenTip": "Fyld med små cirkler i flere lette lag.",
-        "how": "Fyld med små cirkler i flere lette lag.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -7980,12 +8013,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8004,12 +8037,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8028,12 +8061,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8055,9 +8088,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8074,14 +8107,14 @@ const LESSONS = [
       {
         "id": "kat-s13",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8098,14 +8131,14 @@ const LESSONS = [
       {
         "id": "kat-s14",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8124,12 +8157,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8146,14 +8179,14 @@ const LESSONS = [
       {
         "id": "kat-s16",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8170,15 +8203,14 @@ const LESSONS = [
       {
         "id": "kat-s17",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lette lag under hovedet og maven. Lad brystet være lyst.",
+        "screenTip": "Læg lette lag under hovedet og maven. Lad brystet være lyst.",
+        "how": "Læg lette lag under hovedet og maven. Lad brystet være lyst.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8190,19 +8222,20 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lette lag under hovedet og maven. Lad brystet være lyst."
       },
       {
         "id": "kat-s18",
         "skillIds": [
-          "contour"
+          "shading"
         ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
+        "pressure": "let",
+        "tool": "graphiteSide",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Læg lette lag under hovedet og maven. Lad brystet være lyst.",
+        "screenTip": "Læg lette lag under hovedet og maven. Lad brystet være lyst.",
+        "how": "Læg lette lag under hovedet og maven. Lad brystet være lyst.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8214,7 +8247,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": false
+        "optionalDetails": false,
+        "lightGoal": "Læg lette lag under hovedet og maven. Lad brystet være lyst."
       },
       {
         "id": "kat-s19",
@@ -8224,9 +8258,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lette lag under hovedet og maven. Lad brystet være lyst.",
+        "screenTip": "Læg lette lag under hovedet og maven. Lad brystet være lyst.",
+        "how": "Læg lette lag under hovedet og maven. Lad brystet være lyst.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8238,7 +8272,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lette lag under hovedet og maven. Lad brystet være lyst."
       }
     ],
     "skillIds": [
@@ -8259,7 +8294,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "86ea1252a9b261b7"
+    "revision": "89af54244123a271"
   },
   {
     "id": "ugle",
@@ -8298,9 +8333,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -8317,14 +8352,14 @@ const LESSONS = [
       {
         "id": "ugle-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8346,9 +8381,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8367,12 +8402,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8391,12 +8426,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8415,12 +8450,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8439,12 +8474,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8461,14 +8496,14 @@ const LESSONS = [
       {
         "id": "ugle-s08",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8487,12 +8522,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8511,12 +8546,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8535,12 +8570,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8562,9 +8597,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8586,9 +8621,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8610,9 +8645,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8634,9 +8669,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8658,9 +8693,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8682,9 +8717,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8701,15 +8736,14 @@ const LESSONS = [
       {
         "id": "ugle-s18",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Visk hjælpelinjerne let ud. Læg forsigtigt lyse blyantsskygger på uglen og grenen; følg fjerenes og barkens retning.",
+        "screenTip": "Visk hjælpelinjerne let ud. Læg forsigtigt lyse blyantsskygger på uglen og grenen; følg fjerenes og barkens retning.",
+        "how": "Visk hjælpelinjerne let ud. Læg forsigtigt lyse blyantsskygger på uglen og grenen; følg fjerenes og barkens retning.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8721,7 +8755,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Visk hjælpelinjerne let ud. Læg forsigtigt lyse blyantsskygger på uglen og grenen; følg fjerenes og barkens retning."
       },
       {
         "id": "ugle-s19",
@@ -8731,9 +8766,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne på den venstre vinge mørkere.",
+        "screenTip": "Gør skyggerne på den venstre vinge mørkere.",
+        "how": "Gør skyggerne på den venstre vinge mørkere.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8745,7 +8780,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne på den venstre vinge mørkere."
       },
       {
         "id": "ugle-s20",
@@ -8755,9 +8791,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne i øjnene, fjerene og barken mørkere. Behold de lyse områder.",
+        "screenTip": "Gør skyggerne i øjnene, fjerene og barken mørkere. Behold de lyse områder.",
+        "how": "Gør skyggerne i øjnene, fjerene og barken mørkere. Behold de lyse områder.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8769,7 +8805,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne i øjnene, fjerene og barken mørkere. Behold de lyse områder."
       }
     ],
     "skillIds": [
@@ -8789,7 +8826,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "1796b735ec8b66e4"
+    "revision": "9adb2e4a56ba97eb"
   },
   {
     "id": "kanin",
@@ -8827,9 +8864,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -8846,14 +8883,14 @@ const LESSONS = [
       {
         "id": "kanin-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8875,9 +8912,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8899,9 +8936,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8920,12 +8957,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8944,12 +8981,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8968,12 +9005,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -8990,14 +9027,14 @@ const LESSONS = [
       {
         "id": "kanin-s08",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9016,12 +9053,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9040,12 +9077,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9062,14 +9099,14 @@ const LESSONS = [
       {
         "id": "kanin-s11",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9086,14 +9123,14 @@ const LESSONS = [
       {
         "id": "kanin-s12",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9115,9 +9152,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9134,14 +9171,14 @@ const LESSONS = [
       {
         "id": "kanin-s14",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9163,9 +9200,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9187,9 +9224,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9206,15 +9243,14 @@ const LESSONS = [
       {
         "id": "kanin-s17",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse.",
+        "screenTip": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse.",
+        "how": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9226,7 +9262,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse."
       },
       {
         "id": "kanin-s18",
@@ -9236,9 +9273,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse.",
+        "screenTip": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse.",
+        "how": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9250,7 +9287,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse."
       },
       {
         "id": "kanin-s19",
@@ -9260,9 +9298,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse.",
+        "screenTip": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse.",
+        "how": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9274,7 +9312,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg korte buer under kinden og maven. Lad ryggen og ørets kant være lyse."
       }
     ],
     "skillIds": [
@@ -9294,7 +9333,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "c74dd87202dd56f8"
+    "revision": "b1c48dc8331becc4"
   },
   {
     "id": "sommerfugl",
@@ -9331,9 +9370,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -9355,9 +9394,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9379,9 +9418,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9400,12 +9439,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9424,12 +9463,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9446,14 +9485,14 @@ const LESSONS = [
       {
         "id": "sommerfugl-s06",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9472,12 +9511,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9496,12 +9535,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9520,12 +9559,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9544,12 +9583,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9568,12 +9607,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9592,12 +9631,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9614,14 +9653,14 @@ const LESSONS = [
       {
         "id": "sommerfugl-s13",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9640,12 +9679,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9662,15 +9701,14 @@ const LESSONS = [
       {
         "id": "sommerfugl-s15",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Visk hjælpelinjerne let ud. Skyg let i de øverste vinger. Lad de små pletter være lyse.",
+        "screenTip": "Visk hjælpelinjerne let ud. Skyg let i de øverste vinger. Lad de små pletter være lyse.",
+        "how": "Visk hjælpelinjerne let ud. Skyg let i de øverste vinger. Lad de små pletter være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9682,7 +9720,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Visk hjælpelinjerne let ud. Skyg let i de øverste vinger. Lad de små pletter være lyse."
       },
       {
         "id": "sommerfugl-s16",
@@ -9692,9 +9731,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let i de nederste vinger og på kroppen.",
+        "screenTip": "Skyg let i de nederste vinger og på kroppen.",
+        "how": "Skyg let i de nederste vinger og på kroppen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9706,19 +9745,20 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let i de nederste vinger og på kroppen."
       },
       {
         "id": "sommerfugl-s17",
         "skillIds": [
-          "contour"
+          "shading"
         ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
+        "pressure": "let",
+        "tool": "graphiteSide",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Gør én mørk stribe i den venstre overvinge mørkere. Behold de lyse pletter.",
+        "screenTip": "Gør én mørk stribe i den venstre overvinge mørkere. Behold de lyse pletter.",
+        "how": "Gør én mørk stribe i den venstre overvinge mørkere. Behold de lyse pletter.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9730,19 +9770,20 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": false
+        "optionalDetails": false,
+        "lightGoal": "Gør én mørk stribe i den venstre overvinge mørkere. Behold de lyse pletter."
       },
       {
         "id": "sommerfugl-s18",
         "skillIds": [
-          "contour"
+          "shading"
         ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
+        "pressure": "let",
+        "tool": "graphiteSide",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Gør de andre mørke striber og kroppen mørkere. Lad pletterne være lyse.",
+        "screenTip": "Gør de andre mørke striber og kroppen mørkere. Lad pletterne være lyse.",
+        "how": "Gør de andre mørke striber og kroppen mørkere. Lad pletterne være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9754,7 +9795,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": false
+        "optionalDetails": false,
+        "lightGoal": "Gør de andre mørke striber og kroppen mørkere. Lad pletterne være lyse."
       }
     ],
     "skillIds": [
@@ -9773,7 +9815,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "8efbae69e7da4393"
+    "revision": "6c78fc35cd3afbed"
   },
   {
     "id": "solsikke",
@@ -9809,9 +9851,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -9833,9 +9875,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9857,9 +9899,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9878,12 +9920,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9902,12 +9944,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9924,14 +9966,14 @@ const LESSONS = [
       {
         "id": "solsikke-s06",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9948,14 +9990,14 @@ const LESSONS = [
       {
         "id": "solsikke-s07",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9974,12 +10016,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -9998,12 +10040,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10022,12 +10064,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10044,14 +10086,14 @@ const LESSONS = [
       {
         "id": "solsikke-s11",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10068,14 +10110,14 @@ const LESSONS = [
       {
         "id": "solsikke-s12",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10094,12 +10136,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10118,12 +10160,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10142,12 +10184,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10164,15 +10206,14 @@ const LESSONS = [
       {
         "id": "solsikke-s16",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Visk hjælpelinjerne let ud. Læg lyse skygger ved kronbladenes bund, mellem frøene og på stænglen og bladet.",
+        "screenTip": "Visk hjælpelinjerne let ud. Læg lyse skygger ved kronbladenes bund, mellem frøene og på stænglen og bladet.",
+        "how": "Visk hjælpelinjerne let ud. Læg lyse skygger ved kronbladenes bund, mellem frøene og på stænglen og bladet.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10184,7 +10225,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Visk hjælpelinjerne let ud. Læg lyse skygger ved kronbladenes bund, mellem frøene og på stænglen og bladet."
       },
       {
         "id": "solsikke-s17",
@@ -10194,9 +10236,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne dybere mellem kronbladene, omkring frøene og på stænglen og bladet. Bevar de lyse områder.",
+        "screenTip": "Gør skyggerne dybere mellem kronbladene, omkring frøene og på stænglen og bladet. Bevar de lyse områder.",
+        "how": "Gør skyggerne dybere mellem kronbladene, omkring frøene og på stænglen og bladet. Bevar de lyse områder.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10208,7 +10250,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne dybere mellem kronbladene, omkring frøene og på stænglen og bladet. Bevar de lyse områder."
       }
     ],
     "skillIds": [
@@ -10227,7 +10270,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "51c3d013fc1058dd"
+    "revision": "b9c303e85b1bbc8c"
   },
   {
     "id": "fluesvamp",
@@ -10266,9 +10309,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -10290,9 +10333,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10314,9 +10357,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10335,12 +10378,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10359,12 +10402,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10381,14 +10424,14 @@ const LESSONS = [
       {
         "id": "fluesvamp-s06",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10407,12 +10450,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10431,12 +10474,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10455,12 +10498,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10479,12 +10522,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10503,12 +10546,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10525,14 +10568,14 @@ const LESSONS = [
       {
         "id": "fluesvamp-s12",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10551,12 +10594,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10575,12 +10618,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10599,12 +10642,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10623,12 +10666,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10647,12 +10690,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10669,15 +10712,14 @@ const LESSONS = [
       {
         "id": "fluesvamp-s18",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Visk hjælpelinjerne let ud. Skyg let på hattene. Lad pletterne være lyse.",
+        "screenTip": "Visk hjælpelinjerne let ud. Skyg let på hattene. Lad pletterne være lyse.",
+        "how": "Visk hjælpelinjerne let ud. Skyg let på hattene. Lad pletterne være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10689,7 +10731,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Visk hjælpelinjerne let ud. Skyg let på hattene. Lad pletterne være lyse."
       },
       {
         "id": "fluesvamp-s19",
@@ -10699,9 +10742,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let under hattene, på stokkene og i mosset.",
+        "screenTip": "Skyg let under hattene, på stokkene og i mosset.",
+        "how": "Skyg let under hattene, på stokkene og i mosset.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10713,7 +10756,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let under hattene, på stokkene og i mosset."
       },
       {
         "id": "fluesvamp-s20",
@@ -10723,9 +10767,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne mørkere under hattene og mellem mosset. Lad pletterne på hattene være lyse.",
+        "screenTip": "Gør skyggerne mørkere under hattene og mellem mosset. Lad pletterne på hattene være lyse.",
+        "how": "Gør skyggerne mørkere under hattene og mellem mosset. Lad pletterne på hattene være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10737,7 +10781,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne mørkere under hattene og mellem mosset. Lad pletterne på hattene være lyse."
       }
     ],
     "skillIds": [
@@ -10756,7 +10801,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "d8072091da9fb507"
+    "revision": "2ef0d2cb3f57d094"
   },
   {
     "id": "pindsvin",
@@ -10788,9 +10833,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -10807,14 +10852,14 @@ const LESSONS = [
       {
         "id": "pindsvin-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10831,14 +10876,14 @@ const LESSONS = [
       {
         "id": "pindsvin-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10857,12 +10902,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10881,12 +10926,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10903,14 +10948,14 @@ const LESSONS = [
       {
         "id": "pindsvin-s06",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10929,12 +10974,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10953,12 +10998,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -10975,14 +11020,14 @@ const LESSONS = [
       {
         "id": "pindsvin-s09",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11004,9 +11049,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11023,14 +11068,14 @@ const LESSONS = [
       {
         "id": "pindsvin-s11",
         "skillIds": [
-          "fill"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Fyld med små cirkler i flere lette lag.",
-        "screenTip": "Fyld med små cirkler i flere lette lag.",
-        "how": "Fyld med små cirkler i flere lette lag.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11052,9 +11097,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lyse blyantsskygger mellem piggene, i pelsen og under fødderne. Giv øje og næse lidt mørke.",
+        "screenTip": "Læg lyse blyantsskygger mellem piggene, i pelsen og under fødderne. Giv øje og næse lidt mørke.",
+        "how": "Læg lyse blyantsskygger mellem piggene, i pelsen og under fødderne. Giv øje og næse lidt mørke.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11066,7 +11111,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lyse blyantsskygger mellem piggene, i pelsen og under fødderne. Giv øje og næse lidt mørke."
       },
       {
         "id": "pindsvin-s13",
@@ -11076,9 +11122,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne dybere mellem piggene, i øret og under kroppen. Gør også øjet og næsen mørkere.",
+        "screenTip": "Gør skyggerne dybere mellem piggene, i øret og under kroppen. Gør også øjet og næsen mørkere.",
+        "how": "Gør skyggerne dybere mellem piggene, i øret og under kroppen. Gør også øjet og næsen mørkere.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11090,7 +11136,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne dybere mellem piggene, i øret og under kroppen. Gør også øjet og næsen mørkere."
       }
     ],
     "skillIds": [
@@ -11112,7 +11159,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "647c586c46cfb5a6"
+    "revision": "e63bc495b2c636d3"
   },
   {
     "id": "papegoeje",
@@ -11144,9 +11191,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -11163,14 +11210,14 @@ const LESSONS = [
       {
         "id": "papegoeje-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11192,9 +11239,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11211,14 +11258,14 @@ const LESSONS = [
       {
         "id": "papegoeje-s04",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11235,14 +11282,14 @@ const LESSONS = [
       {
         "id": "papegoeje-s05",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11259,14 +11306,14 @@ const LESSONS = [
       {
         "id": "papegoeje-s06",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11285,12 +11332,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11307,14 +11354,14 @@ const LESSONS = [
       {
         "id": "papegoeje-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11336,9 +11383,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11360,9 +11407,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11384,9 +11431,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11408,9 +11455,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lyse blyantsskygger på fuglen og grenen; følg fjerenes retning, og bevar de lyse områder.",
+        "screenTip": "Læg lyse blyantsskygger på fuglen og grenen; følg fjerenes retning, og bevar de lyse områder.",
+        "how": "Læg lyse blyantsskygger på fuglen og grenen; følg fjerenes retning, og bevar de lyse områder.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11422,7 +11469,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lyse blyantsskygger på fuglen og grenen; følg fjerenes retning, og bevar de lyse områder."
       },
       {
         "id": "papegoeje-s13",
@@ -11432,9 +11480,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør næbbet og skyggerne mellem fjerene og under grenen mørkere med lidt mere blyantstryk.",
+        "screenTip": "Gør næbbet og skyggerne mellem fjerene og under grenen mørkere med lidt mere blyantstryk.",
+        "how": "Gør næbbet og skyggerne mellem fjerene og under grenen mørkere med lidt mere blyantstryk.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11446,7 +11494,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør næbbet og skyggerne mellem fjerene og under grenen mørkere med lidt mere blyantstryk."
       }
     ],
     "skillIds": [
@@ -11467,7 +11516,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "e1f554d08d7f27b8"
+    "revision": "7d2a373ad838a941"
   },
   {
     "id": "skildpadde",
@@ -11501,9 +11550,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -11525,9 +11574,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11549,9 +11598,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11568,14 +11617,14 @@ const LESSONS = [
       {
         "id": "skildpadde-s04",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11594,12 +11643,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11618,12 +11667,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11642,12 +11691,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11664,14 +11713,14 @@ const LESSONS = [
       {
         "id": "skildpadde-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11690,12 +11739,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11714,12 +11763,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11736,14 +11785,14 @@ const LESSONS = [
       {
         "id": "skildpadde-s11",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11760,14 +11809,14 @@ const LESSONS = [
       {
         "id": "skildpadde-s12",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11786,12 +11835,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11813,9 +11862,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under skjoldets kant og mellem benene. Behold skjoldets top lys.",
+        "screenTip": "Skyg under skjoldets kant og mellem benene. Behold skjoldets top lys.",
+        "how": "Skyg under skjoldets kant og mellem benene. Behold skjoldets top lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11827,7 +11876,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under skjoldets kant og mellem benene. Behold skjoldets top lys."
       },
       {
         "id": "skildpadde-s15",
@@ -11837,9 +11887,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under skjoldets kant og mellem benene. Behold skjoldets top lys.",
+        "screenTip": "Skyg under skjoldets kant og mellem benene. Behold skjoldets top lys.",
+        "how": "Skyg under skjoldets kant og mellem benene. Behold skjoldets top lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11851,7 +11901,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under skjoldets kant og mellem benene. Behold skjoldets top lys."
       }
     ],
     "skillIds": [
@@ -11871,7 +11922,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "65a1f1bdd77005a4"
+    "revision": "f9c1b99f667b8ce3"
   },
   {
     "id": "hjort",
@@ -11903,9 +11954,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -11922,14 +11973,14 @@ const LESSONS = [
       {
         "id": "hjort-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11946,14 +11997,14 @@ const LESSONS = [
       {
         "id": "hjort-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11972,12 +12023,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -11996,12 +12047,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12018,14 +12069,14 @@ const LESSONS = [
       {
         "id": "hjort-s06",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12042,14 +12093,14 @@ const LESSONS = [
       {
         "id": "hjort-s07",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12066,14 +12117,14 @@ const LESSONS = [
       {
         "id": "hjort-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12092,12 +12143,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12119,9 +12170,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12143,9 +12194,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12167,9 +12218,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lyse blyantsskygger i pelsen, øjet, næsen og klovene. Lad pletterne være hvide.",
+        "screenTip": "Læg lyse blyantsskygger i pelsen, øjet, næsen og klovene. Lad pletterne være hvide.",
+        "how": "Læg lyse blyantsskygger i pelsen, øjet, næsen og klovene. Lad pletterne være hvide.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12181,7 +12232,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lyse blyantsskygger i pelsen, øjet, næsen og klovene. Lad pletterne være hvide."
       },
       {
         "id": "hjort-s13",
@@ -12191,9 +12243,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne dybere med fine blyantsstreger, især på ryggen, i øjet, på næsen og klovene.",
+        "screenTip": "Gør skyggerne dybere med fine blyantsstreger, især på ryggen, i øjet, på næsen og klovene.",
+        "how": "Gør skyggerne dybere med fine blyantsstreger, især på ryggen, i øjet, på næsen og klovene.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12205,7 +12257,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne dybere med fine blyantsstreger, især på ryggen, i øjet, på næsen og klovene."
       }
     ],
     "skillIds": [
@@ -12226,7 +12279,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "e1fd1208cd7102ab"
+    "revision": "c69da1483319a1d8"
   },
   {
     "id": "blomsterbuket",
@@ -12258,9 +12311,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -12277,14 +12330,14 @@ const LESSONS = [
       {
         "id": "blomsterbuket-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12301,14 +12354,14 @@ const LESSONS = [
       {
         "id": "blomsterbuket-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12327,12 +12380,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12349,14 +12402,14 @@ const LESSONS = [
       {
         "id": "blomsterbuket-s05",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12375,12 +12428,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12399,12 +12452,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12421,14 +12474,14 @@ const LESSONS = [
       {
         "id": "blomsterbuket-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12447,12 +12500,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12471,12 +12524,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12495,12 +12548,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12522,9 +12575,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lette blyantsskygger langs kronblade, blade, stilke og vasens sider; behold de lyse områder hvide.",
+        "screenTip": "Læg lette blyantsskygger langs kronblade, blade, stilke og vasens sider; behold de lyse områder hvide.",
+        "how": "Læg lette blyantsskygger langs kronblade, blade, stilke og vasens sider; behold de lyse områder hvide.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12536,7 +12589,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lette blyantsskygger langs kronblade, blade, stilke og vasens sider; behold de lyse områder hvide."
       },
       {
         "id": "blomsterbuket-s13",
@@ -12546,9 +12600,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne mørkere mellem kronbladene, bag bladene og langs glasset, så buketten får dybde.",
+        "screenTip": "Gør skyggerne mørkere mellem kronbladene, bag bladene og langs glasset, så buketten får dybde.",
+        "how": "Gør skyggerne mørkere mellem kronbladene, bag bladene og langs glasset, så buketten får dybde.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -12560,7 +12614,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne mørkere mellem kronbladene, bag bladene og langs glasset, så buketten får dybde."
       }
     ],
     "skillIds": [
@@ -12580,7 +12635,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "1a69a6ab9010ad8d"
+    "revision": "2690b71f3f1e6da7"
   },
   {
     "id": "fyrtaarn",
@@ -12612,12 +12667,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12636,12 +12691,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12655,17 +12710,17 @@ const LESSONS = [
       {
         "id": "fyrtaarn-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12681,15 +12736,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12705,15 +12760,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12729,15 +12784,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12753,15 +12808,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12775,18 +12830,17 @@ const LESSONS = [
       {
         "id": "fyrtaarn-s08",
         "skillIds": [
-          "contour",
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12802,15 +12856,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12826,15 +12880,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12850,15 +12904,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12877,12 +12931,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lyse skygger på tårnets venstre side, under balkonen, mellem klipperne og i bølgerne.",
+        "screenTip": "Læg lyse skygger på tårnets venstre side, under balkonen, mellem klipperne og i bølgerne.",
+        "how": "Læg lyse skygger på tårnets venstre side, under balkonen, mellem klipperne og i bølgerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12891,7 +12945,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lyse skygger på tårnets venstre side, under balkonen, mellem klipperne og i bølgerne."
       },
       {
         "id": "fyrtaarn-s13",
@@ -12901,12 +12956,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne mørkere i vinduerne, på tårnets venstre side og mellem klipperne; behold skummet hvidt.",
+        "screenTip": "Gør skyggerne mørkere i vinduerne, på tårnets venstre side og mellem klipperne; behold skummet hvidt.",
+        "how": "Gør skyggerne mørkere i vinduerne, på tårnets venstre side og mellem klipperne; behold skummet hvidt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -12915,7 +12970,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne mørkere i vinduerne, på tårnets venstre side og mellem klipperne; behold skummet hvidt."
       }
     ],
     "skillIds": [
@@ -12934,7 +12990,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "9eefb9cc81b61675"
+    "revision": "60588ad7ca54c916"
   },
   {
     "id": "puma",
@@ -12966,9 +13022,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -12985,14 +13041,14 @@ const LESSONS = [
       {
         "id": "puma-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13014,9 +13070,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13033,14 +13089,14 @@ const LESSONS = [
       {
         "id": "puma-s04",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13059,12 +13115,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13083,12 +13139,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13107,12 +13163,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13129,14 +13185,14 @@ const LESSONS = [
       {
         "id": "puma-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13155,12 +13211,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13182,9 +13238,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13206,9 +13262,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13230,9 +13286,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under kinden og langs kroppens underside. Behold brystet lyst.",
+        "screenTip": "Skyg under kinden og langs kroppens underside. Behold brystet lyst.",
+        "how": "Skyg under kinden og langs kroppens underside. Behold brystet lyst.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13244,7 +13300,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under kinden og langs kroppens underside. Behold brystet lyst."
       },
       {
         "id": "puma-s13",
@@ -13254,9 +13311,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under kinden og langs kroppens underside. Behold brystet lyst.",
+        "screenTip": "Skyg under kinden og langs kroppens underside. Behold brystet lyst.",
+        "how": "Skyg under kinden og langs kroppens underside. Behold brystet lyst.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13268,7 +13325,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under kinden og langs kroppens underside. Behold brystet lyst."
       }
     ],
     "skillIds": [
@@ -13289,7 +13347,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "9616dad673da1f88"
+    "revision": "78e4420bd330ed13"
   },
   {
     "id": "ulv",
@@ -13321,9 +13379,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -13345,9 +13403,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13369,9 +13427,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13390,12 +13448,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13412,14 +13470,14 @@ const LESSONS = [
       {
         "id": "ulv-s05",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13436,14 +13494,14 @@ const LESSONS = [
       {
         "id": "ulv-s06",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13462,12 +13520,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13484,14 +13542,14 @@ const LESSONS = [
       {
         "id": "ulv-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13510,12 +13568,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13537,9 +13595,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13561,9 +13619,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13585,9 +13643,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lyse blyantsskygger under halsen, maven og på benene; giv også næsen og ørerne lidt skygge.",
+        "screenTip": "Læg lyse blyantsskygger under halsen, maven og på benene; giv også næsen og ørerne lidt skygge.",
+        "how": "Læg lyse blyantsskygger under halsen, maven og på benene; giv også næsen og ørerne lidt skygge.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13599,7 +13657,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lyse blyantsskygger under halsen, maven og på benene; giv også næsen og ørerne lidt skygge."
       },
       {
         "id": "ulv-s13",
@@ -13609,9 +13668,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør pelsen mørkere langs hovedet, halsen, ryggen og halen, og forstærk de mørkeste skygger.",
+        "screenTip": "Gør pelsen mørkere langs hovedet, halsen, ryggen og halen, og forstærk de mørkeste skygger.",
+        "how": "Gør pelsen mørkere langs hovedet, halsen, ryggen og halen, og forstærk de mørkeste skygger.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13623,7 +13682,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør pelsen mørkere langs hovedet, halsen, ryggen og halen, og forstærk de mørkeste skygger."
       }
     ],
     "skillIds": [
@@ -13644,7 +13704,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "72b825b77026472d"
+    "revision": "86507af382eba566"
   },
   {
     "id": "s_haj",
@@ -13676,9 +13736,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -13695,14 +13755,14 @@ const LESSONS = [
       {
         "id": "s_haj-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13724,9 +13784,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13745,12 +13805,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13769,12 +13829,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13793,12 +13853,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13817,12 +13877,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13839,14 +13899,14 @@ const LESSONS = [
       {
         "id": "s_haj-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13865,12 +13925,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13889,12 +13949,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13913,12 +13973,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13940,9 +14000,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lette blyantsskygger på ryggen, finnerne og halen. Lad maven være lys.",
+        "screenTip": "Læg lette blyantsskygger på ryggen, finnerne og halen. Lad maven være lys.",
+        "how": "Læg lette blyantsskygger på ryggen, finnerne og halen. Lad maven være lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13954,7 +14014,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lette blyantsskygger på ryggen, finnerne og halen. Lad maven være lys."
       },
       {
         "id": "s_haj-s13",
@@ -13964,9 +14025,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne på ryggen, finnerne og halen mørkere med bløde blyantsstrøg. Bevar øjets lille glimt.",
+        "screenTip": "Gør skyggerne på ryggen, finnerne og halen mørkere med bløde blyantsstrøg. Bevar øjets lille glimt.",
+        "how": "Gør skyggerne på ryggen, finnerne og halen mørkere med bløde blyantsstrøg. Bevar øjets lille glimt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -13978,7 +14039,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne på ryggen, finnerne og halen mørkere med bløde blyantsstrøg. Bevar øjets lille glimt."
       }
     ],
     "skillIds": [
@@ -13998,9 +14060,9 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "2d2b47d867957d61",
+    "revision": "e7e7ed0115ad29cf",
     "shop": true,
-    "price": 20
+    "price": 8
   },
   {
     "id": "s_panda_baby",
@@ -14032,9 +14094,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -14056,9 +14118,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14080,9 +14142,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14099,14 +14161,14 @@ const LESSONS = [
       {
         "id": "s_panda_baby-s04",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14125,12 +14187,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14149,12 +14211,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14173,12 +14235,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14195,14 +14257,14 @@ const LESSONS = [
       {
         "id": "s_panda_baby-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14221,12 +14283,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14248,9 +14310,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14272,9 +14334,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14296,9 +14358,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lyse blyantsskygger i ører, øjenpletter og ben samt langs grenens underside.",
+        "screenTip": "Læg lyse blyantsskygger i ører, øjenpletter og ben samt langs grenens underside.",
+        "how": "Læg lyse blyantsskygger i ører, øjenpletter og ben samt langs grenens underside.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14310,19 +14372,20 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lyse blyantsskygger i ører, øjenpletter og ben samt langs grenens underside."
       },
       {
         "id": "s_panda_baby-s13",
         "skillIds": [
-          "fur"
+          "shading"
         ],
         "pressure": "let",
-        "tool": "graphitePoint",
+        "tool": "graphiteSide",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Gør de sorte pelsområder og barkens revner mørkere. Bevar lyse glimt i øjnene.",
+        "screenTip": "Gør de sorte pelsområder og barkens revner mørkere. Bevar lyse glimt i øjnene.",
+        "how": "Gør de sorte pelsområder og barkens revner mørkere. Bevar lyse glimt i øjnene.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14334,7 +14397,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør de sorte pelsområder og barkens revner mørkere. Bevar lyse glimt i øjnene."
       }
     ],
     "skillIds": [
@@ -14355,9 +14419,9 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "c0a5dec005208edf",
+    "revision": "05a4bd81d1523316",
     "shop": true,
-    "price": 15
+    "price": 8
   },
   {
     "id": "rose",
@@ -14394,9 +14458,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -14418,9 +14482,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14442,9 +14506,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14463,12 +14527,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14487,12 +14551,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14511,12 +14575,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14535,12 +14599,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14559,12 +14623,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14583,12 +14647,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14607,12 +14671,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14631,12 +14695,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14655,12 +14719,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14679,12 +14743,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14703,12 +14767,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14725,15 +14789,14 @@ const LESSONS = [
       {
         "id": "rose-s15",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys.",
+        "screenTip": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys.",
+        "how": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14745,7 +14808,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys."
       },
       {
         "id": "rose-s16",
@@ -14755,9 +14819,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys.",
+        "screenTip": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys.",
+        "how": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14769,7 +14833,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys."
       },
       {
         "id": "rose-s17",
@@ -14779,9 +14844,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys.",
+        "screenTip": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys.",
+        "how": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14793,7 +14858,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg på foldens inderside. Kronbladets øverste kant bliver lys."
       },
       {
         "id": "rose-s18",
@@ -14803,9 +14869,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg bladets underside. Lad midterribben være lys.",
+        "screenTip": "Skyg bladets underside. Lad midterribben være lys.",
+        "how": "Skyg bladets underside. Lad midterribben være lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14817,7 +14883,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg bladets underside. Lad midterribben være lys."
       }
     ],
     "skillIds": [
@@ -14836,7 +14903,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "378ca39bf9b643a9"
+    "revision": "a84f36a20139697c"
   },
   {
     "id": "hvalp",
@@ -14876,9 +14943,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -14895,14 +14962,14 @@ const LESSONS = [
       {
         "id": "hvalp-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14919,14 +14986,14 @@ const LESSONS = [
       {
         "id": "hvalp-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14943,14 +15010,14 @@ const LESSONS = [
       {
         "id": "hvalp-s04",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14967,14 +15034,14 @@ const LESSONS = [
       {
         "id": "hvalp-s05",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -14993,12 +15060,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15017,12 +15084,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15041,12 +15108,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15065,12 +15132,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15089,12 +15156,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15113,12 +15180,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg bagbenet ned til den runde bagpote. Tegn derefter halens kant på højre side.",
-        "screenTip": "Følg bagbenet ned til den runde bagpote. Tegn derefter halens kant på højre side.",
-        "how": "Følg bagbenet ned til den runde bagpote. Tegn derefter halens kant på højre side.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15137,12 +15204,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15161,12 +15228,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15183,14 +15250,14 @@ const LESSONS = [
       {
         "id": "hvalp-s14",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15212,9 +15279,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15231,14 +15298,14 @@ const LESSONS = [
       {
         "id": "hvalp-s16",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15260,9 +15327,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15284,9 +15351,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15303,15 +15370,14 @@ const LESSONS = [
       {
         "id": "hvalp-s19",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Visk hjælpelinjerne let ud. Skyg let på hovedet og under ørerne. Gør næsen mørkere.",
+        "screenTip": "Visk hjælpelinjerne let ud. Skyg let på hovedet og under ørerne. Gør næsen mørkere.",
+        "how": "Visk hjælpelinjerne let ud. Skyg let på hovedet og under ørerne. Gør næsen mørkere.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15323,7 +15389,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Visk hjælpelinjerne let ud. Skyg let på hovedet og under ørerne. Gør næsen mørkere."
       },
       {
         "id": "hvalp-s20",
@@ -15333,9 +15400,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let på kroppen og under poterne.",
+        "screenTip": "Skyg let på kroppen og under poterne.",
+        "how": "Skyg let på kroppen og under poterne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15347,7 +15414,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let på kroppen og under poterne."
       },
       {
         "id": "hvalp-s21",
@@ -15357,9 +15425,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne i øjne, næse og pels dybere, især under ørerne og mellem forbenene.",
+        "screenTip": "Gør skyggerne i øjne, næse og pels dybere, især under ørerne og mellem forbenene.",
+        "how": "Gør skyggerne i øjne, næse og pels dybere, især under ørerne og mellem forbenene.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15371,7 +15439,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne i øjne, næse og pels dybere, især under ørerne og mellem forbenene."
       }
     ],
     "skillIds": [
@@ -15391,7 +15460,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "0ef8464aa99915d3"
+    "revision": "3da40397a68d2dc2"
   },
   {
     "id": "loeve",
@@ -15428,9 +15497,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -15452,9 +15521,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15471,14 +15540,14 @@ const LESSONS = [
       {
         "id": "loeve-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15497,12 +15566,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15521,12 +15590,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15545,12 +15614,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15569,12 +15638,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15593,12 +15662,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15617,12 +15686,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15641,12 +15710,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15665,12 +15734,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15692,9 +15761,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15711,14 +15780,14 @@ const LESSONS = [
       {
         "id": "loeve-s13",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15740,9 +15809,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15759,15 +15828,14 @@ const LESSONS = [
       {
         "id": "loeve-s15",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse.",
+        "screenTip": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse.",
+        "how": "Visk hjælpelinjerne let ud. Læg lette skygger omkring øjnene, langs næsen, inde i ørerne og mellem mankens lokker.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15779,7 +15847,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse."
       },
       {
         "id": "loeve-s16",
@@ -15789,9 +15858,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse.",
+        "screenTip": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse.",
+        "how": "Gør skyggerne i én tot i manken mørkere.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15803,19 +15872,20 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse."
       },
       {
         "id": "loeve-s17",
         "skillIds": [
-          "contour"
+          "shading"
         ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
+        "pressure": "let",
+        "tool": "graphiteSide",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse.",
+        "screenTip": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse.",
+        "how": "Gør næsen mørkere. Lad en lille lys plet være tilbage.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15827,7 +15897,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": false
+        "optionalDetails": false,
+        "lightGoal": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse."
       },
       {
         "id": "loeve-s18",
@@ -15837,9 +15908,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse.",
+        "screenTip": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse.",
+        "how": "Gør skyggerne i resten af manken og ansigtet mørkere.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15851,7 +15922,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg mellem mankens totter. Lad næseryg, kinder og snude være lyse."
       }
     ],
     "skillIds": [
@@ -15871,7 +15943,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "2be5fe4dae06616a"
+    "revision": "37faf6a4c5e32fae"
   },
   {
     "id": "elefant",
@@ -15911,9 +15983,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -15930,14 +16002,14 @@ const LESSONS = [
       {
         "id": "elefant-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15954,14 +16026,14 @@ const LESSONS = [
       {
         "id": "elefant-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -15978,14 +16050,14 @@ const LESSONS = [
       {
         "id": "elefant-s04",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16004,12 +16076,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16028,12 +16100,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16052,12 +16124,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16076,12 +16148,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16100,12 +16172,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16124,12 +16196,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16146,14 +16218,14 @@ const LESSONS = [
       {
         "id": "elefant-s11",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16172,12 +16244,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16196,12 +16268,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16218,14 +16290,14 @@ const LESSONS = [
       {
         "id": "elefant-s14",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16242,14 +16314,14 @@ const LESSONS = [
       {
         "id": "elefant-s15",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16266,14 +16338,14 @@ const LESSONS = [
       {
         "id": "elefant-s16",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16292,12 +16364,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16314,14 +16386,14 @@ const LESSONS = [
       {
         "id": "elefant-s18",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Læg først skrå streger én vej. Løft, og kryds dem den anden vej.",
+        "screenTip": "Læg først skrå streger én vej. Løft, og kryds dem den anden vej.",
+        "how": "Læg først skrå streger én vej. Løft, og kryds dem den anden vej.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16338,15 +16410,14 @@ const LESSONS = [
       {
         "id": "elefant-s19",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under øret og på benenes indersider. Lad pandens midte være lys.",
+        "screenTip": "Skyg under øret og på benenes indersider. Lad pandens midte være lys.",
+        "how": "Skyg under øret og på benenes indersider. Lad pandens midte være lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16358,7 +16429,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under øret og på benenes indersider. Lad pandens midte være lys."
       },
       {
         "id": "elefant-s20",
@@ -16368,9 +16440,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under øret og på benenes indersider. Lad pandens midte være lys.",
+        "screenTip": "Skyg under øret og på benenes indersider. Lad pandens midte være lys.",
+        "how": "Skyg under øret og på benenes indersider. Lad pandens midte være lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16382,7 +16454,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under øret og på benenes indersider. Lad pandens midte være lys."
       },
       {
         "id": "elefant-s21",
@@ -16392,9 +16465,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under øret og på benenes indersider. Lad pandens midte være lys.",
+        "screenTip": "Skyg under øret og på benenes indersider. Lad pandens midte være lys.",
+        "how": "Skyg under øret og på benenes indersider. Lad pandens midte være lys.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16406,7 +16479,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under øret og på benenes indersider. Lad pandens midte være lys."
       }
     ],
     "skillIds": [
@@ -16425,7 +16499,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "7b55cda36ee4d265"
+    "revision": "c772959b5f7448a8"
   },
   {
     "id": "egern",
@@ -16464,9 +16538,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -16483,14 +16557,14 @@ const LESSONS = [
       {
         "id": "egern-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16507,14 +16581,14 @@ const LESSONS = [
       {
         "id": "egern-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16531,14 +16605,14 @@ const LESSONS = [
       {
         "id": "egern-s04",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16557,12 +16631,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16581,12 +16655,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16605,12 +16679,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16629,12 +16703,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16653,12 +16727,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16677,12 +16751,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16701,12 +16775,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16725,12 +16799,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16747,14 +16821,14 @@ const LESSONS = [
       {
         "id": "egern-s13",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16776,9 +16850,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16800,9 +16874,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16824,9 +16898,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16848,9 +16922,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16867,15 +16941,14 @@ const LESSONS = [
       {
         "id": "egern-s18",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under kinden og langs halen. Behold den lyse brystpels.",
+        "screenTip": "Skyg under kinden og langs halen. Behold den lyse brystpels.",
+        "how": "Skyg under kinden og langs halen. Behold den lyse brystpels.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16887,19 +16960,20 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under kinden og langs halen. Behold den lyse brystpels."
       },
       {
         "id": "egern-s19",
         "skillIds": [
-          "fur"
+          "shading"
         ],
         "pressure": "let",
-        "tool": "graphitePoint",
+        "tool": "graphiteSide",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Skyg under kinden og langs halen. Behold den lyse brystpels.",
+        "screenTip": "Skyg under kinden og langs halen. Behold den lyse brystpels.",
+        "how": "Skyg under kinden og langs halen. Behold den lyse brystpels.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16911,7 +16985,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under kinden og langs halen. Behold den lyse brystpels."
       },
       {
         "id": "egern-s20",
@@ -16921,9 +16996,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg under kinden og langs halen. Behold den lyse brystpels.",
+        "screenTip": "Skyg under kinden og langs halen. Behold den lyse brystpels.",
+        "how": "Skyg under kinden og langs halen. Behold den lyse brystpels.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -16935,7 +17010,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg under kinden og langs halen. Behold den lyse brystpels."
       }
     ],
     "skillIds": [
@@ -16955,7 +17031,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "3f1ca1aeac8aa313"
+    "revision": "d82009061a2ec095"
   },
   {
     "id": "delfin",
@@ -16994,9 +17070,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -17013,14 +17089,14 @@ const LESSONS = [
       {
         "id": "delfin-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17042,9 +17118,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17061,14 +17137,14 @@ const LESSONS = [
       {
         "id": "delfin-s04",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17087,12 +17163,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17111,12 +17187,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17135,12 +17211,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17159,12 +17235,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17183,12 +17259,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17207,12 +17283,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17231,12 +17307,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17255,12 +17331,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17279,12 +17355,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17303,12 +17379,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17325,15 +17401,14 @@ const LESSONS = [
       {
         "id": "delfin-s15",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Visk hjælpelinjerne let ud. Læg lette blyantsskygger på hovedet og snuden. Lad små, blanke områder være lyse.",
+        "screenTip": "Visk hjælpelinjerne let ud. Læg lette blyantsskygger på hovedet og snuden. Lad små, blanke områder være lyse.",
+        "how": "Visk hjælpelinjerne let ud. Læg lette blyantsskygger på hovedet og snuden. Lad små, blanke områder være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17345,7 +17420,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Visk hjælpelinjerne let ud. Læg lette blyantsskygger på hovedet og snuden. Lad små, blanke områder være lyse."
       },
       {
         "id": "delfin-s16",
@@ -17355,9 +17431,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg en smal stribe langs kroppens venstre side.",
+        "screenTip": "Skyg en smal stribe langs kroppens venstre side.",
+        "how": "Skyg en smal stribe langs kroppens venstre side.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17369,7 +17445,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg en smal stribe langs kroppens venstre side."
       },
       {
         "id": "delfin-s17",
@@ -17379,9 +17456,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let på resten af kroppen, finnerne og halen. Behold de lyse områder.",
+        "screenTip": "Skyg let på resten af kroppen, finnerne og halen. Behold de lyse områder.",
+        "how": "Skyg let på resten af kroppen, finnerne og halen. Behold de lyse områder.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17393,7 +17470,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let på resten af kroppen, finnerne og halen. Behold de lyse områder."
       },
       {
         "id": "delfin-s18",
@@ -17403,9 +17481,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne omkring øjet og på hovedet mørkere. Bevar de lyse glimt.",
+        "screenTip": "Gør skyggerne omkring øjet og på hovedet mørkere. Bevar de lyse glimt.",
+        "how": "Gør skyggerne omkring øjet og på hovedet mørkere. Bevar de lyse glimt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17417,19 +17495,20 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne omkring øjet og på hovedet mørkere. Bevar de lyse glimt."
       },
       {
         "id": "delfin-s19",
         "skillIds": [
-          "contour"
+          "shading"
         ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
+        "pressure": "let",
+        "tool": "graphiteSide",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Gør et lille område langs ryggen mørkere.",
+        "screenTip": "Gør et lille område langs ryggen mørkere.",
+        "how": "Gør et lille område langs ryggen mørkere.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17441,7 +17520,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": false
+        "optionalDetails": false,
+        "lightGoal": "Gør et lille område langs ryggen mørkere."
       },
       {
         "id": "delfin-s20",
@@ -17451,9 +17531,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne langs ryggen, finnerne og halen mørkere. Lad bugen og glansen være lyse.",
+        "screenTip": "Gør skyggerne langs ryggen, finnerne og halen mørkere. Lad bugen og glansen være lyse.",
+        "how": "Gør skyggerne langs ryggen, finnerne og halen mørkere. Lad bugen og glansen være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17465,7 +17545,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne langs ryggen, finnerne og halen mørkere. Lad bugen og glansen være lyse."
       }
     ],
     "skillIds": [
@@ -17484,7 +17565,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "3f7ae3c18bd2c99f"
+    "revision": "4709a85e5fdf24eb"
   },
   {
     "id": "eg",
@@ -17522,9 +17603,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -17541,14 +17622,14 @@ const LESSONS = [
       {
         "id": "eg-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17565,14 +17646,14 @@ const LESSONS = [
       {
         "id": "eg-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17591,12 +17672,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17615,12 +17696,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17639,12 +17720,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17663,12 +17744,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17687,12 +17768,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17711,12 +17792,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17735,12 +17816,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17759,12 +17840,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17783,12 +17864,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17810,9 +17891,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17834,9 +17915,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17853,15 +17934,14 @@ const LESSONS = [
       {
         "id": "eg-s15",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse.",
+        "screenTip": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse.",
+        "how": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17873,7 +17953,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse."
       },
       {
         "id": "eg-s16",
@@ -17883,9 +17964,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg stammens højre side og under grenene. Blød kanten indad.",
+        "screenTip": "Skyg stammens højre side og under grenene. Blød kanten indad.",
+        "how": "Skyg stammens højre side og under grenene. Blød kanten indad.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17897,19 +17978,20 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg stammens højre side og under grenene. Blød kanten indad."
       },
       {
         "id": "eg-s17",
         "skillIds": [
-          "contour"
+          "shading"
         ],
-        "pressure": "mellem",
-        "tool": "graphitePoint",
+        "pressure": "let",
+        "tool": "graphiteSide",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse.",
+        "screenTip": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse.",
+        "how": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17921,7 +18003,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": false
+        "optionalDetails": false,
+        "lightGoal": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse."
       },
       {
         "id": "eg-s18",
@@ -17931,9 +18014,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg stammens højre side og under grenene. Blød kanten indad.",
+        "screenTip": "Skyg stammens højre side og under grenene. Blød kanten indad.",
+        "how": "Skyg stammens højre side og under grenene. Blød kanten indad.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17945,7 +18028,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg stammens højre side og under grenene. Blød kanten indad."
       },
       {
         "id": "eg-s19",
@@ -17955,9 +18039,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse.",
+        "screenTip": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse.",
+        "how": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -17969,7 +18053,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg på undersiden af bladgrupperne. Lad toppene være lyse."
       }
     ],
     "skillIds": [
@@ -17989,7 +18074,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "d971d32200bd4af2"
+    "revision": "4cf7ab9a40b157e8"
   },
   {
     "id": "puma_svaer",
@@ -18021,9 +18106,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -18045,9 +18130,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18069,9 +18154,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18088,14 +18173,14 @@ const LESSONS = [
       {
         "id": "puma_svaer-s04",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18112,14 +18197,14 @@ const LESSONS = [
       {
         "id": "puma_svaer-s05",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18138,12 +18223,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18162,12 +18247,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18184,14 +18269,14 @@ const LESSONS = [
       {
         "id": "puma_svaer-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18210,12 +18295,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18237,9 +18322,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18261,9 +18346,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18285,9 +18370,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lyse skygger i pelsen og på klippen; lad de lyseste områder være hvide.",
+        "screenTip": "Læg lyse skygger i pelsen og på klippen; lad de lyseste områder være hvide.",
+        "how": "Læg lyse skygger i pelsen og på klippen; lad de lyseste områder være hvide.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18299,7 +18384,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lyse skygger i pelsen og på klippen; lad de lyseste områder være hvide."
       },
       {
         "id": "puma_svaer-s13",
@@ -18309,9 +18395,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne mørkere under musklerne, ved halespidsen og i klippens sprækker.",
+        "screenTip": "Gør skyggerne mørkere under musklerne, ved halespidsen og i klippens sprækker.",
+        "how": "Gør skyggerne mørkere under musklerne, ved halespidsen og i klippens sprækker.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18323,7 +18409,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne mørkere under musklerne, ved halespidsen og i klippens sprækker."
       }
     ],
     "skillIds": [
@@ -18344,7 +18431,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "0a0efafd88f06f81"
+    "revision": "9152241fb23f43ed"
   },
   {
     "id": "ulv_svaer",
@@ -18376,9 +18463,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -18400,9 +18487,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18419,14 +18506,14 @@ const LESSONS = [
       {
         "id": "ulv_svaer-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18443,14 +18530,14 @@ const LESSONS = [
       {
         "id": "ulv_svaer-s04",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18467,14 +18554,14 @@ const LESSONS = [
       {
         "id": "ulv_svaer-s05",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18493,12 +18580,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18515,14 +18602,14 @@ const LESSONS = [
       {
         "id": "ulv_svaer-s07",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18539,14 +18626,14 @@ const LESSONS = [
       {
         "id": "ulv_svaer-s08",
         "skillIds": [
-          "highlight"
+          "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "screenTip": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
-        "how": "Lad den lyse plet være hvid. Fyld forsigtigt rundt om den.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18565,12 +18652,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18592,9 +18679,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18616,9 +18703,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18640,9 +18727,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg ved kindernes yderside. Lad næseryggen og øjnenes lyspunkter være lyse.",
+        "screenTip": "Skyg ved kindernes yderside. Lad næseryggen og øjnenes lyspunkter være lyse.",
+        "how": "Skyg ved kindernes yderside. Lad næseryggen og øjnenes lyspunkter være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18654,7 +18741,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg ved kindernes yderside. Lad næseryggen og øjnenes lyspunkter være lyse."
       },
       {
         "id": "ulv_svaer-s13",
@@ -18664,9 +18752,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg ved kindernes yderside. Lad næseryggen og øjnenes lyspunkter være lyse.",
+        "screenTip": "Skyg ved kindernes yderside. Lad næseryggen og øjnenes lyspunkter være lyse.",
+        "how": "Skyg ved kindernes yderside. Lad næseryggen og øjnenes lyspunkter være lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18678,7 +18766,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg ved kindernes yderside. Lad næseryggen og øjnenes lyspunkter være lyse."
       }
     ],
     "skillIds": [
@@ -18699,7 +18788,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "bd45c4f310a53be2"
+    "revision": "b91c0c4b1fc555d0"
   },
   {
     "id": "s_drage",
@@ -18731,9 +18820,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -18750,14 +18839,14 @@ const LESSONS = [
       {
         "id": "s_drage-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18779,9 +18868,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18798,14 +18887,14 @@ const LESSONS = [
       {
         "id": "s_drage-s04",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18822,14 +18911,14 @@ const LESSONS = [
       {
         "id": "s_drage-s05",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18848,12 +18937,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18870,14 +18959,14 @@ const LESSONS = [
       {
         "id": "s_drage-s07",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18894,14 +18983,14 @@ const LESSONS = [
       {
         "id": "s_drage-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18920,12 +19009,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18942,14 +19031,14 @@ const LESSONS = [
       {
         "id": "s_drage-s10",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18966,14 +19055,14 @@ const LESSONS = [
       {
         "id": "s_drage-s11",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -18995,9 +19084,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lette blyantsskygger under hovedet, langs kroppen og i vingernes folder.",
+        "screenTip": "Læg lette blyantsskygger under hovedet, langs kroppen og i vingernes folder.",
+        "how": "Læg lette blyantsskygger under hovedet, langs kroppen og i vingernes folder.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19009,7 +19098,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lette blyantsskygger under hovedet, langs kroppen og i vingernes folder."
       },
       {
         "id": "s_drage-s13",
@@ -19019,9 +19109,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne mellem skællene og under vingerne mørkere; behold de lyse områder.",
+        "screenTip": "Gør skyggerne mellem skællene og under vingerne mørkere; behold de lyse områder.",
+        "how": "Gør skyggerne mellem skællene og under vingerne mørkere; behold de lyse områder.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19033,7 +19123,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne mellem skællene og under vingerne mørkere; behold de lyse områder."
       }
     ],
     "skillIds": [
@@ -19053,9 +19144,9 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "2a961f7d418233cd",
+    "revision": "c22c020643449669",
     "shop": true,
-    "price": 40
+    "price": 15
   },
   {
     "id": "s_enhjoerning",
@@ -19087,9 +19178,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -19111,9 +19202,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19135,9 +19226,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19154,14 +19245,14 @@ const LESSONS = [
       {
         "id": "s_enhjoerning-s04",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19180,12 +19271,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19202,14 +19293,14 @@ const LESSONS = [
       {
         "id": "s_enhjoerning-s06",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19228,12 +19319,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19252,12 +19343,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19274,14 +19365,14 @@ const LESSONS = [
       {
         "id": "s_enhjoerning-s09",
         "skillIds": [
-          "eraser"
+          "fur"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19303,9 +19394,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19327,9 +19418,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19351,9 +19442,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lette blyantsskygger under halsen, maven og benene og mellem hårets lokker.",
+        "screenTip": "Læg lette blyantsskygger under halsen, maven og benene og mellem hårets lokker.",
+        "how": "Læg lette blyantsskygger under halsen, maven og benene og mellem hårets lokker.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19365,7 +19456,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lette blyantsskygger under halsen, maven og benene og mellem hårets lokker."
       },
       {
         "id": "s_enhjoerning-s13",
@@ -19375,9 +19467,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne mellem benene og hårlokkerne mørkere, og lad de lyse områder stå.",
+        "screenTip": "Gør skyggerne mellem benene og hårlokkerne mørkere, og lad de lyse områder stå.",
+        "how": "Gør skyggerne mellem benene og hårlokkerne mørkere, og lad de lyse områder stå.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19389,7 +19481,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne mellem benene og hårlokkerne mørkere, og lad de lyse områder stå."
       }
     ],
     "skillIds": [
@@ -19410,9 +19503,9 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "5158b8f83d612dcc",
+    "revision": "541fbcef54d995ed",
     "shop": true,
-    "price": 35
+    "price": 12
   },
   {
     "id": "s_trex",
@@ -19444,9 +19537,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -19463,14 +19556,14 @@ const LESSONS = [
       {
         "id": "s_trex-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19492,9 +19585,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19513,12 +19606,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19537,12 +19630,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19559,14 +19652,14 @@ const LESSONS = [
       {
         "id": "s_trex-s06",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19585,12 +19678,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19607,14 +19700,14 @@ const LESSONS = [
       {
         "id": "s_trex-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19633,12 +19726,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19655,14 +19748,14 @@ const LESSONS = [
       {
         "id": "s_trex-s10",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19679,14 +19772,14 @@ const LESSONS = [
       {
         "id": "s_trex-s11",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "screenTip": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
+        "how": "Tegn én hel form. Gentag med luft imellem; få former er nok.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19708,9 +19801,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg flere lette lag i hudfolderne. Lad tænderne være hvide.",
+        "screenTip": "Læg flere lette lag i hudfolderne. Lad tænderne være hvide.",
+        "how": "Læg flere lette lag i hudfolderne. Lad tænderne være hvide.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19722,7 +19815,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg flere lette lag i hudfolderne. Lad tænderne være hvide."
       },
       {
         "id": "s_trex-s13",
@@ -19732,9 +19826,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg flere lette lag i hudfolderne. Lad tænderne være hvide.",
+        "screenTip": "Læg flere lette lag i hudfolderne. Lad tænderne være hvide.",
+        "how": "Læg flere lette lag i hudfolderne. Lad tænderne være hvide.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19746,7 +19840,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg flere lette lag i hudfolderne. Lad tænderne være hvide."
       }
     ],
     "skillIds": [
@@ -19766,9 +19861,9 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "80bf30124ad8458e",
+    "revision": "45e12e1a366dd337",
     "shop": true,
-    "price": 35
+    "price": 12
   },
   {
     "id": "s_tiger",
@@ -19800,9 +19895,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -19824,9 +19919,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19848,9 +19943,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19867,14 +19962,14 @@ const LESSONS = [
       {
         "id": "s_tiger-s04",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19891,14 +19986,14 @@ const LESSONS = [
       {
         "id": "s_tiger-s05",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19915,14 +20010,14 @@ const LESSONS = [
       {
         "id": "s_tiger-s06",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19939,14 +20034,14 @@ const LESSONS = [
       {
         "id": "s_tiger-s07",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19963,14 +20058,14 @@ const LESSONS = [
       {
         "id": "s_tiger-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -19989,12 +20084,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20016,9 +20111,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20040,9 +20135,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20064,9 +20159,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lyse skygger i striberne, ørerne og omkring øjnene og næsen med let blyant.",
+        "screenTip": "Læg lyse skygger i striberne, ørerne og omkring øjnene og næsen med let blyant.",
+        "how": "Læg lyse skygger i striberne, ørerne og omkring øjnene og næsen med let blyant.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20078,7 +20173,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lyse skygger i striberne, ørerne og omkring øjnene og næsen med let blyant."
       },
       {
         "id": "s_tiger-s13",
@@ -20088,9 +20184,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør striberne og skyggerne mørkere med flere blyantlag; bevar de lyse knurhår og øjnenes glimt.",
+        "screenTip": "Gør striberne og skyggerne mørkere med flere blyantlag; bevar de lyse knurhår og øjnenes glimt.",
+        "how": "Gør striberne og skyggerne mørkere med flere blyantlag; bevar de lyse knurhår og øjnenes glimt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20102,7 +20198,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør striberne og skyggerne mørkere med flere blyantlag; bevar de lyse knurhår og øjnenes glimt."
       }
     ],
     "skillIds": [
@@ -20123,9 +20220,9 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "98b34d04f8c58a28",
+    "revision": "53d0aba7314d4cd9",
     "shop": true,
-    "price": 30
+    "price": 10
   },
   {
     "id": "s_ulv",
@@ -20157,12 +20254,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20181,12 +20278,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20205,12 +20302,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20226,15 +20323,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20248,17 +20345,17 @@ const LESSONS = [
       {
         "id": "s_ulv-s05",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20274,15 +20371,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20298,15 +20395,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20320,17 +20417,17 @@ const LESSONS = [
       {
         "id": "s_ulv-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20346,15 +20443,15 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20373,12 +20470,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20397,12 +20494,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20421,12 +20518,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lette skygger på ryggen, under halsen, ved baglåret og mellem benene.",
+        "screenTip": "Læg lette skygger på ryggen, under halsen, ved baglåret og mellem benene.",
+        "how": "Læg lette skygger på ryggen, under halsen, ved baglåret og mellem benene.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20435,7 +20532,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lette skygger på ryggen, under halsen, ved baglåret og mellem benene."
       },
       {
         "id": "s_ulv-s13",
@@ -20445,12 +20543,12 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne dybere med fine blyantsstreger, især på ryggen, halen og omkring ansigtet.",
+        "screenTip": "Gør skyggerne dybere med fine blyantsstreger, især på ryggen, halen og omkring ansigtet.",
+        "how": "Gør skyggerne dybere med fine blyantsstreger, især på ryggen, halen og omkring ansigtet.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
-          "x": 0.18,
+          "x": 0.82,
           "y": 0.12
         },
         "layoutBounds": [
@@ -20459,7 +20557,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne dybere med fine blyantsstreger, især på ryggen, halen og omkring ansigtet."
       }
     ],
     "skillIds": [
@@ -20480,9 +20579,9 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "24fcee895f2d7c29",
+    "revision": "b72d01f2302dd097",
     "shop": true,
-    "price": 30
+    "price": 10
   },
   {
     "id": "s_oern",
@@ -20514,9 +20613,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -20533,14 +20632,14 @@ const LESSONS = [
       {
         "id": "s_oern-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20562,9 +20661,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20583,12 +20682,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20605,14 +20704,14 @@ const LESSONS = [
       {
         "id": "s_oern-s05",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20629,14 +20728,14 @@ const LESSONS = [
       {
         "id": "s_oern-s06",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20653,14 +20752,14 @@ const LESSONS = [
       {
         "id": "s_oern-s07",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20677,14 +20776,14 @@ const LESSONS = [
       {
         "id": "s_oern-s08",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20706,9 +20805,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20730,9 +20829,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20754,9 +20853,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20778,9 +20877,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lette blyantsskygger langs fjerene på krop og vinger. Hold hovedet og halen lyse.",
+        "screenTip": "Læg lette blyantsskygger langs fjerene på krop og vinger. Hold hovedet og halen lyse.",
+        "how": "Læg lette blyantsskygger langs fjerene på krop og vinger. Hold hovedet og halen lyse.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20792,7 +20891,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lette blyantsskygger langs fjerene på krop og vinger. Hold hovedet og halen lyse."
       },
       {
         "id": "s_oern-s13",
@@ -20802,9 +20902,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne på krop og vinger mørkere, især mellem fjerene. Fremhæv øjet og kløerne.",
+        "screenTip": "Gør skyggerne på krop og vinger mørkere, især mellem fjerene. Fremhæv øjet og kløerne.",
+        "how": "Gør skyggerne på krop og vinger mørkere, især mellem fjerene. Fremhæv øjet og kløerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20816,7 +20916,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne på krop og vinger mørkere, især mellem fjerene. Fremhæv øjet og kløerne."
       }
     ],
     "skillIds": [
@@ -20836,9 +20937,9 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "17cf99e7e8518bc7",
+    "revision": "16f23cc9d4e2035d",
     "shop": true,
-    "price": 35
+    "price": 12
   },
   {
     "id": "panda",
@@ -20879,9 +20980,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -20898,14 +20999,14 @@ const LESSONS = [
       {
         "id": "panda-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20922,14 +21023,14 @@ const LESSONS = [
       {
         "id": "panda-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20946,14 +21047,14 @@ const LESSONS = [
       {
         "id": "panda-s04",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20970,14 +21071,14 @@ const LESSONS = [
       {
         "id": "panda-s05",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -20996,12 +21097,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21020,12 +21121,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21044,12 +21145,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21068,12 +21169,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21092,12 +21193,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21116,12 +21217,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21140,12 +21241,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21164,12 +21265,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21188,12 +21289,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21210,14 +21311,14 @@ const LESSONS = [
       {
         "id": "panda-s15",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21234,14 +21335,14 @@ const LESSONS = [
       {
         "id": "panda-s16",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21258,14 +21359,14 @@ const LESSONS = [
       {
         "id": "panda-s17",
         "skillIds": [
-          "contour"
+          "fur"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21287,9 +21388,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21306,15 +21407,14 @@ const LESSONS = [
       {
         "id": "panda-s19",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
+        "screenTip": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
+        "how": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21326,7 +21426,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå."
       },
       {
         "id": "panda-s20",
@@ -21336,9 +21437,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
+        "screenTip": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
+        "how": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21350,7 +21451,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå."
       },
       {
         "id": "panda-s21",
@@ -21360,9 +21462,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
+        "screenTip": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
+        "how": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21374,7 +21476,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå."
       },
       {
         "id": "panda-s22",
@@ -21384,9 +21487,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
+        "screenTip": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
+        "how": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21398,7 +21501,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg flere lette lag i de mørke pelsfelter. Lad de hvide felter stå."
       }
     ],
     "skillIds": [
@@ -21418,7 +21522,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "148faf31b1da0acd"
+    "revision": "d589f0b4147423e5"
   },
   {
     "id": "s_sportsvogn",
@@ -21450,9 +21554,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -21469,14 +21573,14 @@ const LESSONS = [
       {
         "id": "s_sportsvogn-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21493,14 +21597,14 @@ const LESSONS = [
       {
         "id": "s_sportsvogn-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21519,12 +21623,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21543,12 +21647,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21567,12 +21671,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21591,12 +21695,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21613,14 +21717,14 @@ const LESSONS = [
       {
         "id": "s_sportsvogn-s08",
         "skillIds": [
-          "eraser"
+          "contour"
         ],
-        "pressure": "mellem",
-        "tool": "eraser",
+        "pressure": "let",
+        "tool": "graphitePoint",
         "action": "erase",
-        "tip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "screenTip": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
-        "how": "Visk kun den lette hjælpelinje væk. Bevar omridset.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21639,12 +21743,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21663,12 +21767,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21687,12 +21791,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21714,9 +21818,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg let skygge på jorden under den forreste kofanger. Bevar lygtekanten lys.",
+        "screenTip": "Læg let skygge på jorden under den forreste kofanger. Bevar lygtekanten lys.",
+        "how": "Læg lag i luftindtagene. Stop ved de lyse lygter og kanter.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21728,7 +21832,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg let skygge på jorden under den forreste kofanger. Bevar lygtekanten lys."
       },
       {
         "id": "s_sportsvogn-s13",
@@ -21738,9 +21843,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg let skygge på jorden under den forreste kofanger. Bevar lygtekanten lys.",
+        "screenTip": "Læg let skygge på jorden under den forreste kofanger. Bevar lygtekanten lys.",
+        "how": "Læg lag i luftindtagene. Stop ved de lyse lygter og kanter.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21752,7 +21857,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg let skygge på jorden under den forreste kofanger. Bevar lygtekanten lys."
       }
     ],
     "skillIds": [
@@ -21772,9 +21878,9 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "10d33f95b4457f0e",
+    "revision": "647d1372a1eec41a",
     "shop": true,
-    "price": 30
+    "price": 10
   },
   {
     "id": "hest",
@@ -21810,9 +21916,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -21829,14 +21935,14 @@ const LESSONS = [
       {
         "id": "hest-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21853,14 +21959,14 @@ const LESSONS = [
       {
         "id": "hest-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21879,12 +21985,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21901,14 +22007,14 @@ const LESSONS = [
       {
         "id": "hest-s05",
         "skillIds": [
-          "construction"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21927,12 +22033,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21951,12 +22057,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21973,14 +22079,14 @@ const LESSONS = [
       {
         "id": "hest-s08",
         "skillIds": [
-          "fill"
+          "contour"
         ],
         "pressure": "mellem",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Fyld med små cirkler i flere lette lag.",
-        "screenTip": "Fyld med små cirkler i flere lette lag.",
-        "how": "Fyld med små cirkler i flere lette lag.",
+        "tip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "screenTip": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
+        "how": "Følg kanten. Fyld med små strøg; stop før det hvide lyspunkt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -21999,12 +22105,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22023,12 +22129,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22047,12 +22153,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22074,9 +22180,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22098,9 +22204,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "screenTip": "Korte strøg udad langs formen. Løft efter hvert hår.",
+        "how": "Korte strøg udad langs formen. Løft efter hvert hår.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22122,9 +22228,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "screenTip": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
+        "how": "Træk en lang bue fra roden mod spidsen. Løft, og begynd igen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22141,15 +22247,14 @@ const LESSONS = [
       {
         "id": "hest-s15",
         "skillIds": [
-          "shading",
-          "eraser"
+          "shading"
         ],
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Visk hjælpelinjerne let ud. Skyg let under kinden og langs halsen.",
+        "screenTip": "Visk hjælpelinjerne let ud. Skyg let under kinden og langs halsen.",
+        "how": "Visk hjælpelinjerne let ud. Skyg let under kinden og langs halsen.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22161,7 +22266,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Visk hjælpelinjerne let ud. Skyg let under kinden og langs halsen."
       },
       {
         "id": "hest-s16",
@@ -22171,9 +22277,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Skyg let inde i mankens lange totter. Følg hårenes buer.",
+        "screenTip": "Skyg let inde i mankens lange totter. Følg hårenes buer.",
+        "how": "Skyg let inde i mankens lange totter. Følg hårenes buer.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22185,7 +22291,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Skyg let inde i mankens lange totter. Følg hårenes buer."
       },
       {
         "id": "hest-s17",
@@ -22195,9 +22302,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør skyggerne dybere, især i øjet, næseboret, under kinden og mellem mankens lokker.",
+        "screenTip": "Gør skyggerne dybere, især i øjet, næseboret, under kinden og mellem mankens lokker.",
+        "how": "Gør skyggerne dybere, især i øjet, næseboret, under kinden og mellem mankens lokker.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22209,7 +22316,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør skyggerne dybere, især i øjet, næseboret, under kinden og mellem mankens lokker."
       }
     ],
     "skillIds": [
@@ -22230,7 +22338,7 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "01bf6fe02a6dc679"
+    "revision": "20fab965830e5b46"
   },
   {
     "id": "s_ugle_flyv",
@@ -22262,9 +22370,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "screenTip": "Tryk let. Se først, hvor formen skal begynde og slutte.",
-        "how": "Tryk let. Se først, hvor formen skal begynde og slutte.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Er der stadig plads til de næste dele?",
         "lightSource": {
           "x": 0.18,
@@ -22281,14 +22389,14 @@ const LESSONS = [
       {
         "id": "s_ugle_flyv-s02",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22305,14 +22413,14 @@ const LESSONS = [
       {
         "id": "s_ugle_flyv-s03",
         "skillIds": [
-          "contour"
+          "construction"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "screenTip": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
+        "how": "Tryk let. Sammenlign størrelser og afstande på hele arket.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22331,12 +22439,12 @@ const LESSONS = [
         "skillIds": [
           "contour"
         ],
-        "pressure": "mellem",
+        "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "screenTip": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
-        "how": "Følg kanten med en rolig streg. Løft blyanten, når du vil flytte hånden.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22353,14 +22461,14 @@ const LESSONS = [
       {
         "id": "s_ugle_flyv-s05",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22377,14 +22485,14 @@ const LESSONS = [
       {
         "id": "s_ugle_flyv-s06",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22401,14 +22509,14 @@ const LESSONS = [
       {
         "id": "s_ugle_flyv-s07",
         "skillIds": [
-          "fur"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22425,15 +22533,14 @@ const LESSONS = [
       {
         "id": "s_ugle_flyv-s08",
         "skillIds": [
-          "contour",
-          "eraser"
+          "contour"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Tegn øjne, næb og den runde ansigtskant. Visk derefter forsigtigt hjælpelinjerne væk.",
-        "screenTip": "Tegn øjne, næb og den runde ansigtskant. Visk derefter forsigtigt hjælpelinjerne væk.",
-        "how": "Tegn øjne, næb og den runde ansigtskant. Visk derefter forsigtigt hjælpelinjerne væk.",
+        "tip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "screenTip": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
+        "how": "Se startpunktet. Tegn hele kurven roligt, og løft ved enden.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22450,14 +22557,14 @@ const LESSONS = [
       {
         "id": "s_ugle_flyv-s09",
         "skillIds": [
-          "contour"
+          "fur"
         ],
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Følg vingernes og halens form med lange fjerstreger. Løft blyanten mellem fjerene, og tegn korte streger ved fødderne.",
-        "screenTip": "Følg vingernes og halens form med lange fjerstreger. Løft blyanten mellem fjerene, og tegn korte streger ved fødderne.",
-        "how": "Følg vingernes og halens form med lange fjerstreger. Løft blyanten mellem fjerene, og tegn korte streger ved fødderne.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22479,9 +22586,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22503,9 +22610,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphitePoint",
         "action": "draw",
-        "tip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "screenTip": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
-        "how": "Løft blyanten mellem korte pelsstreger. Følg formen, og lad lidt hvidt papir være imellem.",
+        "tip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "screenTip": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
+        "how": "Følg fjerens bue fra rod til spids. Lad lidt luft mellem stregerne.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22527,9 +22634,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Læg lette, bløde skygger mellem fjerene og langs kroppen. Tryk ganske forsigtigt.",
+        "screenTip": "Læg lette, bløde skygger mellem fjerene og langs kroppen. Tryk ganske forsigtigt.",
+        "how": "Læg lette, bløde skygger mellem fjerene og langs kroppen. Tryk ganske forsigtigt.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22541,7 +22648,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Læg lette, bløde skygger mellem fjerene og langs kroppen. Tryk ganske forsigtigt."
       },
       {
         "id": "s_ugle_flyv-s13",
@@ -22551,9 +22659,9 @@ const LESSONS = [
         "pressure": "let",
         "tool": "graphiteSide",
         "action": "tone",
-        "tip": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
-        "screenTip": "Vælg lysegrå og den brede blyant. Brug små cirkler i flere lag.",
-        "how": "Læg blyanten skråt og skyg med små cirkler. Byg op fra lyst til mørkt. Lad det lyse felt være hvidt.",
+        "tip": "Gør øjne, næb, fjerstriber og de dybeste skygger mørkere. Bevar de lyse områder.",
+        "screenTip": "Gør øjne, næb, fjerstriber og de dybeste skygger mørkere. Bevar de lyse områder.",
+        "how": "Gør øjne, næb, fjerstriber og de dybeste skygger mørkere. Bevar de lyse områder.",
         "selfCheck": "Kan du finde området fra eksemplet på din egen tegning?",
         "lightSource": {
           "x": 0.18,
@@ -22565,7 +22673,8 @@ const LESSONS = [
           0.88,
           0.9
         ],
-        "optionalDetails": true
+        "optionalDetails": true,
+        "lightGoal": "Gør øjne, næb, fjerstriber og de dybeste skygger mørkere. Bevar de lyse områder."
       }
     ],
     "skillIds": [
@@ -22585,8 +22694,8 @@ const LESSONS = [
       "detail": 3,
       "newTechniques": 1
     },
-    "revision": "4bf873cb9467feef",
+    "revision": "4d960fda1375538d",
     "shop": true,
-    "price": 30
+    "price": 10
   }
 ];
